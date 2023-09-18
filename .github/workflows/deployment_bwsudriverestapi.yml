@@ -34,18 +34,12 @@ jobs:
       - name: dotnet publish
         run: dotnet publish -c Api -o ${{env.DOTNET_ROOT}}/myapp
 
-      - name: App Settings Variable Substitution - ConnectionString
+      - name: App Settings Variable Substitution - Secrets
         uses: microsoft/variable-substitution@v1
         with:
-            files: '${{env.DOTNET_ROOT}}/myapp/uDrive.Backend/src/uDrive.Backend.Api/appsettings.json'
+            files: '${{env.DOTNET_ROOT}}/myapp/appsettings.json'
         env:
             ConnectionStrings.AZURE_SQL_CONNECTIONSTRING: ${{ secrets.AZURE_SQL_CONNECTIONSTRING }}
-
-      - name: App Settings Variable Substitution - JWT Secret
-        uses: microsoft/variable-substitution@v1
-        with:
-            files: '${{env.DOTNET_ROOT}}/myapp/uDrive.Backend/src/uDrive.Backend.Api/appsettings.json'
-        env:
             ApplicationSettings.JWT_Secret: ${{ secrets.BWSJWTPRODUCTIVSECRET }} 
 
       - name: dotnet install ef
