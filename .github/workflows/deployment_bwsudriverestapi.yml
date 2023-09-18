@@ -25,6 +25,20 @@ jobs:
           dotnet-version: '7.x'
           include-prerelease: true
 
+      - name: App Settings Variable Substitution - ConnectionString
+        uses: microsoft/variable-substitution@v1
+        with:
+            files: '${{env.DOTNET_ROOT}}/myapp/src/uDrive.Backend.Api/appsettings.json'
+        env:
+            ConnectionStrings.AZURE_SQL_CONNECTIONSTRING: ${{ secrets.AZURE_SQL_CONNECTIONSTRING }}
+
+      - name: App Settings Variable Substitution - JWT Secret
+        uses: microsoft/variable-substitution@v1
+        with:
+            files: '${{env.DOTNET_ROOT}}/myapp/src/uDrive.Backend.Api/appsettings.json'
+        env:
+            ApplicationSettings.JWT_Secret: ${{ secrets.BWSJWTPRODUCTIVSECRET }}
+
       - name: Build with dotnet
         run: dotnet build --configuration Api
 
@@ -34,20 +48,6 @@ jobs:
 
       - name: dotnet install ef
         run: dotnet tool install -g dotnet-ef
-
-      - name: App Settings Variable Substitution - ConnectionString
-        uses: microsoft/variable-substitution@v1
-        with:
-            files: '${{env.DOTNET_ROOT}}/myapp/appsettings.json'
-        env:
-            ConnectionStrings.AZURE_SQL_CONNECTIONSTRING: ${{ secrets.AZURE_SQL_CONNECTIONSTRING }}
-
-      - name: App Settings Variable Substitution - JWT Secret
-        uses: microsoft/variable-substitution@v1
-        with:
-            files: '${{env.DOTNET_ROOT}}/myapp/appsettings.json'
-        env:
-            ApplicationSettings.JWT_Secret: ${{ secrets.BWSJWTPRODUCTIVSECRET }}
 
       - name: dotnet bundle migration
         run: dotnet ef migrations bundle --runtime linux-x64 -p src/uDrive.Backend.Api/uDrive.Backend.Api.csproj -o ${{env.DOTNET_ROOT}}/myapp/migrate
