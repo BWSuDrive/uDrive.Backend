@@ -43,7 +43,7 @@ jobs:
     - name: App Settings Variable Substitution - Secrets
       uses: microsoft/variable-substitution@v1
       with:
-            files: '${{env.DOTNET_ROOT}}/myapp/appsettings.json'
+            files: 'D:\a\uDrive.Backend\uDrive.Backend\publish\appsettings.json'
       env:
             ConnectionStrings.AZURE_SQL_CONNECTIONSTRING: ${{ secrets.AZURE_SQL_CONNECTIONSTRING }}
             ApplicationSettings.JWT_Secret: ${{ secrets.BWSJWTPRODUCTIVSECRET }} 
