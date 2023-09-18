@@ -30,6 +30,10 @@ jobs:
         run: dotnet build --configuration Api
 
 
+
+      - name: dotnet publish
+        run: dotnet publish -c Api -o ${{env.DOTNET_ROOT}}/myapp
+
       - name: App Settings Variable Substitution - ConnectionString
         uses: microsoft/variable-substitution@v1
         with:
@@ -42,10 +46,7 @@ jobs:
         with:
             files: '/home/runner/work/uDrive.Backend/uDrive.Backend/src/uDrive.Backend.Api/appsettings.json'
         env:
-            ApplicationSettings.JWT_Secret: ${{ secrets.BWSJWTPRODUCTIVSECRET }}
-      - name: dotnet publish
-        run: dotnet publish -c Api -o ${{env.DOTNET_ROOT}}/myapp
- 
+            ApplicationSettings.JWT_Secret: ${{ secrets.BWSJWTPRODUCTIVSECRET }} 
 
       - name: dotnet install ef
         run: dotnet tool install -g dotnet-ef
