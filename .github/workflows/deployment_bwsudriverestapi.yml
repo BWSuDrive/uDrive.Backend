@@ -33,14 +33,14 @@ jobs:
       - name: App Settings Variable Substitution - ConnectionString
         uses: microsoft/variable-substitution@v1
         with:
-            files: 'work/myapp/src/uDrive.Backend.Api/appsettings.json'
+            files: '/home/runner//myapp/src/uDrive.Backend.Api/appsettings.json'
         env:
             ConnectionStrings.AZURE_SQL_CONNECTIONSTRING: ${{ secrets.AZURE_SQL_CONNECTIONSTRING }}
 
       - name: App Settings Variable Substitution - JWT Secret
         uses: microsoft/variable-substitution@v1
         with:
-            files: 'work/myapp/src/uDrive.Backend.Api/appsettings.json'
+            files: '/home/runner//myapp/src/uDrive.Backend.Api/appsettings.json'
         env:
             ApplicationSettings.JWT_Secret: ${{ secrets.BWSJWTPRODUCTIVSECRET }}
       - name: dotnet publish
