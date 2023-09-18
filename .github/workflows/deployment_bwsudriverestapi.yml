@@ -24,11 +24,8 @@ jobs:
           dotnet-version: '7.x'
           include-prerelease: true
 
-
       - name: Build with dotnet
         run: dotnet build --configuration Api
-
-
 
       - name: dotnet publish
         run: dotnet publish -c Api -o ${{env.DOTNET_ROOT}}/myapp
