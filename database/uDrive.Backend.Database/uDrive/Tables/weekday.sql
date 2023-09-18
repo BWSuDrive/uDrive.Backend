@@ -1,0 +1,4 @@
+﻿CREATE TABLE [uDrive].[weekday] (
+  [id] NVARCHAR(450) NOT NULL,
+  [name] NVARCHAR(20) NOT NULL,
+  CONSTRAINT [PK_weekday]  PRIMARY KEY CLUSTERED ([id] ASC))

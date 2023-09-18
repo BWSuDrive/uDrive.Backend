@@ -1,0 +1,5 @@
+﻿CREATE TABLE [uDrive].[person] (
+  [id] NVARCHAR(450) NOT NULL,
+  [firstname] NVARCHAR(200) NOT NULL,
+  [lastname] NVARCHAR(200) NOT NULL,
+  CONSTRAINT [PK_person]  PRIMARY KEY CLUSTERED ([id] ASC))
