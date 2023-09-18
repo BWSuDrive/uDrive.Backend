@@ -1,16 +1,16 @@
-name: Build and deploy .NET Core application to Web App uDriveBackendREST with API Management Service uDriveBackendApiapi-uDriveBackendApi
+name: Build and deploy .NET Core application to Web App uDriveBackendApi with API Management Service uDriveBackendRESTfull-uDriveBackendApi
 on:
   push:
     branches:
     - main
 env:
-  AZURE_WEBAPP_NAME: uDriveBackendREST
+  AZURE_WEBAPP_NAME: uDriveBackendApi
   AZURE_WEBAPP_PACKAGE_PATH: .\publish
   AZURE_APIM_RESOURCE_PATH: /
-  AZURE_APIM_RESOURCEGROUP: BWSuDrive_group
-  AZURE_APIM_SERVICENAME: uDriveBackendApiapi
+  AZURE_APIM_RESOURCEGROUP: BWSuDriveRestApi_group
+  AZURE_APIM_SERVICENAME: uDriveBackendRESTfull
   AZURE_APIM_API_ID: uDriveBackendApi
-  AZURE_APIM_APPSERVICEURL: https://udrivebackendrest.azurewebsites.net
+  AZURE_APIM_APPSERVICEURL: https://udrivebackendapi.azurewebsites.net
   SWASHBUCLE_ASPNET_CORE_CLI_PACKAGE_VERSION: 5.6.3
   SWASHBUCKLE_DOTNET_CORE_VERSION: 3.1.x
   API_IMPORT_SPECIFICATION_PATH: .\publish\swagger.json
@@ -40,6 +40,13 @@ jobs:
       run: dotnet test ${{ env.WORKING_DIRECTORY }} --no-build
     - name: Publish
       run: dotnet publish ${{ env.WORKING_DIRECTORY }} --configuration ${{ env.CONFIGURATION }} --no-build --output ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+    - name: App Settings Variable Substitution - Secrets
+      uses: microsoft/variable-substitution@v1
+      with:
+            files: '${{env.DOTNET_ROOT}}/myapp/appsettings.json'
+      env:
+            ConnectionStrings.AZURE_SQL_CONNECTIONSTRING: ${{ secrets.AZURE_SQL_CONNECTIONSTRING }}
+            ApplicationSettings.JWT_Secret: ${{ secrets.BWSJWTPRODUCTIVSECRET }} 
     - name: Install Swashbuckle CLI .NET Global Tool
       run: dotnet tool install --global Swashbuckle.AspNetCore.Cli --version ${{ env.SWASHBUCLE_ASPNET_CORE_CLI_PACKAGE_VERSION }}
       working-directory: ${{ env.WORKING_DIRECTORY }}
@@ -64,11 +71,11 @@ jobs:
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
-        publish-profile: ${{ secrets.uDriveBackendREST_2CB2 }}
+        publish-profile: ${{ secrets.uDriveBackendApi_8EBB }}
     - name: Azure Login
       uses: azure/login@v1
       with:
-        creds: ${{ secrets.uDriveBackendApiapi_SPN }}
+        creds: ${{ secrets.uDriveBackendRESTfull_SPN }}
     - name: Import API into Azure API Management
       run: az apim api import --path "${{ env.AZURE_APIM_RESOURCE_PATH }}" --resource-group "${{ env.AZURE_APIM_RESOURCEGROUP }}" --service-name "${{ env.AZURE_APIM_SERVICENAME }}" --api-id "${{ env.AZURE_APIM_API_ID }}" --service-url "${{ env.AZURE_APIM_APPSERVICEURL }}" --specification-path "${{ env.API_IMPORT_SPECIFICATION_PATH }}" --specification-format OpenApi --subscription-required false
     - name: logout
