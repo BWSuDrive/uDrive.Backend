@@ -3,31 +3,51 @@
 
 name: Build and deploy ASP.Net Core app to Azure Web App - BWSuDriveRestApi
 
+
+
 on:
   push:
     branches:
+      - deployment
       - main
   workflow_dispatch:
 
-jobs:
+  
+jobs:  
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
-
+                     
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: '7.x'
           include-prerelease: true
 
+
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build --configuration Api
+
+
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish -c Api -o ${{env.DOTNET_ROOT}}/myapp
 
+      - name: App Settings Variable Substitution - Secrets
+        uses: microsoft/variable-substitution@v1
+        with:
+            files: '${{env.DOTNET_ROOT}}/myapp/appsettings.json'
+        env:
+            ConnectionStrings.AZURE_SQL_CONNECTIONSTRING: ${{ secrets.AZURE_SQL_CONNECTIONSTRING }}
+            ApplicationSettings.JWT_Secret: ${{ secrets.BWSJWTPRODUCTIVSECRET }} 
+
+      - name: dotnet install ef
+        run: dotnet tool install -g dotnet-ef
+
+      - name: dotnet bundle migration
+        run: dotnet ef migrations bundle --runtime linux-x64 -p src/uDrive.Backend.Api/uDrive.Backend.Api.csproj -o ${{env.DOTNET_ROOT}}/myapp/migrate
+    
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
@@ -53,5 +73,5 @@ jobs:
         with:
           app-name: 'BWSuDriveRestApi'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_788D39E9E844410586CF0CC0839AE7A7 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4C81D7FA3EC14E84837262DFD0C50041 }}
           package: .
