@@ -18,14 +18,19 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{ env.DOTNET_CORE_VERSION }}
+        
     - name: Restore
       run: dotnet restore "${{ env.WORKING_DIRECTORY }}"
+      
     - name: Build
       run: dotnet build "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-restore
+      
     - name: Test
       run: dotnet test "${{ env.WORKING_DIRECTORY }}" --no-build
+      
     - name: Publish
       run: dotnet publish "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-build --output "${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
+      
     - name: App Settings Variable Substitution - Secrets
       uses: microsoft/variable-substitution@v1
       with:
@@ -33,8 +38,12 @@ jobs:
       env:
             ConnectionStrings.AZURE_SQL_CONNECTIONSTRING: ${{ secrets.AZURE_SQL_CONNECTIONSTRING }}
             ApplicationSettings.JWT_Secret: ${{ secrets.BWSJWTPRODUCTIVSECRET }} 
+            
+    - name: dotnet install ef
+      run: dotnet tool install -g dotnet-ef
+      
     - name: dotnet bundle migration
-      run: dotnet ef migrations bundle --p ${{ env.WORKING_DIRECTORY }}/uDrive.Backend.Model  --s ${{ env.WORKING_DIRECTORY }}/uDrive.Backend.Api -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/migrate
+      run: dotnet ef migrations bundle --p ${{ env.WORKING_DIRECTORY }}/src/uDrive.Backend.Model  --s ${{ env.WORKING_DIRECTORY }}/src/uDrive.Backend.Api -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/migrate
     
     - name: Publish Artifacts
       uses: actions/upload-artifact@v3
