@@ -33,3 +33,4 @@ Als Ergebniss sollte eine *(noch)* **leere** liste und der Response Code 200 kom
 ## Data migrations 
 `dotnet ef migrations remove --project ..\..\uDrive.Backend.Model\` 
 `dotnet ef migrations add NewMigration --project ..\..\uDrive.Backend.Model`
+`dotnet ef database update --project ..\uDrive.Backend.Model --connection "CONNECTION_STRING_IN_MARKS"`
