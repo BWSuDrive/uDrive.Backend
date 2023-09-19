@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using uDrive.Backend.Model.Entities;
+using uDrive.Backend.Api.Data.Models;
 
 namespace uDrive.Backend.Api.Controllers
 {

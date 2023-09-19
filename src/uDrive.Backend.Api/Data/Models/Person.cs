@@ -1,0 +1,17 @@
+﻿using Microsoft.AspNetCore.Identity;
+using System;
+using System.Collections.Generic;
+
+namespace uDrive.Backend.Api.Data.Models;
+
+public class Person : IdentityUser
+{
+ 
+    //public string Id { get; set; } = null!;
+
+    public string Firstname { get; set; } = null!;
+
+    public string Lastname { get; set; } = null!;
+
+    public virtual ICollection<Driver> Drivers { get; } = new List<Driver>();
+}

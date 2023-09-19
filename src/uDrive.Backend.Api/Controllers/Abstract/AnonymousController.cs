@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using uDrive.Backend.Model;
+using uDrive.Backend.Api.Data;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace uDrive.Backend.Api.Controllers.Abstract;
 
 [Produces(Application.Json)]
 [Consumes(Application.Json)]
-[Route("api/[controller]")]
 [ApiController]
+[Route("api/[controller]")]
 public class AnonymousController<TEntity> : ControllerBase where TEntity : class, IEntity
 {
 

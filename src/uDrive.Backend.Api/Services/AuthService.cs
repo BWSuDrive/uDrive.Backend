@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using uDrive.Backend.Model.DTO;
-using uDrive.Backend.Model.Entities;
+using uDrive.Backend.Api.Data.DTO;
+using uDrive.Backend.Api.Data.Models;
 
 using uDrive.Backend.Api.Services.Interfaces;
+using Microsoft.EntityFrameworkCore.Tools;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -12,47 +13,23 @@ namespace uDrive.Backend.Api.Services;
 
 public class AuthService : IAuthService
 {
-    private readonly UserManager<Person> userManager;
-    private readonly RoleManager<IdentityRole> roleManager;
+    private readonly SignInManager<Person> _signInManager;
+    private readonly UserManager<Person> _userManager;
     private readonly IConfiguration _configuration;
-    public AuthService(UserManager<Person> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
+
+    public AuthService(SignInManager<Person> signInManager,
+        UserManager<Person> userManager,
+        IConfiguration configuration)
     {
-        this.userManager = userManager;
-        this.roleManager = roleManager;
+        _signInManager = signInManager;
+        _userManager = userManager;
         _configuration = configuration;
-
     }
-    //public async Task<(int, string)> Registeration(RegistrationModel model, string role)
-    //{
-    //    var userExists = await userManager.FindByNameAsync(model.Username);
-    //    if (userExists != null)
-    //        return (0, "User already exists");
 
-    //    Person user = new()
-    //    {
-    //        Email = model.Email,
-    //        SecurityStamp = Guid.NewGuid().ToString(),
-    //        UserName = model.Username,
-    //        FirstName = model.FirstName,
-    //        LastName = model.LastName,
-    //    };
-    //    var createUserResult = await userManager.CreateAsync(user, model.Password);
-    //    if (!createUserResult.Succeeded)
-    //        return (0, "User creation failed! Please check user details and try again.");
-
-    //    if (!await roleManager.RoleExistsAsync(role))
-    //        await roleManager.CreateAsync(new IdentityRole(role));
-
-    //    if (await roleManager.RoleExistsAsync(role))
-    //        await userManager.AddToRoleAsync(user, role);
-
-    //    return (1, "User created successfully!");
-    //}
     public async Task<Response<LoginResponseDTO>> LoginSystemUserAsync(SignInUserDTO credentials)
-      {
-        
-        var result = await Login(credentials).ConfigureAwait(false);
-        if (result.Item1 != 1)
+    {
+        var user = await _userManager.FindByEmailAsync(credentials.Email);
+        if (user == null)
         {
             return new()
             {
@@ -61,8 +38,17 @@ public class AuthService : IAuthService
                 Message = "Email or password is incorrect",
             };
         }
-        var token = result.Item2;
-        var user = result.Item3;
+        var result = await _signInManager.PasswordSignInAsync(user.UserName, credentials.Password, false, true);
+        if (!result.Succeeded)
+        {
+            return new()
+            {
+                Success = false,
+                Data = new LoginResponseDTO() { },
+                Message = "Email or password is incorrect",
+            };
+        }
+        var token = await GenerateJWTTokenAsync(user).ConfigureAwait(false);
         return new Response<LoginResponseDTO>()
         {
             Message = "Login Successfull!",
@@ -77,47 +63,28 @@ public class AuthService : IAuthService
             },
         };
     }
-
-    public async Task<(int, string, Person?)> Login(SignInUserDTO model)
+    public async Task<string> GenerateJWTTokenAsync(Person person)
     {
-        var user = await userManager.FindByNameAsync(model.UserName);
-        if (user == null)
-            return (0, "Invalid username",null);
-        if (!await userManager.CheckPasswordAsync(user, model.Password))
-            return (0, "Invalid password",null);
+        var roles = await _userManager.GetRolesAsync(person).ConfigureAwait(false);
+        var role = roles.FirstOrDefault();
+        var securityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_configuration["JWTKey:Secret"]));
+        var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
-        var userRoles = await userManager.GetRolesAsync(user);
-        var authClaims = new List<Claim>
-            {
-               new Claim(ClaimTypes.Name, user.UserName),
-               new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            };
-
-        foreach (var userRole in userRoles)
+        var claims = new[]
         {
-            authClaims.Add(new Claim(ClaimTypes.Role, userRole));
-        }
-        string token = GenerateToken(authClaims);
-        return (1, token,user);
-    }
-
-
-    private string GenerateToken(IEnumerable<Claim> claims)
-    {
-        var authSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWTKey:Secret"]));
-        var _TokenExpiryTimeInHour = Convert.ToInt64(_configuration["JWTKey:TokenExpiryTimeInHour"]);
-        var tokenDescriptor = new SecurityTokenDescriptor
-        {
-            //Issuer = _configuration["JWTKey:ValidIssuer"],
-            //Audience = _configuration["JWTKey:ValidAudience"],
-            //Expires = DateTime.UtcNow.AddHours(_TokenExpiryTimeInHour),
-            Expires = DateTime.UtcNow.AddMinutes(1),
-            SigningCredentials = new SigningCredentials(authSigningKey, SecurityAlgorithms.HmacSha256),
-            Subject = new ClaimsIdentity(claims)
+            new Claim(JwtRegisteredClaimNames.Sub, person.UserName),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim(ClaimTypes.Role, role)
         };
 
-        var tokenHandler = new JwtSecurityTokenHandler();
-        var token = tokenHandler.CreateToken(tokenDescriptor);
-        return tokenHandler.WriteToken(token);
+        var token = new JwtSecurityToken(
+            issuer: null,
+            audience: null,
+            claims: claims,
+            expires: DateTime.UtcNow.AddMinutes(30),
+            signingCredentials: credentials);
+
+        return new JwtSecurityTokenHandler().WriteToken(token);
     }
+
 }

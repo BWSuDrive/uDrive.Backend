@@ -1,12 +1,13 @@
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
+using uDrive.Backend.Api.Data;
+using uDrive.Backend.Api.Data.Models;
 using uDrive.Backend.Api.Services.Interfaces;
 using uDrive.Backend.Api.Services;
-using uDrive.Backend.Model;
-using uDrive.Backend.Model.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,9 +18,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<Person>(options => options.SignIn.RequireConfirmedAccount = true)
-        .AddRoles<IdentityRole>()
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
-builder.Services.AddTransient<IAuthService, AuthService>();
 
 builder.Services.AddAuthentication(options =>
 {
@@ -40,13 +40,28 @@ builder.Services.AddAuthentication(options =>
 });
 builder.Services.AddControllersWithViews();
 builder.Services.AddControllers();
+builder.Services.AddSwaggerGen();
+
+builder.Services.AddTransient<IAuthService,AuthService>();
 
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseMigrationsEndPoint();
+    app.UseSwagger();
+    _ = app.UseSwaggerUI(options =>
+    {
+        // build a swagger endpoint for each discovered API version
+        
+            //var url = $"/swagger/v1/swagger.json";
+            //var name = "v1";
+            //options.SwaggerEndpoint(url, name);
+        
+
+        options.EnableFilter();
+    });
+
 }
 else
 {
@@ -63,6 +78,7 @@ app.UseAuthentication();
 
 app.UseAuthorization();
 
+app.MapControllers();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

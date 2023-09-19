@@ -3,20 +3,16 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-using uDrive.Backend.Model.DTO;
-using uDrive.Backend.Model.Entities;
+using uDrive.Backend.Api.Data.DTO;
+using uDrive.Backend.Api.Data.Models;
 using uDrive.Backend.Api.Services.Interfaces;
 using static System.Net.Mime.MediaTypeNames;
 using static Microsoft.AspNetCore.Http.StatusCodes;
-using Microsoft.AspNetCore.Authorization;
 
-namespace uDrive.Backend.Api.Controllers;
+namespace uDrive.Backend.Api.Controllers.V1;
 
 [Produces(Application.Json)]
-[Consumes(Application.Json)]
-
 [ApiController]
-[AllowAnonymous]
 [Route("api/[controller]")]
 public class RESTLoginController : ControllerBase
 {
@@ -33,11 +29,9 @@ public class RESTLoginController : ControllerBase
 
     [HttpPost]
     [ProducesResponseType(Status200OK)]
-    [ProducesResponseType(Status400BadRequest)]
-
     public async Task<IActionResult> LogInUser(SignInUserDTO signInUserDTO)
     {
-        if (!ModelState.IsValid)
+        if(!ModelState.IsValid)
         {
             return BadRequest(ModelState);
         }

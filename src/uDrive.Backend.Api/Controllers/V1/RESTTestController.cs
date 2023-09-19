@@ -1,16 +1,12 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 using static System.Net.Mime.MediaTypeNames;
 using static Microsoft.AspNetCore.Http.StatusCodes;
 
-namespace uDrive.Backend.Api.Controllers;
+namespace uDrive.Backend.Api.Controllers.V1;
 
 [Produces(Application.Json)]
-[Consumes(Application.Json)]
-
 [ApiController]
-[AllowAnonymous]
 [Route("api/[controller]")]
 public class RESTTestController : ControllerBase
 {
