@@ -1,4 +1,4 @@
-name: Build and deploy .NET Core application to Web App BWS-uDrive
+name: Web - Build and deploy .NET Core application to Web App BWS-uDrive
 on:
   push:
     branches:
@@ -34,12 +34,7 @@ jobs:
       env:
             ConnectionStrings.AZURE_SQL_CONNECTIONSTRING: ${{ secrets.AZURE_SQL_CONNECTIONSTRING }}
 
-    - name: App Settings Variable Substitution - JWT Secret
-      uses: microsoft/variable-substitution@v1
-      with:
-            files: '${{env.AZURE_WEBAPP_PACKAGE_PATH}}/appsettings.json'
-      env:
-            ApplicationSettings.JWT_Secret: ${{ secrets.AZURE_SQL_CONNECTIONSTRING }}
+
     - name: Publish Artifacts
       uses: actions/upload-artifact@v3
       with:
