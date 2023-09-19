@@ -3,10 +3,12 @@ on:
   push:
     branches:
     - main
+    tags:
+    - webapp
 env:
   AZURE_WEBAPP_NAME: BWS-uDrive
   AZURE_WEBAPP_PACKAGE_PATH: .\published
-  CONFIGURATION: WepApp
+  CONFIGURATION: Wep
   DOTNET_CORE_VERSION: 7.0.x
   WORKING_DIRECTORY: .
 jobs:

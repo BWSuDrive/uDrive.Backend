@@ -4,7 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Configurations>Debug;Release;Api;WebApp</Configurations>
+    <Configurations>Debug;Release;Api;WebApp;Web</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
