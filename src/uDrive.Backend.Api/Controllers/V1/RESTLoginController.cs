@@ -14,7 +14,7 @@ namespace uDrive.Backend.Api.Controllers.V1;
 [Produces(Application.Json)]
 [Consumes(Application.Json)]
 
-[Route("api/[controller]")]
+[Route("/[controller]")]
 [ApiController]
 public class RESTLoginController : ControllerBase
 {

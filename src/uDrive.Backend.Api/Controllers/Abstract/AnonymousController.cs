@@ -6,7 +6,7 @@ namespace uDrive.Backend.Api.Controllers.Abstract;
 
 [Produces(Application.Json)]
 [Consumes(Application.Json)]
-[Route("api/[controller]")]
+[Route("/[controller]")]
 [ApiController]
 public class AnonymousController<TEntity> : ControllerBase where TEntity : class, IEntity
 {
