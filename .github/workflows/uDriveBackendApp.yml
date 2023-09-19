@@ -39,11 +39,11 @@ jobs:
             ConnectionStrings.AZURE_SQL_CONNECTIONSTRING: ${{ secrets.AZURE_SQL_CONNECTIONSTRING }}
             ApplicationSettings.JWT_Secret: ${{ secrets.BWSJWTPRODUCTIVSECRET }} 
             
-    - name: dotnet install ef
-      run: dotnet tool install -g dotnet-ef
+ #   - name: dotnet install ef
+#      run: dotnet tool install -g dotnet-ef
       
-    - name: dotnet bundle migration
-      run: dotnet ef migrations bundle --p ${{ env.WORKING_DIRECTORY }}/src/uDrive.Backend.Model  --s ${{ env.WORKING_DIRECTORY }}/src/uDrive.Backend.Api -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/migrate
+ #   - name: dotnet bundle migration
+  #    run: dotnet ef migrations bundle --p ${{ env.WORKING_DIRECTORY }}/src/uDrive.Backend.Model  --s ${{ env.WORKING_DIRECTORY }}/src/uDrive.Backend.Api -o ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/migrate
     
     - name: Publish Artifacts
       uses: actions/upload-artifact@v3
