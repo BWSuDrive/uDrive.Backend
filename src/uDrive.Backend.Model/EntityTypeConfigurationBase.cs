@@ -18,7 +18,7 @@ namespace uDrive.Backend.Model;
 /// base class.
 /// </remarks>
 /// <typeparam name="T">Entity class this configuration is for</typeparam>
-internal abstract class EntityTypeConfigurationBase<T>
+public abstract class EntityTypeConfigurationBase<T>
     where T : class, IEntity
 {
     protected static void ConfigureDefaults(
