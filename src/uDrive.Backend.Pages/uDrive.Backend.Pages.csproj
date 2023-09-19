@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-uDrive.Backend.Pages-915fbc8d-4f78-40cd-a380-d0d658e68a45</UserSecretsId>
+    <Configurations>Debug;Release;Api;Web</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
