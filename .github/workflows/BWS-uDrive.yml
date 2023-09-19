@@ -26,6 +26,14 @@ jobs:
       run: dotnet test "${{ env.WORKING_DIRECTORY }}" --no-build
     - name: Publish
       run: dotnet publish "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-build --output "${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
+    - name: App Settings Variable Substitution - Secrets
+      uses: microsoft/variable-substitution@v1
+      with:
+            files: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/appsettings.json'
+      env:
+            ConnectionStrings.AZURE_SQL_CONNECTIONSTRING: ${{ secrets.AZURE_SQL_CONNECTIONSTRING }}
+            ApplicationSettings.JWT_Secret: ${{ secrets.BWSJWTPRODUCTIVSECRET }} 
+
     - name: Publish Artifacts
       uses: actions/upload-artifact@v3
       with:

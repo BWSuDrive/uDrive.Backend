@@ -13,14 +13,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{96
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0C4728F8-E33F-42E1-8FB5-C659D8AAEA46}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uDrive.Backend.Blazor", "src\uDrive.Backend.Blazor\uDrive.Backend.Blazor.csproj", "{FF229579-8303-4DC9-B854-A59E4800A4B2}"
-	ProjectSection(ProjectDependencies) = postProject
-		{9249D7F8-B6A6-4095-BFB6-1E36BC496E96} = {9249D7F8-B6A6-4095-BFB6-1E36BC496E96}
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uDrive.Backend.Model", "src\uDrive.Backend.Model\uDrive.Backend.Model.csproj", "{9249D7F8-B6A6-4095-BFB6-1E36BC496E96}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uDrive.Backend.Api", "src\uDrive.Backend.Api\uDrive.Backend.Api.csproj", "{3702CE4A-BE73-442B-A66A-481C35BDF27F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uDrive.Backend.Pages", "src\uDrive.Backend.Pages\uDrive.Backend.Pages.csproj", "{FCD3D5B5-CBE9-4D0B-BDA5-1A300E9A76AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,15 +26,6 @@ Global
 		WebApp|Any CPU = WebApp|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FF229579-8303-4DC9-B854-A59E4800A4B2}.Api|Any CPU.ActiveCfg = Api|Any CPU
-		{FF229579-8303-4DC9-B854-A59E4800A4B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FF229579-8303-4DC9-B854-A59E4800A4B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FF229579-8303-4DC9-B854-A59E4800A4B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FF229579-8303-4DC9-B854-A59E4800A4B2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FF229579-8303-4DC9-B854-A59E4800A4B2}.Web|Any CPU.ActiveCfg = Web|Any CPU
-		{FF229579-8303-4DC9-B854-A59E4800A4B2}.Web|Any CPU.Build.0 = Web|Any CPU
-		{FF229579-8303-4DC9-B854-A59E4800A4B2}.WebApp|Any CPU.ActiveCfg = WebApp|Any CPU
-		{FF229579-8303-4DC9-B854-A59E4800A4B2}.WebApp|Any CPU.Build.0 = WebApp|Any CPU
 		{9249D7F8-B6A6-4095-BFB6-1E36BC496E96}.Api|Any CPU.ActiveCfg = Api|Any CPU
 		{9249D7F8-B6A6-4095-BFB6-1E36BC496E96}.Api|Any CPU.Build.0 = Api|Any CPU
 		{9249D7F8-B6A6-4095-BFB6-1E36BC496E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -47,23 +33,25 @@ Global
 		{9249D7F8-B6A6-4095-BFB6-1E36BC496E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9249D7F8-B6A6-4095-BFB6-1E36BC496E96}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9249D7F8-B6A6-4095-BFB6-1E36BC496E96}.Web|Any CPU.ActiveCfg = Web|Any CPU
+		{9249D7F8-B6A6-4095-BFB6-1E36BC496E96}.Web|Any CPU.Build.0 = Web|Any CPU
 		{9249D7F8-B6A6-4095-BFB6-1E36BC496E96}.WebApp|Any CPU.ActiveCfg = Api|Any CPU
-		{3702CE4A-BE73-442B-A66A-481C35BDF27F}.Api|Any CPU.ActiveCfg = Api|Any CPU
-		{3702CE4A-BE73-442B-A66A-481C35BDF27F}.Api|Any CPU.Build.0 = Api|Any CPU
-		{3702CE4A-BE73-442B-A66A-481C35BDF27F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3702CE4A-BE73-442B-A66A-481C35BDF27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3702CE4A-BE73-442B-A66A-481C35BDF27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3702CE4A-BE73-442B-A66A-481C35BDF27F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3702CE4A-BE73-442B-A66A-481C35BDF27F}.Web|Any CPU.ActiveCfg = Web|Any CPU
-		{3702CE4A-BE73-442B-A66A-481C35BDF27F}.WebApp|Any CPU.ActiveCfg = Api|Any CPU
+		{FCD3D5B5-CBE9-4D0B-BDA5-1A300E9A76AA}.Api|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD3D5B5-CBE9-4D0B-BDA5-1A300E9A76AA}.Api|Any CPU.Build.0 = Debug|Any CPU
+		{FCD3D5B5-CBE9-4D0B-BDA5-1A300E9A76AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD3D5B5-CBE9-4D0B-BDA5-1A300E9A76AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD3D5B5-CBE9-4D0B-BDA5-1A300E9A76AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD3D5B5-CBE9-4D0B-BDA5-1A300E9A76AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCD3D5B5-CBE9-4D0B-BDA5-1A300E9A76AA}.Web|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD3D5B5-CBE9-4D0B-BDA5-1A300E9A76AA}.Web|Any CPU.Build.0 = Debug|Any CPU
+		{FCD3D5B5-CBE9-4D0B-BDA5-1A300E9A76AA}.WebApp|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD3D5B5-CBE9-4D0B-BDA5-1A300E9A76AA}.WebApp|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{FF229579-8303-4DC9-B854-A59E4800A4B2} = {D9274224-93C3-4A06-98CA-D88591B8A4AE}
 		{9249D7F8-B6A6-4095-BFB6-1E36BC496E96} = {D9274224-93C3-4A06-98CA-D88591B8A4AE}
-		{3702CE4A-BE73-442B-A66A-481C35BDF27F} = {D9274224-93C3-4A06-98CA-D88591B8A4AE}
+		{FCD3D5B5-CBE9-4D0B-BDA5-1A300E9A76AA} = {D9274224-93C3-4A06-98CA-D88591B8A4AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9842ED5-8324-42AE-947E-9C8E00EEB83B}
