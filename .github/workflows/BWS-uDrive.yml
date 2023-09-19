@@ -39,7 +39,7 @@ jobs:
       with:
             files: '${{env.AZURE_WEBAPP_PACKAGE_PATH}}/appsettings.json'
       env:
-            JWTKEy: ${{ secrets.BWSJWTPRODUCTIVSECRET }}
+            JWTKey: ${{ secrets.BWSJWTPRODUCTIVSECRET }}
 
     - name: Publish Artifacts
       uses: actions/upload-artifact@v3
