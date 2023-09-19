@@ -62,6 +62,5 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          slot-name: 'Production'
-          publish-profile: ${{ secrets.BWS_uDriveApi_C73D }}
+          publish-profile: ${{ secrets.BWS_uDrive_6EE6 }}
           package: .
