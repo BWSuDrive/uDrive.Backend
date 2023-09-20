@@ -6,15 +6,14 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using uDrive.Backend.Model;
-using uDrive.Backend.Model.Entities;
 
 #nullable disable
 
 namespace uDrive.Backend.Model.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230914095354_AddRoles")]
-    partial class AddRoles
+    [Migration("20230920160541_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -73,29 +72,29 @@ namespace uDrive.Backend.Model.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "554eb2b3-bb72-4b98-906c-961a2df7c598",
-                            ConcurrencyStamp = "554eb2b3-bb72-4b98-906c-961a2df7c598",
+                            Id = "fdfd6951-1a19-4dbe-b7eb-9589dc634d62",
+                            ConcurrencyStamp = "fdfd6951-1a19-4dbe-b7eb-9589dc634d62",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         },
                         new
                         {
-                            Id = "18c3884c-2091-4944-b0cd-5ebf17092458",
-                            ConcurrencyStamp = "18c3884c-2091-4944-b0cd-5ebf17092458",
+                            Id = "e17eb711-64b1-4d81-9fa5-87ba617ea84a",
+                            ConcurrencyStamp = "e17eb711-64b1-4d81-9fa5-87ba617ea84a",
                             Name = "Secretary",
                             NormalizedName = "SECRETARY"
                         },
                         new
                         {
-                            Id = "a0c00a8e-2dec-41db-8b19-761a4aa1eeaf",
-                            ConcurrencyStamp = "a0c00a8e-2dec-41db-8b19-761a4aa1eeaf",
+                            Id = "f09273cd-1adf-4a13-b797-267585e68d6d",
+                            ConcurrencyStamp = "f09273cd-1adf-4a13-b797-267585e68d6d",
                             Name = "Driver",
                             NormalizedName = "DRIVER"
                         },
                         new
                         {
-                            Id = "d2eab8f6-d599-4fe9-9d77-18fa45a20068",
-                            ConcurrencyStamp = "d2eab8f6-d599-4fe9-9d77-18fa45a20068",
+                            Id = "9abfa5ff-4347-4e81-8cc3-de6c41661432",
+                            ConcurrencyStamp = "9abfa5ff-4347-4e81-8cc3-de6c41661432",
                             Name = "Person",
                             NormalizedName = "PERSON"
                         });
@@ -192,23 +191,23 @@ namespace uDrive.Backend.Model.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "2c498d17-4ec6-40b5-93b2-56e83e5498e2",
-                            RoleId = "554eb2b3-bb72-4b98-906c-961a2df7c598"
+                            UserId = "dddc8bba-ab43-454c-ba57-0a61f456af7e",
+                            RoleId = "fdfd6951-1a19-4dbe-b7eb-9589dc634d62"
                         },
                         new
                         {
-                            UserId = "29c18bb9-34ec-4f0b-aff7-50f8d78ea4cc",
-                            RoleId = "18c3884c-2091-4944-b0cd-5ebf17092458"
+                            UserId = "8ee9da42-1303-42be-81d9-aadf42a9d655",
+                            RoleId = "e17eb711-64b1-4d81-9fa5-87ba617ea84a"
                         },
                         new
                         {
-                            UserId = "f5f7ce85-b383-4368-a969-af31e28463a1",
-                            RoleId = "a0c00a8e-2dec-41db-8b19-761a4aa1eeaf"
+                            UserId = "af41d9ec-9e71-4a9c-b7ab-443bce642e7e",
+                            RoleId = "f09273cd-1adf-4a13-b797-267585e68d6d"
                         },
                         new
                         {
-                            UserId = "da58ee98-8702-4bde-99e7-07ddfb413c46",
-                            RoleId = "d2eab8f6-d599-4fe9-9d77-18fa45a20068"
+                            UserId = "60f9d742-6fd6-445e-8c02-055ec70ab9dd",
+                            RoleId = "9abfa5ff-4347-4e81-8cc3-de6c41661432"
                         });
                 });
 
@@ -233,9 +232,10 @@ namespace uDrive.Backend.Model.Migrations
                     b.ToTable("AspNetUserTokens", "uDrive");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.Driver", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.Driver", b =>
                 {
                     b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("id");
 
@@ -251,7 +251,8 @@ namespace uDrive.Backend.Model.Migrations
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("idPerson");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id")
+                        .HasName("PK_uDrive_driver");
 
                     b.HasIndex("IdDrivinglicense");
 
@@ -260,9 +261,10 @@ namespace uDrive.Backend.Model.Migrations
                     b.ToTable("driver", "uDrive");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.DrivingLicence", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.DrivingLicence", b =>
                 {
                     b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("id");
 
@@ -276,14 +278,16 @@ namespace uDrive.Backend.Model.Migrations
                         .HasColumnType("nvarchar(20)")
                         .HasColumnName("licenceClass");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id")
+                        .HasName("PK_uDrive_drivingLicence");
 
                     b.ToTable("drivingLicence", "uDrive");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.DrivingSchedule", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.DrivingSchedule", b =>
                 {
                     b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("id");
 
@@ -301,14 +305,15 @@ namespace uDrive.Backend.Model.Migrations
                         .HasColumnType("time")
                         .HasColumnName("start");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id")
+                        .HasName("PK_uDrive_drivingSchedule");
 
                     b.HasIndex("IdWeekday");
 
                     b.ToTable("drivingSchedule", "uDrive");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.Person", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.Person", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -383,9 +388,9 @@ namespace uDrive.Backend.Model.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "2c498d17-4ec6-40b5-93b2-56e83e5498e2",
+                            Id = "dddc8bba-ab43-454c-ba57-0a61f456af7e",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2ac10161-c31f-4987-9920-c5bfa35672cf",
+                            ConcurrencyStamp = "7cd5d28e-1e8a-4b91-bac1-3f4e2befddd9",
                             Email = "Administrator@udrive.de",
                             EmailConfirmed = true,
                             Firstname = "Administrator",
@@ -393,17 +398,17 @@ namespace uDrive.Backend.Model.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMINISTRATOR@UDRIVE.DE",
                             NormalizedUserName = "ADMINISTRATOR@UDRIVE.DE",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDP5JkgtHOdNTiOTz+fCwA1nERS1gKL++MWeIqmYHHfiIHTQS3u32Zj3M5d5U3n+Hg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOI36ZnPQZEzzAIe5gQzr9zAuEOjv4uigPbjfRTungnM3y9r5MoNhIvFT1217gOcPQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "c1bd93ac-e43e-48de-9743-81dd6441927a",
+                            SecurityStamp = "8b7684fe-98d6-4fb6-bbde-9162dc2b9d07",
                             TwoFactorEnabled = false,
                             UserName = "Administrator@udrive.de"
                         },
                         new
                         {
-                            Id = "29c18bb9-34ec-4f0b-aff7-50f8d78ea4cc",
+                            Id = "8ee9da42-1303-42be-81d9-aadf42a9d655",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2b047410-c562-4400-8766-f5a317025938",
+                            ConcurrencyStamp = "acadca04-ad7a-446a-878c-f79bfc561571",
                             Email = "Secretary@udrive.de",
                             EmailConfirmed = true,
                             Firstname = "Secretary",
@@ -411,17 +416,17 @@ namespace uDrive.Backend.Model.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "SECRETARY@UDRIVE.DE",
                             NormalizedUserName = "SECRETARY@UDRIVE.DE",
-                            PasswordHash = "AQAAAAIAAYagAAAAEMGF68CpO17D8oko+hnjZUXFcZGjRiNhB5m26AoBxJ1XprtdZ1n4V1BtKl3LRcIAWA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKRFmxvxYmdMAkofPJfiQOHBKfCEdk4DIjIbGu5CEAlawx8hlLT0BkuD+6PEVM3AIA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "1280b489-0940-4bad-83e0-421c6cc6f5ec",
+                            SecurityStamp = "d8c54738-c0a5-4e44-a5eb-0ff1b56feaa7",
                             TwoFactorEnabled = false,
                             UserName = "Secretary@udrive.de"
                         },
                         new
                         {
-                            Id = "f5f7ce85-b383-4368-a969-af31e28463a1",
+                            Id = "af41d9ec-9e71-4a9c-b7ab-443bce642e7e",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "45922ec3-c79f-43fd-9da1-adfc13faa883",
+                            ConcurrencyStamp = "5825af23-28a7-4405-87e7-199184598e7b",
                             Email = "Driver@udrive.de",
                             EmailConfirmed = true,
                             Firstname = "Driver",
@@ -429,17 +434,17 @@ namespace uDrive.Backend.Model.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "DRIVER@UDRIVE.DE",
                             NormalizedUserName = "DRIVER@UDRIVE.DE",
-                            PasswordHash = "AQAAAAIAAYagAAAAECBNUNl8oEQ998f+kW4qbiqWBxCbQmS1nOaxt8/wKKp2dI+ReGmQlzKBTcmN1tlM4A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEPi3rOvpBZl6AnW+Bi8BWaC10Lu+N7D4e5qgXFMmth0KeWxyPJ//AQpLI+TmhH19nA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "744f0586-48c2-4989-89df-ca3b77c9db66",
+                            SecurityStamp = "52625683-3f82-4c02-99d5-99ab6ed48aff",
                             TwoFactorEnabled = false,
                             UserName = "Driver@udrive.de"
                         },
                         new
                         {
-                            Id = "da58ee98-8702-4bde-99e7-07ddfb413c46",
+                            Id = "60f9d742-6fd6-445e-8c02-055ec70ab9dd",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3c3d5b1b-77ab-4ec9-96a6-87c89271e7e3",
+                            ConcurrencyStamp = "e9b59417-9016-4d8f-8e32-e03113c45255",
                             Email = "Person@udrive.de",
                             EmailConfirmed = true,
                             Firstname = "Person",
@@ -447,17 +452,18 @@ namespace uDrive.Backend.Model.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "PERSON@UDRIVE.DE",
                             NormalizedUserName = "PERSON@UDRIVE.DE",
-                            PasswordHash = "AQAAAAIAAYagAAAAEAMfTuaqiY57m/TvuANyJHUqwtCeTcN+Fp8D+zsZQGInjELOd20q8ZazW2Lhzw6gPQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJWTrHSpKCI14MIRY+fAEL1cZgslctjPu8D2O/t7+KFmIxEg2AJPj5plCyFtlZSDgA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "986c7bfa-00f6-4496-92f0-10e0e20ad51c",
+                            SecurityStamp = "0dead13b-cd93-4b07-b87d-d4bd7381d374",
                             TwoFactorEnabled = false,
                             UserName = "Person@udrive.de"
                         });
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.SpontanesDrive", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.SpontanesDrive", b =>
                 {
                     b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("id");
 
@@ -471,16 +477,59 @@ namespace uDrive.Backend.Model.Migrations
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("idDrivingScheduleOverwrite");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id")
+                        .HasName("PK_uDrive_spontanesDrive");
 
                     b.HasIndex("IdDrivingScheduleOverwrite");
 
                     b.ToTable("spontanesDrive", "uDrive");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.Weekday", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.TourPlan", b =>
                 {
                     b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("id");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<TimeSpan>("Departure")
+                        .HasColumnType("time");
+
+                    b.Property<string>("Destiniation")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<TimeSpan>("Eta")
+                        .HasColumnType("time");
+
+                    b.Property<string>("IdDriver")
+                        .IsRequired()
+                        .HasMaxLength(450)
+                        .HasColumnType("nvarchar(450)")
+                        .HasColumnName("IdDriver");
+
+                    b.Property<string>("Start")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("StopRequests")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id")
+                        .HasName("PK_uDrive_tourPlan");
+
+                    b.HasIndex("IdDriver");
+
+                    b.ToTable("tourPlan", "uDrive");
+                });
+
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.Weekday", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("nvarchar(450)")
                         .HasColumnName("id");
 
@@ -490,20 +539,21 @@ namespace uDrive.Backend.Model.Migrations
                         .HasColumnType("nvarchar(20)")
                         .HasColumnName("name");
 
-                    b.HasKey("Id");
+                    b.HasKey("Id")
+                        .HasName("PK_uDrive_weekday");
 
                     b.ToTable("weekday", "uDrive");
                 });
 
             modelBuilder.Entity("DrivingScheduleDriver", b =>
                 {
-                    b.HasOne("uDrive.Backend.Api.Data.Models.Driver", null)
+                    b.HasOne("uDrive.Backend.Model.Entities.Driver", null)
                         .WithMany()
                         .HasForeignKey("DriverId")
                         .IsRequired()
                         .HasConstraintName("FK__drivingSc__drive__08B54D69");
 
-                    b.HasOne("uDrive.Backend.Api.Data.Models.DrivingSchedule", null)
+                    b.HasOne("uDrive.Backend.Model.Entities.DrivingSchedule", null)
                         .WithMany()
                         .HasForeignKey("DrivingScheduleId")
                         .IsRequired()
@@ -521,7 +571,7 @@ namespace uDrive.Backend.Model.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("uDrive.Backend.Api.Data.Models.Person", null)
+                    b.HasOne("uDrive.Backend.Model.Entities.Person", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -530,7 +580,7 @@ namespace uDrive.Backend.Model.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("uDrive.Backend.Api.Data.Models.Person", null)
+                    b.HasOne("uDrive.Backend.Model.Entities.Person", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -545,7 +595,7 @@ namespace uDrive.Backend.Model.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("uDrive.Backend.Api.Data.Models.Person", null)
+                    b.HasOne("uDrive.Backend.Model.Entities.Person", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -554,22 +604,22 @@ namespace uDrive.Backend.Model.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("uDrive.Backend.Api.Data.Models.Person", null)
+                    b.HasOne("uDrive.Backend.Model.Entities.Person", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.Driver", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.Driver", b =>
                 {
-                    b.HasOne("uDrive.Backend.Api.Data.Models.DrivingLicence", "IdDrivinglicenseNavigation")
+                    b.HasOne("uDrive.Backend.Model.Entities.DrivingLicence", "IdDrivinglicenseNavigation")
                         .WithMany("Drivers")
                         .HasForeignKey("IdDrivinglicense")
                         .IsRequired()
                         .HasConstraintName("FK_Driver_DrivingLicence");
 
-                    b.HasOne("uDrive.Backend.Api.Data.Models.Person", "IdPersonNavigation")
+                    b.HasOne("uDrive.Backend.Model.Entities.Person", "IdPersonNavigation")
                         .WithMany("Drivers")
                         .HasForeignKey("IdPerson")
                         .IsRequired()
@@ -580,9 +630,9 @@ namespace uDrive.Backend.Model.Migrations
                     b.Navigation("IdPersonNavigation");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.DrivingSchedule", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.DrivingSchedule", b =>
                 {
-                    b.HasOne("uDrive.Backend.Api.Data.Models.Weekday", "IdWeekdayNavigation")
+                    b.HasOne("uDrive.Backend.Model.Entities.Weekday", "IdWeekdayNavigation")
                         .WithMany("DrivingSchedules")
                         .HasForeignKey("IdWeekday")
                         .IsRequired()
@@ -591,9 +641,9 @@ namespace uDrive.Backend.Model.Migrations
                     b.Navigation("IdWeekdayNavigation");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.SpontanesDrive", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.SpontanesDrive", b =>
                 {
-                    b.HasOne("uDrive.Backend.Api.Data.Models.DrivingSchedule", "IdDrivingScheduleOverwriteNavigation")
+                    b.HasOne("uDrive.Backend.Model.Entities.DrivingSchedule", "IdDrivingScheduleOverwriteNavigation")
                         .WithMany("SpontanesDrives")
                         .HasForeignKey("IdDrivingScheduleOverwrite")
                         .IsRequired()
@@ -602,22 +652,38 @@ namespace uDrive.Backend.Model.Migrations
                     b.Navigation("IdDrivingScheduleOverwriteNavigation");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.DrivingLicence", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.TourPlan", b =>
+                {
+                    b.HasOne("uDrive.Backend.Model.Entities.Driver", "Driver")
+                        .WithMany("TourPlans")
+                        .HasForeignKey("IdDriver")
+                        .IsRequired()
+                        .HasConstraintName("FK_TourPlan_Driver");
+
+                    b.Navigation("Driver");
+                });
+
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.Driver", b =>
+                {
+                    b.Navigation("TourPlans");
+                });
+
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.DrivingLicence", b =>
                 {
                     b.Navigation("Drivers");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.DrivingSchedule", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.DrivingSchedule", b =>
                 {
                     b.Navigation("SpontanesDrives");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.Person", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.Person", b =>
                 {
                     b.Navigation("Drivers");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.Weekday", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.Weekday", b =>
                 {
                     b.Navigation("DrivingSchedules");
                 });

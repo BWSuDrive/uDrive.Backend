@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using uDrive.Backend.Model;
 using uDrive.Backend.Model.DTO;
@@ -75,71 +76,76 @@ public class AnonymousController<TEntity> : ControllerBase where TEntity : class
     }
 
 
-    [HttpPut]
-    [ProducesResponseType(Status200OK)]
-    [ProducesResponseType(Status400BadRequest)]
-    [ProducesResponseType(Status404NotFound)]
-    public async ValueTask<ActionResult<TEntity>> PutAsync([FromRoute] string key, [FromBody] TEntity entity)
-    {
-        if (!ModelState.IsValid || entity is null)
-        {
+    //[HttpPut("{key}")]
+    //[ProducesResponseType(Status200OK)]
+    //[ProducesResponseType(Status400BadRequest)]
+    //[ProducesResponseType(Status404NotFound)]
+    //public async ValueTask<ActionResult<TEntity>> PutAsync([FromRoute] string key, [FromBody] TEntity entity)
+    //{
+    //    if (!ModelState.IsValid || entity is null)
+    //    {
 
-            return BadRequest(ModelState);
-        }
-        if (entity.Id == string.Empty)
-        {
-            return BadRequest("The Id property must not be set.");
-        }
+    //        return BadRequest(ModelState);
+    //    }
+    //    if (entity.Id == string.Empty)
+    //    {
+    //        return BadRequest("The Id property must not be set.");
+    //    }
 
-        if (entity.Id != key)
-        {
-            return BadRequest("Id does not match the Id in the payload.");
-        }
+    //    if (entity.Id != key)
+    //    {
+    //        return BadRequest("Id does not match the Id in the payload.");
+    //    }
 
-        var savedEntity = Entities.SingleOrDefault(x => x.Id == key);
+    // //   var savedEntity = Entities.SingleOrDefault(x => x.Id == key);
 
-        if (savedEntity == null)
-        {
-            return NotFound($"{nameof(TEntity)} with id {key} not found");
-        }
-        savedEntity = entity;
-        //  var save = await _context.Set<TEntity>(). .AddAsync(entity).ConfigureAwait(false);
-        await _context.SaveChangesAsync();
-        return Ok(savedEntity);
-    }
+    //    var savedEntity = _context.Set<TEntity>().Where(x => x.Id == key).AsTracking();
+    //    if (!savedEntity.Any())
+    //    {
+    //        return NotFound($"{nameof(TEntity)} with id {key} not found");
+    //    }
+    //    var ew = savedEntity.First();
+    //    ew = entity;
+    //    //savedEntity = entity;
 
-    [HttpPatch]
-    [ProducesResponseType(Status200OK)]
-    [ProducesResponseType(Status400BadRequest)]
-    [ProducesResponseType(Status404NotFound)]
-    public async ValueTask<ActionResult<TEntity>> PatchAsync([FromRoute] string key, [FromBody] TEntity entity)
-    {
-        if (!ModelState.IsValid || entity is null)
-        {
+    //    //_ = _context.Set<TEntity>().Update(entity);
+    //    //  var save = await _context.Set<TEntity>(). .AddAsync(entity).ConfigureAwait(false);
+    //    await _context.SaveChangesAsync();
+    //    return Ok(savedEntity);
+    //}
 
-            return BadRequest(ModelState);
-        }
-        if (key == string.Empty)
-        {
-            return BadRequest("The Id must be set.");
-        }
+    //[HttpPatch("{key}")]
+    //[ProducesResponseType(Status200OK)]
+    //[ProducesResponseType(Status400BadRequest)]
+    //[ProducesResponseType(Status404NotFound)]
+    //public async ValueTask<ActionResult<TEntity>> PatchAsync([FromRoute] string key, [FromBody] TEntity entity)
+    //{
+    //    if (!ModelState.IsValid || entity is null)
+    //    {
 
-        if (entity.Id != key)
-        {
-            return BadRequest("Id does not match the Id in the payload.");
-        }
+    //        return BadRequest(ModelState);
+    //    }
+    //    if (key == string.Empty)
+    //    {
+    //        return BadRequest("The Id must be set.");
+    //    }
 
-        var savedEntity = Entities.SingleOrDefault(x => x.Id == key);
+    //    if (entity.Id != key)
+    //    {
+    //        return BadRequest("Id does not match the Id in the payload.");
+    //    }
 
-        if (savedEntity == null)
-        {
-            return NotFound($"{nameof(TEntity)} with id {key} not found");
-        }
-        savedEntity = entity;
-        //  var save = await _context.Set<TEntity>(). .AddAsync(entity).ConfigureAwait(false);
-        await _context.SaveChangesAsync();
-        return Ok(savedEntity);
-    }
+    //    var savedEntity = Entities.SingleOrDefault(x => x.Id == key);
+
+    //    if (savedEntity == null)
+    //    {
+    //        return NotFound($"{nameof(TEntity)} with id {key} not found");
+    //    }
+    //    savedEntity = entity;
+    //    //  var save = await _context.Set<TEntity>(). .AddAsync(entity).ConfigureAwait(false);
+    //    await _context.SaveChangesAsync();
+    //    return Ok(savedEntity);
+    //}
 
     [HttpDelete("{key}")]
     [ProducesResponseType(Status200OK)]
