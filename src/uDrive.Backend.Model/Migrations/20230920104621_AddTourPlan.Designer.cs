@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using uDrive.Backend.Model;
 
@@ -11,9 +12,11 @@ using uDrive.Backend.Model;
 namespace uDrive.Backend.Model.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230920104621_AddTourPlan")]
+    partial class AddTourPlan
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -229,7 +232,7 @@ namespace uDrive.Backend.Model.Migrations
                     b.ToTable("AspNetUserTokens", "uDrive");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.Driver", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.Driver", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)")
@@ -256,7 +259,7 @@ namespace uDrive.Backend.Model.Migrations
                     b.ToTable("driver", "uDrive");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.DrivingLicence", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.DrivingLicence", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)")
@@ -277,7 +280,7 @@ namespace uDrive.Backend.Model.Migrations
                     b.ToTable("drivingLicence", "uDrive");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.DrivingSchedule", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.DrivingSchedule", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)")
@@ -304,7 +307,7 @@ namespace uDrive.Backend.Model.Migrations
                     b.ToTable("drivingSchedule", "uDrive");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.Person", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.Person", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -451,7 +454,7 @@ namespace uDrive.Backend.Model.Migrations
                         });
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.SpontanesDrive", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.SpontanesDrive", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)")
@@ -532,13 +535,13 @@ namespace uDrive.Backend.Model.Migrations
 
             modelBuilder.Entity("DrivingScheduleDriver", b =>
                 {
-                    b.HasOne("uDrive.Backend.Api.Data.Models.Driver", null)
+                    b.HasOne("uDrive.Backend.Model.Entities.Driver", null)
                         .WithMany()
                         .HasForeignKey("DriverId")
                         .IsRequired()
                         .HasConstraintName("FK__drivingSc__drive__08B54D69");
 
-                    b.HasOne("uDrive.Backend.Api.Data.Models.DrivingSchedule", null)
+                    b.HasOne("uDrive.Backend.Model.Entities.DrivingSchedule", null)
                         .WithMany()
                         .HasForeignKey("DrivingScheduleId")
                         .IsRequired()
@@ -556,7 +559,7 @@ namespace uDrive.Backend.Model.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("uDrive.Backend.Api.Data.Models.Person", null)
+                    b.HasOne("uDrive.Backend.Model.Entities.Person", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -565,7 +568,7 @@ namespace uDrive.Backend.Model.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("uDrive.Backend.Api.Data.Models.Person", null)
+                    b.HasOne("uDrive.Backend.Model.Entities.Person", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -580,7 +583,7 @@ namespace uDrive.Backend.Model.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("uDrive.Backend.Api.Data.Models.Person", null)
+                    b.HasOne("uDrive.Backend.Model.Entities.Person", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -589,22 +592,22 @@ namespace uDrive.Backend.Model.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("uDrive.Backend.Api.Data.Models.Person", null)
+                    b.HasOne("uDrive.Backend.Model.Entities.Person", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.Driver", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.Driver", b =>
                 {
-                    b.HasOne("uDrive.Backend.Api.Data.Models.DrivingLicence", "IdDrivinglicenseNavigation")
+                    b.HasOne("uDrive.Backend.Model.Entities.DrivingLicence", "IdDrivinglicenseNavigation")
                         .WithMany("Drivers")
                         .HasForeignKey("IdDrivinglicense")
                         .IsRequired()
                         .HasConstraintName("FK_Driver_DrivingLicence");
 
-                    b.HasOne("uDrive.Backend.Api.Data.Models.Person", "IdPersonNavigation")
+                    b.HasOne("uDrive.Backend.Model.Entities.Person", "IdPersonNavigation")
                         .WithMany("Drivers")
                         .HasForeignKey("IdPerson")
                         .IsRequired()
@@ -615,9 +618,9 @@ namespace uDrive.Backend.Model.Migrations
                     b.Navigation("IdPersonNavigation");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.DrivingSchedule", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.DrivingSchedule", b =>
                 {
-                    b.HasOne("uDrive.Backend.Api.Data.Models.Weekday", "IdWeekdayNavigation")
+                    b.HasOne("uDrive.Backend.Model.Entities.Weekday", "IdWeekdayNavigation")
                         .WithMany("DrivingSchedules")
                         .HasForeignKey("IdWeekday")
                         .IsRequired()
@@ -626,9 +629,9 @@ namespace uDrive.Backend.Model.Migrations
                     b.Navigation("IdWeekdayNavigation");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.SpontanesDrive", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.SpontanesDrive", b =>
                 {
-                    b.HasOne("uDrive.Backend.Api.Data.Models.DrivingSchedule", "IdDrivingScheduleOverwriteNavigation")
+                    b.HasOne("uDrive.Backend.Model.Entities.DrivingSchedule", "IdDrivingScheduleOverwriteNavigation")
                         .WithMany("SpontanesDrives")
                         .HasForeignKey("IdDrivingScheduleOverwrite")
                         .IsRequired()
@@ -637,22 +640,38 @@ namespace uDrive.Backend.Model.Migrations
                     b.Navigation("IdDrivingScheduleOverwriteNavigation");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.DrivingLicence", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.TourPlan", b =>
+                {
+                    b.HasOne("uDrive.Backend.Model.Entities.Driver", "Driver")
+                        .WithMany("TourPlans")
+                        .HasForeignKey("IdDriver")
+                        .IsRequired()
+                        .HasConstraintName("FK_TourPlan_Driver");
+
+                    b.Navigation("Driver");
+                });
+
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.Driver", b =>
+                {
+                    b.Navigation("TourPlans");
+                });
+
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.DrivingLicence", b =>
                 {
                     b.Navigation("Drivers");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.DrivingSchedule", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.DrivingSchedule", b =>
                 {
                     b.Navigation("SpontanesDrives");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.Person", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.Person", b =>
                 {
                     b.Navigation("Drivers");
                 });
 
-            modelBuilder.Entity("uDrive.Backend.Api.Data.Models.Weekday", b =>
+            modelBuilder.Entity("uDrive.Backend.Model.Entities.Weekday", b =>
                 {
                     b.Navigation("DrivingSchedules");
                 });
