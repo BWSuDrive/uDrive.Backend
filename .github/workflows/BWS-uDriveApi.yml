@@ -40,7 +40,7 @@ jobs:
       with:
             files: '${{env.AZURE_WEBAPP_PACKAGE_PATH}}/appsettings.json'
       env:
-            JWTKey: ${{ secrets.AZURE_SQL_CONNECTIONSTRING }}
+            JWTKey: ${{ secrets.BWSJWTPRODUCTIVSECRET }}
 
     - name: Publish Artifacts
       uses: actions/upload-artifact@v3
