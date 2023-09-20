@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using uDrive.Backend.Model;
 using uDrive.Backend.Model.Entities;
+using uDrive.Backend.Pages;
 
 var builder = WebApplication.CreateBuilder(args);
 
