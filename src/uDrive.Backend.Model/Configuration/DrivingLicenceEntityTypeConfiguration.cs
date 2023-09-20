@@ -22,7 +22,7 @@ internal class DrivingLicenceEntityTypeConfiguration
 
     private static void ConfigureEntityProperties(EntityTypeBuilder<DrivingLicence> builder)
     {
-        _ = builder.Property(e => e.Id).HasColumnName("id");
+        //_ = builder.Property(e => e.Id).HasColumnName("id");
         _ = builder.Property(e => e.ExpireDate).HasColumnName("expireDate");
         _ = builder.Property(e => e.LicenceClass)
             .HasMaxLength(20)

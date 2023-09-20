@@ -22,7 +22,7 @@ internal class SpontanesDriveEntityTypeConfiguration
 
     private static void ConfigureEntityProperties(EntityTypeBuilder<SpontanesDrive> builder)
     {
-        _ = builder.Property(e => e.Id).HasColumnName("id");
+        //_ = builder.Property(e => e.Id).HasColumnName("id");
         _ = builder.Property(e => e.Date)
             .HasColumnType("datetime")
             .HasColumnName("date");

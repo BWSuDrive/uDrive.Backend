@@ -7,7 +7,7 @@ using uDrive.Backend.Model.Entities;
 
 namespace uDrive.Backend.Api.Controllers;
 
-public class TourPlansController : PersonController<TourPlan>
+public class TourPlansController : PersonRoleController<TourPlan>
 {
     public TourPlansController(
     ILogger<TourPlansController> logger,

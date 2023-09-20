@@ -5,7 +5,7 @@ namespace uDrive.Backend.Model.Entities;
 
 public class Driver : IEntity
 {
-    public string Id { get; set; } = null!;
+    public string Id { get; set; }
 
     public string IdDrivinglicense { get; set; } = null!;
 
@@ -16,4 +16,6 @@ public class Driver : IEntity
     public virtual Person IdPersonNavigation { get; set; } = null!;
 
     public virtual ICollection<DrivingSchedule> DrivingSchedules { get; } = new List<DrivingSchedule>();
+    public virtual ICollection<TourPlan> TourPlans { get; } = new List<TourPlan>();
+
 }

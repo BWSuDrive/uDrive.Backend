@@ -5,7 +5,7 @@ namespace uDrive.Backend.Model.Entities;
 
 public class DrivingLicence : IEntity
 {
-    public string Id { get; set; } = null!;
+    public string? Id { get; set; }
 
     public DateTime ExpireDate { get; set; }
 

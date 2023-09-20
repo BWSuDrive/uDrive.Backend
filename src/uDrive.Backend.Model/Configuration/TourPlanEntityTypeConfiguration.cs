@@ -22,7 +22,7 @@ internal class TourPlanEntityTypeConfiguration
 
     private static void ConfigureEntityProperties(EntityTypeBuilder<TourPlan> builder)
     {
-        _ = builder.Property(e => e.Id).HasColumnName("id");
+        //_ = builder.Property(e => e.Id).HasColumnName("id");
 
         _ = builder.Property(e => e.IdDriver)
           .HasMaxLength(450)

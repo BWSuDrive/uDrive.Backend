@@ -7,10 +7,10 @@ namespace uDrive.Backend.Model
     public static class ModelBuilderExtension
     {
         private static List<string> BlankRoles = new List<string>()
-        {   "Administrator",
-            "Secretary",
-                "Driver",
-                "Person"
+        {   UDriveRoles.Administrator,
+            UDriveRoles.Secretary,
+                UDriveRoles.Driver,
+                UDriveRoles.Person
         };
 
 
@@ -83,6 +83,7 @@ namespace uDrive.Backend.Model
             foreach (var role in Roles)
             {
                 var person = Persons.Find(x => x.Firstname == role.Name);
+                
                 if (person is not null)
                 {
                     modelBuilder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>

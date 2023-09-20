@@ -22,7 +22,7 @@ internal class DriverEntityTypeConfiguration
 
     private static void ConfigureEntityProperties(EntityTypeBuilder<Driver> builder)
     {
-        _ = builder.Property(e => e.Id).HasColumnName("id");
+        //_ = builder.Property(e => e.Id).HasColumnName("id");
         _ = builder.Property(e => e.IdDrivinglicense)
             .HasMaxLength(450)
             .HasColumnName("idDrivinglicense");

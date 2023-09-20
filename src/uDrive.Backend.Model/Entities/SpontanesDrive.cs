@@ -5,7 +5,7 @@ namespace uDrive.Backend.Model.Entities;
 
 public class SpontanesDrive : IEntity
 {
-    public string Id { get; set; } = null!;
+    public string? Id { get; set; } 
 
     public DateTime? Date { get; set; }
 

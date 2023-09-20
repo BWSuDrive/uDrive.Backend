@@ -22,7 +22,7 @@ internal class DrivingScheduleEntityTypeConfiguration
 
     private static void ConfigureEntityProperties(EntityTypeBuilder<DrivingSchedule> builder)
     {
-        _ = builder.Property(e => e.Id).HasColumnName("id");
+        //_ = builder.Property(e => e.Id).HasColumnName("id");
         _ = builder.Property(e => e.Arrival).HasColumnName("arrival");
         _ = builder.Property(e => e.IdWeekday)
             .HasMaxLength(450)

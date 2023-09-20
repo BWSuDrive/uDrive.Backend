@@ -8,8 +8,7 @@ using uDrive.Backend.Model.Entities;
 
 namespace uDrive.Backend.Api.Controllers;
 
-[Authorize(Roles = "Secretary")]
-public class WeekdaysController : SecretaryController<Weekday>
+public class WeekdaysController : SecretaryRoleController<Weekday>
 {
     public WeekdaysController(
     ILogger<WeekdaysController> logger,
