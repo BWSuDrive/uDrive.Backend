@@ -3,6 +3,7 @@ on:
   push:
     branches:
     - deployment/both
+    - deployment/api 
 env:
   AZURE_WEBAPP_NAME: BWS-uDriveApi
   AZURE_WEBAPP_PACKAGE_PATH: .\publish
