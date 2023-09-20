@@ -21,23 +21,23 @@ internal class Program
         builder.Services.AddIdentity<Person, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
             .AddEntityFrameworkStores<ApplicationDbContext>();
 
-//        builder.Services.AddAuthentication(options =>
-//        {
-//            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-//            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-//        })
-//.AddJwtBearer(options =>
-//{
-//    options.RequireHttpsMetadata = true;
-//    options.SaveToken = true;
-//    options.TokenValidationParameters = new TokenValidationParameters
-//    {
-//        ValidateIssuerSigningKey = true,
-//        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWTKey:Secret"])),
-//        ValidateIssuer = false,
-//        ValidateAudience = false
-//    };
-//});
+        builder.Services.AddAuthentication(options =>
+        {
+            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        })
+.AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = true;
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWTKey:Secret"])),
+        ValidateIssuer = false,
+        ValidateAudience = false
+    };
+});
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
@@ -53,7 +53,7 @@ internal class Program
         }
 
         app.UseHttpsRedirection();
-
+        app.UseAuthentication();
         app.UseAuthorization();
 
         app.MapControllers();
