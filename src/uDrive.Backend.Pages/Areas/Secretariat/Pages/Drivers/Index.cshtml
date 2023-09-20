@@ -1,0 +1,19 @@
+﻿@page
+@model uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel
+@{
+}
+<div class="container">  
+    <div class="row">
+        <div class="col">Firstname</div>
+        <div class="col">Lastname</div>
+        <div class="col"></div>
+    </div>
+    @foreach (var user in Model.Users)
+    {<div class="row">
+            <div class="col">@user.Firstname</div>
+            <div class="col">@user.Lastname</div>
+            <div class="col"><button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Add as Driver</button></div>
+        </div>
+    }
+</div>
+

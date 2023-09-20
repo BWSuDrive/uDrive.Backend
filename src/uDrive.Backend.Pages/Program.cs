@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using uDrive.Backend.Model;
 using uDrive.Backend.Model.Entities;
-using uDrive.Backend.Pages;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +16,12 @@ builder.Services.AddDefaultIdentity<Person>(options => options.SignIn.RequireCon
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddAuthentication().AddCookie();
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("Secretaries", policy => policy.RequireRole(UDriveRoles.Secretary,UDriveRoles.Administrator));
+});
+
 builder.Services.AddRazorPages();
 
 var app = builder.Build();

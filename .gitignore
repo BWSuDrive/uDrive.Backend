@@ -4,3 +4,5 @@
 database/uDrive.Backend.Database/Import Script Logs
 */bin
 */obj
+*/*/*/obj
+*/*/*/bin
