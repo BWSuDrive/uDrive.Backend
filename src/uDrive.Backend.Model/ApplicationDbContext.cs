@@ -6,7 +6,7 @@ using uDrive.Backend.Model.Entities;
 
 namespace uDrive.Backend.Model
 {
-    public class ApplicationDbContext : IdentityDbContext<Person>
+    public class ApplicationDbContext : IdentityDbContext<Person, IdentityRole, string>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
