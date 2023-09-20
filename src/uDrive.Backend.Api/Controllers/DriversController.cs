@@ -4,7 +4,7 @@ using uDrive.Backend.Model;
 
 namespace uDrive.Backend.Api.Controllers
 {
-    public class DriversController : PersonController<Driver>
+    public class DriversController : PersonRoleController<Driver>
     {
         public DriversController(
         ILogger<DriversController> logger,

@@ -5,7 +5,7 @@ namespace uDrive.Backend.Model.Entities;
 
 public class DrivingSchedule : IEntity
 {
-    public string Id { get; set; } = null!;
+    public string? Id { get; set; } 
 
     public TimeSpan Start { get; set; }
 

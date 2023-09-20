@@ -22,7 +22,7 @@ internal class WeekdayEntityTypeConfiguration
 
     private static void ConfigureEntityProperties(EntityTypeBuilder<Weekday> builder)
     {
-        _ = builder.Property(e => e.Id).HasColumnName("id");
+    
         _ = builder.Property(e => e.Name)
             .HasMaxLength(20)
             .HasColumnName("name");

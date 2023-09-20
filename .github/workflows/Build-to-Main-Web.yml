@@ -1,9 +1,8 @@
-name: Web - Build and deploy .NET Core application to Web App BWS-uDrive
+name: Build Web
 on:
   push:
     branches:
-    - deployment/both
-    - deployment/web
+    - main
 env:
   AZURE_WEBAPP_NAME: BWS-uDrive
   AZURE_WEBAPP_PACKAGE_PATH: .\published
@@ -34,25 +33,5 @@ jobs:
             files: '${{env.AZURE_WEBAPP_PACKAGE_PATH}}/appsettings.json'
       env:
             ConnectionStrings.AZURE_SQL_CONNECTIONSTRING: ${{ secrets.AZURE_SQL_CONNECTIONSTRING }}
-
-
-    - name: Publish Artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: webapp
-        path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
-  deploy:
-    runs-on: windows-latest
-    needs: build
-    steps:
-    - name: Download artifact from build job
-      uses: actions/download-artifact@v3
-      with:
-        name: webapp
-        path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
-    - name: Deploy to Azure WebApp
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.BWS_uDrive_3023 }}
-        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+            
+  
