@@ -13,5 +13,7 @@ public class Person : IdentityUser
 
     public string Lastname { get; set; } = null!;
 
+    public bool Verified { get; set; } = false;
+
     public virtual ICollection<Driver> Drivers { get; } = new List<Driver>();
 }

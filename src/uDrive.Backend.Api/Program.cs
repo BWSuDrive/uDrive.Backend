@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Text;
+using System.Text.Json.Serialization;
 using uDrive.Backend.Api.Services;
 using uDrive.Backend.Api.Services.Interfaces;
 using uDrive.Backend.Model;
@@ -41,7 +42,8 @@ internal class Program
     };
 });
         builder.Services.AddTransient<IAuthService, AuthService>();
-        builder.Services.AddControllers();
+        builder.Services.AddControllers().AddJsonOptions(x =>
+                x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles); ;
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();

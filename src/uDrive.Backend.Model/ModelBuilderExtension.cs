@@ -295,6 +295,9 @@ namespace uDrive.Backend.Model
                     .HasMaxLength(256)
                     .HasColumnType("nvarchar(256)");
 
+                b.Property<bool>("Verified")
+                    .HasColumnType("bit");
+
                 b.HasKey("Id");
 
                 b.HasIndex("NormalizedEmail")

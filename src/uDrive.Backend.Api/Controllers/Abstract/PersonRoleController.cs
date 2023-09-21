@@ -6,7 +6,8 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace uDrive.Backend.Api.Controllers.Abstract;
 
-[Authorize (Roles = $"{UDriveRoles.Secretary},{UDriveRoles.Administrator},{UDriveRoles.Person}")]
+[Authorize(Roles = $"{UDriveRoles.Secretary},{UDriveRoles.Administrator},{UDriveRoles.Driver},{UDriveRoles.Person}")]
+
 public class PersonRoleController<TEntity> : AnonymousController<TEntity>
     where TEntity : class, IEntity
 {

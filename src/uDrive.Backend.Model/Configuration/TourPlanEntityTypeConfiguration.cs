@@ -28,27 +28,26 @@ internal class TourPlanEntityTypeConfiguration
           .HasMaxLength(450)
           .HasColumnName("IdDriver");
 
-        _ = builder.Property<string>("Destiniation")
+        _ = builder.Property<string>(e => e.Destination)
             .IsRequired()
             .HasColumnType("nvarchar(max)");
 
 
-        _ = builder.Property<TimeSpan>("Eta")
+        _ = builder.Property<TimeSpan>(e => e.Eta )
             .HasColumnType("time");
 
 
-        _ = builder.Property<string>("Start")
+        _ = builder.Property<string>(e => e.Start)
             .IsRequired()
             .HasColumnType("nvarchar(max)");
 
-        _ = builder.Property<int>("StopRequests")
+        _ = builder.Property<int>(e => e.StopRequests)
             .HasColumnType("int");
 
-        _ = builder.Property<TimeSpan>("Departure")
-            .HasColumnType("time");
+        _ = builder.Property<DateTime>(e => e.Departure)
+            .HasColumnType("datetime");
 
-        _ = builder.Property<DateTime>("Date")
-            .HasColumnType("datetime2");
+       
 
         _ = builder.HasOne(d => d.Driver)
                        .WithMany(p => p.TourPlans)
