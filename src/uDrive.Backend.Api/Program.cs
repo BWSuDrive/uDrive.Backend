@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Text;
+using uDrive.Backend.Api.Services;
+using uDrive.Backend.Api.Services.Interfaces;
 using uDrive.Backend.Model;
 using uDrive.Backend.Model.Entities;
 
@@ -38,6 +40,7 @@ internal class Program
         ValidateAudience = false
     };
 });
+        builder.Services.AddTransient<IAuthService, AuthService>();
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();
