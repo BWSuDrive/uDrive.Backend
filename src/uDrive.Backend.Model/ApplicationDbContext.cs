@@ -32,6 +32,8 @@ namespace uDrive.Backend.Model
             typeof(EntityTypeConfigurationBase<>).Assembly);
 
             modelBuilder.AddIdentityConfiguration();
+
+            // only needed for first setup
             modelBuilder.AddRoles();
             modelBuilder.AddUsers();
             modelBuilder.AddUsersToRoles();

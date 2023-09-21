@@ -70,6 +70,7 @@ public class AuthService : IAuthService
             EmailConfirmed = true,
             NormalizedEmail = model.Email.ToUpper(),
             NormalizedUserName = model.UserName.ToUpper(),
+            Verified = true,
         };
         var createUserResult = await _userManager.CreateAsync(user, model.Password);
         if (!createUserResult.Succeeded)
