@@ -1,6 +1,6 @@
 ﻿namespace uDrive.Backend.Model.DTO;
 
-public class SignInUserDTO
+public class SignInUserDTO : IDTO
 {
     public string UserName { get; set; }
     public string Password { get; set; }
