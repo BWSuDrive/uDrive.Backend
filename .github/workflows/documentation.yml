@@ -34,4 +34,3 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: docfx_project/_site
-        destination_dir: docs
