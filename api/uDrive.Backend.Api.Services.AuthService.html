@@ -154,192 +154,53 @@
 
 
 
-
   <h2 class="section" id="constructors">Constructors
 </h2>
 
-
-  <a id="uDrive_Backend_Api_Services_AuthService__ctor_" data-uid="uDrive.Backend.Api.Services.AuthService.#ctor*"></a>
-
-  <h3 id="uDrive_Backend_Api_Services_AuthService__ctor_Microsoft_AspNetCore_Identity_UserManager_uDrive_Backend_Model_Entities_Person__Microsoft_AspNetCore_Identity_RoleManager_Microsoft_AspNetCore_Identity_IdentityRole__Microsoft_Extensions_Configuration_IConfiguration_" data-uid="uDrive.Backend.Api.Services.AuthService.#ctor(Microsoft.AspNetCore.Identity.UserManager{uDrive.Backend.Model.Entities.Person},Microsoft.AspNetCore.Identity.RoleManager{Microsoft.AspNetCore.Identity.IdentityRole},Microsoft.Extensions.Configuration.IConfiguration)">
-  AuthService(UserManager&lt;Person&gt;, RoleManager&lt;IdentityRole&gt;, IConfiguration)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Services/AuthService.cs/#L19"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AuthService(UserManager&lt;Person&gt; userManager, RoleManager&lt;IdentityRole&gt; roleManager, IConfiguration configuration)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>userManager</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.usermanager-1">UserManager</a>&lt;<a class="xref" href="uDrive.Backend.Model.Entities.Person.html">Person</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>roleManager</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.rolemanager-1">RoleManager</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityrole">IdentityRole</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>configuration</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></dt>
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Services.AuthService.-ctor.html#uDrive_Backend_Api_Services_AuthService__ctor_Microsoft_AspNetCore_Identity_UserManager_uDrive_Backend_Model_Entities_Person__Microsoft_AspNetCore_Identity_RoleManager_Microsoft_AspNetCore_Identity_IdentityRole__Microsoft_Extensions_Configuration_IConfiguration_">AuthService(UserManager&lt;Person&gt;, RoleManager&lt;IdentityRole&gt;, IConfiguration)</a></dt>
     <dd></dd>
   </dl>
 
+  <h2 class="section" id="fields">Fields
+</h2>
 
-
-
-
-
-
-
-
-
-
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Services.AuthService._configuration.html">_configuration</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Services.AuthService._roleManager.html">_roleManager</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Services.AuthService._userManager.html">_userManager</a></dt>
+    <dd></dd>
+  </dl>
 
   <h2 class="section" id="methods">Methods
 </h2>
 
-
-  <a id="uDrive_Backend_Api_Services_AuthService_LoginAsync_" data-uid="uDrive.Backend.Api.Services.AuthService.LoginAsync*"></a>
-
-  <h3 id="uDrive_Backend_Api_Services_AuthService_LoginAsync_uDrive_Backend_Model_DTO_SignInUserDTO_" data-uid="uDrive.Backend.Api.Services.AuthService.LoginAsync(uDrive.Backend.Model.DTO.SignInUserDTO)">
-  LoginAsync(SignInUserDTO)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Services/AuthService.cs/#L126"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;(int identifier, string token, Person? user, List&lt;string&gt;? roles)&gt; LoginAsync(SignInUserDTO model)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>model</code> <a class="xref" href="uDrive.Backend.Model.DTO.SignInUserDTO.html">SignInUserDTO</a></dt>
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Services.AuthService.GenerateJWTTokenAsync.html#uDrive_Backend_Api_Services_AuthService_GenerateJWTTokenAsync_uDrive_Backend_Model_Entities_Person_System_Collections_Generic_IEnumerable_System_Security_Claims_Claim__">GenerateJWTTokenAsync(Person, IEnumerable&lt;Claim&gt;)</a></dt>
     <dd></dd>
   </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.string,udrive.backend.model.entities.person,system.collections.generic.list-system.string--.identifier">identifier</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.string,udrive.backend.model.entities.person,system.collections.generic.list-system.string--.token">token</a>, <a class="xref" href="uDrive.Backend.Model.Entities.Person.html">Person</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.string,udrive.backend.model.entities.person,system.collections.generic.list-system.string--.user">user</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.string,udrive.backend.model.entities.person,system.collections.generic.list-system.string--.roles">roles</a>)&gt;</dt>
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Services.AuthService.LoginAsync.html#uDrive_Backend_Api_Services_AuthService_LoginAsync_uDrive_Backend_Model_DTO_SignInUserDTO_">LoginAsync(SignInUserDTO)</a></dt>
     <dd></dd>
   </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="uDrive_Backend_Api_Services_AuthService_LoginSystemUserAsync_" data-uid="uDrive.Backend.Api.Services.AuthService.LoginSystemUserAsync*"></a>
-
-  <h3 id="uDrive_Backend_Api_Services_AuthService_LoginSystemUserAsync_uDrive_Backend_Model_DTO_SignInUserDTO_" data-uid="uDrive.Backend.Api.Services.AuthService.LoginSystemUserAsync(uDrive.Backend.Model.DTO.SignInUserDTO)">
-  LoginSystemUserAsync(SignInUserDTO)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Services/AuthService.cs/#L96"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Response&lt;LoginResponseDTO&gt;&gt; LoginSystemUserAsync(SignInUserDTO credentials)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>credentials</code> <a class="xref" href="uDrive.Backend.Model.DTO.SignInUserDTO.html">SignInUserDTO</a></dt>
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Services.AuthService.LoginSystemUserAsync.html#uDrive_Backend_Api_Services_AuthService_LoginSystemUserAsync_uDrive_Backend_Model_DTO_SignInUserDTO_">LoginSystemUserAsync(SignInUserDTO)</a></dt>
     <dd></dd>
   </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="uDrive.Backend.Model.DTO.Response-1.html">Response</a>&lt;<a class="xref" href="uDrive.Backend.Model.DTO.LoginResponseDTO.html">LoginResponseDTO</a>&gt;&gt;</dt>
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Services.AuthService.RegisterSystemUserAsync.html#uDrive_Backend_Api_Services_AuthService_RegisterSystemUserAsync_uDrive_Backend_Model_DTO_RegisterDTO_">RegisterSystemUserAsync(RegisterDTO)</a></dt>
     <dd></dd>
   </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="uDrive_Backend_Api_Services_AuthService_RegisterSystemUserAsync_" data-uid="uDrive.Backend.Api.Services.AuthService.RegisterSystemUserAsync*"></a>
-
-  <h3 id="uDrive_Backend_Api_Services_AuthService_RegisterSystemUserAsync_uDrive_Backend_Model_DTO_RegisterDTO_" data-uid="uDrive.Backend.Api.Services.AuthService.RegisterSystemUserAsync(uDrive.Backend.Model.DTO.RegisterDTO)">
-  RegisterSystemUserAsync(RegisterDTO)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Services/AuthService.cs/#L28"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;Response&lt;LoginResponseDTO&gt;&gt; RegisterSystemUserAsync(RegisterDTO registerDTO)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>registerDTO</code> <a class="xref" href="uDrive.Backend.Model.DTO.RegisterDTO.html">RegisterDTO</a></dt>
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Services.AuthService.RegistrationAsync.html#uDrive_Backend_Api_Services_AuthService_RegistrationAsync_uDrive_Backend_Model_DTO_RegisterDTO_">RegistrationAsync(RegisterDTO)</a></dt>
     <dd></dd>
   </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="uDrive.Backend.Model.DTO.Response-1.html">Response</a>&lt;<a class="xref" href="uDrive.Backend.Model.DTO.LoginResponseDTO.html">LoginResponseDTO</a>&gt;&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="uDrive_Backend_Api_Services_AuthService_RegistrationAsync_" data-uid="uDrive.Backend.Api.Services.AuthService.RegistrationAsync*"></a>
-
-  <h3 id="uDrive_Backend_Api_Services_AuthService_RegistrationAsync_uDrive_Backend_Model_DTO_RegisterDTO_" data-uid="uDrive.Backend.Api.Services.AuthService.RegistrationAsync(uDrive.Backend.Model.DTO.RegisterDTO)">
-  RegistrationAsync(RegisterDTO)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Services/AuthService.cs/#L57"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;(int identifier, string token, Person? user, List&lt;string&gt;? roles)&gt; RegistrationAsync(RegisterDTO model)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>model</code> <a class="xref" href="uDrive.Backend.Model.DTO.RegisterDTO.html">RegisterDTO</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.string,udrive.backend.model.entities.person,system.collections.generic.list-system.string--.identifier">identifier</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.string,udrive.backend.model.entities.person,system.collections.generic.list-system.string--.token">token</a>, <a class="xref" href="uDrive.Backend.Model.Entities.Person.html">Person</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.string,udrive.backend.model.entities.person,system.collections.generic.list-system.string--.user">user</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.string,udrive.backend.model.entities.person,system.collections.generic.list-system.string--.roles">roles</a>)&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>uDrive.Backend.Api </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="uDrive.Backend.Api ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BWSuDrive/uDrive.Backend/blob/main/docfx_project/articles/apicallguide.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="udrivebackendapi">uDrive.Backend.Api</h1>
+
+<h1 id="api">Api</h1>
+<h2 id="zugang-via-bearer-token-bsp-an-postman">Zugang via Bearer Token, bsp. an Postman</h2>
+<h3 id="login">Login</h3>
+<p><code>https://https://bws-udriveapi.azurewebsites.net/Login</code> als <code>POST</code> eingeben.
+Bei <strong>Body</strong> als raw json folgendes :</p>
+<pre><code class="lang-json">{
+  &quot;userName&quot;: &quot;Secretary@udrive.de&quot;,
+  &quot;password&quot;: &quot;SecretarySTrongPassword!2345&quot;,
+  &quot;email&quot;: &quot;Secretary@udrive.de&quot;
+}
+</code></pre>
+<p>als response m�sste dann etwas in der Art rauskommen:</p>
+<pre><code class="lang-json">{
+    &quot;success&quot;: true,
+    &quot;data&quot;: {
+        &quot;id&quot;: &quot;userid&quot;,
+        &quot;userName&quot;: &quot;Secretary@udrive.de&quot;,
+        &quot;firstname&quot;: &quot;Secretary&quot;,
+        &quot;lastname&quot;: &quot;Secretary&quot;,
+        &quot;email&quot;: &quot;Secretary@udrive.de&quot;,
+        &quot;roles&quot;: [
+            &quot;Person&quot;, 
+            etc.
+        ],
+        &quot;token&quot;: &quot;genratedtokenextralong&quot;
+    },
+    &quot;message&quot;: &quot;Login Successfull!&quot;
+}
+</code></pre>
+<h3 id="registrierung">Registrierung</h3>
+<p><code>https://https://bws-udriveapi.azurewebsites.net/Register</code> als <code>POST</code> eingeben.
+Bei <strong>Body</strong> als raw json folgendes :</p>
+<pre><code class="lang-json">{
+  &quot;userName&quot;: &quot;Secretary@udrive.de&quot;,
+  &quot;password&quot;: &quot;SecretarySTrongPassword!2345&quot;,
+  &quot;email&quot;: &quot;Secretary@udrive.de&quot;,
+  &quot;Firstname&quot;:&quot;Super&quot;,
+  &quot;Lastname&quot;:&quot;Secretary&quot;
+}
+</code></pre>
+<p>als response müsste dann etwas in der Art rauskommen:</p>
+<pre><code class="lang-json">{
+    &quot;success&quot;: true,
+    &quot;data&quot;: {
+        &quot;id&quot;: &quot;userid&quot;,
+        &quot;userName&quot;: &quot;Secretary@udrive.de&quot;,
+        &quot;firstname&quot;: &quot;Super&quot;,
+        &quot;lastname&quot;: &quot;Secretary&quot;,
+        &quot;email&quot;: &quot;Secretary@udrive.de&quot;,
+        &quot;token&quot;: &quot;genratedtokenextralong&quot;,
+        &quot;roles&quot;: [
+            &quot;Person&quot;
+        ]
+    },
+    &quot;message&quot;: &quot;User created successfully!&quot;
+}
+</code></pre>
+<p>Hierbei wird neu registrierten direkt die Rolle <strong>Person</strong> zugewiesen</p>
+<p>Der Wert in Token wird kopiert und ein neuer Request erstellt. Zu testzwecken ist <code>https://bwsudriverestapi.azurewebsites.net/api/Weekdays</code> erreichbar, welches die Secretary brauch um angesprochen zu werden.
+Bei Postman <code>Get</code> als Request Type auswählen, bei <code>Authorization</code>, <code>Bearer Token</code> auswählen und dort den vorher kopierten Token einfügen.
+Als Ergebniss sollte eine <em>(noch)</em> <strong>leere</strong> liste und der Response Code 200 kommen, da keine Wochentage in der Datenbank eingetragen sind.</p>
+<h2 id="driver-controllers">Driver Controllers</h2>
+<h3 id="get--driversgetscheduleddrivers">Get  /Drivers/GetScheduledDrivers</h3>
+<p>Response</p>
+<pre><code class="lang-json">[
+    {
+        &quot;id&quot;: &quot;5112e60f-1f65-4f88-90e6-dcd1f00b904a&quot;,
+        &quot;idDrivinglicense&quot;: &quot;128ceee1-a6fc-4ce2-9adb-ee382fcde0fa&quot;,
+        &quot;idPerson&quot;: &quot;04424240-28c0-4d6e-994d-41ee52799763&quot;,
+        &quot;idDrivinglicenseNavigation&quot;: null,
+        &quot;idPersonNavigation&quot;: null,
+        &quot;drivingSchedules&quot;: [],
+        &quot;tourPlans&quot;: [
+            {
+                &quot;id&quot;: &quot;86726023-ec04-4f0d-9074-60e38dc932f0&quot;,
+                &quot;idDriver&quot;: &quot;5112e60f-1f65-4f88-90e6-dcd1f00b904a&quot;,
+                &quot;departure&quot;: &quot;2023-09-21T14:34:05.567&quot;,
+                &quot;stopRequests&quot;: 15,
+                &quot;eta&quot;: &quot;00:15:00&quot;,
+                &quot;start&quot;: &quot;string&quot;,
+                &quot;destination&quot;: &quot;string&quot;,
+                &quot;driver&quot;: null
+            }
+        ]
+    }
+]
+</code></pre>
+<h3 id="post-driversadddrivinglicencewithnewdriverkey">Post Drivers/AddDrivingLicenceWithNewDriver/key</h3>
+<p>Body</p>
+<pre><code class="lang-json">{
+  &quot;expireDate&quot;: &quot;yyyy-MM-dd:hh:mm:ss&quot;,
+  &quot;licenceClass&quot;: &quot;B&quot;
+}
+</code></pre>
+<p>Response
+<br>
+new DriverId</p>
+<h3 id="post-driverstourplans">Post Drivers/TourPlans</h3>
+<p>Body</p>
+<pre><code class="lang-json"> {
+     &quot;idDriver&quot;: &quot;5112e60f-1f65-4f88-90e6-dcd1f00b904a&quot;,
+  &quot;departure&quot;: &quot;2023-09-21T14:34:05.567Z&quot;,
+  &quot;stopRequests&quot;: 15,
+  &quot;eta&quot;: &quot;00:15:00&quot;,
+  &quot;start&quot;: &quot;string&quot;,
+  &quot;destination&quot;: &quot;string&quot;
+  }
+</code></pre>
+<p>Response</p>
+<pre><code class="lang-json">{
+    &quot;id&quot;: &quot;86726023-ec04-4f0d-9074-60e38dc932f0&quot;,
+    &quot;idDriver&quot;: &quot;5112e60f-1f65-4f88-90e6-dcd1f00b904a&quot;,
+    &quot;departure&quot;: &quot;2023-09-21T14:34:05.567Z&quot;,
+    &quot;stopRequests&quot;: 15,
+    &quot;eta&quot;: &quot;00:15:00&quot;,
+    &quot;start&quot;: &quot;string&quot;,
+    &quot;destination&quot;: &quot;string&quot;,
+    &quot;driver&quot;: null
+}
+</code></pre>
+<h1 id="data-migrations">Data migrations</h1>
+<p><code>dotnet ef migrations remove --project ..\uDrive.Backend.Model\</code>
+<br>
+<code>dotnet ef migrations add NewMigration --project ..\uDrive.Backend.Model</code>
+<br>
+<code>dotnet ef database update --project ..\uDrive.Backend.Model --connection &quot;CONNECTION_STRING_IN_MARKS&quot;</code></p>
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/docfx_project/articles/apicallguide.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
