@@ -6,16 +6,16 @@
           "files": [
             "src/*/*.csproj"
           ],
-		  "src":"../"
+          "src": "../"
         }
       ],
       "dest": "api",
-      "includePrivateMembers": false,
+      "includePrivateMembers": true,
       "disableGitFeatures": false,
       "disableDefaultFilter": false,
       "noRestore": false,
       "namespaceLayout": "flattened",
-      "memberLayout": "samePage",
+      "memberLayout": "separatePages",
       "EnumSortOrder": "alphabetic",
       "allowCompilationErrors": false
     }
