@@ -9,6 +9,10 @@ using static Microsoft.AspNetCore.Http.StatusCodes;
 
 namespace uDrive.Backend.Api.Controllers.Abstract;
 
+/// <summary>
+/// Controller for REST Request, where no Authorization is required
+/// </summary>
+/// <typeparam name="TEntity"></typeparam>
 [Produces(Application.Json)]
 [Consumes(Application.Json)]
 [Route("[controller]")]
