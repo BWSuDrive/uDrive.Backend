@@ -24,20 +24,21 @@ public class DistanceController : ControllerBase //TODO : change after testing t
     }
 
 
-    [HttpPost]
-    public async Task<IActionResult> GetAsync([FromBody] GeocoordinatesDTO dto)
-    {
-        var driver = ConvertToLongAndLong(dto.DriverPos);
+    //[HttpPost]
+    //public async Task<IActionResult> GetAsync([FromBody] GeocoordinatesDTO dto)
+    //{
+    //    var driver = ConvertToLongitudeAndLattiude(dto.DriverPos);
         
-        var person = ConvertToLongAndLong(dto.PersonPos);
-        Coordinate origin = new Coordinate(driver.longitude,driver.lattiude);
-        Coordinate destination = new Coordinate(person.longitude, person.lattiude);
-        double distance = GeoCalculator.GetDistance(origin, destination, 2);
-        return Ok(distance);
+    //    var person = ConvertToLongitudeAndLattiude(dto.PersonPos);
+    //    Coordinate origin = new Coordinate(driver.longitude,driver.lattiude);
+    //    Coordinate destination = new Coordinate(person.longitude, person.lattiude);
+    //    double distance = GeoCalculator.GetDistance(origin, destination, 2);
+    //    return Ok(distance);
 
-    }
+    //}
 
-    private (double longitude, double lattiude ) ConvertToLongAndLong(string val)
+    [Obsolete("to be deleted")]
+    private (double longitude, double lattiude ) ConvertToLongitudeAndLattiude(string val)
     {
         var split = val.Split(',');
         return (double.Parse(split[0], System.Globalization.CultureInfo.InvariantCulture), double.Parse(split[1],System.Globalization.CultureInfo.InvariantCulture));

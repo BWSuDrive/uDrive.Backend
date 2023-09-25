@@ -41,13 +41,22 @@ internal class TourPlanEntityTypeConfiguration
             .IsRequired()
             .HasColumnType("nvarchar(max)");
 
-        _ = builder.Property<int>(e => e.StopRequests)
+        _ = builder.Property(e => e.StopRequests)
             .HasColumnType("int");
 
         _ = builder.Property<DateTime>(e => e.Departure)
             .HasColumnType("datetime");
 
-       
+        _ = builder.Property(e => e.Message);
+
+        _ = builder.Property(e => e.CurrentCoordinates);
+
+        _ = builder.Property(e => e.CurrentLatitude).HasColumnType("float");
+        ;
+
+        _ = builder.Property(e => e.CurrentLongitude).HasColumnType("float");
+        ;
+
 
         _ = builder.HasOne(d => d.Driver)
                        .WithMany(p => p.TourPlans)

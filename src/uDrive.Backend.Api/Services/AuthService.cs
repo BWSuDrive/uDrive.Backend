@@ -147,6 +147,12 @@ public class AuthService : IAuthService
         return (1, token, user, userRoles);
     }
 
+    public async Task<bool> AssignPersonToRoleAsync(Person person, string role)
+    {
+        _ = await _userManager.AddToRoleAsync(person,role).ConfigureAwait(false);
+        return true;
+    }
+
 
     private async Task<string> GenerateJWTTokenAsync(Person person, IEnumerable<Claim> claims)
     {

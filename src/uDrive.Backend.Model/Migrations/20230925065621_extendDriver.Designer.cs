@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using uDrive.Backend.Model;
 
@@ -11,9 +12,11 @@ using uDrive.Backend.Model;
 namespace uDrive.Backend.Model.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230925065621_extendDriver")]
+    partial class extendDriver
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -48,35 +51,35 @@ namespace uDrive.Backend.Model.Migrations
 
                     b.ToTable("AspNetRoles", "uDrive");
 
-                    //b.HasData(
-                    //    new
-                    //    {
-                    //        Id = "e26f7233-6ebc-496e-b2b2-0297780616cf",
-                    //        ConcurrencyStamp = "e26f7233-6ebc-496e-b2b2-0297780616cf",
-                    //        Name = "Administrator",
-                    //        NormalizedName = "ADMINISTRATOR"
-                    //    },
-                    //    new
-                    //    {
-                    //        Id = "14ee1067-e6ca-45bc-931c-794842eaf4b1",
-                    //        ConcurrencyStamp = "14ee1067-e6ca-45bc-931c-794842eaf4b1",
-                    //        Name = "Secretary",
-                    //        NormalizedName = "SECRETARY"
-                    //    },
-                    //    new
-                    //    {
-                    //        Id = "129a8b16-2384-4fd5-ba38-9bc1dc8d0f59",
-                    //        ConcurrencyStamp = "129a8b16-2384-4fd5-ba38-9bc1dc8d0f59",
-                    //        Name = "Driver",
-                    //        NormalizedName = "DRIVER"
-                    //    },
-                    //    new
-                    //    {
-                    //        Id = "39569ca1-d0a8-43ba-a108-01f7ca14d59b",
-                    //        ConcurrencyStamp = "39569ca1-d0a8-43ba-a108-01f7ca14d59b",
-                    //        Name = "Person",
-                    //        NormalizedName = "PERSON"
-                    //    });
+                    b.HasData(
+                        new
+                        {
+                            Id = "e26f7233-6ebc-496e-b2b2-0297780616cf",
+                            ConcurrencyStamp = "e26f7233-6ebc-496e-b2b2-0297780616cf",
+                            Name = "Administrator",
+                            NormalizedName = "ADMINISTRATOR"
+                        },
+                        new
+                        {
+                            Id = "14ee1067-e6ca-45bc-931c-794842eaf4b1",
+                            ConcurrencyStamp = "14ee1067-e6ca-45bc-931c-794842eaf4b1",
+                            Name = "Secretary",
+                            NormalizedName = "SECRETARY"
+                        },
+                        new
+                        {
+                            Id = "129a8b16-2384-4fd5-ba38-9bc1dc8d0f59",
+                            ConcurrencyStamp = "129a8b16-2384-4fd5-ba38-9bc1dc8d0f59",
+                            Name = "Driver",
+                            NormalizedName = "DRIVER"
+                        },
+                        new
+                        {
+                            Id = "39569ca1-d0a8-43ba-a108-01f7ca14d59b",
+                            ConcurrencyStamp = "39569ca1-d0a8-43ba-a108-01f7ca14d59b",
+                            Name = "Person",
+                            NormalizedName = "PERSON"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -167,27 +170,27 @@ namespace uDrive.Backend.Model.Migrations
 
                     b.ToTable("AspNetUserRoles", "uDrive");
 
-                    //b.HasData(
-                    //    new
-                    //    {
-                    //        UserId = "fd333960-7858-4fff-b401-2547e961e599",
-                    //        RoleId = "e26f7233-6ebc-496e-b2b2-0297780616cf"
-                    //    },
-                    //    new
-                    //    {
-                    //        UserId = "65ff54ef-d26c-4136-b34d-fe196111d739",
-                    //        RoleId = "14ee1067-e6ca-45bc-931c-794842eaf4b1"
-                    //    },
-                    //    new
-                    //    {
-                    //        UserId = "583eab94-0fab-4f6f-b1f6-5b5373392ea1",
-                    //        RoleId = "129a8b16-2384-4fd5-ba38-9bc1dc8d0f59"
-                    //    },
-                    //    new
-                    //    {
-                    //        UserId = "7c596c7b-7e18-4591-9e9f-eccc8ad27d3e",
-                    //        RoleId = "39569ca1-d0a8-43ba-a108-01f7ca14d59b"
-                    //    });
+                    b.HasData(
+                        new
+                        {
+                            UserId = "fd333960-7858-4fff-b401-2547e961e599",
+                            RoleId = "e26f7233-6ebc-496e-b2b2-0297780616cf"
+                        },
+                        new
+                        {
+                            UserId = "65ff54ef-d26c-4136-b34d-fe196111d739",
+                            RoleId = "14ee1067-e6ca-45bc-931c-794842eaf4b1"
+                        },
+                        new
+                        {
+                            UserId = "583eab94-0fab-4f6f-b1f6-5b5373392ea1",
+                            RoleId = "129a8b16-2384-4fd5-ba38-9bc1dc8d0f59"
+                        },
+                        new
+                        {
+                            UserId = "7c596c7b-7e18-4591-9e9f-eccc8ad27d3e",
+                            RoleId = "39569ca1-d0a8-43ba-a108-01f7ca14d59b"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -357,83 +360,83 @@ namespace uDrive.Backend.Model.Migrations
 
                     b.ToTable("AspNetUsers", "uDrive");
 
-                    //b.HasData(
-                    //    new
-                    //    {
-                    //        Id = "fd333960-7858-4fff-b401-2547e961e599",
-                    //        AccessFailedCount = 0,
-                    //        ConcurrencyStamp = "4f56b834-678a-4874-ab77-b4bb1a8ef44a",
-                    //        Email = "Administrator@udrive.de",
-                    //        EmailConfirmed = true,
-                    //        Firstname = "Administrator",
-                    //        Lastname = "Administrator",
-                    //        LockoutEnabled = false,
-                    //        NormalizedEmail = "ADMINISTRATOR@UDRIVE.DE",
-                    //        NormalizedUserName = "ADMINISTRATOR@UDRIVE.DE",
-                    //        PasswordHash = "AQAAAAIAAYagAAAAEMYNTmZxDXEa9DT2M5N6hUFNojHugZjo7CE57U1ccTfc417jl42vwAU6JQ1XPEhVsw==",
-                    //        PhoneNumberConfirmed = false,
-                    //        SecurityStamp = "64287bbf-ecee-4178-a9cf-e39ada57ca44",
-                    //        TwoFactorEnabled = false,
-                    //        UserName = "Administrator@udrive.de",
-                    //        Verified = false
-                    //    },
-                    //    new
-                    //    {
-                    //        Id = "65ff54ef-d26c-4136-b34d-fe196111d739",
-                    //        AccessFailedCount = 0,
-                    //        ConcurrencyStamp = "54a78820-c15f-455e-968d-1744d8cf1e70",
-                    //        Email = "Secretary@udrive.de",
-                    //        EmailConfirmed = true,
-                    //        Firstname = "Secretary",
-                    //        Lastname = "Secretary",
-                    //        LockoutEnabled = false,
-                    //        NormalizedEmail = "SECRETARY@UDRIVE.DE",
-                    //        NormalizedUserName = "SECRETARY@UDRIVE.DE",
-                    //        PasswordHash = "AQAAAAIAAYagAAAAENdRalFZ/6FUNnDO97cDSgB0ZUmGusc+QNEbKOagTjjd9pBecapm5mHBnE7ApzdZZQ==",
-                    //        PhoneNumberConfirmed = false,
-                    //        SecurityStamp = "b9d95649-ad55-4991-92c7-29c0eac37f79",
-                    //        TwoFactorEnabled = false,
-                    //        UserName = "Secretary@udrive.de",
-                    //        Verified = false
-                    //    },
-                    //    new
-                    //    {
-                    //        Id = "583eab94-0fab-4f6f-b1f6-5b5373392ea1",
-                    //        AccessFailedCount = 0,
-                    //        ConcurrencyStamp = "cd899b33-f424-43e0-a3f6-351a60a20d2d",
-                    //        Email = "Driver@udrive.de",
-                    //        EmailConfirmed = true,
-                    //        Firstname = "Driver",
-                    //        Lastname = "Driver",
-                    //        LockoutEnabled = false,
-                    //        NormalizedEmail = "DRIVER@UDRIVE.DE",
-                    //        NormalizedUserName = "DRIVER@UDRIVE.DE",
-                    //        PasswordHash = "AQAAAAIAAYagAAAAEHxeSJ70O7Lqgh3yBzN7k4AWEYsZp90FL4ETHJ3axaJPRbI5WJEA9LOPoIN9A0lbXA==",
-                    //        PhoneNumberConfirmed = false,
-                    //        SecurityStamp = "37246fb8-fb5f-4172-9171-e02a6345ee97",
-                    //        TwoFactorEnabled = false,
-                    //        UserName = "Driver@udrive.de",
-                    //        Verified = false
-                    //    },
-                    //    new
-                    //    {
-                    //        Id = "7c596c7b-7e18-4591-9e9f-eccc8ad27d3e",
-                    //        AccessFailedCount = 0,
-                    //        ConcurrencyStamp = "7b79d8b4-dc93-49a4-9dc5-6f913c2bbd35",
-                    //        Email = "Person@udrive.de",
-                    //        EmailConfirmed = true,
-                    //        Firstname = "Person",
-                    //        Lastname = "Person",
-                    //        LockoutEnabled = false,
-                    //        NormalizedEmail = "PERSON@UDRIVE.DE",
-                    //        NormalizedUserName = "PERSON@UDRIVE.DE",
-                    //        PasswordHash = "AQAAAAIAAYagAAAAEE6umwXsQu6Wn+H6zWfrDJIlWdkh8Gg2ecOcuzsFs2INcCRJoTM8b4gQy9NuGCx6cg==",
-                    //        PhoneNumberConfirmed = false,
-                    //        SecurityStamp = "a68214f7-9f5f-4816-9780-24d2c7bc1021",
-                    //        TwoFactorEnabled = false,
-                    //        UserName = "Person@udrive.de",
-                    //        Verified = false
-                    //    });
+                    b.HasData(
+                        new
+                        {
+                            Id = "fd333960-7858-4fff-b401-2547e961e599",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "4f56b834-678a-4874-ab77-b4bb1a8ef44a",
+                            Email = "Administrator@udrive.de",
+                            EmailConfirmed = true,
+                            Firstname = "Administrator",
+                            Lastname = "Administrator",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ADMINISTRATOR@UDRIVE.DE",
+                            NormalizedUserName = "ADMINISTRATOR@UDRIVE.DE",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMYNTmZxDXEa9DT2M5N6hUFNojHugZjo7CE57U1ccTfc417jl42vwAU6JQ1XPEhVsw==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "64287bbf-ecee-4178-a9cf-e39ada57ca44",
+                            TwoFactorEnabled = false,
+                            UserName = "Administrator@udrive.de",
+                            Verified = false
+                        },
+                        new
+                        {
+                            Id = "65ff54ef-d26c-4136-b34d-fe196111d739",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "54a78820-c15f-455e-968d-1744d8cf1e70",
+                            Email = "Secretary@udrive.de",
+                            EmailConfirmed = true,
+                            Firstname = "Secretary",
+                            Lastname = "Secretary",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "SECRETARY@UDRIVE.DE",
+                            NormalizedUserName = "SECRETARY@UDRIVE.DE",
+                            PasswordHash = "AQAAAAIAAYagAAAAENdRalFZ/6FUNnDO97cDSgB0ZUmGusc+QNEbKOagTjjd9pBecapm5mHBnE7ApzdZZQ==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "b9d95649-ad55-4991-92c7-29c0eac37f79",
+                            TwoFactorEnabled = false,
+                            UserName = "Secretary@udrive.de",
+                            Verified = false
+                        },
+                        new
+                        {
+                            Id = "583eab94-0fab-4f6f-b1f6-5b5373392ea1",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "cd899b33-f424-43e0-a3f6-351a60a20d2d",
+                            Email = "Driver@udrive.de",
+                            EmailConfirmed = true,
+                            Firstname = "Driver",
+                            Lastname = "Driver",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "DRIVER@UDRIVE.DE",
+                            NormalizedUserName = "DRIVER@UDRIVE.DE",
+                            PasswordHash = "AQAAAAIAAYagAAAAEHxeSJ70O7Lqgh3yBzN7k4AWEYsZp90FL4ETHJ3axaJPRbI5WJEA9LOPoIN9A0lbXA==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "37246fb8-fb5f-4172-9171-e02a6345ee97",
+                            TwoFactorEnabled = false,
+                            UserName = "Driver@udrive.de",
+                            Verified = false
+                        },
+                        new
+                        {
+                            Id = "7c596c7b-7e18-4591-9e9f-eccc8ad27d3e",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "7b79d8b4-dc93-49a4-9dc5-6f913c2bbd35",
+                            Email = "Person@udrive.de",
+                            EmailConfirmed = true,
+                            Firstname = "Person",
+                            Lastname = "Person",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "PERSON@UDRIVE.DE",
+                            NormalizedUserName = "PERSON@UDRIVE.DE",
+                            PasswordHash = "AQAAAAIAAYagAAAAEE6umwXsQu6Wn+H6zWfrDJIlWdkh8Gg2ecOcuzsFs2INcCRJoTM8b4gQy9NuGCx6cg==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "a68214f7-9f5f-4816-9780-24d2c7bc1021",
+                            TwoFactorEnabled = false,
+                            UserName = "Person@udrive.de",
+                            Verified = false
+                        });
                 });
 
             modelBuilder.Entity("uDrive.Backend.Model.Entities.TourPlan", b =>

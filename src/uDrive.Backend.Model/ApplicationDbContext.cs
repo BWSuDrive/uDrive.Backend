@@ -16,12 +16,9 @@ namespace uDrive.Backend.Model
 
         public virtual DbSet<DrivingLicence> DrivingLicences { get; set; }
 
-        public virtual DbSet<DrivingSchedule> DrivingSchedules { get; set; }
         public virtual DbSet<Person> Persons { get; set; }
         public virtual DbSet<TourPlan> TourPlans { get; set; }
-        public virtual DbSet<SpontanesDrive> SpontanesDrives { get; set; }
 
-        public virtual DbSet<Weekday> Weekdays { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder
