@@ -2,11 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Method GetScheduledDriversAsync
- </title>
+      <title>Register as User </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Method GetScheduledDriversAsync
- ">
+      <meta name="title" content="Register as User ">
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -17,7 +15,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BWSuDrive/uDrive.Backend/new/main/apiSpec/new?filename=uDrive_Backend_Api_Controllers_ScheduleTourController_GetScheduledDriversAsync_.md&amp;value=---%0Auid%3A%20uDrive.Backend.Api.Controllers.ScheduleTourController.GetScheduledDriversAsync*%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BWSuDrive/uDrive.Backend/blob/39/merge/docfx_project/articles/register.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -43,7 +41,7 @@
   </script>
 
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -84,80 +82,59 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="uDrive.Backend.Api.Controllers.ScheduleTourController.GetScheduledDriversAsync*">
+        <article data-uid="">
+<h1 id="register-as-user">Register as User</h1>
 
-
-
-
-
-<h1 id="uDrive_Backend_Api_Controllers_ScheduleTourController_GetScheduledDriversAsync_" data-uid="uDrive.Backend.Api.Controllers.ScheduleTourController.GetScheduledDriversAsync*" class="text-break">
-  Method GetScheduledDriversAsync
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/ScheduleTourController.cs/#L34"><i class="bi bi-code-slash"></i></a>
-</h1>
-
-<div class="facts text-secondary">
-  <dl><dt>Namespace</dt><dd><a class="xref" href="uDrive.html">uDrive</a>.<a class="xref" href="uDrive.Backend.html">Backend</a>.<a class="xref" href="uDrive.Backend.Api.html">Api</a>.<a class="xref" href="uDrive.Backend.Api.Controllers.html">Controllers</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>uDrive.Backend.Api.dll</dd></dl>
-</div>
-
-<div class="markdown summary"></div>
-<div class="markdown conceptual"></div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<a id="uDrive_Backend_Api_Controllers_ScheduleTourController_GetScheduledDriversAsync_" data-uid="uDrive.Backend.Api.Controllers.ScheduleTourController.GetScheduledDriversAsync*"></a>
-
-<h3 id="uDrive_Backend_Api_Controllers_ScheduleTourController_GetScheduledDriversAsync" data-uid="uDrive.Backend.Api.Controllers.ScheduleTourController.GetScheduledDriversAsync">
-  GetScheduledDriversAsync()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/ScheduleTourController.cs/#L34"><i class="bi bi-code-slash"></i></a>
-</h3>
-
-<div class="markdown level1 summary"><p>Gets all Drivers, who are at a tour</p>
-</div>
-<div class="markdown level1 conceptual"></div>
-
-<div class="codewrapper">
-  <pre><code class="lang-csharp hljs">[HttpGet(&quot;GetScheduledDrivers&quot;)]
-public ValueTask&lt;ActionResult&lt;Driver&gt;&gt; GetScheduledDriversAsync()</code></pre>
-</div>
-
-
-<h4 class="section">Returns</h4>
-<dl class="parameters">
-  <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.actionresult-1">ActionResult</a>&lt;<a class="xref" href="uDrive.Backend.Model.Entities.Driver.html">Driver</a>&gt;&gt;</dt>
-  <dd><p><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List&lt;T&gt;</a> of <a class="xref" href="uDrive.Backend.Model.Entities.Driver.html">Driver</a> entities</p>
-</dd>
-</dl>
-
-
-
-
-
-
-
-
-
-
-
+<p>F�r die Regestrierung muss ein <code>POST</code> request an <code>/Register</code> gehen</p>
+<h2 id="post-model">Post Model</h2>
+<pre><code class="lang-json">{
+  &quot;userName&quot;: &quot;Passenger1@udrive.de&quot;,
+  &quot;password&quot;: &quot;pw&quot;,
+  &quot;email&quot;: &quot;Passenger1@udrive.de&quot;,
+  &quot;firstname&quot;: &quot;Passenger1_Firstname&quot;,
+  &quot;lastname&quot;: &quot;Lastname_Passenger1&quot;,
+  &quot;phonenumber&quot; : &quot;number&quot;
+}
+</code></pre>
+<h2 id="response">Response</h2>
+<p>Der Response sieht �hnlich aus wie beim Login :</p>
+<pre><code class="lang-json">{
+    &quot;success&quot;: true,
+    &quot;data&quot;: {
+        &quot;id&quot;: &quot;id&quot;,
+        &quot;userName&quot;: &quot;Passenger1@udrive.de&quot;,
+        &quot;firstname&quot;: &quot;Passenger1_Firstname&quot;,
+        &quot;lastname&quot;: &quot;Lastname_Passenger1&quot;,
+        &quot;email&quot;: &quot;Passenger1@udrive.de&quot;,
+        &quot;token&quot;: &quot;&quot;,
+        &quot;roles&quot;: [
+            &quot;Person&quot;
+        ]
+    },
+    &quot;message&quot;: &quot;Login Successfull!&quot;
+}
+</code></pre>
+<h1 id="register-as-driver">Register as Driver</h1>
+<p>F�r die Registrierung als Fahrer, wird mindestens ein Account mit Secretary Role ben�tigt, dieser kann dann eine Person als Fahrer via Api registrieren</p>
+<h2 id="post-model-post-adddrivinglicencewithnewdriverpersonid">Post Model <code>POST /AddDrivingLicenceWithNewDriver/personID</code></h2>
+<p>Wichtig hierbei ist, in der URL die Id der Person anzugeben.</p>
+<pre><code class="lang-json">{
+  &quot;expireDate&quot;: &quot;2030-09-21T13:11:15.018Z&quot;,
+  &quot;licenceClass&quot;: &quot;B&quot;,
+  &quot;seats&quot; : 2
+}
+</code></pre>
+<h2 id="response-1">Response</h2>
+<p>Als Response kommt nur die neue generierte Id des Fahrer(Drivers) raus</p>
+<pre><code class="lang-json">&quot;fa57449d-731c-47ed-a0cc-6d22155924f4&quot;
+</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/ScheduleTourController.cs/#L34" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BWSuDrive/uDrive.Backend/blob/39/merge/docfx_project/articles/register.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
         
       </div>
 

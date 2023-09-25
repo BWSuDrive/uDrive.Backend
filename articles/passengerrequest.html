@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Passagier Anfragen </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Passagier Anfragen ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/BWSuDrive/uDrive.Backend/blob/39/merge/docfx_project/articles/passengerrequest.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="passagier-anfragen">Passagier Anfragen</h1>
+
+<p>Um als Passagier bei jemanden mitzufahren, muss die Person zuerst registriert sein, danach k�nnen folgende Anfragen gestellt werden.</p>
+<h2 id="get-passengerrequestsfilterdriversby5kmradius"><code>GET /PassengerRequests/FilterDriversBy5kmRadius</code></h2>
+<p>Mit dieser Anfrage, k�nnen Passagiere eine Liste erhalten, welche alle Fahrer innerhalb von 5 Kilometern ausgibt</p>
+<h3 id="send-model">Send Model</h3>
+<pre><code class="lang-json">{
+  &quot;currentLatitude&quot;: 50.08486509467797, 
+  &quot;currentLongitude&quot;: 8.458661956343363
+}
+</code></pre>
+<h3 id="response">Response</h3>
+<pre><code class="lang-json">[
+    {
+        &quot;distance&quot;: 0.26,
+        &quot;person&quot;: {
+            &quot;firstname&quot;: &quot;Driver_Firstname_Test3&quot;,
+            &quot;lastname&quot;: &quot;Lastname_Test2&quot;,
+            &quot;phoneNumber&quot;: &quot;number&quot;,
+            &quot;email&quot;: &quot;TestDriver3@udrive.de&quot;,
+           ...
+        },
+        &quot;driver&quot;: {
+            &quot;id&quot;: &quot;id&quot;,
+            &quot;idDrivinglicense&quot;: &quot;idDrivinglicense&quot;,
+            &quot;idPerson&quot;: &quot;idPerson&quot;,
+            &quot;seats&quot;: 0,
+            &quot;idDrivinglicenseNavigation&quot;: null,
+            &quot;idPersonNavigation&quot;: null,
+            &quot;tourPlans&quot;: []
+        },
+        &quot;tourPlan&quot;: {
+            &quot;id&quot;: &quot;id&quot;,
+            &quot;idDriver&quot;: &quot;idDriver&quot;,
+            &quot;departure&quot;: &quot;2023-09-25T17:52:12.257&quot;,
+            &quot;stopRequests&quot;: 0,
+            &quot;eta&quot;: &quot;00:15:00&quot;,
+            &quot;start&quot;: &quot;string&quot;,
+            &quot;destination&quot;: &quot;string&quot;,
+            &quot;message&quot;: &quot;string&quot;,
+            &quot;currentLatitude&quot;: 50.08513701910111,
+            &quot;currentLongitude&quot;: 8.452825469725695,
+            &quot;driver&quot;: {
+               ...
+            },
+            &quot;passengers&quot;: [],
+            &quot;passengerRequests&quot;: []
+        }
+    }
+]
+</code></pre>
+<h2 id="get-passengerrequestsgetscheduleddrivers"><code>GET /PassengerRequests/GetScheduledDrivers</code></h2>
+<p>Mit dieser Anfrage, werden alle aktuellen Fahrer mit ihren geplanten Touren ausgegeben</p>
+<h3 id="response-1">Response</h3>
+<pre><code class="lang-json">[
+    {
+        &quot;id&quot;: &quot;id&quot;,
+        &quot;idDrivinglicense&quot;: &quot;idDrivinglicense&quot;,
+        &quot;idPerson&quot;: &quot;idPerson&quot;,
+        &quot;seats&quot;: 0,
+        &quot;idDrivinglicenseNavigation&quot;: null,
+        &quot;idPersonNavigation&quot;: null,
+        &quot;tourPlans&quot;: [
+            {
+                &quot;id&quot;: &quot;id&quot;,
+                &quot;idDriver&quot;: &quot;idDriver&quot;,
+                &quot;departure&quot;: &quot;2023-09-25T17:52:12.257&quot;,
+                &quot;stopRequests&quot;: 0,
+                &quot;eta&quot;: &quot;00:15:00&quot;,
+                &quot;start&quot;: &quot;string&quot;,
+                &quot;destination&quot;: &quot;string&quot;,
+                &quot;message&quot;: &quot;string&quot;,
+                &quot;currentLatitude&quot;: 50.08513701910111,
+                &quot;currentLongitude&quot;: 8.452825469725695,
+                &quot;driver&quot;: null,
+                &quot;passengers&quot;: [],
+                &quot;passengerRequests&quot;: []
+            },
+            {
+                &quot;id&quot;: &quot;id&quot;,
+                &quot;idDriver&quot;: &quot;idDriver&quot;,
+                &quot;departure&quot;: &quot;2023-09-26T17:52:12.257&quot;,
+                &quot;stopRequests&quot;: 0,
+                &quot;eta&quot;: &quot;00:15:00&quot;,
+                &quot;start&quot;: &quot;string&quot;,
+                &quot;destination&quot;: &quot;string&quot;,
+                &quot;message&quot;: &quot;string&quot;,
+                &quot;currentLatitude&quot;: 50.08513701910111,
+                &quot;currentLongitude&quot;: 8.452825469725695,
+                &quot;driver&quot;: null,
+                &quot;passengers&quot;: [],
+                &quot;passengerRequests&quot;: []
+            }
+        ]
+    }
+]
+</code></pre>
+<h2 id="post-passengerrequests"><code>POST /PassengerRequests</code></h2>
+<p>Um sich f�r eine Tour zu melden, wird ein <code>POST</code> an den Controller <code>PassengerRequets</code> gesendet. Die <code>�dPerson</code> muss hierbei nicht korrekt sei, das System erkennt welche Person den Request stellt.</p>
+<h3 id="send-model-1">Send Model</h3>
+<pre><code class="lang-json">{&quot;idPerson&quot;: &quot;idPerson&quot;,
+  &quot;idTourPlan&quot;: &quot;idTourPlan&quot;,
+  &quot;message&quot;: &quot;Stehe an der Ecke&quot;,
+  &quot;currentLatitude&quot;: 0,
+  &quot;currentLongitude&quot;: 0
+}
+</code></pre>
+<h3 id="response-2">Response</h3>
+<pre><code class="lang-json">[
+    {
+        &quot;id&quot;: &quot;id&quot;,
+        &quot;idPerson&quot;: &quot;idPerson&quot;,
+        &quot;idTourPlan&quot;: &quot;idTourPlan&quot;,
+        &quot;message&quot;: &quot;Stehe an der Ecke&quot;,
+        &quot;currentLatitude&quot;: 0,
+        &quot;currentLongitude&quot;: 0,
+        &quot;isPending&quot;: true,
+        &quot;isDenied&quot;: false,
+        &quot;person&quot;: {
+            &quot;firstname&quot;: &quot;Passenger1_Firstname&quot;,
+            &quot;lastname&quot;: &quot;Lastname_Passenger1&quot;,
+            &quot;email&quot;: &quot;Passenger1@udrive.de&quot;,
+            &quot;phoneNumber&quot;: &quot;number&quot;,
+
+            ...
+        },
+        &quot;tourPlan&quot;: null
+    }
+]
+</code></pre>
+<h3 id="weitere">Weitere</h3>
+<p>Um die Anfrage zu �ndern, k�nnen einfach die Endpunkte <code>PUT</code>, <code>PATCH</code>,<code>DELETE</code> und <code>GET</code> benutzt werden.</p>
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/BWSuDrive/uDrive.Backend/blob/39/merge/docfx_project/articles/passengerrequest.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

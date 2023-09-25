@@ -17,7 +17,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BWSuDrive/uDrive.Backend/new/main/apiSpec/new?filename=uDrive_Backend_Api_Controllers_TourPlansController.md&amp;value=---%0Auid%3A%20uDrive.Backend.Api.Controllers.TourPlansController%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BWSuDrive/uDrive.Backend/new/39/merge/apiSpec/new?filename=uDrive_Backend_Api_Controllers_TourPlansController.md&amp;value=---%0Auid%3A%20uDrive.Backend.Api.Controllers.TourPlansController%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -90,7 +90,7 @@
 
   <h1 id="uDrive_Backend_Api_Controllers_TourPlansController" data-uid="uDrive.Backend.Api.Controllers.TourPlansController" class="text-break">
     Class TourPlansController
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/TourPlansController.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/39/merge/src/uDrive.Backend.Api/Controllers/TourPlansController.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -104,7 +104,12 @@ Inherits from <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.Secr
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TourPlansController : DriverRoleController&lt;TourPlan&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">[Produces(&quot;application/json&quot;, new string[] { })]
+[Consumes(&quot;application/json&quot;, new string[] { })]
+[Route(&quot;[controller]&quot;)]
+[ApiController]
+[Authorize(Roles = &quot;Secretary,Administrator,Driver&quot;)]
+public class TourPlansController : ControllerBase</code></pre>
   </div>
 
 
@@ -115,9 +120,6 @@ Inherits from <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.Secr
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controllerbase">ControllerBase</a></div>
-      <div><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.html">AnonymousController</a>&lt;<a class="xref" href="uDrive.Backend.Model.Entities.TourPlan.html">TourPlan</a>&gt;</div>
-      <div><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.PersonRoleController-1.html">PersonRoleController</a>&lt;<a class="xref" href="uDrive.Backend.Model.Entities.TourPlan.html">TourPlan</a>&gt;</div>
-      <div><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.DriverRoleController-1.html">DriverRoleController</a>&lt;<a class="xref" href="uDrive.Backend.Model.Entities.TourPlan.html">TourPlan</a>&gt;</div>
       <div><span class="xref">TourPlansController</span></div>
     </dd>
   </dl>
@@ -127,30 +129,6 @@ Inherits from <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.Secr
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1._authService.html">AnonymousController&lt;TourPlan&gt;._authService</a>
-    </div>
-    <div>
-      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1._logger.html">AnonymousController&lt;TourPlan&gt;._logger</a>
-    </div>
-    <div>
-      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1._context.html">AnonymousController&lt;TourPlan&gt;._context</a>
-    </div>
-    <div>
-      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.Entities.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_Entities">AnonymousController&lt;TourPlan&gt;.Entities</a>
-    </div>
-    <div>
-      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.Get.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_Get">AnonymousController&lt;TourPlan&gt;.Get()</a>
-    </div>
-    <div>
-      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.GetById.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_GetById_System_String_">AnonymousController&lt;TourPlan&gt;.GetById(string)</a>
-    </div>
-    <div>
-      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.PostAsync.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_PostAsync__0_">AnonymousController&lt;TourPlan&gt;.PostAsync(TourPlan)</a>
-    </div>
-    <div>
-      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.DeleteAsync.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_DeleteAsync_System_String_">AnonymousController&lt;TourPlan&gt;.DeleteAsync(string)</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controllerbase.statuscode#microsoft-aspnetcore-mvc-controllerbase-statuscode(system-int32)">ControllerBase.StatusCode(int)</a>
     </div>
@@ -702,12 +680,63 @@ Inherits from <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.Secr
     <dd></dd>
   </dl>
 
+  <h2 class="section" id="fields">Fields
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.TourPlansController._authService.html">_authService</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.TourPlansController._context.html">_context</a></dt>
+    <dd><p>internal <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext">DbContext</a> reference</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.TourPlansController._logger.html">_logger</a></dt>
+    <dd><p>Internal access for the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a>.</p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.TourPlansController.Entities.html#uDrive_Backend_Api_Controllers_TourPlansController_Entities">Entities</a></dt>
+    <dd><p>internal queryable list of <a class="xref" href="uDrive.Backend.Model.Entities.TourPlan.html">TourPlan</a></p>
+</dd>
+  </dl>
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.TourPlansController.DeleteAsync.html#uDrive_Backend_Api_Controllers_TourPlansController_DeleteAsync_System_String_">DeleteAsync(string)</a></dt>
+    <dd><p>Deletes the entity with the <code class="paramref">key</code>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.TourPlansController.GetAsync.html#uDrive_Backend_Api_Controllers_TourPlansController_GetAsync">GetAsync()</a></dt>
+    <dd><p>Queryable collection of <code class="typeparamref">TourPlan</code>.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.TourPlansController.GetByIdAsync.html#uDrive_Backend_Api_Controllers_TourPlansController_GetByIdAsync_System_String_">GetByIdAsync(string)</a></dt>
+    <dd><p>Searched entity.</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.TourPlansController.PostAsync.html#uDrive_Backend_Api_Controllers_TourPlansController_PostAsync_uDrive_Backend_Model_Entities_TourPlan_">PostAsync(TourPlan)</a></dt>
+    <dd><p>Creates a new item, and returns the created item with the correct id.</p>
+</dd>
+  </dl>
+
 
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/TourPlansController.cs/#L15" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BWSuDrive/uDrive.Backend/blob/39/merge/src/uDrive.Backend.Api/Controllers/TourPlansController.cs/#L19" class="edit-link">Edit this page</a>
         </div>
 
         

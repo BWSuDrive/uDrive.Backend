@@ -1,2 +1,2 @@
 
-{"items":[{"name":"Introduction","href":"intro.html","topicHref":"intro.html"},{"name":"Api Call Guide","href":"apicallguide.html","topicHref":"apicallguide.html"}]}
+{"items":[{"name":"Introduction","href":"intro.html","topicHref":"intro.html"},{"name":"Api Call Guide","href":"apicallguide.html","topicHref":"apicallguide.html"},{"name":"Register","href":"register.html","topicHref":"register.html"},{"name":"Login","href":"login.html","topicHref":"login.html"},{"name":"Fahrer Tour Planung","href":"drivertourplan.html","topicHref":"drivertourplan.html"},{"name":"Passagier Anfragen","href":"passengerrequest.html","topicHref":"passengerrequest.html"}]}
