@@ -25,4 +25,6 @@ public class Person : IdentityUser
     public virtual ICollection<Driver> Drivers { get; } = new List<Driver>();
 
     public virtual ICollection<TourPlan> AsPassengers { get;} = new Collection<TourPlan>();
+    public virtual ICollection<PassengerRequest> PassengerRequests{ get; } = new Collection<PassengerRequest>();
+
 }

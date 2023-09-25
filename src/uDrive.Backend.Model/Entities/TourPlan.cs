@@ -46,11 +46,6 @@ public class TourPlan : IEntity
     public string? Message { get; set; }
 
     /// <summary>
-    /// Current Coordinates of the <see cref="Entities.Driver"/>, saved as string as an comma seperated Longitude and Lattiude pair
-    /// </summary>
-    public string? CurrentCoordinates { get; set; }
-
-    /// <summary>
     /// The current Latitude
     /// </summary>
     public double  CurrentLatitude { get; set; }
@@ -67,5 +62,7 @@ public class TourPlan : IEntity
     public virtual Driver? Driver { get; set; } = null!;
 
     public virtual ICollection<Person> Passengers { get; } = new Collection<Person>();
+    public virtual ICollection<PassengerRequest> PassengerRequests { get; } = new Collection<PassengerRequest>();
+
 
 }

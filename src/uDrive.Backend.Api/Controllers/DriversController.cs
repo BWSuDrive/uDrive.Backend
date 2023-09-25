@@ -12,19 +12,26 @@ namespace uDrive.Backend.Api.Controllers
 {
     /// <summary>
     /// Controller to access and modify <see cref="Driver"/> Entities. 
-    /// Inherits from <see cref="PersonRoleController{TEntity}"/>.
+    /// Inherits from <see cref="SecretaryRoleController{TEntity}"/>.
     /// </summary>
     public class DriversController : SecretaryRoleController<Driver>
     {
+        /// <summary>
+        /// internal <see cref="DbContext"/> reference
+        /// </summary>
         private static ApplicationDbContext _context;
+
+        /// <summary>
+        /// internal reference to <see cref="IAuthService"/>
+        /// </summary>
         private readonly IAuthService _authService;
 
-
+        /// <inheritdoc />
         public DriversController(
         ILogger<DriversController> logger,
         ApplicationDbContext context, IAuthService authService
     )
-        : base(logger, context)
+        : base(logger, context, authService)
         {
             _authService = authService;
             _context = context;

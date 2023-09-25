@@ -8,6 +8,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Data;
+using Microsoft.Extensions.Primitives;
 
 namespace uDrive.Backend.Api.Services;
 
@@ -24,6 +25,27 @@ public class AuthService : IAuthService
 
     }
 
+    public async Task<Person> GetLogedInPerson(StringValues token)
+    {
+        var tokenHandler = new JwtSecurityTokenHandler();
+        var SecretKey = _configuration["JWTKey:Secret"];
+        var key = Encoding.UTF8.GetBytes(SecretKey);
+       // var token = HttpContext.Request.Headers["Authorization"];
+
+        tokenHandler.ValidateToken(token, new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(key),
+            ValidateIssuer = false,
+            ValidateAudience = false,
+            ClockSkew = TimeSpan.Zero
+        }, out SecurityToken validatedToken);
+
+        var jwtToken = (JwtSecurityToken)validatedToken;
+        var userId = jwtToken.Claims.First(x => x.Type == "NameIdentifier").Value;
+        var user = await _userManager.FindByIdAsync(userId).ConfigureAwait(false);
+        return user;
+    }
 
     public async Task<Response<LoginResponseDTO>> RegisterSystemUserAsync(RegisterDTO registerDTO)
     {
@@ -71,6 +93,8 @@ public class AuthService : IAuthService
             NormalizedEmail = model.Email.ToUpper(),
             NormalizedUserName = model.UserName.ToUpper(),
             Verified = true,
+            PhoneNumber = model.PhoneNumber,
+            PhoneNumberConfirmed = true // TODO : change afterwards
         };
         var createUserResult = await _userManager.CreateAsync(user, model.Password);
         if (!createUserResult.Succeeded)

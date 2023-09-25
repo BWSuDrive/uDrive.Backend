@@ -15,6 +15,7 @@ namespace uDrive.Backend.Model
         public virtual DbSet<Driver> Drivers { get; set; }
 
         public virtual DbSet<DrivingLicence> DrivingLicences { get; set; }
+        public virtual DbSet<PassengerRequest> PassengerRequests { get; set; }
 
         public virtual DbSet<Person> Persons { get; set; }
         public virtual DbSet<TourPlan> TourPlans { get; set; }
