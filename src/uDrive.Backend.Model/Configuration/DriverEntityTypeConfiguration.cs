@@ -26,9 +26,12 @@ internal class DriverEntityTypeConfiguration
         _ = builder.Property(e => e.IdDrivinglicense)
             .HasMaxLength(450)
             .HasColumnName("idDrivinglicense");
+
         _ = builder.Property(e => e.IdPerson)
             .HasMaxLength(450)
             .HasColumnName("idPerson");
+
+        _ = builder.Property(e => e.Seats).HasColumnName("Seats");
 
         _ = builder.HasOne(d => d.IdDrivinglicenseNavigation).WithMany(p => p.Drivers)
             .HasForeignKey(d => d.IdDrivinglicense)

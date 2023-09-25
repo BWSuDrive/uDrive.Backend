@@ -361,6 +361,21 @@ namespace uDrive.Backend.Model
                     .OnDelete(DeleteBehavior.Cascade)
                     .IsRequired();
             });
+
+            modelBuilder.Entity("PersonTourPlan", b =>
+            {
+                b.HasOne("uDrive.Backend.Model.Entities.TourPlan", null)
+                    .WithMany()
+                    .HasForeignKey("AsPassengersId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+
+                b.HasOne("uDrive.Backend.Model.Entities.Person", null)
+                    .WithMany()
+                    .HasForeignKey("PassengersId")
+                    .OnDelete(DeleteBehavior.Cascade)
+                    .IsRequired();
+            });
         }
     }
 }

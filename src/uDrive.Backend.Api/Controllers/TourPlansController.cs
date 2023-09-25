@@ -9,9 +9,12 @@ namespace uDrive.Backend.Api.Controllers;
 
 public class TourPlansController : DriverRoleController<TourPlan>
 {
+
     public TourPlansController(
     ILogger<TourPlansController> logger,
     ApplicationDbContext context
 )
     : base(logger, context) { }
+
+
 }
