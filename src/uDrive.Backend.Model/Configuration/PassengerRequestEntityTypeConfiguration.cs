@@ -23,23 +23,27 @@ internal class PassengerRequestEntityTypeConfiguration
     private static void ConfigureEntityProperties(EntityTypeBuilder<PassengerRequest> builder)
     {
         //_ = builder.Property(e => e.Id).HasColumnName("id");
-        _ = builder.Property(e => e.idTourPlan)
+        _ = builder.Property(e => e.IdTourPlan)
             .HasMaxLength(450)
             .HasColumnName("idTourPlan");
 
-        _ = builder.Property(e => e.idPerson)
+        _ = builder.Property(e => e.IdPerson)
             .HasMaxLength(450)
             .HasColumnName("idPerson");
 
         _ = builder.Property(e => e.Message).HasColumnName("message");
 
+        _ = builder.Property(e => e.IsPending).HasColumnName("isPending");
+
+        _ = builder.Property(e => e.IsDenied).HasColumnName("isDenied");
+
         _ = builder.HasOne(d => d.Person).WithMany(p => p.PassengerRequests)
-            .HasForeignKey(d => d.idPerson)
+            .HasForeignKey(d => d.IdPerson)
             .OnDelete(DeleteBehavior.ClientSetNull)
             .HasConstraintName("FK_Person_PassengarRequests");
 
         _ = builder.HasOne(d => d.TourPlan).WithMany(p => p.PassengerRequests)
-            .HasForeignKey(d => d.idTourPlan)
+            .HasForeignKey(d => d.IdTourPlan)
             .OnDelete(DeleteBehavior.ClientSetNull)
             .HasConstraintName("FK_TourPlan_PassengarRequests");
 

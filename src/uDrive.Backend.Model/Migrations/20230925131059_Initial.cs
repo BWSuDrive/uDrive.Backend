@@ -39,6 +39,7 @@ namespace uDrive.Backend.Model.Migrations
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Firstname = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Lastname = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Verified = table.Column<bool>(type: "bit", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -71,19 +72,6 @@ namespace uDrive.Backend.Model.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_uDrive_drivingLicence", x => x.id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "weekday",
-                schema: "uDrive",
-                columns: table => new
-                {
-                    id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    name = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_uDrive_weekday", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
@@ -210,7 +198,8 @@ namespace uDrive.Backend.Model.Migrations
                 {
                     id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     idDrivinglicense = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false),
-                    idPerson = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false)
+                    idPerson = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false),
+                    Seats = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -230,39 +219,20 @@ namespace uDrive.Backend.Model.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "drivingSchedule",
-                schema: "uDrive",
-                columns: table => new
-                {
-                    id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    start = table.Column<TimeSpan>(type: "time", nullable: false),
-                    arrival = table.Column<TimeSpan>(type: "time", nullable: false),
-                    idWeekday = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_uDrive_drivingSchedule", x => x.id);
-                    table.ForeignKey(
-                        name: "FK_Weekday_DrivingSchedule",
-                        column: x => x.idWeekday,
-                        principalSchema: "uDrive",
-                        principalTable: "weekday",
-                        principalColumn: "id");
-                });
-
-            migrationBuilder.CreateTable(
                 name: "tourPlan",
                 schema: "uDrive",
                 columns: table => new
                 {
                     id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     IdDriver = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false),
-                    Date = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Departure = table.Column<TimeSpan>(type: "time", nullable: false),
-                    StopRequests = table.Column<int>(type: "int", nullable: false),
+                    Departure = table.Column<DateTime>(type: "datetime", nullable: false),
+                    StopRequests = table.Column<int>(type: "int", nullable: true),
                     Eta = table.Column<TimeSpan>(type: "time", nullable: false),
                     Start = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Destiniation = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Destination = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Message = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CurrentLatitude = table.Column<double>(type: "float", nullable: false),
+                    CurrentLongitude = table.Column<double>(type: "float", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -276,48 +246,61 @@ namespace uDrive.Backend.Model.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "drivingSchedule_driver",
-                schema: "uDrive",
-                columns: table => new
-                {
-                    drivingSchedule_id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    driver_id = table.Column<string>(type: "nvarchar(450)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK__drivingS__1748636A316DE11E", x => new { x.drivingSchedule_id, x.driver_id });
-                    table.ForeignKey(
-                        name: "FK__drivingSc__drive__08B54D69",
-                        column: x => x.driver_id,
-                        principalSchema: "uDrive",
-                        principalTable: "driver",
-                        principalColumn: "id");
-                    table.ForeignKey(
-                        name: "FK__drivingSc__drivi__07C12930",
-                        column: x => x.drivingSchedule_id,
-                        principalSchema: "uDrive",
-                        principalTable: "drivingSchedule",
-                        principalColumn: "id");
-                });
-
-            migrationBuilder.CreateTable(
-                name: "spontanesDrive",
+                name: "passengerRequest",
                 schema: "uDrive",
                 columns: table => new
                 {
                     id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    date = table.Column<DateTime>(type: "datetime", nullable: true),
-                    idDrivingScheduleOverwrite = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false)
+                    idPerson = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false),
+                    idTourPlan = table.Column<string>(type: "nvarchar(450)", maxLength: 450, nullable: false),
+                    message = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CurrentLatitude = table.Column<double>(type: "float", nullable: false),
+                    CurrentLongitude = table.Column<double>(type: "float", nullable: false),
+                    isPending = table.Column<bool>(type: "bit", nullable: false),
+                    isDenied = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_uDrive_spontanesDrive", x => x.id);
+                    table.PrimaryKey("PK_uDrive_passengerRequest", x => x.id);
                     table.ForeignKey(
-                        name: "FK_DrivingSchedule_SpontanesDrive",
-                        column: x => x.idDrivingScheduleOverwrite,
+                        name: "FK_Person_PassengarRequests",
+                        column: x => x.idPerson,
                         principalSchema: "uDrive",
-                        principalTable: "drivingSchedule",
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_TourPlan_PassengarRequests",
+                        column: x => x.idTourPlan,
+                        principalSchema: "uDrive",
+                        principalTable: "tourPlan",
                         principalColumn: "id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "PersonTourPlan",
+                schema: "uDrive",
+                columns: table => new
+                {
+                    AsPassengersId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    PassengersId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_PersonTourPlan", x => new { x.AsPassengersId, x.PassengersId });
+                    table.ForeignKey(
+                        name: "FK_PersonTourPlan_AspNetUsers_PassengersId",
+                        column: x => x.PassengersId,
+                        principalSchema: "uDrive",
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_PersonTourPlan_tourPlan_AsPassengersId",
+                        column: x => x.AsPassengersId,
+                        principalSchema: "uDrive",
+                        principalTable: "tourPlan",
+                        principalColumn: "id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.InsertData(
@@ -326,22 +309,22 @@ namespace uDrive.Backend.Model.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "9abfa5ff-4347-4e81-8cc3-de6c41661432", "9abfa5ff-4347-4e81-8cc3-de6c41661432", "Person", "PERSON" },
-                    { "e17eb711-64b1-4d81-9fa5-87ba617ea84a", "e17eb711-64b1-4d81-9fa5-87ba617ea84a", "Secretary", "SECRETARY" },
-                    { "f09273cd-1adf-4a13-b797-267585e68d6d", "f09273cd-1adf-4a13-b797-267585e68d6d", "Driver", "DRIVER" },
-                    { "fdfd6951-1a19-4dbe-b7eb-9589dc634d62", "fdfd6951-1a19-4dbe-b7eb-9589dc634d62", "Administrator", "ADMINISTRATOR" }
+                    { "2be1d292-4c01-4cfe-9cd8-c7b7012a5683", "2be1d292-4c01-4cfe-9cd8-c7b7012a5683", "Administrator", "ADMINISTRATOR" },
+                    { "39f6894e-9781-4f87-9f23-8f145d7d1e33", "39f6894e-9781-4f87-9f23-8f145d7d1e33", "Person", "PERSON" },
+                    { "96288eaf-d4d3-4937-a67f-346ccee73b73", "96288eaf-d4d3-4937-a67f-346ccee73b73", "Secretary", "SECRETARY" },
+                    { "ce743c88-4ebd-4375-a627-387c69171052", "ce743c88-4ebd-4375-a627-387c69171052", "Driver", "DRIVER" }
                 });
 
             migrationBuilder.InsertData(
                 schema: "uDrive",
                 table: "AspNetUsers",
-                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "Firstname", "Lastname", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "Firstname", "Lastname", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName", "Verified" },
                 values: new object[,]
                 {
-                    { "60f9d742-6fd6-445e-8c02-055ec70ab9dd", 0, "e9b59417-9016-4d8f-8e32-e03113c45255", "Person@udrive.de", true, "Person", "Person", false, null, "PERSON@UDRIVE.DE", "PERSON@UDRIVE.DE", "AQAAAAIAAYagAAAAEJWTrHSpKCI14MIRY+fAEL1cZgslctjPu8D2O/t7+KFmIxEg2AJPj5plCyFtlZSDgA==", null, false, "0dead13b-cd93-4b07-b87d-d4bd7381d374", false, "Person@udrive.de" },
-                    { "8ee9da42-1303-42be-81d9-aadf42a9d655", 0, "acadca04-ad7a-446a-878c-f79bfc561571", "Secretary@udrive.de", true, "Secretary", "Secretary", false, null, "SECRETARY@UDRIVE.DE", "SECRETARY@UDRIVE.DE", "AQAAAAIAAYagAAAAEKRFmxvxYmdMAkofPJfiQOHBKfCEdk4DIjIbGu5CEAlawx8hlLT0BkuD+6PEVM3AIA==", null, false, "d8c54738-c0a5-4e44-a5eb-0ff1b56feaa7", false, "Secretary@udrive.de" },
-                    { "af41d9ec-9e71-4a9c-b7ab-443bce642e7e", 0, "5825af23-28a7-4405-87e7-199184598e7b", "Driver@udrive.de", true, "Driver", "Driver", false, null, "DRIVER@UDRIVE.DE", "DRIVER@UDRIVE.DE", "AQAAAAIAAYagAAAAEPi3rOvpBZl6AnW+Bi8BWaC10Lu+N7D4e5qgXFMmth0KeWxyPJ//AQpLI+TmhH19nA==", null, false, "52625683-3f82-4c02-99d5-99ab6ed48aff", false, "Driver@udrive.de" },
-                    { "dddc8bba-ab43-454c-ba57-0a61f456af7e", 0, "7cd5d28e-1e8a-4b91-bac1-3f4e2befddd9", "Administrator@udrive.de", true, "Administrator", "Administrator", false, null, "ADMINISTRATOR@UDRIVE.DE", "ADMINISTRATOR@UDRIVE.DE", "AQAAAAIAAYagAAAAEOI36ZnPQZEzzAIe5gQzr9zAuEOjv4uigPbjfRTungnM3y9r5MoNhIvFT1217gOcPQ==", null, false, "8b7684fe-98d6-4fb6-bbde-9162dc2b9d07", false, "Administrator@udrive.de" }
+                    { "167312eb-965f-4053-834f-eb8a9d6d11eb", 0, "4157289f-8b3b-4839-8264-8470a6ef2623", "Person@udrive.de", true, "Person", "Person", false, null, "PERSON@UDRIVE.DE", "PERSON@UDRIVE.DE", "AQAAAAIAAYagAAAAEND1R0/z/oWlzA16FjIEmgs+A46Izey5AcfnLlzbVZ630IBXzIjBRFtNBXRaFCDtMg==", "0049619229040", true, "4aa05674-6a32-42bb-b8a8-4e423fff223a", false, "Person@udrive.de", false },
+                    { "415fe08c-7c80-442f-981a-c1ecbe7b9daa", 0, "d4b44abe-4e14-4bbd-8968-4875b3ec93cd", "Administrator@udrive.de", true, "Administrator", "Administrator", false, null, "ADMINISTRATOR@UDRIVE.DE", "ADMINISTRATOR@UDRIVE.DE", "AQAAAAIAAYagAAAAEKhEYfqf4SEPgiidjWoFZ1fOGPxUJwyMKpn2ZoEAris8rZChMSV+rDIEVbPOjcfq8Q==", "0049619229040", true, "73660b4a-8878-4ea5-bf5e-68efd95cc8de", false, "Administrator@udrive.de", false },
+                    { "9f9b0461-ada7-4ec3-a7cd-44b66c6650cc", 0, "46d4c50f-8c33-4c2c-a797-c5f0883737c3", "Driver@udrive.de", true, "Driver", "Driver", false, null, "DRIVER@UDRIVE.DE", "DRIVER@UDRIVE.DE", "AQAAAAIAAYagAAAAEDZV2vp/+kmgfT/IS1GRz858Jmw0GUGIdNK9UDp7bp+GdJ2/heXNWZn9pCfIdk0Qkw==", "0049619229040", true, "74e384d6-ffc8-46c5-8ccf-659f7a9b6ad1", false, "Driver@udrive.de", false },
+                    { "bbcb6bae-9fc7-47de-9d82-ad4dac5691ac", 0, "b30d3b5d-7234-4d36-ab74-b911ac76c866", "Secretary@udrive.de", true, "Secretary", "Secretary", false, null, "SECRETARY@UDRIVE.DE", "SECRETARY@UDRIVE.DE", "AQAAAAIAAYagAAAAEMPsxnQzFEl6Woz7p9MXWZcTI4dstKbSPXI7w6uqp1/geC9c1MPgKl8ckCqPyxaE3Q==", "0049619229040", true, "d14fd0d5-6aa9-470f-a717-d200028ff80f", false, "Secretary@udrive.de", false }
                 });
 
             migrationBuilder.InsertData(
@@ -350,10 +333,10 @@ namespace uDrive.Backend.Model.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "9abfa5ff-4347-4e81-8cc3-de6c41661432", "60f9d742-6fd6-445e-8c02-055ec70ab9dd" },
-                    { "e17eb711-64b1-4d81-9fa5-87ba617ea84a", "8ee9da42-1303-42be-81d9-aadf42a9d655" },
-                    { "f09273cd-1adf-4a13-b797-267585e68d6d", "af41d9ec-9e71-4a9c-b7ab-443bce642e7e" },
-                    { "fdfd6951-1a19-4dbe-b7eb-9589dc634d62", "dddc8bba-ab43-454c-ba57-0a61f456af7e" }
+                    { "39f6894e-9781-4f87-9f23-8f145d7d1e33", "167312eb-965f-4053-834f-eb8a9d6d11eb" },
+                    { "2be1d292-4c01-4cfe-9cd8-c7b7012a5683", "415fe08c-7c80-442f-981a-c1ecbe7b9daa" },
+                    { "ce743c88-4ebd-4375-a627-387c69171052", "9f9b0461-ada7-4ec3-a7cd-44b66c6650cc" },
+                    { "96288eaf-d4d3-4937-a67f-346ccee73b73", "bbcb6bae-9fc7-47de-9d82-ad4dac5691ac" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -415,22 +398,22 @@ namespace uDrive.Backend.Model.Migrations
                 column: "idPerson");
 
             migrationBuilder.CreateIndex(
-                name: "IX_drivingSchedule_idWeekday",
+                name: "IX_passengerRequest_idPerson",
                 schema: "uDrive",
-                table: "drivingSchedule",
-                column: "idWeekday");
+                table: "passengerRequest",
+                column: "idPerson");
 
             migrationBuilder.CreateIndex(
-                name: "IX_drivingSchedule_driver_driver_id",
+                name: "IX_passengerRequest_idTourPlan",
                 schema: "uDrive",
-                table: "drivingSchedule_driver",
-                column: "driver_id");
+                table: "passengerRequest",
+                column: "idTourPlan");
 
             migrationBuilder.CreateIndex(
-                name: "IX_spontanesDrive_idDrivingScheduleOverwrite",
+                name: "IX_PersonTourPlan_PassengersId",
                 schema: "uDrive",
-                table: "spontanesDrive",
-                column: "idDrivingScheduleOverwrite");
+                table: "PersonTourPlan",
+                column: "PassengersId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_tourPlan_IdDriver",
@@ -463,15 +446,11 @@ namespace uDrive.Backend.Model.Migrations
                 schema: "uDrive");
 
             migrationBuilder.DropTable(
-                name: "drivingSchedule_driver",
+                name: "passengerRequest",
                 schema: "uDrive");
 
             migrationBuilder.DropTable(
-                name: "spontanesDrive",
-                schema: "uDrive");
-
-            migrationBuilder.DropTable(
-                name: "tourPlan",
+                name: "PersonTourPlan",
                 schema: "uDrive");
 
             migrationBuilder.DropTable(
@@ -479,15 +458,11 @@ namespace uDrive.Backend.Model.Migrations
                 schema: "uDrive");
 
             migrationBuilder.DropTable(
-                name: "drivingSchedule",
+                name: "tourPlan",
                 schema: "uDrive");
 
             migrationBuilder.DropTable(
                 name: "driver",
-                schema: "uDrive");
-
-            migrationBuilder.DropTable(
-                name: "weekday",
                 schema: "uDrive");
 
             migrationBuilder.DropTable(
