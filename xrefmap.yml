@@ -3154,15 +3154,15 @@ references:
   fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController(Of TEntity)
   nameWithType: AdministratorRoleController<TEntity>
   nameWithType.vb: AdministratorRoleController(Of TEntity)
-- uid: uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext)
-  name: AdministratorRoleController(ILogger<AdministratorRoleController<TEntity>>, ApplicationDbContext)
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController-1.-ctor.html#uDrive_Backend_Api_Controllers_Abstract_AdministratorRoleController_1__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_Abstract_AdministratorRoleController__0___uDrive_Backend_Model_ApplicationDbContext_
-  commentId: M:uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext)
-  name.vb: New(ILogger(Of AdministratorRoleController(Of TEntity)), ApplicationDbContext)
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController<TEntity>.AdministratorRoleController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController<TEntity>>, uDrive.Backend.Model.ApplicationDbContext)
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController(Of TEntity).New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController(Of TEntity)), uDrive.Backend.Model.ApplicationDbContext)
-  nameWithType: AdministratorRoleController<TEntity>.AdministratorRoleController(ILogger<AdministratorRoleController<TEntity>>, ApplicationDbContext)
-  nameWithType.vb: AdministratorRoleController(Of TEntity).New(ILogger(Of AdministratorRoleController(Of TEntity)), ApplicationDbContext)
+- uid: uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name: AdministratorRoleController(ILogger<AdministratorRoleController<TEntity>>, ApplicationDbContext, IAuthService)
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController-1.-ctor.html#uDrive_Backend_Api_Controllers_Abstract_AdministratorRoleController_1__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_Abstract_AdministratorRoleController__0___uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_
+  commentId: M:uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name.vb: New(ILogger(Of AdministratorRoleController(Of TEntity)), ApplicationDbContext, IAuthService)
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController<TEntity>.AdministratorRoleController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController<TEntity>>, uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController(Of TEntity).New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController(Of TEntity)), uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  nameWithType: AdministratorRoleController<TEntity>.AdministratorRoleController(ILogger<AdministratorRoleController<TEntity>>, ApplicationDbContext, IAuthService)
+  nameWithType.vb: AdministratorRoleController(Of TEntity).New(ILogger(Of AdministratorRoleController(Of TEntity)), ApplicationDbContext, IAuthService)
 - uid: uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController`1.#ctor*
   name: AdministratorRoleController
   href: api/uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController-1.-ctor.html
@@ -3181,15 +3181,15 @@ references:
   fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity)
   nameWithType: AnonymousController<TEntity>
   nameWithType.vb: AnonymousController(Of TEntity)
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.AnonymousController{`0}},uDrive.Backend.Model.ApplicationDbContext)
-  name: AnonymousController(ILogger<AnonymousController<TEntity>>, ApplicationDbContext)
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.-ctor.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_Abstract_AnonymousController__0___uDrive_Backend_Model_ApplicationDbContext_
-  commentId: M:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.AnonymousController{`0}},uDrive.Backend.Model.ApplicationDbContext)
-  name.vb: New(ILogger(Of AnonymousController(Of TEntity)), ApplicationDbContext)
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>.AnonymousController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>>, uDrive.Backend.Model.ApplicationDbContext)
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity).New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity)), uDrive.Backend.Model.ApplicationDbContext)
-  nameWithType: AnonymousController<TEntity>.AnonymousController(ILogger<AnonymousController<TEntity>>, ApplicationDbContext)
-  nameWithType.vb: AnonymousController(Of TEntity).New(ILogger(Of AnonymousController(Of TEntity)), ApplicationDbContext)
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.AnonymousController{`0}},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name: AnonymousController(ILogger<AnonymousController<TEntity>>, ApplicationDbContext, IAuthService)
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.-ctor.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_Abstract_AnonymousController__0___uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_
+  commentId: M:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.AnonymousController{`0}},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name.vb: New(ILogger(Of AnonymousController(Of TEntity)), ApplicationDbContext, IAuthService)
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>.AnonymousController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>>, uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity).New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity)), uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  nameWithType: AnonymousController<TEntity>.AnonymousController(ILogger<AnonymousController<TEntity>>, ApplicationDbContext, IAuthService)
+  nameWithType.vb: AnonymousController(Of TEntity).New(ILogger(Of AnonymousController(Of TEntity)), ApplicationDbContext, IAuthService)
 - uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.#ctor*
   name: AnonymousController
   href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.-ctor.html
@@ -3281,6 +3281,14 @@ references:
   fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity).PostAsync
   nameWithType: AnonymousController<TEntity>.PostAsync
   nameWithType.vb: AnonymousController(Of TEntity).PostAsync
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1._authService
+  name: _authService
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1._authService.html
+  commentId: F:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1._authService
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>._authService
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity)._authService
+  nameWithType: AnonymousController<TEntity>._authService
+  nameWithType.vb: AnonymousController(Of TEntity)._authService
 - uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1._context
   name: _context
   href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1._context.html
@@ -3306,15 +3314,15 @@ references:
   fullName.vb: uDrive.Backend.Api.Controllers.Abstract.DriverRoleController(Of TEntity)
   nameWithType: DriverRoleController<TEntity>
   nameWithType.vb: DriverRoleController(Of TEntity)
-- uid: uDrive.Backend.Api.Controllers.Abstract.DriverRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.DriverRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext)
-  name: DriverRoleController(ILogger<DriverRoleController<TEntity>>, ApplicationDbContext)
-  href: api/uDrive.Backend.Api.Controllers.Abstract.DriverRoleController-1.-ctor.html#uDrive_Backend_Api_Controllers_Abstract_DriverRoleController_1__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_Abstract_DriverRoleController__0___uDrive_Backend_Model_ApplicationDbContext_
-  commentId: M:uDrive.Backend.Api.Controllers.Abstract.DriverRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.DriverRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext)
-  name.vb: New(ILogger(Of DriverRoleController(Of TEntity)), ApplicationDbContext)
-  fullName: uDrive.Backend.Api.Controllers.Abstract.DriverRoleController<TEntity>.DriverRoleController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.Abstract.DriverRoleController<TEntity>>, uDrive.Backend.Model.ApplicationDbContext)
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.DriverRoleController(Of TEntity).New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.Abstract.DriverRoleController(Of TEntity)), uDrive.Backend.Model.ApplicationDbContext)
-  nameWithType: DriverRoleController<TEntity>.DriverRoleController(ILogger<DriverRoleController<TEntity>>, ApplicationDbContext)
-  nameWithType.vb: DriverRoleController(Of TEntity).New(ILogger(Of DriverRoleController(Of TEntity)), ApplicationDbContext)
+- uid: uDrive.Backend.Api.Controllers.Abstract.DriverRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.DriverRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name: DriverRoleController(ILogger<DriverRoleController<TEntity>>, ApplicationDbContext, IAuthService)
+  href: api/uDrive.Backend.Api.Controllers.Abstract.DriverRoleController-1.-ctor.html#uDrive_Backend_Api_Controllers_Abstract_DriverRoleController_1__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_Abstract_DriverRoleController__0___uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_
+  commentId: M:uDrive.Backend.Api.Controllers.Abstract.DriverRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.DriverRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name.vb: New(ILogger(Of DriverRoleController(Of TEntity)), ApplicationDbContext, IAuthService)
+  fullName: uDrive.Backend.Api.Controllers.Abstract.DriverRoleController<TEntity>.DriverRoleController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.Abstract.DriverRoleController<TEntity>>, uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.DriverRoleController(Of TEntity).New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.Abstract.DriverRoleController(Of TEntity)), uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  nameWithType: DriverRoleController<TEntity>.DriverRoleController(ILogger<DriverRoleController<TEntity>>, ApplicationDbContext, IAuthService)
+  nameWithType.vb: DriverRoleController(Of TEntity).New(ILogger(Of DriverRoleController(Of TEntity)), ApplicationDbContext, IAuthService)
 - uid: uDrive.Backend.Api.Controllers.Abstract.DriverRoleController`1.#ctor*
   name: DriverRoleController
   href: api/uDrive.Backend.Api.Controllers.Abstract.DriverRoleController-1.-ctor.html
@@ -3333,15 +3341,15 @@ references:
   fullName.vb: uDrive.Backend.Api.Controllers.Abstract.PersonRoleController(Of TEntity)
   nameWithType: PersonRoleController<TEntity>
   nameWithType.vb: PersonRoleController(Of TEntity)
-- uid: uDrive.Backend.Api.Controllers.Abstract.PersonRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.PersonRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext)
-  name: PersonRoleController(ILogger<PersonRoleController<TEntity>>, ApplicationDbContext)
-  href: api/uDrive.Backend.Api.Controllers.Abstract.PersonRoleController-1.-ctor.html#uDrive_Backend_Api_Controllers_Abstract_PersonRoleController_1__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_Abstract_PersonRoleController__0___uDrive_Backend_Model_ApplicationDbContext_
-  commentId: M:uDrive.Backend.Api.Controllers.Abstract.PersonRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.PersonRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext)
-  name.vb: New(ILogger(Of PersonRoleController(Of TEntity)), ApplicationDbContext)
-  fullName: uDrive.Backend.Api.Controllers.Abstract.PersonRoleController<TEntity>.PersonRoleController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.Abstract.PersonRoleController<TEntity>>, uDrive.Backend.Model.ApplicationDbContext)
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.PersonRoleController(Of TEntity).New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.Abstract.PersonRoleController(Of TEntity)), uDrive.Backend.Model.ApplicationDbContext)
-  nameWithType: PersonRoleController<TEntity>.PersonRoleController(ILogger<PersonRoleController<TEntity>>, ApplicationDbContext)
-  nameWithType.vb: PersonRoleController(Of TEntity).New(ILogger(Of PersonRoleController(Of TEntity)), ApplicationDbContext)
+- uid: uDrive.Backend.Api.Controllers.Abstract.PersonRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.PersonRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name: PersonRoleController(ILogger<PersonRoleController<TEntity>>, ApplicationDbContext, IAuthService)
+  href: api/uDrive.Backend.Api.Controllers.Abstract.PersonRoleController-1.-ctor.html#uDrive_Backend_Api_Controllers_Abstract_PersonRoleController_1__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_Abstract_PersonRoleController__0___uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_
+  commentId: M:uDrive.Backend.Api.Controllers.Abstract.PersonRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.PersonRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name.vb: New(ILogger(Of PersonRoleController(Of TEntity)), ApplicationDbContext, IAuthService)
+  fullName: uDrive.Backend.Api.Controllers.Abstract.PersonRoleController<TEntity>.PersonRoleController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.Abstract.PersonRoleController<TEntity>>, uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.PersonRoleController(Of TEntity).New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.Abstract.PersonRoleController(Of TEntity)), uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  nameWithType: PersonRoleController<TEntity>.PersonRoleController(ILogger<PersonRoleController<TEntity>>, ApplicationDbContext, IAuthService)
+  nameWithType.vb: PersonRoleController(Of TEntity).New(ILogger(Of PersonRoleController(Of TEntity)), ApplicationDbContext, IAuthService)
 - uid: uDrive.Backend.Api.Controllers.Abstract.PersonRoleController`1.#ctor*
   name: PersonRoleController
   href: api/uDrive.Backend.Api.Controllers.Abstract.PersonRoleController-1.-ctor.html
@@ -3360,15 +3368,15 @@ references:
   fullName.vb: uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController(Of TEntity)
   nameWithType: SecretaryRoleController<TEntity>
   nameWithType.vb: SecretaryRoleController(Of TEntity)
-- uid: uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext)
-  name: SecretaryRoleController(ILogger<SecretaryRoleController<TEntity>>, ApplicationDbContext)
-  href: api/uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController-1.-ctor.html#uDrive_Backend_Api_Controllers_Abstract_SecretaryRoleController_1__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_Abstract_SecretaryRoleController__0___uDrive_Backend_Model_ApplicationDbContext_
-  commentId: M:uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext)
-  name.vb: New(ILogger(Of SecretaryRoleController(Of TEntity)), ApplicationDbContext)
-  fullName: uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController<TEntity>.SecretaryRoleController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController<TEntity>>, uDrive.Backend.Model.ApplicationDbContext)
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController(Of TEntity).New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController(Of TEntity)), uDrive.Backend.Model.ApplicationDbContext)
-  nameWithType: SecretaryRoleController<TEntity>.SecretaryRoleController(ILogger<SecretaryRoleController<TEntity>>, ApplicationDbContext)
-  nameWithType.vb: SecretaryRoleController(Of TEntity).New(ILogger(Of SecretaryRoleController(Of TEntity)), ApplicationDbContext)
+- uid: uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name: SecretaryRoleController(ILogger<SecretaryRoleController<TEntity>>, ApplicationDbContext, IAuthService)
+  href: api/uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController-1.-ctor.html#uDrive_Backend_Api_Controllers_Abstract_SecretaryRoleController_1__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_Abstract_SecretaryRoleController__0___uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_
+  commentId: M:uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name.vb: New(ILogger(Of SecretaryRoleController(Of TEntity)), ApplicationDbContext, IAuthService)
+  fullName: uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController<TEntity>.SecretaryRoleController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController<TEntity>>, uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController(Of TEntity).New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController(Of TEntity)), uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  nameWithType: SecretaryRoleController<TEntity>.SecretaryRoleController(ILogger<SecretaryRoleController<TEntity>>, ApplicationDbContext, IAuthService)
+  nameWithType.vb: SecretaryRoleController(Of TEntity).New(ILogger(Of SecretaryRoleController(Of TEntity)), ApplicationDbContext, IAuthService)
 - uid: uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController`1.#ctor*
   name: SecretaryRoleController
   href: api/uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController-1.-ctor.html
@@ -3378,57 +3386,6 @@ references:
   fullName.vb: uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController(Of TEntity).New
   nameWithType: SecretaryRoleController<TEntity>.SecretaryRoleController
   nameWithType.vb: SecretaryRoleController(Of TEntity).New
-- uid: uDrive.Backend.Api.Controllers.DistanceController
-  name: DistanceController
-  href: api/uDrive.Backend.Api.Controllers.DistanceController.html
-  commentId: T:uDrive.Backend.Api.Controllers.DistanceController
-  fullName: uDrive.Backend.Api.Controllers.DistanceController
-  nameWithType: DistanceController
-- uid: uDrive.Backend.Api.Controllers.DistanceController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.DistanceController},uDrive.Backend.Model.ApplicationDbContext)
-  name: DistanceController(ILogger<DistanceController>, ApplicationDbContext)
-  href: api/uDrive.Backend.Api.Controllers.DistanceController.-ctor.html#uDrive_Backend_Api_Controllers_DistanceController__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_DistanceController__uDrive_Backend_Model_ApplicationDbContext_
-  commentId: M:uDrive.Backend.Api.Controllers.DistanceController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.DistanceController},uDrive.Backend.Model.ApplicationDbContext)
-  name.vb: New(ILogger(Of DistanceController), ApplicationDbContext)
-  fullName: uDrive.Backend.Api.Controllers.DistanceController.DistanceController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.DistanceController>, uDrive.Backend.Model.ApplicationDbContext)
-  fullName.vb: uDrive.Backend.Api.Controllers.DistanceController.New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.DistanceController), uDrive.Backend.Model.ApplicationDbContext)
-  nameWithType: DistanceController.DistanceController(ILogger<DistanceController>, ApplicationDbContext)
-  nameWithType.vb: DistanceController.New(ILogger(Of DistanceController), ApplicationDbContext)
-- uid: uDrive.Backend.Api.Controllers.DistanceController.#ctor*
-  name: DistanceController
-  href: api/uDrive.Backend.Api.Controllers.DistanceController.-ctor.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.DistanceController.#ctor
-  name.vb: New
-  fullName: uDrive.Backend.Api.Controllers.DistanceController.DistanceController
-  fullName.vb: uDrive.Backend.Api.Controllers.DistanceController.New
-  nameWithType: DistanceController.DistanceController
-  nameWithType.vb: DistanceController.New
-- uid: uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude(System.String)
-  name: ConvertToLongitudeAndLattiude(string)
-  href: api/uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude.html#uDrive_Backend_Api_Controllers_DistanceController_ConvertToLongitudeAndLattiude_System_String_
-  commentId: M:uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude(System.String)
-  name.vb: ConvertToLongitudeAndLattiude(String)
-  fullName: uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude(string)
-  fullName.vb: uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude(String)
-  nameWithType: DistanceController.ConvertToLongitudeAndLattiude(string)
-  nameWithType.vb: DistanceController.ConvertToLongitudeAndLattiude(String)
-- uid: uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude*
-  name: ConvertToLongitudeAndLattiude
-  href: api/uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude
-  fullName: uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude
-  nameWithType: DistanceController.ConvertToLongitudeAndLattiude
-- uid: uDrive.Backend.Api.Controllers.DistanceController._context
-  name: _context
-  href: api/uDrive.Backend.Api.Controllers.DistanceController._context.html
-  commentId: F:uDrive.Backend.Api.Controllers.DistanceController._context
-  fullName: uDrive.Backend.Api.Controllers.DistanceController._context
-  nameWithType: DistanceController._context
-- uid: uDrive.Backend.Api.Controllers.DistanceController._logger
-  name: _logger
-  href: api/uDrive.Backend.Api.Controllers.DistanceController._logger.html
-  commentId: F:uDrive.Backend.Api.Controllers.DistanceController._logger
-  fullName: uDrive.Backend.Api.Controllers.DistanceController._logger
-  nameWithType: DistanceController._logger
 - uid: uDrive.Backend.Api.Controllers.DriversController
   name: DriversController
   href: api/uDrive.Backend.Api.Controllers.DriversController.html
@@ -3486,15 +3443,15 @@ references:
   commentId: T:uDrive.Backend.Api.Controllers.DrivingLicencesController
   fullName: uDrive.Backend.Api.Controllers.DrivingLicencesController
   nameWithType: DrivingLicencesController
-- uid: uDrive.Backend.Api.Controllers.DrivingLicencesController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.DrivingLicencesController},uDrive.Backend.Model.ApplicationDbContext)
-  name: DrivingLicencesController(ILogger<DrivingLicencesController>, ApplicationDbContext)
-  href: api/uDrive.Backend.Api.Controllers.DrivingLicencesController.-ctor.html#uDrive_Backend_Api_Controllers_DrivingLicencesController__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_DrivingLicencesController__uDrive_Backend_Model_ApplicationDbContext_
-  commentId: M:uDrive.Backend.Api.Controllers.DrivingLicencesController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.DrivingLicencesController},uDrive.Backend.Model.ApplicationDbContext)
-  name.vb: New(ILogger(Of DrivingLicencesController), ApplicationDbContext)
-  fullName: uDrive.Backend.Api.Controllers.DrivingLicencesController.DrivingLicencesController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.DrivingLicencesController>, uDrive.Backend.Model.ApplicationDbContext)
-  fullName.vb: uDrive.Backend.Api.Controllers.DrivingLicencesController.New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.DrivingLicencesController), uDrive.Backend.Model.ApplicationDbContext)
-  nameWithType: DrivingLicencesController.DrivingLicencesController(ILogger<DrivingLicencesController>, ApplicationDbContext)
-  nameWithType.vb: DrivingLicencesController.New(ILogger(Of DrivingLicencesController), ApplicationDbContext)
+- uid: uDrive.Backend.Api.Controllers.DrivingLicencesController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.DrivingLicencesController},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name: DrivingLicencesController(ILogger<DrivingLicencesController>, ApplicationDbContext, IAuthService)
+  href: api/uDrive.Backend.Api.Controllers.DrivingLicencesController.-ctor.html#uDrive_Backend_Api_Controllers_DrivingLicencesController__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_DrivingLicencesController__uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_
+  commentId: M:uDrive.Backend.Api.Controllers.DrivingLicencesController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.DrivingLicencesController},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name.vb: New(ILogger(Of DrivingLicencesController), ApplicationDbContext, IAuthService)
+  fullName: uDrive.Backend.Api.Controllers.DrivingLicencesController.DrivingLicencesController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.DrivingLicencesController>, uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  fullName.vb: uDrive.Backend.Api.Controllers.DrivingLicencesController.New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.DrivingLicencesController), uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  nameWithType: DrivingLicencesController.DrivingLicencesController(ILogger<DrivingLicencesController>, ApplicationDbContext, IAuthService)
+  nameWithType.vb: DrivingLicencesController.New(ILogger(Of DrivingLicencesController), ApplicationDbContext, IAuthService)
 - uid: uDrive.Backend.Api.Controllers.DrivingLicencesController.#ctor*
   name: DrivingLicencesController
   href: api/uDrive.Backend.Api.Controllers.DrivingLicencesController.-ctor.html
@@ -3504,12 +3461,6 @@ references:
   fullName.vb: uDrive.Backend.Api.Controllers.DrivingLicencesController.New
   nameWithType: DrivingLicencesController.DrivingLicencesController
   nameWithType.vb: DrivingLicencesController.New
-- uid: uDrive.Backend.Api.Controllers.DrivingLicencesController._context
-  name: _context
-  href: api/uDrive.Backend.Api.Controllers.DrivingLicencesController._context.html
-  commentId: F:uDrive.Backend.Api.Controllers.DrivingLicencesController._context
-  fullName: uDrive.Backend.Api.Controllers.DrivingLicencesController._context
-  nameWithType: DrivingLicencesController._context
 - uid: uDrive.Backend.Api.Controllers.LoginController
   name: LoginController
   href: api/uDrive.Backend.Api.Controllers.LoginController.html
@@ -3558,6 +3509,57 @@ references:
   commentId: F:uDrive.Backend.Api.Controllers.LoginController._logger
   fullName: uDrive.Backend.Api.Controllers.LoginController._logger
   nameWithType: LoginController._logger
+- uid: uDrive.Backend.Api.Controllers.PassengerRequestsController
+  name: PassengerRequestsController
+  href: api/uDrive.Backend.Api.Controllers.PassengerRequestsController.html
+  commentId: T:uDrive.Backend.Api.Controllers.PassengerRequestsController
+  fullName: uDrive.Backend.Api.Controllers.PassengerRequestsController
+  nameWithType: PassengerRequestsController
+- uid: uDrive.Backend.Api.Controllers.PassengerRequestsController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.PassengerRequestsController},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name: PassengerRequestsController(ILogger<PassengerRequestsController>, ApplicationDbContext, IAuthService)
+  href: api/uDrive.Backend.Api.Controllers.PassengerRequestsController.-ctor.html#uDrive_Backend_Api_Controllers_PassengerRequestsController__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_PassengerRequestsController__uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_
+  commentId: M:uDrive.Backend.Api.Controllers.PassengerRequestsController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.PassengerRequestsController},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name.vb: New(ILogger(Of PassengerRequestsController), ApplicationDbContext, IAuthService)
+  fullName: uDrive.Backend.Api.Controllers.PassengerRequestsController.PassengerRequestsController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.PassengerRequestsController>, uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  fullName.vb: uDrive.Backend.Api.Controllers.PassengerRequestsController.New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.PassengerRequestsController), uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  nameWithType: PassengerRequestsController.PassengerRequestsController(ILogger<PassengerRequestsController>, ApplicationDbContext, IAuthService)
+  nameWithType.vb: PassengerRequestsController.New(ILogger(Of PassengerRequestsController), ApplicationDbContext, IAuthService)
+- uid: uDrive.Backend.Api.Controllers.PassengerRequestsController.#ctor*
+  name: PassengerRequestsController
+  href: api/uDrive.Backend.Api.Controllers.PassengerRequestsController.-ctor.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.PassengerRequestsController.#ctor
+  name.vb: New
+  fullName: uDrive.Backend.Api.Controllers.PassengerRequestsController.PassengerRequestsController
+  fullName.vb: uDrive.Backend.Api.Controllers.PassengerRequestsController.New
+  nameWithType: PassengerRequestsController.PassengerRequestsController
+  nameWithType.vb: PassengerRequestsController.New
+- uid: uDrive.Backend.Api.Controllers.PassengerRequestsController.GetPassengerRequestsAsync(System.String)
+  name: GetPassengerRequestsAsync(string)
+  href: api/uDrive.Backend.Api.Controllers.PassengerRequestsController.GetPassengerRequestsAsync.html#uDrive_Backend_Api_Controllers_PassengerRequestsController_GetPassengerRequestsAsync_System_String_
+  commentId: M:uDrive.Backend.Api.Controllers.PassengerRequestsController.GetPassengerRequestsAsync(System.String)
+  name.vb: GetPassengerRequestsAsync(String)
+  fullName: uDrive.Backend.Api.Controllers.PassengerRequestsController.GetPassengerRequestsAsync(string)
+  fullName.vb: uDrive.Backend.Api.Controllers.PassengerRequestsController.GetPassengerRequestsAsync(String)
+  nameWithType: PassengerRequestsController.GetPassengerRequestsAsync(string)
+  nameWithType.vb: PassengerRequestsController.GetPassengerRequestsAsync(String)
+- uid: uDrive.Backend.Api.Controllers.PassengerRequestsController.GetPassengerRequestsAsync*
+  name: GetPassengerRequestsAsync
+  href: api/uDrive.Backend.Api.Controllers.PassengerRequestsController.GetPassengerRequestsAsync.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.PassengerRequestsController.GetPassengerRequestsAsync
+  fullName: uDrive.Backend.Api.Controllers.PassengerRequestsController.GetPassengerRequestsAsync
+  nameWithType: PassengerRequestsController.GetPassengerRequestsAsync
+- uid: uDrive.Backend.Api.Controllers.PassengerRequestsController._authService
+  name: _authService
+  href: api/uDrive.Backend.Api.Controllers.PassengerRequestsController._authService.html
+  commentId: F:uDrive.Backend.Api.Controllers.PassengerRequestsController._authService
+  fullName: uDrive.Backend.Api.Controllers.PassengerRequestsController._authService
+  nameWithType: PassengerRequestsController._authService
+- uid: uDrive.Backend.Api.Controllers.PassengerRequestsController._context
+  name: _context
+  href: api/uDrive.Backend.Api.Controllers.PassengerRequestsController._context.html
+  commentId: F:uDrive.Backend.Api.Controllers.PassengerRequestsController._context
+  fullName: uDrive.Backend.Api.Controllers.PassengerRequestsController._context
+  nameWithType: PassengerRequestsController._context
 - uid: uDrive.Backend.Api.Controllers.RegisterController
   name: RegisterController
   href: api/uDrive.Backend.Api.Controllers.RegisterController.html
@@ -3612,15 +3614,15 @@ references:
   commentId: T:uDrive.Backend.Api.Controllers.ScheduleTourController
   fullName: uDrive.Backend.Api.Controllers.ScheduleTourController
   nameWithType: ScheduleTourController
-- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.ScheduleTourController},uDrive.Backend.Model.ApplicationDbContext)
-  name: ScheduleTourController(ILogger<ScheduleTourController>, ApplicationDbContext)
-  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.-ctor.html#uDrive_Backend_Api_Controllers_ScheduleTourController__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_ScheduleTourController__uDrive_Backend_Model_ApplicationDbContext_
-  commentId: M:uDrive.Backend.Api.Controllers.ScheduleTourController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.ScheduleTourController},uDrive.Backend.Model.ApplicationDbContext)
-  name.vb: New(ILogger(Of ScheduleTourController), ApplicationDbContext)
-  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.ScheduleTourController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.ScheduleTourController>, uDrive.Backend.Model.ApplicationDbContext)
-  fullName.vb: uDrive.Backend.Api.Controllers.ScheduleTourController.New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.ScheduleTourController), uDrive.Backend.Model.ApplicationDbContext)
-  nameWithType: ScheduleTourController.ScheduleTourController(ILogger<ScheduleTourController>, ApplicationDbContext)
-  nameWithType.vb: ScheduleTourController.New(ILogger(Of ScheduleTourController), ApplicationDbContext)
+- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.ScheduleTourController},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name: ScheduleTourController(ILogger<ScheduleTourController>, ApplicationDbContext, IAuthService)
+  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.-ctor.html#uDrive_Backend_Api_Controllers_ScheduleTourController__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_ScheduleTourController__uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_
+  commentId: M:uDrive.Backend.Api.Controllers.ScheduleTourController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.ScheduleTourController},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name.vb: New(ILogger(Of ScheduleTourController), ApplicationDbContext, IAuthService)
+  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.ScheduleTourController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.ScheduleTourController>, uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  fullName.vb: uDrive.Backend.Api.Controllers.ScheduleTourController.New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.ScheduleTourController), uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  nameWithType: ScheduleTourController.ScheduleTourController(ILogger<ScheduleTourController>, ApplicationDbContext, IAuthService)
+  nameWithType.vb: ScheduleTourController.New(ILogger(Of ScheduleTourController), ApplicationDbContext, IAuthService)
 - uid: uDrive.Backend.Api.Controllers.ScheduleTourController.#ctor*
   name: ScheduleTourController
   href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.-ctor.html
@@ -3630,36 +3632,6 @@ references:
   fullName.vb: uDrive.Backend.Api.Controllers.ScheduleTourController.New
   nameWithType: ScheduleTourController.ScheduleTourController
   nameWithType.vb: ScheduleTourController.New
-- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger(uDrive.Backend.Model.Entities.TourPlan,System.String)
-  name: AssignForTourAsPassenger(TourPlan, string)
-  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger.html#uDrive_Backend_Api_Controllers_ScheduleTourController_AssignForTourAsPassenger_uDrive_Backend_Model_Entities_TourPlan_System_String_
-  commentId: M:uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger(uDrive.Backend.Model.Entities.TourPlan,System.String)
-  name.vb: AssignForTourAsPassenger(TourPlan, String)
-  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger(uDrive.Backend.Model.Entities.TourPlan, string)
-  fullName.vb: uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger(uDrive.Backend.Model.Entities.TourPlan, String)
-  nameWithType: ScheduleTourController.AssignForTourAsPassenger(TourPlan, string)
-  nameWithType.vb: ScheduleTourController.AssignForTourAsPassenger(TourPlan, String)
-- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger*
-  name: AssignForTourAsPassenger
-  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger
-  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger
-  nameWithType: ScheduleTourController.AssignForTourAsPassenger
-- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude(System.String)
-  name: ConvertToLongitudeAndLatitude(string)
-  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude.html#uDrive_Backend_Api_Controllers_ScheduleTourController_ConvertToLongitudeAndLatitude_System_String_
-  commentId: M:uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude(System.String)
-  name.vb: ConvertToLongitudeAndLatitude(String)
-  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude(string)
-  fullName.vb: uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude(String)
-  nameWithType: ScheduleTourController.ConvertToLongitudeAndLatitude(string)
-  nameWithType.vb: ScheduleTourController.ConvertToLongitudeAndLatitude(String)
-- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude*
-  name: ConvertToLongitudeAndLatitude
-  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude
-  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude
-  nameWithType: ScheduleTourController.ConvertToLongitudeAndLatitude
 - uid: uDrive.Backend.Api.Controllers.ScheduleTourController.FilterDriversBy5kmRadiusAsync(uDrive.Backend.Model.DTO.GeocoordinatesDTO)
   name: FilterDriversBy5kmRadiusAsync(GeocoordinatesDTO)
   href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.FilterDriversBy5kmRadiusAsync.html#uDrive_Backend_Api_Controllers_ScheduleTourController_FilterDriversBy5kmRadiusAsync_uDrive_Backend_Model_DTO_GeocoordinatesDTO_
@@ -3717,15 +3689,15 @@ references:
   commentId: T:uDrive.Backend.Api.Controllers.TourPlansController
   fullName: uDrive.Backend.Api.Controllers.TourPlansController
   nameWithType: TourPlansController
-- uid: uDrive.Backend.Api.Controllers.TourPlansController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.TourPlansController},uDrive.Backend.Model.ApplicationDbContext)
-  name: TourPlansController(ILogger<TourPlansController>, ApplicationDbContext)
-  href: api/uDrive.Backend.Api.Controllers.TourPlansController.-ctor.html#uDrive_Backend_Api_Controllers_TourPlansController__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_TourPlansController__uDrive_Backend_Model_ApplicationDbContext_
-  commentId: M:uDrive.Backend.Api.Controllers.TourPlansController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.TourPlansController},uDrive.Backend.Model.ApplicationDbContext)
-  name.vb: New(ILogger(Of TourPlansController), ApplicationDbContext)
-  fullName: uDrive.Backend.Api.Controllers.TourPlansController.TourPlansController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.TourPlansController>, uDrive.Backend.Model.ApplicationDbContext)
-  fullName.vb: uDrive.Backend.Api.Controllers.TourPlansController.New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.TourPlansController), uDrive.Backend.Model.ApplicationDbContext)
-  nameWithType: TourPlansController.TourPlansController(ILogger<TourPlansController>, ApplicationDbContext)
-  nameWithType.vb: TourPlansController.New(ILogger(Of TourPlansController), ApplicationDbContext)
+- uid: uDrive.Backend.Api.Controllers.TourPlansController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.TourPlansController},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name: TourPlansController(ILogger<TourPlansController>, ApplicationDbContext, IAuthService)
+  href: api/uDrive.Backend.Api.Controllers.TourPlansController.-ctor.html#uDrive_Backend_Api_Controllers_TourPlansController__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_TourPlansController__uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_
+  commentId: M:uDrive.Backend.Api.Controllers.TourPlansController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.TourPlansController},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name.vb: New(ILogger(Of TourPlansController), ApplicationDbContext, IAuthService)
+  fullName: uDrive.Backend.Api.Controllers.TourPlansController.TourPlansController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.TourPlansController>, uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  fullName.vb: uDrive.Backend.Api.Controllers.TourPlansController.New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.TourPlansController), uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  nameWithType: TourPlansController.TourPlansController(ILogger<TourPlansController>, ApplicationDbContext, IAuthService)
+  nameWithType.vb: TourPlansController.New(ILogger(Of TourPlansController), ApplicationDbContext, IAuthService)
 - uid: uDrive.Backend.Api.Controllers.TourPlansController.#ctor*
   name: TourPlansController
   href: api/uDrive.Backend.Api.Controllers.TourPlansController.-ctor.html
@@ -3795,6 +3767,18 @@ references:
   commentId: Overload:uDrive.Backend.Api.Services.AuthService.GenerateJWTTokenAsync
   fullName: uDrive.Backend.Api.Services.AuthService.GenerateJWTTokenAsync
   nameWithType: AuthService.GenerateJWTTokenAsync
+- uid: uDrive.Backend.Api.Services.AuthService.GetLogedInPerson(Microsoft.Extensions.Primitives.StringValues)
+  name: GetLogedInPerson(StringValues)
+  href: api/uDrive.Backend.Api.Services.AuthService.GetLogedInPerson.html#uDrive_Backend_Api_Services_AuthService_GetLogedInPerson_Microsoft_Extensions_Primitives_StringValues_
+  commentId: M:uDrive.Backend.Api.Services.AuthService.GetLogedInPerson(Microsoft.Extensions.Primitives.StringValues)
+  fullName: uDrive.Backend.Api.Services.AuthService.GetLogedInPerson(Microsoft.Extensions.Primitives.StringValues)
+  nameWithType: AuthService.GetLogedInPerson(StringValues)
+- uid: uDrive.Backend.Api.Services.AuthService.GetLogedInPerson*
+  name: GetLogedInPerson
+  href: api/uDrive.Backend.Api.Services.AuthService.GetLogedInPerson.html
+  commentId: Overload:uDrive.Backend.Api.Services.AuthService.GetLogedInPerson
+  fullName: uDrive.Backend.Api.Services.AuthService.GetLogedInPerson
+  nameWithType: AuthService.GetLogedInPerson
 - uid: uDrive.Backend.Api.Services.AuthService.LoginAsync(uDrive.Backend.Model.DTO.SignInUserDTO)
   name: LoginAsync(SignInUserDTO)
   href: api/uDrive.Backend.Api.Services.AuthService.LoginAsync.html#uDrive_Backend_Api_Services_AuthService_LoginAsync_uDrive_Backend_Model_DTO_SignInUserDTO_
@@ -3888,6 +3872,18 @@ references:
   commentId: Overload:uDrive.Backend.Api.Services.Interfaces.IAuthService.AssignPersonToRoleAsync
   fullName: uDrive.Backend.Api.Services.Interfaces.IAuthService.AssignPersonToRoleAsync
   nameWithType: IAuthService.AssignPersonToRoleAsync
+- uid: uDrive.Backend.Api.Services.Interfaces.IAuthService.GetLogedInPerson(Microsoft.Extensions.Primitives.StringValues)
+  name: GetLogedInPerson(StringValues)
+  href: api/uDrive.Backend.Api.Services.Interfaces.IAuthService.GetLogedInPerson.html#uDrive_Backend_Api_Services_Interfaces_IAuthService_GetLogedInPerson_Microsoft_Extensions_Primitives_StringValues_
+  commentId: M:uDrive.Backend.Api.Services.Interfaces.IAuthService.GetLogedInPerson(Microsoft.Extensions.Primitives.StringValues)
+  fullName: uDrive.Backend.Api.Services.Interfaces.IAuthService.GetLogedInPerson(Microsoft.Extensions.Primitives.StringValues)
+  nameWithType: IAuthService.GetLogedInPerson(StringValues)
+- uid: uDrive.Backend.Api.Services.Interfaces.IAuthService.GetLogedInPerson*
+  name: GetLogedInPerson
+  href: api/uDrive.Backend.Api.Services.Interfaces.IAuthService.GetLogedInPerson.html
+  commentId: Overload:uDrive.Backend.Api.Services.Interfaces.IAuthService.GetLogedInPerson
+  fullName: uDrive.Backend.Api.Services.Interfaces.IAuthService.GetLogedInPerson
+  nameWithType: IAuthService.GetLogedInPerson
 - uid: uDrive.Backend.Api.Services.Interfaces.IAuthService.LoginAsync(uDrive.Backend.Model.DTO.SignInUserDTO)
   name: LoginAsync(SignInUserDTO)
   href: api/uDrive.Backend.Api.Services.Interfaces.IAuthService.LoginAsync.html#uDrive_Backend_Api_Services_Interfaces_IAuthService_LoginAsync_uDrive_Backend_Model_DTO_SignInUserDTO_
@@ -4002,6 +3998,18 @@ references:
   commentId: Overload:uDrive.Backend.Model.ApplicationDbContext.OnModelCreating
   fullName: uDrive.Backend.Model.ApplicationDbContext.OnModelCreating
   nameWithType: ApplicationDbContext.OnModelCreating
+- uid: uDrive.Backend.Model.ApplicationDbContext.PassengerRequests
+  name: PassengerRequests
+  href: api/uDrive.Backend.Model.ApplicationDbContext.PassengerRequests.html#uDrive_Backend_Model_ApplicationDbContext_PassengerRequests
+  commentId: P:uDrive.Backend.Model.ApplicationDbContext.PassengerRequests
+  fullName: uDrive.Backend.Model.ApplicationDbContext.PassengerRequests
+  nameWithType: ApplicationDbContext.PassengerRequests
+- uid: uDrive.Backend.Model.ApplicationDbContext.PassengerRequests*
+  name: PassengerRequests
+  href: api/uDrive.Backend.Model.ApplicationDbContext.PassengerRequests.html
+  commentId: Overload:uDrive.Backend.Model.ApplicationDbContext.PassengerRequests
+  fullName: uDrive.Backend.Model.ApplicationDbContext.PassengerRequests
+  nameWithType: ApplicationDbContext.PassengerRequests
 - uid: uDrive.Backend.Model.ApplicationDbContext.Persons
   name: Persons
   href: api/uDrive.Backend.Model.ApplicationDbContext.Persons.html#uDrive_Backend_Model_ApplicationDbContext_Persons
@@ -4128,6 +4136,54 @@ references:
   commentId: F:uDrive.Backend.Model.Configuration.DrivingLicenceEntityTypeConfiguration.TableSchema
   fullName: uDrive.Backend.Model.Configuration.DrivingLicenceEntityTypeConfiguration.TableSchema
   nameWithType: DrivingLicenceEntityTypeConfiguration.TableSchema
+- uid: uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration
+  name: PassengerRequestEntityTypeConfiguration
+  href: api/uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.html
+  commentId: T:uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration
+  fullName: uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration
+  nameWithType: PassengerRequestEntityTypeConfiguration
+- uid: uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{uDrive.Backend.Model.Entities.PassengerRequest})
+  name: Configure(EntityTypeBuilder<PassengerRequest>)
+  href: api/uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.Configure.html#uDrive_Backend_Model_Configuration_PassengerRequestEntityTypeConfiguration_Configure_Microsoft_EntityFrameworkCore_Metadata_Builders_EntityTypeBuilder_uDrive_Backend_Model_Entities_PassengerRequest__
+  commentId: M:uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{uDrive.Backend.Model.Entities.PassengerRequest})
+  name.vb: Configure(EntityTypeBuilder(Of PassengerRequest))
+  fullName: uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<uDrive.Backend.Model.Entities.PassengerRequest>)
+  fullName.vb: uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of uDrive.Backend.Model.Entities.PassengerRequest))
+  nameWithType: PassengerRequestEntityTypeConfiguration.Configure(EntityTypeBuilder<PassengerRequest>)
+  nameWithType.vb: PassengerRequestEntityTypeConfiguration.Configure(EntityTypeBuilder(Of PassengerRequest))
+- uid: uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.Configure*
+  name: Configure
+  href: api/uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.Configure.html
+  commentId: Overload:uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.Configure
+  fullName: uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.Configure
+  nameWithType: PassengerRequestEntityTypeConfiguration.Configure
+- uid: uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.ConfigureEntityProperties(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{uDrive.Backend.Model.Entities.PassengerRequest})
+  name: ConfigureEntityProperties(EntityTypeBuilder<PassengerRequest>)
+  href: api/uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.ConfigureEntityProperties.html#uDrive_Backend_Model_Configuration_PassengerRequestEntityTypeConfiguration_ConfigureEntityProperties_Microsoft_EntityFrameworkCore_Metadata_Builders_EntityTypeBuilder_uDrive_Backend_Model_Entities_PassengerRequest__
+  commentId: M:uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.ConfigureEntityProperties(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{uDrive.Backend.Model.Entities.PassengerRequest})
+  name.vb: ConfigureEntityProperties(EntityTypeBuilder(Of PassengerRequest))
+  fullName: uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.ConfigureEntityProperties(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<uDrive.Backend.Model.Entities.PassengerRequest>)
+  fullName.vb: uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.ConfigureEntityProperties(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of uDrive.Backend.Model.Entities.PassengerRequest))
+  nameWithType: PassengerRequestEntityTypeConfiguration.ConfigureEntityProperties(EntityTypeBuilder<PassengerRequest>)
+  nameWithType.vb: PassengerRequestEntityTypeConfiguration.ConfigureEntityProperties(EntityTypeBuilder(Of PassengerRequest))
+- uid: uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.ConfigureEntityProperties*
+  name: ConfigureEntityProperties
+  href: api/uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.ConfigureEntityProperties.html
+  commentId: Overload:uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.ConfigureEntityProperties
+  fullName: uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.ConfigureEntityProperties
+  nameWithType: PassengerRequestEntityTypeConfiguration.ConfigureEntityProperties
+- uid: uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.Table
+  name: Table
+  href: api/uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.Table.html
+  commentId: F:uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.Table
+  fullName: uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.Table
+  nameWithType: PassengerRequestEntityTypeConfiguration.Table
+- uid: uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.TableSchema
+  name: TableSchema
+  href: api/uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.TableSchema.html
+  commentId: F:uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.TableSchema
+  fullName: uDrive.Backend.Model.Configuration.PassengerRequestEntityTypeConfiguration.TableSchema
+  nameWithType: PassengerRequestEntityTypeConfiguration.TableSchema
 - uid: uDrive.Backend.Model.Configuration.TourPlanEntityTypeConfiguration
   name: TourPlanEntityTypeConfiguration
   href: api/uDrive.Backend.Model.Configuration.TourPlanEntityTypeConfiguration.html
@@ -4212,30 +4268,18 @@ references:
   commentId: Overload:uDrive.Backend.Model.DTO.DriversInRangeDTO.Driver
   fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.Driver
   nameWithType: DriversInRangeDTO.Driver
-- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname
-  name: Firstname
-  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname.html#uDrive_Backend_Model_DTO_DriversInRangeDTO_Firstname
-  commentId: P:uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname
-  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname
-  nameWithType: DriversInRangeDTO.Firstname
-- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname*
-  name: Firstname
-  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname.html
-  commentId: Overload:uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname
-  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname
-  nameWithType: DriversInRangeDTO.Firstname
-- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname
-  name: Lastname
-  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname.html#uDrive_Backend_Model_DTO_DriversInRangeDTO_Lastname
-  commentId: P:uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname
-  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname
-  nameWithType: DriversInRangeDTO.Lastname
-- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname*
-  name: Lastname
-  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname.html
-  commentId: Overload:uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname
-  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname
-  nameWithType: DriversInRangeDTO.Lastname
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.Person
+  name: Person
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Person.html#uDrive_Backend_Model_DTO_DriversInRangeDTO_Person
+  commentId: P:uDrive.Backend.Model.DTO.DriversInRangeDTO.Person
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.Person
+  nameWithType: DriversInRangeDTO.Person
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.Person*
+  name: Person
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Person.html
+  commentId: Overload:uDrive.Backend.Model.DTO.DriversInRangeDTO.Person
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.Person
+  nameWithType: DriversInRangeDTO.Person
 - uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.TourPlan
   name: TourPlan
   href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.TourPlan.html#uDrive_Backend_Model_DTO_DriversInRangeDTO_TourPlan
@@ -4248,48 +4292,12 @@ references:
   commentId: Overload:uDrive.Backend.Model.DTO.DriversInRangeDTO.TourPlan
   fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.TourPlan
   nameWithType: DriversInRangeDTO.TourPlan
-- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName
-  name: UserName
-  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName.html#uDrive_Backend_Model_DTO_DriversInRangeDTO_UserName
-  commentId: P:uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName
-  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName
-  nameWithType: DriversInRangeDTO.UserName
-- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName*
-  name: UserName
-  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName.html
-  commentId: Overload:uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName
-  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName
-  nameWithType: DriversInRangeDTO.UserName
-- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson
-  name: idPerson
-  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson.html#uDrive_Backend_Model_DTO_DriversInRangeDTO_idPerson
-  commentId: P:uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson
-  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson
-  nameWithType: DriversInRangeDTO.idPerson
-- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson*
-  name: idPerson
-  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson.html
-  commentId: Overload:uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson
-  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson
-  nameWithType: DriversInRangeDTO.idPerson
 - uid: uDrive.Backend.Model.DTO.GeocoordinatesDTO
   name: GeocoordinatesDTO
   href: api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.html
   commentId: T:uDrive.Backend.Model.DTO.GeocoordinatesDTO
   fullName: uDrive.Backend.Model.DTO.GeocoordinatesDTO
   nameWithType: GeocoordinatesDTO
-- uid: uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates
-  name: Coordinates
-  href: api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates.html#uDrive_Backend_Model_DTO_GeocoordinatesDTO_Coordinates
-  commentId: P:uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates
-  fullName: uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates
-  nameWithType: GeocoordinatesDTO.Coordinates
-- uid: uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates*
-  name: Coordinates
-  href: api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates.html
-  commentId: Overload:uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates
-  fullName: uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates
-  nameWithType: GeocoordinatesDTO.Coordinates
 - uid: uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLatitude
   name: CurrentLatitude
   href: api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLatitude.html#uDrive_Backend_Model_DTO_GeocoordinatesDTO_CurrentLatitude
@@ -4497,6 +4505,18 @@ references:
   commentId: Overload:uDrive.Backend.Model.DTO.RegisterDTO.Lastname
   fullName: uDrive.Backend.Model.DTO.RegisterDTO.Lastname
   nameWithType: RegisterDTO.Lastname
+- uid: uDrive.Backend.Model.DTO.RegisterDTO.PhoneNumber
+  name: PhoneNumber
+  href: api/uDrive.Backend.Model.DTO.RegisterDTO.PhoneNumber.html#uDrive_Backend_Model_DTO_RegisterDTO_PhoneNumber
+  commentId: P:uDrive.Backend.Model.DTO.RegisterDTO.PhoneNumber
+  fullName: uDrive.Backend.Model.DTO.RegisterDTO.PhoneNumber
+  nameWithType: RegisterDTO.PhoneNumber
+- uid: uDrive.Backend.Model.DTO.RegisterDTO.PhoneNumber*
+  name: PhoneNumber
+  href: api/uDrive.Backend.Model.DTO.RegisterDTO.PhoneNumber.html
+  commentId: Overload:uDrive.Backend.Model.DTO.RegisterDTO.PhoneNumber
+  fullName: uDrive.Backend.Model.DTO.RegisterDTO.PhoneNumber
+  nameWithType: RegisterDTO.PhoneNumber
 - uid: uDrive.Backend.Model.DTO.Response`1
   name: Response<TEntity>
   href: api/uDrive.Backend.Model.DTO.Response-1.html
@@ -4776,6 +4796,108 @@ references:
   commentId: Overload:uDrive.Backend.Model.Entities.ErrorViewModel.ShowRequestId
   fullName: uDrive.Backend.Model.Entities.ErrorViewModel.ShowRequestId
   nameWithType: ErrorViewModel.ShowRequestId
+- uid: uDrive.Backend.Model.Entities.PassengerRequest
+  name: PassengerRequest
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.html
+  commentId: T:uDrive.Backend.Model.Entities.PassengerRequest
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest
+  nameWithType: PassengerRequest
+- uid: uDrive.Backend.Model.Entities.PassengerRequest.CurrentLatitude
+  name: CurrentLatitude
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.CurrentLatitude.html#uDrive_Backend_Model_Entities_PassengerRequest_CurrentLatitude
+  commentId: P:uDrive.Backend.Model.Entities.PassengerRequest.CurrentLatitude
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest.CurrentLatitude
+  nameWithType: PassengerRequest.CurrentLatitude
+- uid: uDrive.Backend.Model.Entities.PassengerRequest.CurrentLatitude*
+  name: CurrentLatitude
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.CurrentLatitude.html
+  commentId: Overload:uDrive.Backend.Model.Entities.PassengerRequest.CurrentLatitude
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest.CurrentLatitude
+  nameWithType: PassengerRequest.CurrentLatitude
+- uid: uDrive.Backend.Model.Entities.PassengerRequest.CurrentLongitude
+  name: CurrentLongitude
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.CurrentLongitude.html#uDrive_Backend_Model_Entities_PassengerRequest_CurrentLongitude
+  commentId: P:uDrive.Backend.Model.Entities.PassengerRequest.CurrentLongitude
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest.CurrentLongitude
+  nameWithType: PassengerRequest.CurrentLongitude
+- uid: uDrive.Backend.Model.Entities.PassengerRequest.CurrentLongitude*
+  name: CurrentLongitude
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.CurrentLongitude.html
+  commentId: Overload:uDrive.Backend.Model.Entities.PassengerRequest.CurrentLongitude
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest.CurrentLongitude
+  nameWithType: PassengerRequest.CurrentLongitude
+- uid: uDrive.Backend.Model.Entities.PassengerRequest.Id
+  name: Id
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.Id.html#uDrive_Backend_Model_Entities_PassengerRequest_Id
+  commentId: P:uDrive.Backend.Model.Entities.PassengerRequest.Id
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest.Id
+  nameWithType: PassengerRequest.Id
+- uid: uDrive.Backend.Model.Entities.PassengerRequest.Id*
+  name: Id
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.Id.html
+  commentId: Overload:uDrive.Backend.Model.Entities.PassengerRequest.Id
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest.Id
+  nameWithType: PassengerRequest.Id
+- uid: uDrive.Backend.Model.Entities.PassengerRequest.Message
+  name: Message
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.Message.html#uDrive_Backend_Model_Entities_PassengerRequest_Message
+  commentId: P:uDrive.Backend.Model.Entities.PassengerRequest.Message
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest.Message
+  nameWithType: PassengerRequest.Message
+- uid: uDrive.Backend.Model.Entities.PassengerRequest.Message*
+  name: Message
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.Message.html
+  commentId: Overload:uDrive.Backend.Model.Entities.PassengerRequest.Message
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest.Message
+  nameWithType: PassengerRequest.Message
+- uid: uDrive.Backend.Model.Entities.PassengerRequest.Person
+  name: Person
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.Person.html#uDrive_Backend_Model_Entities_PassengerRequest_Person
+  commentId: P:uDrive.Backend.Model.Entities.PassengerRequest.Person
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest.Person
+  nameWithType: PassengerRequest.Person
+- uid: uDrive.Backend.Model.Entities.PassengerRequest.Person*
+  name: Person
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.Person.html
+  commentId: Overload:uDrive.Backend.Model.Entities.PassengerRequest.Person
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest.Person
+  nameWithType: PassengerRequest.Person
+- uid: uDrive.Backend.Model.Entities.PassengerRequest.TourPlan
+  name: TourPlan
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.TourPlan.html#uDrive_Backend_Model_Entities_PassengerRequest_TourPlan
+  commentId: P:uDrive.Backend.Model.Entities.PassengerRequest.TourPlan
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest.TourPlan
+  nameWithType: PassengerRequest.TourPlan
+- uid: uDrive.Backend.Model.Entities.PassengerRequest.TourPlan*
+  name: TourPlan
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.TourPlan.html
+  commentId: Overload:uDrive.Backend.Model.Entities.PassengerRequest.TourPlan
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest.TourPlan
+  nameWithType: PassengerRequest.TourPlan
+- uid: uDrive.Backend.Model.Entities.PassengerRequest.idPerson
+  name: idPerson
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.idPerson.html#uDrive_Backend_Model_Entities_PassengerRequest_idPerson
+  commentId: P:uDrive.Backend.Model.Entities.PassengerRequest.idPerson
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest.idPerson
+  nameWithType: PassengerRequest.idPerson
+- uid: uDrive.Backend.Model.Entities.PassengerRequest.idPerson*
+  name: idPerson
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.idPerson.html
+  commentId: Overload:uDrive.Backend.Model.Entities.PassengerRequest.idPerson
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest.idPerson
+  nameWithType: PassengerRequest.idPerson
+- uid: uDrive.Backend.Model.Entities.PassengerRequest.idTourPlan
+  name: idTourPlan
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.idTourPlan.html#uDrive_Backend_Model_Entities_PassengerRequest_idTourPlan
+  commentId: P:uDrive.Backend.Model.Entities.PassengerRequest.idTourPlan
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest.idTourPlan
+  nameWithType: PassengerRequest.idTourPlan
+- uid: uDrive.Backend.Model.Entities.PassengerRequest.idTourPlan*
+  name: idTourPlan
+  href: api/uDrive.Backend.Model.Entities.PassengerRequest.idTourPlan.html
+  commentId: Overload:uDrive.Backend.Model.Entities.PassengerRequest.idTourPlan
+  fullName: uDrive.Backend.Model.Entities.PassengerRequest.idTourPlan
+  nameWithType: PassengerRequest.idTourPlan
 - uid: uDrive.Backend.Model.Entities.Person
   name: Person
   href: api/uDrive.Backend.Model.Entities.Person.html
@@ -4830,6 +4952,18 @@ references:
   commentId: Overload:uDrive.Backend.Model.Entities.Person.Lastname
   fullName: uDrive.Backend.Model.Entities.Person.Lastname
   nameWithType: Person.Lastname
+- uid: uDrive.Backend.Model.Entities.Person.PassengerRequests
+  name: PassengerRequests
+  href: api/uDrive.Backend.Model.Entities.Person.PassengerRequests.html#uDrive_Backend_Model_Entities_Person_PassengerRequests
+  commentId: P:uDrive.Backend.Model.Entities.Person.PassengerRequests
+  fullName: uDrive.Backend.Model.Entities.Person.PassengerRequests
+  nameWithType: Person.PassengerRequests
+- uid: uDrive.Backend.Model.Entities.Person.PassengerRequests*
+  name: PassengerRequests
+  href: api/uDrive.Backend.Model.Entities.Person.PassengerRequests.html
+  commentId: Overload:uDrive.Backend.Model.Entities.Person.PassengerRequests
+  fullName: uDrive.Backend.Model.Entities.Person.PassengerRequests
+  nameWithType: Person.PassengerRequests
 - uid: uDrive.Backend.Model.Entities.Person.Verified
   name: Verified
   href: api/uDrive.Backend.Model.Entities.Person.Verified.html#uDrive_Backend_Model_Entities_Person_Verified
@@ -4848,18 +4982,6 @@ references:
   commentId: T:uDrive.Backend.Model.Entities.TourPlan
   fullName: uDrive.Backend.Model.Entities.TourPlan
   nameWithType: TourPlan
-- uid: uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates
-  name: CurrentCoordinates
-  href: api/uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates.html#uDrive_Backend_Model_Entities_TourPlan_CurrentCoordinates
-  commentId: P:uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates
-  fullName: uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates
-  nameWithType: TourPlan.CurrentCoordinates
-- uid: uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates*
-  name: CurrentCoordinates
-  href: api/uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates.html
-  commentId: Overload:uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates
-  fullName: uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates
-  nameWithType: TourPlan.CurrentCoordinates
 - uid: uDrive.Backend.Model.Entities.TourPlan.CurrentLatitude
   name: CurrentLatitude
   href: api/uDrive.Backend.Model.Entities.TourPlan.CurrentLatitude.html#uDrive_Backend_Model_Entities_TourPlan_CurrentLatitude
@@ -4968,6 +5090,18 @@ references:
   commentId: Overload:uDrive.Backend.Model.Entities.TourPlan.Message
   fullName: uDrive.Backend.Model.Entities.TourPlan.Message
   nameWithType: TourPlan.Message
+- uid: uDrive.Backend.Model.Entities.TourPlan.PassengerRequests
+  name: PassengerRequests
+  href: api/uDrive.Backend.Model.Entities.TourPlan.PassengerRequests.html#uDrive_Backend_Model_Entities_TourPlan_PassengerRequests
+  commentId: P:uDrive.Backend.Model.Entities.TourPlan.PassengerRequests
+  fullName: uDrive.Backend.Model.Entities.TourPlan.PassengerRequests
+  nameWithType: TourPlan.PassengerRequests
+- uid: uDrive.Backend.Model.Entities.TourPlan.PassengerRequests*
+  name: PassengerRequests
+  href: api/uDrive.Backend.Model.Entities.TourPlan.PassengerRequests.html
+  commentId: Overload:uDrive.Backend.Model.Entities.TourPlan.PassengerRequests
+  fullName: uDrive.Backend.Model.Entities.TourPlan.PassengerRequests
+  nameWithType: TourPlan.PassengerRequests
 - uid: uDrive.Backend.Model.Entities.TourPlan.Passengers
   name: Passengers
   href: api/uDrive.Backend.Model.Entities.TourPlan.Passengers.html#uDrive_Backend_Model_Entities_TourPlan_Passengers
@@ -5131,6 +5265,48 @@ references:
   commentId: Overload:uDrive.Backend.Model.Migrations.Initial.Up
   fullName: uDrive.Backend.Model.Migrations.Initial.Up
   nameWithType: Initial.Up
+- uid: uDrive.Backend.Model.Migrations.PassengerRequest
+  name: PassengerRequest
+  href: api/uDrive.Backend.Model.Migrations.PassengerRequest.html
+  commentId: T:uDrive.Backend.Model.Migrations.PassengerRequest
+  fullName: uDrive.Backend.Model.Migrations.PassengerRequest
+  nameWithType: PassengerRequest
+- uid: uDrive.Backend.Model.Migrations.PassengerRequest.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  name: BuildTargetModel(ModelBuilder)
+  href: api/uDrive.Backend.Model.Migrations.PassengerRequest.BuildTargetModel.html#uDrive_Backend_Model_Migrations_PassengerRequest_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
+  commentId: M:uDrive.Backend.Model.Migrations.PassengerRequest.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  fullName: uDrive.Backend.Model.Migrations.PassengerRequest.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: PassengerRequest.BuildTargetModel(ModelBuilder)
+- uid: uDrive.Backend.Model.Migrations.PassengerRequest.BuildTargetModel*
+  name: BuildTargetModel
+  href: api/uDrive.Backend.Model.Migrations.PassengerRequest.BuildTargetModel.html
+  commentId: Overload:uDrive.Backend.Model.Migrations.PassengerRequest.BuildTargetModel
+  fullName: uDrive.Backend.Model.Migrations.PassengerRequest.BuildTargetModel
+  nameWithType: PassengerRequest.BuildTargetModel
+- uid: uDrive.Backend.Model.Migrations.PassengerRequest.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Down(MigrationBuilder)
+  href: api/uDrive.Backend.Model.Migrations.PassengerRequest.Down.html#uDrive_Backend_Model_Migrations_PassengerRequest_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:uDrive.Backend.Model.Migrations.PassengerRequest.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: uDrive.Backend.Model.Migrations.PassengerRequest.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: PassengerRequest.Down(MigrationBuilder)
+- uid: uDrive.Backend.Model.Migrations.PassengerRequest.Down*
+  name: Down
+  href: api/uDrive.Backend.Model.Migrations.PassengerRequest.Down.html
+  commentId: Overload:uDrive.Backend.Model.Migrations.PassengerRequest.Down
+  fullName: uDrive.Backend.Model.Migrations.PassengerRequest.Down
+  nameWithType: PassengerRequest.Down
+- uid: uDrive.Backend.Model.Migrations.PassengerRequest.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Up(MigrationBuilder)
+  href: api/uDrive.Backend.Model.Migrations.PassengerRequest.Up.html#uDrive_Backend_Model_Migrations_PassengerRequest_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:uDrive.Backend.Model.Migrations.PassengerRequest.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: uDrive.Backend.Model.Migrations.PassengerRequest.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: PassengerRequest.Up(MigrationBuilder)
+- uid: uDrive.Backend.Model.Migrations.PassengerRequest.Up*
+  name: Up
+  href: api/uDrive.Backend.Model.Migrations.PassengerRequest.Up.html
+  commentId: Overload:uDrive.Backend.Model.Migrations.PassengerRequest.Up
+  fullName: uDrive.Backend.Model.Migrations.PassengerRequest.Up
+  nameWithType: PassengerRequest.Up
 - uid: uDrive.Backend.Model.Migrations.changes
   name: changes
   href: api/uDrive.Backend.Model.Migrations.changes.html

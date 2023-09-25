@@ -92,7 +92,7 @@
 
 <h1 id="uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1__ctor_" data-uid="uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.#ctor*" class="text-break">
   Constructor AnonymousController
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/Abstract/AnonymousController.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/Abstract/AnonymousController.cs/#L45"><i class="bi bi-code-slash"></i></a>
 </h1>
 
 <div class="facts text-secondary">
@@ -120,23 +120,28 @@
 
 <a id="uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1__ctor_" data-uid="uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.#ctor*"></a>
 
-<h3 id="uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_Abstract_AnonymousController__0___uDrive_Backend_Model_ApplicationDbContext_" data-uid="uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.AnonymousController{`0}},uDrive.Backend.Model.ApplicationDbContext)">
-  AnonymousController(ILogger&lt;AnonymousController&lt;TEntity&gt;&gt;, ApplicationDbContext)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/Abstract/AnonymousController.cs/#L28"><i class="bi bi-code-slash"></i></a>
+<h3 id="uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_Abstract_AnonymousController__0___uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_" data-uid="uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.AnonymousController{`0}},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)">
+  AnonymousController(ILogger&lt;AnonymousController&lt;TEntity&gt;&gt;, ApplicationDbContext, IAuthService)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/Abstract/AnonymousController.cs/#L45"><i class="bi bi-code-slash"></i></a>
 </h3>
 
-<div class="markdown level1 summary"></div>
+<div class="markdown level1 summary"><p>Internal constructor.</p>
+</div>
 <div class="markdown level1 conceptual"></div>
 
 <div class="codewrapper">
-  <pre><code class="lang-csharp hljs">public AnonymousController(ILogger&lt;AnonymousController&lt;TEntity&gt;&gt; logger, ApplicationDbContext context)</code></pre>
+  <pre><code class="lang-csharp hljs">public AnonymousController(ILogger&lt;AnonymousController&lt;TEntity&gt;&gt; logger, ApplicationDbContext context, IAuthService authService)</code></pre>
 </div>
 
 <h4 class="section">Parameters</h4>
 <dl class="parameters">
   <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.html">AnonymousController</a>&lt;TEntity&gt;&gt;</dt>
-  <dd></dd>
+  <dd><p>Logger, managed by dependency injection.</p>
+</dd>
   <dt><code>context</code> <a class="xref" href="uDrive.Backend.Model.ApplicationDbContext.html">ApplicationDbContext</a></dt>
+  <dd><p>Context, managed by dependecy injection.</p>
+</dd>
+  <dt><code>authService</code> <a class="xref" href="uDrive.Backend.Api.Services.Interfaces.IAuthService.html">IAuthService</a></dt>
   <dd></dd>
 </dl>
 
@@ -154,7 +159,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/Abstract/AnonymousController.cs/#L28" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/Abstract/AnonymousController.cs/#L45" class="edit-link">Edit this page</a>
         </div>
 
         

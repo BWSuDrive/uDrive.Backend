@@ -90,7 +90,7 @@
 
   <h1 id="uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1" data-uid="uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1" class="text-break">
     Class AnonymousController&lt;TEntity&gt;
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/Abstract/AnonymousController.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/Abstract/AnonymousController.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -115,7 +115,8 @@ public class AnonymousController&lt;TEntity&gt; : ControllerBase where TEntity :
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TEntity</code></dt>
-    <dd></dd>
+    <dd><p><a class="xref" href="uDrive.Backend.Model.IEntity.html">IEntity</a> as TEntity as class</p>
+</dd>
   </dl>
 
   <dl class="typelist inheritance">
@@ -685,20 +686,27 @@ public class AnonymousController&lt;TEntity&gt; : ControllerBase where TEntity :
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.-ctor.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_Abstract_AnonymousController__0___uDrive_Backend_Model_ApplicationDbContext_">AnonymousController(ILogger&lt;AnonymousController&lt;TEntity&gt;&gt;, ApplicationDbContext)</a></dt>
-    <dd></dd>
+    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.-ctor.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_Abstract_AnonymousController__0___uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_">AnonymousController(ILogger&lt;AnonymousController&lt;TEntity&gt;&gt;, ApplicationDbContext, IAuthService)</a></dt>
+    <dd><p>Internal constructor.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="fields">Fields
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1._context.html">_context</a></dt>
+    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1._authService.html">_authService</a></dt>
     <dd></dd>
   </dl>
   <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1._context.html">_context</a></dt>
+    <dd><p>internal <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.entityframeworkcore.dbcontext">DbContext</a> reference</p>
+</dd>
+  </dl>
+  <dl class="jumplist">
     <dt><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1._logger.html">_logger</a></dt>
-    <dd></dd>
+    <dd><p>Internal access for the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a>.</p>
+</dd>
   </dl>
 
   <h2 class="section" id="properties">Properties
@@ -706,7 +714,8 @@ public class AnonymousController&lt;TEntity&gt; : ControllerBase where TEntity :
 
   <dl class="jumplist">
     <dt><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.Entities.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_Entities">Entities</a></dt>
-    <dd></dd>
+    <dd><p>internal queryable list of TEntity</p>
+</dd>
   </dl>
 
   <h2 class="section" id="methods">Methods
@@ -714,19 +723,23 @@ public class AnonymousController&lt;TEntity&gt; : ControllerBase where TEntity :
 
   <dl class="jumplist">
     <dt><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.DeleteAsync.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_DeleteAsync_System_String_">DeleteAsync(string)</a></dt>
-    <dd></dd>
+    <dd><p>Deletes the entity with the <code class="paramref">key</code>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.Get.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_Get">Get()</a></dt>
-    <dd></dd>
+    <dd><p>Queryable collection of <code class="typeparamref">TEntity</code>.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.GetById.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_GetById_System_String_">GetById(string)</a></dt>
-    <dd></dd>
+    <dd><p>Searched entity.</p>
+</dd>
   </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.PostAsync.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_PostAsync__0_">PostAsync(TEntity)</a></dt>
-    <dd></dd>
+    <dd><p>Creates a new item, and returns the created item with the correct id.</p>
+</dd>
   </dl>
 
 
@@ -734,7 +747,7 @@ public class AnonymousController&lt;TEntity&gt; : ControllerBase where TEntity :
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/Abstract/AnonymousController.cs/#L16" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/Abstract/AnonymousController.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
         
