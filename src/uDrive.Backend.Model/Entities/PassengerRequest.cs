@@ -10,9 +10,9 @@ public class PassengerRequest : IEntity
 {
     public string? Id { get; set; }
     
-    public string idPerson { get; set; }
+    public string IdPerson { get; set; }
 
-    public string idTourPlan { get; set; }
+    public string IdTourPlan { get; set; }
     public string? Message { get; set; }
 
     /// <summary>
@@ -24,6 +24,10 @@ public class PassengerRequest : IEntity
     /// The current Longitude
     /// </summary>
     public double CurrentLongitude { get; set; }
+
+    public bool IsPending { get; set; } = true;
+
+    public bool IsDenied { get; set; } = false;
 
     public virtual Person? Person { get; }
 

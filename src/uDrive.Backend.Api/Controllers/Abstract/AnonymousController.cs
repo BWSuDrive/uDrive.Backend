@@ -62,6 +62,8 @@ public class AnonymousController<TEntity> : ControllerBase where TEntity : class
     {
         return Ok(Entities);
     }
+
+
     /// <summary>
     /// Searched entity.
     /// </summary>

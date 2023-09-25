@@ -37,9 +37,9 @@ public class LoginController : ControllerBase
     /// <param name="login">
     /// <code>
     /// {
-    //  "userName": "TestDriver3@udrive.de",
-   /// "password": "Test1234!",
-   /// "email": "TestDriver3@udrive.de"
+    ///  "userName": "TestDriver3@udrive.de",
+    /// "password": "password",
+    /// "email": "TestDriver3@udrive.de"
     /// } 
     /// </code></param>
     /// <returns>The newly created <see cref="SignInUserDTO"/>

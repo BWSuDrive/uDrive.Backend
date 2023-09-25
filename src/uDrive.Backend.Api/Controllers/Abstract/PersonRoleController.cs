@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
 using uDrive.Backend.Api.Services.Interfaces;
 using uDrive.Backend.Model;
-using uDrive.Backend.Model.Entities;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace uDrive.Backend.Api.Controllers.Abstract;
 
