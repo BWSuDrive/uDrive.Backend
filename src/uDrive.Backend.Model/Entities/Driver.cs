@@ -11,11 +11,12 @@ public class Driver : IEntity
 
     public string IdPerson { get; set; } = null!;
 
+    public int Seats { get; set; }
+
     public virtual DrivingLicence? IdDrivinglicenseNavigation { get; set; } 
 
     public virtual Person? IdPersonNavigation { get; set; } 
 
-    public virtual ICollection<DrivingSchedule> DrivingSchedules { get; } = new List<DrivingSchedule>();
     public virtual ICollection<TourPlan> TourPlans { get; } = new List<TourPlan>();
 
 }

@@ -4,29 +4,56 @@ using uDrive.Backend.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
+using uDrive.Backend.Model.DTO;
+using Geolocation;
+using uDrive.Backend.Api.Services.Interfaces;
 
 namespace uDrive.Backend.Api.Controllers
 {
-    public class DriversController : PersonRoleController<Driver>
+    /// <summary>
+    /// Controller to access and modify <see cref="Driver"/> Entities. 
+    /// Inherits from <see cref="PersonRoleController{TEntity}"/>.
+    /// </summary>
+    public class DriversController : SecretaryRoleController<Driver>
     {
         private static ApplicationDbContext _context;
+        private readonly IAuthService _authService;
+
 
         public DriversController(
         ILogger<DriversController> logger,
-        ApplicationDbContext context
+        ApplicationDbContext context, IAuthService authService
     )
-        : base(logger, context) { 
-        _context = context;
-        }
-
-        [HttpGet("GetScheduledDrivers")]
-        public async ValueTask<ActionResult<Driver>> GetScheduledDriversAsync()
+        : base(logger, context)
         {
-            var res = _context.Drivers.AsTracking().Include(tours => tours.TourPlans).AsQueryable();
-            var pes = res.Where(x => x.TourPlans.Any()).ToList();
-            return Ok(pes);
+            _authService = authService;
+            _context = context;
         }
 
+
+       
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="personId">Id of the <see cref="Person"/></param>
+        /// <param name="drivingLicence"><see cref="IEntity"/><see cref="DrivingLicence"/></param>
+        /// <returns><see cref="List{T}"/> of <see cref="Driver"/>
+        /// <code>
+        /// [
+        ///    {
+        ///       "id": "01d3f9da-c371-4c79-bc48-d57c2b90f4b7",
+        ///        "idDrivinglicense": "a1a2e759-ed78-43f8-aef6-e34e50957196",
+        ///        "idPerson": "601fee53-202a-400d-8d59-5c9772c7fdae",
+        ///        "idDrivinglicenseNavigation": null,
+        ///        "idPersonNavigation": null,
+        ///        "drivingSchedules": [],
+        ///        "tourPlans": []
+        ///    }
+        ///]
+        /// </code>
+        /// </returns>
+        /// <exception cref="ArgumentException"></exception>
         [Authorize(Roles = $"{UDriveRoles.Secretary},{UDriveRoles.Administrator}")]
         [HttpPost("AddDrivingLicenceWithNewDriver/{personId}")]
         public async ValueTask<ActionResult<Driver>> PostAddDrivingLicenceWithNewDriverAsync([FromRoute] string personId, [FromBody] DrivingLicence drivingLicence)
@@ -59,12 +86,17 @@ namespace uDrive.Backend.Api.Controllers
                 IdDrivinglicense = newLicenseEntity.Id,
                 IdPerson = personId
             };
-
+            if(!await _authService.AssignPersonToRoleAsync(person,"Driver").ConfigureAwait(false))
+            {
+                throw new ArgumentException();
+            }
             var newDriver = await _context.Drivers.AddAsync(driver).ConfigureAwait(false);
             await _context.SaveChangesAsync().ConfigureAwait(false);
             return Ok(newDriver.Entity.Id);
 
 
         }
+
+
     }
 }
