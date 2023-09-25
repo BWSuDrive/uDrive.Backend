@@ -3402,33 +3402,21 @@ references:
   fullName.vb: uDrive.Backend.Api.Controllers.DistanceController.New
   nameWithType: DistanceController.DistanceController
   nameWithType.vb: DistanceController.New
-- uid: uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongAndLong(System.String)
-  name: ConvertToLongAndLong(string)
-  href: api/uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongAndLong.html#uDrive_Backend_Api_Controllers_DistanceController_ConvertToLongAndLong_System_String_
-  commentId: M:uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongAndLong(System.String)
-  name.vb: ConvertToLongAndLong(String)
-  fullName: uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongAndLong(string)
-  fullName.vb: uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongAndLong(String)
-  nameWithType: DistanceController.ConvertToLongAndLong(string)
-  nameWithType.vb: DistanceController.ConvertToLongAndLong(String)
-- uid: uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongAndLong*
-  name: ConvertToLongAndLong
-  href: api/uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongAndLong.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongAndLong
-  fullName: uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongAndLong
-  nameWithType: DistanceController.ConvertToLongAndLong
-- uid: uDrive.Backend.Api.Controllers.DistanceController.GetAsync(uDrive.Backend.Model.DTO.GeocoordinatesDTO)
-  name: GetAsync(GeocoordinatesDTO)
-  href: api/uDrive.Backend.Api.Controllers.DistanceController.GetAsync.html#uDrive_Backend_Api_Controllers_DistanceController_GetAsync_uDrive_Backend_Model_DTO_GeocoordinatesDTO_
-  commentId: M:uDrive.Backend.Api.Controllers.DistanceController.GetAsync(uDrive.Backend.Model.DTO.GeocoordinatesDTO)
-  fullName: uDrive.Backend.Api.Controllers.DistanceController.GetAsync(uDrive.Backend.Model.DTO.GeocoordinatesDTO)
-  nameWithType: DistanceController.GetAsync(GeocoordinatesDTO)
-- uid: uDrive.Backend.Api.Controllers.DistanceController.GetAsync*
-  name: GetAsync
-  href: api/uDrive.Backend.Api.Controllers.DistanceController.GetAsync.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.DistanceController.GetAsync
-  fullName: uDrive.Backend.Api.Controllers.DistanceController.GetAsync
-  nameWithType: DistanceController.GetAsync
+- uid: uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude(System.String)
+  name: ConvertToLongitudeAndLattiude(string)
+  href: api/uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude.html#uDrive_Backend_Api_Controllers_DistanceController_ConvertToLongitudeAndLattiude_System_String_
+  commentId: M:uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude(System.String)
+  name.vb: ConvertToLongitudeAndLattiude(String)
+  fullName: uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude(string)
+  fullName.vb: uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude(String)
+  nameWithType: DistanceController.ConvertToLongitudeAndLattiude(string)
+  nameWithType.vb: DistanceController.ConvertToLongitudeAndLattiude(String)
+- uid: uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude*
+  name: ConvertToLongitudeAndLattiude
+  href: api/uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude
+  fullName: uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude
+  nameWithType: DistanceController.ConvertToLongitudeAndLattiude
 - uid: uDrive.Backend.Api.Controllers.DistanceController._context
   name: _context
   href: api/uDrive.Backend.Api.Controllers.DistanceController._context.html
@@ -3447,15 +3435,15 @@ references:
   commentId: T:uDrive.Backend.Api.Controllers.DriversController
   fullName: uDrive.Backend.Api.Controllers.DriversController
   nameWithType: DriversController
-- uid: uDrive.Backend.Api.Controllers.DriversController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.DriversController},uDrive.Backend.Model.ApplicationDbContext)
-  name: DriversController(ILogger<DriversController>, ApplicationDbContext)
-  href: api/uDrive.Backend.Api.Controllers.DriversController.-ctor.html#uDrive_Backend_Api_Controllers_DriversController__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_DriversController__uDrive_Backend_Model_ApplicationDbContext_
-  commentId: M:uDrive.Backend.Api.Controllers.DriversController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.DriversController},uDrive.Backend.Model.ApplicationDbContext)
-  name.vb: New(ILogger(Of DriversController), ApplicationDbContext)
-  fullName: uDrive.Backend.Api.Controllers.DriversController.DriversController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.DriversController>, uDrive.Backend.Model.ApplicationDbContext)
-  fullName.vb: uDrive.Backend.Api.Controllers.DriversController.New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.DriversController), uDrive.Backend.Model.ApplicationDbContext)
-  nameWithType: DriversController.DriversController(ILogger<DriversController>, ApplicationDbContext)
-  nameWithType.vb: DriversController.New(ILogger(Of DriversController), ApplicationDbContext)
+- uid: uDrive.Backend.Api.Controllers.DriversController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.DriversController},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name: DriversController(ILogger<DriversController>, ApplicationDbContext, IAuthService)
+  href: api/uDrive.Backend.Api.Controllers.DriversController.-ctor.html#uDrive_Backend_Api_Controllers_DriversController__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_DriversController__uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_
+  commentId: M:uDrive.Backend.Api.Controllers.DriversController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.DriversController},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name.vb: New(ILogger(Of DriversController), ApplicationDbContext, IAuthService)
+  fullName: uDrive.Backend.Api.Controllers.DriversController.DriversController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.DriversController>, uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  fullName.vb: uDrive.Backend.Api.Controllers.DriversController.New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.DriversController), uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  nameWithType: DriversController.DriversController(ILogger<DriversController>, ApplicationDbContext, IAuthService)
+  nameWithType.vb: DriversController.New(ILogger(Of DriversController), ApplicationDbContext, IAuthService)
 - uid: uDrive.Backend.Api.Controllers.DriversController.#ctor*
   name: DriversController
   href: api/uDrive.Backend.Api.Controllers.DriversController.-ctor.html
@@ -3465,18 +3453,6 @@ references:
   fullName.vb: uDrive.Backend.Api.Controllers.DriversController.New
   nameWithType: DriversController.DriversController
   nameWithType.vb: DriversController.New
-- uid: uDrive.Backend.Api.Controllers.DriversController.GetScheduledDriversAsync
-  name: GetScheduledDriversAsync()
-  href: api/uDrive.Backend.Api.Controllers.DriversController.GetScheduledDriversAsync.html#uDrive_Backend_Api_Controllers_DriversController_GetScheduledDriversAsync
-  commentId: M:uDrive.Backend.Api.Controllers.DriversController.GetScheduledDriversAsync
-  fullName: uDrive.Backend.Api.Controllers.DriversController.GetScheduledDriversAsync()
-  nameWithType: DriversController.GetScheduledDriversAsync()
-- uid: uDrive.Backend.Api.Controllers.DriversController.GetScheduledDriversAsync*
-  name: GetScheduledDriversAsync
-  href: api/uDrive.Backend.Api.Controllers.DriversController.GetScheduledDriversAsync.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.DriversController.GetScheduledDriversAsync
-  fullName: uDrive.Backend.Api.Controllers.DriversController.GetScheduledDriversAsync
-  nameWithType: DriversController.GetScheduledDriversAsync
 - uid: uDrive.Backend.Api.Controllers.DriversController.PostAddDrivingLicenceWithNewDriverAsync(System.String,uDrive.Backend.Model.Entities.DrivingLicence)
   name: PostAddDrivingLicenceWithNewDriverAsync(string, DrivingLicence)
   href: api/uDrive.Backend.Api.Controllers.DriversController.PostAddDrivingLicenceWithNewDriverAsync.html#uDrive_Backend_Api_Controllers_DriversController_PostAddDrivingLicenceWithNewDriverAsync_System_String_uDrive_Backend_Model_Entities_DrivingLicence_
@@ -3492,6 +3468,12 @@ references:
   commentId: Overload:uDrive.Backend.Api.Controllers.DriversController.PostAddDrivingLicenceWithNewDriverAsync
   fullName: uDrive.Backend.Api.Controllers.DriversController.PostAddDrivingLicenceWithNewDriverAsync
   nameWithType: DriversController.PostAddDrivingLicenceWithNewDriverAsync
+- uid: uDrive.Backend.Api.Controllers.DriversController._authService
+  name: _authService
+  href: api/uDrive.Backend.Api.Controllers.DriversController._authService.html
+  commentId: F:uDrive.Backend.Api.Controllers.DriversController._authService
+  fullName: uDrive.Backend.Api.Controllers.DriversController._authService
+  nameWithType: DriversController._authService
 - uid: uDrive.Backend.Api.Controllers.DriversController._context
   name: _context
   href: api/uDrive.Backend.Api.Controllers.DriversController._context.html
@@ -3624,6 +3606,111 @@ references:
   commentId: F:uDrive.Backend.Api.Controllers.RegisterController._logger
   fullName: uDrive.Backend.Api.Controllers.RegisterController._logger
   nameWithType: RegisterController._logger
+- uid: uDrive.Backend.Api.Controllers.ScheduleTourController
+  name: ScheduleTourController
+  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.html
+  commentId: T:uDrive.Backend.Api.Controllers.ScheduleTourController
+  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController
+  nameWithType: ScheduleTourController
+- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.ScheduleTourController},uDrive.Backend.Model.ApplicationDbContext)
+  name: ScheduleTourController(ILogger<ScheduleTourController>, ApplicationDbContext)
+  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.-ctor.html#uDrive_Backend_Api_Controllers_ScheduleTourController__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_ScheduleTourController__uDrive_Backend_Model_ApplicationDbContext_
+  commentId: M:uDrive.Backend.Api.Controllers.ScheduleTourController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.ScheduleTourController},uDrive.Backend.Model.ApplicationDbContext)
+  name.vb: New(ILogger(Of ScheduleTourController), ApplicationDbContext)
+  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.ScheduleTourController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.ScheduleTourController>, uDrive.Backend.Model.ApplicationDbContext)
+  fullName.vb: uDrive.Backend.Api.Controllers.ScheduleTourController.New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.ScheduleTourController), uDrive.Backend.Model.ApplicationDbContext)
+  nameWithType: ScheduleTourController.ScheduleTourController(ILogger<ScheduleTourController>, ApplicationDbContext)
+  nameWithType.vb: ScheduleTourController.New(ILogger(Of ScheduleTourController), ApplicationDbContext)
+- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.#ctor*
+  name: ScheduleTourController
+  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.-ctor.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.ScheduleTourController.#ctor
+  name.vb: New
+  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.ScheduleTourController
+  fullName.vb: uDrive.Backend.Api.Controllers.ScheduleTourController.New
+  nameWithType: ScheduleTourController.ScheduleTourController
+  nameWithType.vb: ScheduleTourController.New
+- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger(uDrive.Backend.Model.Entities.TourPlan,System.String)
+  name: AssignForTourAsPassenger(TourPlan, string)
+  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger.html#uDrive_Backend_Api_Controllers_ScheduleTourController_AssignForTourAsPassenger_uDrive_Backend_Model_Entities_TourPlan_System_String_
+  commentId: M:uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger(uDrive.Backend.Model.Entities.TourPlan,System.String)
+  name.vb: AssignForTourAsPassenger(TourPlan, String)
+  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger(uDrive.Backend.Model.Entities.TourPlan, string)
+  fullName.vb: uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger(uDrive.Backend.Model.Entities.TourPlan, String)
+  nameWithType: ScheduleTourController.AssignForTourAsPassenger(TourPlan, string)
+  nameWithType.vb: ScheduleTourController.AssignForTourAsPassenger(TourPlan, String)
+- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger*
+  name: AssignForTourAsPassenger
+  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger
+  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger
+  nameWithType: ScheduleTourController.AssignForTourAsPassenger
+- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude(System.String)
+  name: ConvertToLongitudeAndLatitude(string)
+  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude.html#uDrive_Backend_Api_Controllers_ScheduleTourController_ConvertToLongitudeAndLatitude_System_String_
+  commentId: M:uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude(System.String)
+  name.vb: ConvertToLongitudeAndLatitude(String)
+  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude(string)
+  fullName.vb: uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude(String)
+  nameWithType: ScheduleTourController.ConvertToLongitudeAndLatitude(string)
+  nameWithType.vb: ScheduleTourController.ConvertToLongitudeAndLatitude(String)
+- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude*
+  name: ConvertToLongitudeAndLatitude
+  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude
+  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude
+  nameWithType: ScheduleTourController.ConvertToLongitudeAndLatitude
+- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.FilterDriversBy5kmRadiusAsync(uDrive.Backend.Model.DTO.GeocoordinatesDTO)
+  name: FilterDriversBy5kmRadiusAsync(GeocoordinatesDTO)
+  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.FilterDriversBy5kmRadiusAsync.html#uDrive_Backend_Api_Controllers_ScheduleTourController_FilterDriversBy5kmRadiusAsync_uDrive_Backend_Model_DTO_GeocoordinatesDTO_
+  commentId: M:uDrive.Backend.Api.Controllers.ScheduleTourController.FilterDriversBy5kmRadiusAsync(uDrive.Backend.Model.DTO.GeocoordinatesDTO)
+  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.FilterDriversBy5kmRadiusAsync(uDrive.Backend.Model.DTO.GeocoordinatesDTO)
+  nameWithType: ScheduleTourController.FilterDriversBy5kmRadiusAsync(GeocoordinatesDTO)
+- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.FilterDriversBy5kmRadiusAsync*
+  name: FilterDriversBy5kmRadiusAsync
+  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.FilterDriversBy5kmRadiusAsync.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.ScheduleTourController.FilterDriversBy5kmRadiusAsync
+  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.FilterDriversBy5kmRadiusAsync
+  nameWithType: ScheduleTourController.FilterDriversBy5kmRadiusAsync
+- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.GetScheduledDriversAsync
+  name: GetScheduledDriversAsync()
+  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.GetScheduledDriversAsync.html#uDrive_Backend_Api_Controllers_ScheduleTourController_GetScheduledDriversAsync
+  commentId: M:uDrive.Backend.Api.Controllers.ScheduleTourController.GetScheduledDriversAsync
+  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.GetScheduledDriversAsync()
+  nameWithType: ScheduleTourController.GetScheduledDriversAsync()
+- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.GetScheduledDriversAsync*
+  name: GetScheduledDriversAsync
+  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.GetScheduledDriversAsync.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.ScheduleTourController.GetScheduledDriversAsync
+  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.GetScheduledDriversAsync
+  nameWithType: ScheduleTourController.GetScheduledDriversAsync
+- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.MatchDistance(uDrive.Backend.Model.Entities.TourPlan,uDrive.Backend.Model.DTO.GeocoordinatesDTO,System.Int32)
+  name: MatchDistance(TourPlan, GeocoordinatesDTO, int)
+  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.MatchDistance.html#uDrive_Backend_Api_Controllers_ScheduleTourController_MatchDistance_uDrive_Backend_Model_Entities_TourPlan_uDrive_Backend_Model_DTO_GeocoordinatesDTO_System_Int32_
+  commentId: M:uDrive.Backend.Api.Controllers.ScheduleTourController.MatchDistance(uDrive.Backend.Model.Entities.TourPlan,uDrive.Backend.Model.DTO.GeocoordinatesDTO,System.Int32)
+  name.vb: MatchDistance(TourPlan, GeocoordinatesDTO, Integer)
+  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.MatchDistance(uDrive.Backend.Model.Entities.TourPlan, uDrive.Backend.Model.DTO.GeocoordinatesDTO, int)
+  fullName.vb: uDrive.Backend.Api.Controllers.ScheduleTourController.MatchDistance(uDrive.Backend.Model.Entities.TourPlan, uDrive.Backend.Model.DTO.GeocoordinatesDTO, Integer)
+  nameWithType: ScheduleTourController.MatchDistance(TourPlan, GeocoordinatesDTO, int)
+  nameWithType.vb: ScheduleTourController.MatchDistance(TourPlan, GeocoordinatesDTO, Integer)
+- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.MatchDistance*
+  name: MatchDistance
+  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.MatchDistance.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.ScheduleTourController.MatchDistance
+  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.MatchDistance
+  nameWithType: ScheduleTourController.MatchDistance
+- uid: uDrive.Backend.Api.Controllers.ScheduleTourController._context
+  name: _context
+  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController._context.html
+  commentId: F:uDrive.Backend.Api.Controllers.ScheduleTourController._context
+  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController._context
+  nameWithType: ScheduleTourController._context
+- uid: uDrive.Backend.Api.Controllers.ScheduleTourController._logger
+  name: _logger
+  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController._logger.html
+  commentId: F:uDrive.Backend.Api.Controllers.ScheduleTourController._logger
+  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController._logger
+  nameWithType: ScheduleTourController._logger
 - uid: uDrive.Backend.Api.Controllers.TourPlansController
   name: TourPlansController
   href: api/uDrive.Backend.Api.Controllers.TourPlansController.html
@@ -3648,66 +3735,6 @@ references:
   fullName.vb: uDrive.Backend.Api.Controllers.TourPlansController.New
   nameWithType: TourPlansController.TourPlansController
   nameWithType.vb: TourPlansController.New
-- uid: uDrive.Backend.Api.Controllers.WeekdaysController
-  name: WeekdaysController
-  href: api/uDrive.Backend.Api.Controllers.WeekdaysController.html
-  commentId: T:uDrive.Backend.Api.Controllers.WeekdaysController
-  fullName: uDrive.Backend.Api.Controllers.WeekdaysController
-  nameWithType: WeekdaysController
-- uid: uDrive.Backend.Api.Controllers.WeekdaysController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.WeekdaysController},uDrive.Backend.Model.ApplicationDbContext)
-  name: WeekdaysController(ILogger<WeekdaysController>, ApplicationDbContext)
-  href: api/uDrive.Backend.Api.Controllers.WeekdaysController.-ctor.html#uDrive_Backend_Api_Controllers_WeekdaysController__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_WeekdaysController__uDrive_Backend_Model_ApplicationDbContext_
-  commentId: M:uDrive.Backend.Api.Controllers.WeekdaysController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.WeekdaysController},uDrive.Backend.Model.ApplicationDbContext)
-  name.vb: New(ILogger(Of WeekdaysController), ApplicationDbContext)
-  fullName: uDrive.Backend.Api.Controllers.WeekdaysController.WeekdaysController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.WeekdaysController>, uDrive.Backend.Model.ApplicationDbContext)
-  fullName.vb: uDrive.Backend.Api.Controllers.WeekdaysController.New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.WeekdaysController), uDrive.Backend.Model.ApplicationDbContext)
-  nameWithType: WeekdaysController.WeekdaysController(ILogger<WeekdaysController>, ApplicationDbContext)
-  nameWithType.vb: WeekdaysController.New(ILogger(Of WeekdaysController), ApplicationDbContext)
-- uid: uDrive.Backend.Api.Controllers.WeekdaysController.#ctor*
-  name: WeekdaysController
-  href: api/uDrive.Backend.Api.Controllers.WeekdaysController.-ctor.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.WeekdaysController.#ctor
-  name.vb: New
-  fullName: uDrive.Backend.Api.Controllers.WeekdaysController.WeekdaysController
-  fullName.vb: uDrive.Backend.Api.Controllers.WeekdaysController.New
-  nameWithType: WeekdaysController.WeekdaysController
-  nameWithType.vb: WeekdaysController.New
-- uid: uDrive.Backend.Api.Controllers.WeekdaysController.PatchAsync(System.String,uDrive.Backend.Model.Entities.Weekday)
-  name: PatchAsync(string, Weekday)
-  href: api/uDrive.Backend.Api.Controllers.WeekdaysController.PatchAsync.html#uDrive_Backend_Api_Controllers_WeekdaysController_PatchAsync_System_String_uDrive_Backend_Model_Entities_Weekday_
-  commentId: M:uDrive.Backend.Api.Controllers.WeekdaysController.PatchAsync(System.String,uDrive.Backend.Model.Entities.Weekday)
-  name.vb: PatchAsync(String, Weekday)
-  fullName: uDrive.Backend.Api.Controllers.WeekdaysController.PatchAsync(string, uDrive.Backend.Model.Entities.Weekday)
-  fullName.vb: uDrive.Backend.Api.Controllers.WeekdaysController.PatchAsync(String, uDrive.Backend.Model.Entities.Weekday)
-  nameWithType: WeekdaysController.PatchAsync(string, Weekday)
-  nameWithType.vb: WeekdaysController.PatchAsync(String, Weekday)
-- uid: uDrive.Backend.Api.Controllers.WeekdaysController.PatchAsync*
-  name: PatchAsync
-  href: api/uDrive.Backend.Api.Controllers.WeekdaysController.PatchAsync.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.WeekdaysController.PatchAsync
-  fullName: uDrive.Backend.Api.Controllers.WeekdaysController.PatchAsync
-  nameWithType: WeekdaysController.PatchAsync
-- uid: uDrive.Backend.Api.Controllers.WeekdaysController.PutAsync(System.String,uDrive.Backend.Model.Entities.Weekday)
-  name: PutAsync(string, Weekday)
-  href: api/uDrive.Backend.Api.Controllers.WeekdaysController.PutAsync.html#uDrive_Backend_Api_Controllers_WeekdaysController_PutAsync_System_String_uDrive_Backend_Model_Entities_Weekday_
-  commentId: M:uDrive.Backend.Api.Controllers.WeekdaysController.PutAsync(System.String,uDrive.Backend.Model.Entities.Weekday)
-  name.vb: PutAsync(String, Weekday)
-  fullName: uDrive.Backend.Api.Controllers.WeekdaysController.PutAsync(string, uDrive.Backend.Model.Entities.Weekday)
-  fullName.vb: uDrive.Backend.Api.Controllers.WeekdaysController.PutAsync(String, uDrive.Backend.Model.Entities.Weekday)
-  nameWithType: WeekdaysController.PutAsync(string, Weekday)
-  nameWithType.vb: WeekdaysController.PutAsync(String, Weekday)
-- uid: uDrive.Backend.Api.Controllers.WeekdaysController.PutAsync*
-  name: PutAsync
-  href: api/uDrive.Backend.Api.Controllers.WeekdaysController.PutAsync.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.WeekdaysController.PutAsync
-  fullName: uDrive.Backend.Api.Controllers.WeekdaysController.PutAsync
-  nameWithType: WeekdaysController.PutAsync
-- uid: uDrive.Backend.Api.Controllers.WeekdaysController._context
-  name: _context
-  href: api/uDrive.Backend.Api.Controllers.WeekdaysController._context.html
-  commentId: F:uDrive.Backend.Api.Controllers.WeekdaysController._context
-  fullName: uDrive.Backend.Api.Controllers.WeekdaysController._context
-  nameWithType: WeekdaysController._context
 - uid: uDrive.Backend.Api.Services
   name: uDrive.Backend.Api.Services
   href: api/uDrive.Backend.Api.Services.html
@@ -3738,6 +3765,21 @@ references:
   fullName.vb: uDrive.Backend.Api.Services.AuthService.New
   nameWithType: AuthService.AuthService
   nameWithType.vb: AuthService.New
+- uid: uDrive.Backend.Api.Services.AuthService.AssignPersonToRoleAsync(uDrive.Backend.Model.Entities.Person,System.String)
+  name: AssignPersonToRoleAsync(Person, string)
+  href: api/uDrive.Backend.Api.Services.AuthService.AssignPersonToRoleAsync.html#uDrive_Backend_Api_Services_AuthService_AssignPersonToRoleAsync_uDrive_Backend_Model_Entities_Person_System_String_
+  commentId: M:uDrive.Backend.Api.Services.AuthService.AssignPersonToRoleAsync(uDrive.Backend.Model.Entities.Person,System.String)
+  name.vb: AssignPersonToRoleAsync(Person, String)
+  fullName: uDrive.Backend.Api.Services.AuthService.AssignPersonToRoleAsync(uDrive.Backend.Model.Entities.Person, string)
+  fullName.vb: uDrive.Backend.Api.Services.AuthService.AssignPersonToRoleAsync(uDrive.Backend.Model.Entities.Person, String)
+  nameWithType: AuthService.AssignPersonToRoleAsync(Person, string)
+  nameWithType.vb: AuthService.AssignPersonToRoleAsync(Person, String)
+- uid: uDrive.Backend.Api.Services.AuthService.AssignPersonToRoleAsync*
+  name: AssignPersonToRoleAsync
+  href: api/uDrive.Backend.Api.Services.AuthService.AssignPersonToRoleAsync.html
+  commentId: Overload:uDrive.Backend.Api.Services.AuthService.AssignPersonToRoleAsync
+  fullName: uDrive.Backend.Api.Services.AuthService.AssignPersonToRoleAsync
+  nameWithType: AuthService.AssignPersonToRoleAsync
 - uid: uDrive.Backend.Api.Services.AuthService.GenerateJWTTokenAsync(uDrive.Backend.Model.Entities.Person,System.Collections.Generic.IEnumerable{System.Security.Claims.Claim})
   name: GenerateJWTTokenAsync(Person, IEnumerable<Claim>)
   href: api/uDrive.Backend.Api.Services.AuthService.GenerateJWTTokenAsync.html#uDrive_Backend_Api_Services_AuthService_GenerateJWTTokenAsync_uDrive_Backend_Model_Entities_Person_System_Collections_Generic_IEnumerable_System_Security_Claims_Claim__
@@ -3831,6 +3873,21 @@ references:
   commentId: T:uDrive.Backend.Api.Services.Interfaces.IAuthService
   fullName: uDrive.Backend.Api.Services.Interfaces.IAuthService
   nameWithType: IAuthService
+- uid: uDrive.Backend.Api.Services.Interfaces.IAuthService.AssignPersonToRoleAsync(uDrive.Backend.Model.Entities.Person,System.String)
+  name: AssignPersonToRoleAsync(Person, string)
+  href: api/uDrive.Backend.Api.Services.Interfaces.IAuthService.AssignPersonToRoleAsync.html#uDrive_Backend_Api_Services_Interfaces_IAuthService_AssignPersonToRoleAsync_uDrive_Backend_Model_Entities_Person_System_String_
+  commentId: M:uDrive.Backend.Api.Services.Interfaces.IAuthService.AssignPersonToRoleAsync(uDrive.Backend.Model.Entities.Person,System.String)
+  name.vb: AssignPersonToRoleAsync(Person, String)
+  fullName: uDrive.Backend.Api.Services.Interfaces.IAuthService.AssignPersonToRoleAsync(uDrive.Backend.Model.Entities.Person, string)
+  fullName.vb: uDrive.Backend.Api.Services.Interfaces.IAuthService.AssignPersonToRoleAsync(uDrive.Backend.Model.Entities.Person, String)
+  nameWithType: IAuthService.AssignPersonToRoleAsync(Person, string)
+  nameWithType.vb: IAuthService.AssignPersonToRoleAsync(Person, String)
+- uid: uDrive.Backend.Api.Services.Interfaces.IAuthService.AssignPersonToRoleAsync*
+  name: AssignPersonToRoleAsync
+  href: api/uDrive.Backend.Api.Services.Interfaces.IAuthService.AssignPersonToRoleAsync.html
+  commentId: Overload:uDrive.Backend.Api.Services.Interfaces.IAuthService.AssignPersonToRoleAsync
+  fullName: uDrive.Backend.Api.Services.Interfaces.IAuthService.AssignPersonToRoleAsync
+  nameWithType: IAuthService.AssignPersonToRoleAsync
 - uid: uDrive.Backend.Api.Services.Interfaces.IAuthService.LoginAsync(uDrive.Backend.Model.DTO.SignInUserDTO)
   name: LoginAsync(SignInUserDTO)
   href: api/uDrive.Backend.Api.Services.Interfaces.IAuthService.LoginAsync.html#uDrive_Backend_Api_Services_Interfaces_IAuthService_LoginAsync_uDrive_Backend_Model_DTO_SignInUserDTO_
@@ -3933,18 +3990,6 @@ references:
   commentId: Overload:uDrive.Backend.Model.ApplicationDbContext.DrivingLicences
   fullName: uDrive.Backend.Model.ApplicationDbContext.DrivingLicences
   nameWithType: ApplicationDbContext.DrivingLicences
-- uid: uDrive.Backend.Model.ApplicationDbContext.DrivingSchedules
-  name: DrivingSchedules
-  href: api/uDrive.Backend.Model.ApplicationDbContext.DrivingSchedules.html#uDrive_Backend_Model_ApplicationDbContext_DrivingSchedules
-  commentId: P:uDrive.Backend.Model.ApplicationDbContext.DrivingSchedules
-  fullName: uDrive.Backend.Model.ApplicationDbContext.DrivingSchedules
-  nameWithType: ApplicationDbContext.DrivingSchedules
-- uid: uDrive.Backend.Model.ApplicationDbContext.DrivingSchedules*
-  name: DrivingSchedules
-  href: api/uDrive.Backend.Model.ApplicationDbContext.DrivingSchedules.html
-  commentId: Overload:uDrive.Backend.Model.ApplicationDbContext.DrivingSchedules
-  fullName: uDrive.Backend.Model.ApplicationDbContext.DrivingSchedules
-  nameWithType: ApplicationDbContext.DrivingSchedules
 - uid: uDrive.Backend.Model.ApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
   name: OnModelCreating(ModelBuilder)
   href: api/uDrive.Backend.Model.ApplicationDbContext.OnModelCreating.html#uDrive_Backend_Model_ApplicationDbContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_
@@ -3969,18 +4014,6 @@ references:
   commentId: Overload:uDrive.Backend.Model.ApplicationDbContext.Persons
   fullName: uDrive.Backend.Model.ApplicationDbContext.Persons
   nameWithType: ApplicationDbContext.Persons
-- uid: uDrive.Backend.Model.ApplicationDbContext.SpontanesDrives
-  name: SpontanesDrives
-  href: api/uDrive.Backend.Model.ApplicationDbContext.SpontanesDrives.html#uDrive_Backend_Model_ApplicationDbContext_SpontanesDrives
-  commentId: P:uDrive.Backend.Model.ApplicationDbContext.SpontanesDrives
-  fullName: uDrive.Backend.Model.ApplicationDbContext.SpontanesDrives
-  nameWithType: ApplicationDbContext.SpontanesDrives
-- uid: uDrive.Backend.Model.ApplicationDbContext.SpontanesDrives*
-  name: SpontanesDrives
-  href: api/uDrive.Backend.Model.ApplicationDbContext.SpontanesDrives.html
-  commentId: Overload:uDrive.Backend.Model.ApplicationDbContext.SpontanesDrives
-  fullName: uDrive.Backend.Model.ApplicationDbContext.SpontanesDrives
-  nameWithType: ApplicationDbContext.SpontanesDrives
 - uid: uDrive.Backend.Model.ApplicationDbContext.TourPlans
   name: TourPlans
   href: api/uDrive.Backend.Model.ApplicationDbContext.TourPlans.html#uDrive_Backend_Model_ApplicationDbContext_TourPlans
@@ -3993,18 +4026,6 @@ references:
   commentId: Overload:uDrive.Backend.Model.ApplicationDbContext.TourPlans
   fullName: uDrive.Backend.Model.ApplicationDbContext.TourPlans
   nameWithType: ApplicationDbContext.TourPlans
-- uid: uDrive.Backend.Model.ApplicationDbContext.Weekdays
-  name: Weekdays
-  href: api/uDrive.Backend.Model.ApplicationDbContext.Weekdays.html#uDrive_Backend_Model_ApplicationDbContext_Weekdays
-  commentId: P:uDrive.Backend.Model.ApplicationDbContext.Weekdays
-  fullName: uDrive.Backend.Model.ApplicationDbContext.Weekdays
-  nameWithType: ApplicationDbContext.Weekdays
-- uid: uDrive.Backend.Model.ApplicationDbContext.Weekdays*
-  name: Weekdays
-  href: api/uDrive.Backend.Model.ApplicationDbContext.Weekdays.html
-  commentId: Overload:uDrive.Backend.Model.ApplicationDbContext.Weekdays
-  fullName: uDrive.Backend.Model.ApplicationDbContext.Weekdays
-  nameWithType: ApplicationDbContext.Weekdays
 - uid: uDrive.Backend.Model.Configuration
   name: uDrive.Backend.Model.Configuration
   href: api/uDrive.Backend.Model.Configuration.html
@@ -4107,102 +4128,6 @@ references:
   commentId: F:uDrive.Backend.Model.Configuration.DrivingLicenceEntityTypeConfiguration.TableSchema
   fullName: uDrive.Backend.Model.Configuration.DrivingLicenceEntityTypeConfiguration.TableSchema
   nameWithType: DrivingLicenceEntityTypeConfiguration.TableSchema
-- uid: uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration
-  name: DrivingScheduleEntityTypeConfiguration
-  href: api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.html
-  commentId: T:uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration
-  fullName: uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration
-  nameWithType: DrivingScheduleEntityTypeConfiguration
-- uid: uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{uDrive.Backend.Model.Entities.DrivingSchedule})
-  name: Configure(EntityTypeBuilder<DrivingSchedule>)
-  href: api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.Configure.html#uDrive_Backend_Model_Configuration_DrivingScheduleEntityTypeConfiguration_Configure_Microsoft_EntityFrameworkCore_Metadata_Builders_EntityTypeBuilder_uDrive_Backend_Model_Entities_DrivingSchedule__
-  commentId: M:uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{uDrive.Backend.Model.Entities.DrivingSchedule})
-  name.vb: Configure(EntityTypeBuilder(Of DrivingSchedule))
-  fullName: uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<uDrive.Backend.Model.Entities.DrivingSchedule>)
-  fullName.vb: uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of uDrive.Backend.Model.Entities.DrivingSchedule))
-  nameWithType: DrivingScheduleEntityTypeConfiguration.Configure(EntityTypeBuilder<DrivingSchedule>)
-  nameWithType.vb: DrivingScheduleEntityTypeConfiguration.Configure(EntityTypeBuilder(Of DrivingSchedule))
-- uid: uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.Configure*
-  name: Configure
-  href: api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.Configure.html
-  commentId: Overload:uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.Configure
-  fullName: uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.Configure
-  nameWithType: DrivingScheduleEntityTypeConfiguration.Configure
-- uid: uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.ConfigureEntityProperties(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{uDrive.Backend.Model.Entities.DrivingSchedule})
-  name: ConfigureEntityProperties(EntityTypeBuilder<DrivingSchedule>)
-  href: api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.ConfigureEntityProperties.html#uDrive_Backend_Model_Configuration_DrivingScheduleEntityTypeConfiguration_ConfigureEntityProperties_Microsoft_EntityFrameworkCore_Metadata_Builders_EntityTypeBuilder_uDrive_Backend_Model_Entities_DrivingSchedule__
-  commentId: M:uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.ConfigureEntityProperties(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{uDrive.Backend.Model.Entities.DrivingSchedule})
-  name.vb: ConfigureEntityProperties(EntityTypeBuilder(Of DrivingSchedule))
-  fullName: uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.ConfigureEntityProperties(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<uDrive.Backend.Model.Entities.DrivingSchedule>)
-  fullName.vb: uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.ConfigureEntityProperties(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of uDrive.Backend.Model.Entities.DrivingSchedule))
-  nameWithType: DrivingScheduleEntityTypeConfiguration.ConfigureEntityProperties(EntityTypeBuilder<DrivingSchedule>)
-  nameWithType.vb: DrivingScheduleEntityTypeConfiguration.ConfigureEntityProperties(EntityTypeBuilder(Of DrivingSchedule))
-- uid: uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.ConfigureEntityProperties*
-  name: ConfigureEntityProperties
-  href: api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.ConfigureEntityProperties.html
-  commentId: Overload:uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.ConfigureEntityProperties
-  fullName: uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.ConfigureEntityProperties
-  nameWithType: DrivingScheduleEntityTypeConfiguration.ConfigureEntityProperties
-- uid: uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.Table
-  name: Table
-  href: api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.Table.html
-  commentId: F:uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.Table
-  fullName: uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.Table
-  nameWithType: DrivingScheduleEntityTypeConfiguration.Table
-- uid: uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.TableSchema
-  name: TableSchema
-  href: api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.TableSchema.html
-  commentId: F:uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.TableSchema
-  fullName: uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.TableSchema
-  nameWithType: DrivingScheduleEntityTypeConfiguration.TableSchema
-- uid: uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration
-  name: SpontanesDriveEntityTypeConfiguration
-  href: api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.html
-  commentId: T:uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration
-  fullName: uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration
-  nameWithType: SpontanesDriveEntityTypeConfiguration
-- uid: uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{uDrive.Backend.Model.Entities.SpontanesDrive})
-  name: Configure(EntityTypeBuilder<SpontanesDrive>)
-  href: api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.Configure.html#uDrive_Backend_Model_Configuration_SpontanesDriveEntityTypeConfiguration_Configure_Microsoft_EntityFrameworkCore_Metadata_Builders_EntityTypeBuilder_uDrive_Backend_Model_Entities_SpontanesDrive__
-  commentId: M:uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{uDrive.Backend.Model.Entities.SpontanesDrive})
-  name.vb: Configure(EntityTypeBuilder(Of SpontanesDrive))
-  fullName: uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<uDrive.Backend.Model.Entities.SpontanesDrive>)
-  fullName.vb: uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of uDrive.Backend.Model.Entities.SpontanesDrive))
-  nameWithType: SpontanesDriveEntityTypeConfiguration.Configure(EntityTypeBuilder<SpontanesDrive>)
-  nameWithType.vb: SpontanesDriveEntityTypeConfiguration.Configure(EntityTypeBuilder(Of SpontanesDrive))
-- uid: uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.Configure*
-  name: Configure
-  href: api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.Configure.html
-  commentId: Overload:uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.Configure
-  fullName: uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.Configure
-  nameWithType: SpontanesDriveEntityTypeConfiguration.Configure
-- uid: uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.ConfigureEntityProperties(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{uDrive.Backend.Model.Entities.SpontanesDrive})
-  name: ConfigureEntityProperties(EntityTypeBuilder<SpontanesDrive>)
-  href: api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.ConfigureEntityProperties.html#uDrive_Backend_Model_Configuration_SpontanesDriveEntityTypeConfiguration_ConfigureEntityProperties_Microsoft_EntityFrameworkCore_Metadata_Builders_EntityTypeBuilder_uDrive_Backend_Model_Entities_SpontanesDrive__
-  commentId: M:uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.ConfigureEntityProperties(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{uDrive.Backend.Model.Entities.SpontanesDrive})
-  name.vb: ConfigureEntityProperties(EntityTypeBuilder(Of SpontanesDrive))
-  fullName: uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.ConfigureEntityProperties(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<uDrive.Backend.Model.Entities.SpontanesDrive>)
-  fullName.vb: uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.ConfigureEntityProperties(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of uDrive.Backend.Model.Entities.SpontanesDrive))
-  nameWithType: SpontanesDriveEntityTypeConfiguration.ConfigureEntityProperties(EntityTypeBuilder<SpontanesDrive>)
-  nameWithType.vb: SpontanesDriveEntityTypeConfiguration.ConfigureEntityProperties(EntityTypeBuilder(Of SpontanesDrive))
-- uid: uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.ConfigureEntityProperties*
-  name: ConfigureEntityProperties
-  href: api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.ConfigureEntityProperties.html
-  commentId: Overload:uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.ConfigureEntityProperties
-  fullName: uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.ConfigureEntityProperties
-  nameWithType: SpontanesDriveEntityTypeConfiguration.ConfigureEntityProperties
-- uid: uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.Table
-  name: Table
-  href: api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.Table.html
-  commentId: F:uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.Table
-  fullName: uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.Table
-  nameWithType: SpontanesDriveEntityTypeConfiguration.Table
-- uid: uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.TableSchema
-  name: TableSchema
-  href: api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.TableSchema.html
-  commentId: F:uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.TableSchema
-  fullName: uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.TableSchema
-  nameWithType: SpontanesDriveEntityTypeConfiguration.TableSchema
 - uid: uDrive.Backend.Model.Configuration.TourPlanEntityTypeConfiguration
   name: TourPlanEntityTypeConfiguration
   href: api/uDrive.Backend.Model.Configuration.TourPlanEntityTypeConfiguration.html
@@ -4251,90 +4176,144 @@ references:
   commentId: F:uDrive.Backend.Model.Configuration.TourPlanEntityTypeConfiguration.TableSchema
   fullName: uDrive.Backend.Model.Configuration.TourPlanEntityTypeConfiguration.TableSchema
   nameWithType: TourPlanEntityTypeConfiguration.TableSchema
-- uid: uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration
-  name: WeekdayEntityTypeConfiguration
-  href: api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.html
-  commentId: T:uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration
-  fullName: uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration
-  nameWithType: WeekdayEntityTypeConfiguration
-- uid: uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{uDrive.Backend.Model.Entities.Weekday})
-  name: Configure(EntityTypeBuilder<Weekday>)
-  href: api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.Configure.html#uDrive_Backend_Model_Configuration_WeekdayEntityTypeConfiguration_Configure_Microsoft_EntityFrameworkCore_Metadata_Builders_EntityTypeBuilder_uDrive_Backend_Model_Entities_Weekday__
-  commentId: M:uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{uDrive.Backend.Model.Entities.Weekday})
-  name.vb: Configure(EntityTypeBuilder(Of Weekday))
-  fullName: uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<uDrive.Backend.Model.Entities.Weekday>)
-  fullName.vb: uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of uDrive.Backend.Model.Entities.Weekday))
-  nameWithType: WeekdayEntityTypeConfiguration.Configure(EntityTypeBuilder<Weekday>)
-  nameWithType.vb: WeekdayEntityTypeConfiguration.Configure(EntityTypeBuilder(Of Weekday))
-- uid: uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.Configure*
-  name: Configure
-  href: api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.Configure.html
-  commentId: Overload:uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.Configure
-  fullName: uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.Configure
-  nameWithType: WeekdayEntityTypeConfiguration.Configure
-- uid: uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.ConfigureEntityProperties(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{uDrive.Backend.Model.Entities.Weekday})
-  name: ConfigureEntityProperties(EntityTypeBuilder<Weekday>)
-  href: api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.ConfigureEntityProperties.html#uDrive_Backend_Model_Configuration_WeekdayEntityTypeConfiguration_ConfigureEntityProperties_Microsoft_EntityFrameworkCore_Metadata_Builders_EntityTypeBuilder_uDrive_Backend_Model_Entities_Weekday__
-  commentId: M:uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.ConfigureEntityProperties(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder{uDrive.Backend.Model.Entities.Weekday})
-  name.vb: ConfigureEntityProperties(EntityTypeBuilder(Of Weekday))
-  fullName: uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.ConfigureEntityProperties(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<uDrive.Backend.Model.Entities.Weekday>)
-  fullName.vb: uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.ConfigureEntityProperties(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder(Of uDrive.Backend.Model.Entities.Weekday))
-  nameWithType: WeekdayEntityTypeConfiguration.ConfigureEntityProperties(EntityTypeBuilder<Weekday>)
-  nameWithType.vb: WeekdayEntityTypeConfiguration.ConfigureEntityProperties(EntityTypeBuilder(Of Weekday))
-- uid: uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.ConfigureEntityProperties*
-  name: ConfigureEntityProperties
-  href: api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.ConfigureEntityProperties.html
-  commentId: Overload:uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.ConfigureEntityProperties
-  fullName: uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.ConfigureEntityProperties
-  nameWithType: WeekdayEntityTypeConfiguration.ConfigureEntityProperties
-- uid: uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.Table
-  name: Table
-  href: api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.Table.html
-  commentId: F:uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.Table
-  fullName: uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.Table
-  nameWithType: WeekdayEntityTypeConfiguration.Table
-- uid: uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.TableSchema
-  name: TableSchema
-  href: api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.TableSchema.html
-  commentId: F:uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.TableSchema
-  fullName: uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.TableSchema
-  nameWithType: WeekdayEntityTypeConfiguration.TableSchema
 - uid: uDrive.Backend.Model.DTO
   name: uDrive.Backend.Model.DTO
   href: api/uDrive.Backend.Model.DTO.html
   commentId: N:uDrive.Backend.Model.DTO
   fullName: uDrive.Backend.Model.DTO
   nameWithType: uDrive.Backend.Model.DTO
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO
+  name: DriversInRangeDTO
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.html
+  commentId: T:uDrive.Backend.Model.DTO.DriversInRangeDTO
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO
+  nameWithType: DriversInRangeDTO
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.Distance
+  name: Distance
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Distance.html#uDrive_Backend_Model_DTO_DriversInRangeDTO_Distance
+  commentId: P:uDrive.Backend.Model.DTO.DriversInRangeDTO.Distance
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.Distance
+  nameWithType: DriversInRangeDTO.Distance
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.Distance*
+  name: Distance
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Distance.html
+  commentId: Overload:uDrive.Backend.Model.DTO.DriversInRangeDTO.Distance
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.Distance
+  nameWithType: DriversInRangeDTO.Distance
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.Driver
+  name: Driver
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Driver.html#uDrive_Backend_Model_DTO_DriversInRangeDTO_Driver
+  commentId: P:uDrive.Backend.Model.DTO.DriversInRangeDTO.Driver
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.Driver
+  nameWithType: DriversInRangeDTO.Driver
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.Driver*
+  name: Driver
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Driver.html
+  commentId: Overload:uDrive.Backend.Model.DTO.DriversInRangeDTO.Driver
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.Driver
+  nameWithType: DriversInRangeDTO.Driver
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname
+  name: Firstname
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname.html#uDrive_Backend_Model_DTO_DriversInRangeDTO_Firstname
+  commentId: P:uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname
+  nameWithType: DriversInRangeDTO.Firstname
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname*
+  name: Firstname
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname.html
+  commentId: Overload:uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname
+  nameWithType: DriversInRangeDTO.Firstname
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname
+  name: Lastname
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname.html#uDrive_Backend_Model_DTO_DriversInRangeDTO_Lastname
+  commentId: P:uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname
+  nameWithType: DriversInRangeDTO.Lastname
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname*
+  name: Lastname
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname.html
+  commentId: Overload:uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname
+  nameWithType: DriversInRangeDTO.Lastname
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.TourPlan
+  name: TourPlan
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.TourPlan.html#uDrive_Backend_Model_DTO_DriversInRangeDTO_TourPlan
+  commentId: P:uDrive.Backend.Model.DTO.DriversInRangeDTO.TourPlan
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.TourPlan
+  nameWithType: DriversInRangeDTO.TourPlan
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.TourPlan*
+  name: TourPlan
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.TourPlan.html
+  commentId: Overload:uDrive.Backend.Model.DTO.DriversInRangeDTO.TourPlan
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.TourPlan
+  nameWithType: DriversInRangeDTO.TourPlan
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName
+  name: UserName
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName.html#uDrive_Backend_Model_DTO_DriversInRangeDTO_UserName
+  commentId: P:uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName
+  nameWithType: DriversInRangeDTO.UserName
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName*
+  name: UserName
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName.html
+  commentId: Overload:uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName
+  nameWithType: DriversInRangeDTO.UserName
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson
+  name: idPerson
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson.html#uDrive_Backend_Model_DTO_DriversInRangeDTO_idPerson
+  commentId: P:uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson
+  nameWithType: DriversInRangeDTO.idPerson
+- uid: uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson*
+  name: idPerson
+  href: api/uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson.html
+  commentId: Overload:uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson
+  fullName: uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson
+  nameWithType: DriversInRangeDTO.idPerson
 - uid: uDrive.Backend.Model.DTO.GeocoordinatesDTO
   name: GeocoordinatesDTO
   href: api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.html
   commentId: T:uDrive.Backend.Model.DTO.GeocoordinatesDTO
   fullName: uDrive.Backend.Model.DTO.GeocoordinatesDTO
   nameWithType: GeocoordinatesDTO
-- uid: uDrive.Backend.Model.DTO.GeocoordinatesDTO.DriverPos
-  name: DriverPos
-  href: api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.DriverPos.html#uDrive_Backend_Model_DTO_GeocoordinatesDTO_DriverPos
-  commentId: P:uDrive.Backend.Model.DTO.GeocoordinatesDTO.DriverPos
-  fullName: uDrive.Backend.Model.DTO.GeocoordinatesDTO.DriverPos
-  nameWithType: GeocoordinatesDTO.DriverPos
-- uid: uDrive.Backend.Model.DTO.GeocoordinatesDTO.DriverPos*
-  name: DriverPos
-  href: api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.DriverPos.html
-  commentId: Overload:uDrive.Backend.Model.DTO.GeocoordinatesDTO.DriverPos
-  fullName: uDrive.Backend.Model.DTO.GeocoordinatesDTO.DriverPos
-  nameWithType: GeocoordinatesDTO.DriverPos
-- uid: uDrive.Backend.Model.DTO.GeocoordinatesDTO.PersonPos
-  name: PersonPos
-  href: api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.PersonPos.html#uDrive_Backend_Model_DTO_GeocoordinatesDTO_PersonPos
-  commentId: P:uDrive.Backend.Model.DTO.GeocoordinatesDTO.PersonPos
-  fullName: uDrive.Backend.Model.DTO.GeocoordinatesDTO.PersonPos
-  nameWithType: GeocoordinatesDTO.PersonPos
-- uid: uDrive.Backend.Model.DTO.GeocoordinatesDTO.PersonPos*
-  name: PersonPos
-  href: api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.PersonPos.html
-  commentId: Overload:uDrive.Backend.Model.DTO.GeocoordinatesDTO.PersonPos
-  fullName: uDrive.Backend.Model.DTO.GeocoordinatesDTO.PersonPos
-  nameWithType: GeocoordinatesDTO.PersonPos
+- uid: uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates
+  name: Coordinates
+  href: api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates.html#uDrive_Backend_Model_DTO_GeocoordinatesDTO_Coordinates
+  commentId: P:uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates
+  fullName: uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates
+  nameWithType: GeocoordinatesDTO.Coordinates
+- uid: uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates*
+  name: Coordinates
+  href: api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates.html
+  commentId: Overload:uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates
+  fullName: uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates
+  nameWithType: GeocoordinatesDTO.Coordinates
+- uid: uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLatitude
+  name: CurrentLatitude
+  href: api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLatitude.html#uDrive_Backend_Model_DTO_GeocoordinatesDTO_CurrentLatitude
+  commentId: P:uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLatitude
+  fullName: uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLatitude
+  nameWithType: GeocoordinatesDTO.CurrentLatitude
+- uid: uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLatitude*
+  name: CurrentLatitude
+  href: api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLatitude.html
+  commentId: Overload:uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLatitude
+  fullName: uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLatitude
+  nameWithType: GeocoordinatesDTO.CurrentLatitude
+- uid: uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLongitude
+  name: CurrentLongitude
+  href: api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLongitude.html#uDrive_Backend_Model_DTO_GeocoordinatesDTO_CurrentLongitude
+  commentId: P:uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLongitude
+  fullName: uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLongitude
+  nameWithType: GeocoordinatesDTO.CurrentLongitude
+- uid: uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLongitude*
+  name: CurrentLongitude
+  href: api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLongitude.html
+  commentId: Overload:uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLongitude
+  fullName: uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLongitude
+  nameWithType: GeocoordinatesDTO.CurrentLongitude
 - uid: uDrive.Backend.Model.DTO.IDTO
   name: IDTO
   href: api/uDrive.Backend.Model.DTO.IDTO.html
@@ -4629,18 +4608,6 @@ references:
   commentId: T:uDrive.Backend.Model.Entities.Driver
   fullName: uDrive.Backend.Model.Entities.Driver
   nameWithType: Driver
-- uid: uDrive.Backend.Model.Entities.Driver.DrivingSchedules
-  name: DrivingSchedules
-  href: api/uDrive.Backend.Model.Entities.Driver.DrivingSchedules.html#uDrive_Backend_Model_Entities_Driver_DrivingSchedules
-  commentId: P:uDrive.Backend.Model.Entities.Driver.DrivingSchedules
-  fullName: uDrive.Backend.Model.Entities.Driver.DrivingSchedules
-  nameWithType: Driver.DrivingSchedules
-- uid: uDrive.Backend.Model.Entities.Driver.DrivingSchedules*
-  name: DrivingSchedules
-  href: api/uDrive.Backend.Model.Entities.Driver.DrivingSchedules.html
-  commentId: Overload:uDrive.Backend.Model.Entities.Driver.DrivingSchedules
-  fullName: uDrive.Backend.Model.Entities.Driver.DrivingSchedules
-  nameWithType: Driver.DrivingSchedules
 - uid: uDrive.Backend.Model.Entities.Driver.Id
   name: Id
   href: api/uDrive.Backend.Model.Entities.Driver.Id.html#uDrive_Backend_Model_Entities_Driver_Id
@@ -4701,6 +4668,18 @@ references:
   commentId: Overload:uDrive.Backend.Model.Entities.Driver.IdPersonNavigation
   fullName: uDrive.Backend.Model.Entities.Driver.IdPersonNavigation
   nameWithType: Driver.IdPersonNavigation
+- uid: uDrive.Backend.Model.Entities.Driver.Seats
+  name: Seats
+  href: api/uDrive.Backend.Model.Entities.Driver.Seats.html#uDrive_Backend_Model_Entities_Driver_Seats
+  commentId: P:uDrive.Backend.Model.Entities.Driver.Seats
+  fullName: uDrive.Backend.Model.Entities.Driver.Seats
+  nameWithType: Driver.Seats
+- uid: uDrive.Backend.Model.Entities.Driver.Seats*
+  name: Seats
+  href: api/uDrive.Backend.Model.Entities.Driver.Seats.html
+  commentId: Overload:uDrive.Backend.Model.Entities.Driver.Seats
+  fullName: uDrive.Backend.Model.Entities.Driver.Seats
+  nameWithType: Driver.Seats
 - uid: uDrive.Backend.Model.Entities.Driver.TourPlans
   name: TourPlans
   href: api/uDrive.Backend.Model.Entities.Driver.TourPlans.html#uDrive_Backend_Model_Entities_Driver_TourPlans
@@ -4767,96 +4746,6 @@ references:
   commentId: Overload:uDrive.Backend.Model.Entities.DrivingLicence.LicenceClass
   fullName: uDrive.Backend.Model.Entities.DrivingLicence.LicenceClass
   nameWithType: DrivingLicence.LicenceClass
-- uid: uDrive.Backend.Model.Entities.DrivingSchedule
-  name: DrivingSchedule
-  href: api/uDrive.Backend.Model.Entities.DrivingSchedule.html
-  commentId: T:uDrive.Backend.Model.Entities.DrivingSchedule
-  fullName: uDrive.Backend.Model.Entities.DrivingSchedule
-  nameWithType: DrivingSchedule
-- uid: uDrive.Backend.Model.Entities.DrivingSchedule.Arrival
-  name: Arrival
-  href: api/uDrive.Backend.Model.Entities.DrivingSchedule.Arrival.html#uDrive_Backend_Model_Entities_DrivingSchedule_Arrival
-  commentId: P:uDrive.Backend.Model.Entities.DrivingSchedule.Arrival
-  fullName: uDrive.Backend.Model.Entities.DrivingSchedule.Arrival
-  nameWithType: DrivingSchedule.Arrival
-- uid: uDrive.Backend.Model.Entities.DrivingSchedule.Arrival*
-  name: Arrival
-  href: api/uDrive.Backend.Model.Entities.DrivingSchedule.Arrival.html
-  commentId: Overload:uDrive.Backend.Model.Entities.DrivingSchedule.Arrival
-  fullName: uDrive.Backend.Model.Entities.DrivingSchedule.Arrival
-  nameWithType: DrivingSchedule.Arrival
-- uid: uDrive.Backend.Model.Entities.DrivingSchedule.Drivers
-  name: Drivers
-  href: api/uDrive.Backend.Model.Entities.DrivingSchedule.Drivers.html#uDrive_Backend_Model_Entities_DrivingSchedule_Drivers
-  commentId: P:uDrive.Backend.Model.Entities.DrivingSchedule.Drivers
-  fullName: uDrive.Backend.Model.Entities.DrivingSchedule.Drivers
-  nameWithType: DrivingSchedule.Drivers
-- uid: uDrive.Backend.Model.Entities.DrivingSchedule.Drivers*
-  name: Drivers
-  href: api/uDrive.Backend.Model.Entities.DrivingSchedule.Drivers.html
-  commentId: Overload:uDrive.Backend.Model.Entities.DrivingSchedule.Drivers
-  fullName: uDrive.Backend.Model.Entities.DrivingSchedule.Drivers
-  nameWithType: DrivingSchedule.Drivers
-- uid: uDrive.Backend.Model.Entities.DrivingSchedule.Id
-  name: Id
-  href: api/uDrive.Backend.Model.Entities.DrivingSchedule.Id.html#uDrive_Backend_Model_Entities_DrivingSchedule_Id
-  commentId: P:uDrive.Backend.Model.Entities.DrivingSchedule.Id
-  fullName: uDrive.Backend.Model.Entities.DrivingSchedule.Id
-  nameWithType: DrivingSchedule.Id
-- uid: uDrive.Backend.Model.Entities.DrivingSchedule.Id*
-  name: Id
-  href: api/uDrive.Backend.Model.Entities.DrivingSchedule.Id.html
-  commentId: Overload:uDrive.Backend.Model.Entities.DrivingSchedule.Id
-  fullName: uDrive.Backend.Model.Entities.DrivingSchedule.Id
-  nameWithType: DrivingSchedule.Id
-- uid: uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekday
-  name: IdWeekday
-  href: api/uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekday.html#uDrive_Backend_Model_Entities_DrivingSchedule_IdWeekday
-  commentId: P:uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekday
-  fullName: uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekday
-  nameWithType: DrivingSchedule.IdWeekday
-- uid: uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekday*
-  name: IdWeekday
-  href: api/uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekday.html
-  commentId: Overload:uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekday
-  fullName: uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekday
-  nameWithType: DrivingSchedule.IdWeekday
-- uid: uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekdayNavigation
-  name: IdWeekdayNavigation
-  href: api/uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekdayNavigation.html#uDrive_Backend_Model_Entities_DrivingSchedule_IdWeekdayNavigation
-  commentId: P:uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekdayNavigation
-  fullName: uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekdayNavigation
-  nameWithType: DrivingSchedule.IdWeekdayNavigation
-- uid: uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekdayNavigation*
-  name: IdWeekdayNavigation
-  href: api/uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekdayNavigation.html
-  commentId: Overload:uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekdayNavigation
-  fullName: uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekdayNavigation
-  nameWithType: DrivingSchedule.IdWeekdayNavigation
-- uid: uDrive.Backend.Model.Entities.DrivingSchedule.SpontanesDrives
-  name: SpontanesDrives
-  href: api/uDrive.Backend.Model.Entities.DrivingSchedule.SpontanesDrives.html#uDrive_Backend_Model_Entities_DrivingSchedule_SpontanesDrives
-  commentId: P:uDrive.Backend.Model.Entities.DrivingSchedule.SpontanesDrives
-  fullName: uDrive.Backend.Model.Entities.DrivingSchedule.SpontanesDrives
-  nameWithType: DrivingSchedule.SpontanesDrives
-- uid: uDrive.Backend.Model.Entities.DrivingSchedule.SpontanesDrives*
-  name: SpontanesDrives
-  href: api/uDrive.Backend.Model.Entities.DrivingSchedule.SpontanesDrives.html
-  commentId: Overload:uDrive.Backend.Model.Entities.DrivingSchedule.SpontanesDrives
-  fullName: uDrive.Backend.Model.Entities.DrivingSchedule.SpontanesDrives
-  nameWithType: DrivingSchedule.SpontanesDrives
-- uid: uDrive.Backend.Model.Entities.DrivingSchedule.Start
-  name: Start
-  href: api/uDrive.Backend.Model.Entities.DrivingSchedule.Start.html#uDrive_Backend_Model_Entities_DrivingSchedule_Start
-  commentId: P:uDrive.Backend.Model.Entities.DrivingSchedule.Start
-  fullName: uDrive.Backend.Model.Entities.DrivingSchedule.Start
-  nameWithType: DrivingSchedule.Start
-- uid: uDrive.Backend.Model.Entities.DrivingSchedule.Start*
-  name: Start
-  href: api/uDrive.Backend.Model.Entities.DrivingSchedule.Start.html
-  commentId: Overload:uDrive.Backend.Model.Entities.DrivingSchedule.Start
-  fullName: uDrive.Backend.Model.Entities.DrivingSchedule.Start
-  nameWithType: DrivingSchedule.Start
 - uid: uDrive.Backend.Model.Entities.ErrorViewModel
   name: ErrorViewModel
   href: api/uDrive.Backend.Model.Entities.ErrorViewModel.html
@@ -4893,6 +4782,18 @@ references:
   commentId: T:uDrive.Backend.Model.Entities.Person
   fullName: uDrive.Backend.Model.Entities.Person
   nameWithType: Person
+- uid: uDrive.Backend.Model.Entities.Person.AsPassengers
+  name: AsPassengers
+  href: api/uDrive.Backend.Model.Entities.Person.AsPassengers.html#uDrive_Backend_Model_Entities_Person_AsPassengers
+  commentId: P:uDrive.Backend.Model.Entities.Person.AsPassengers
+  fullName: uDrive.Backend.Model.Entities.Person.AsPassengers
+  nameWithType: Person.AsPassengers
+- uid: uDrive.Backend.Model.Entities.Person.AsPassengers*
+  name: AsPassengers
+  href: api/uDrive.Backend.Model.Entities.Person.AsPassengers.html
+  commentId: Overload:uDrive.Backend.Model.Entities.Person.AsPassengers
+  fullName: uDrive.Backend.Model.Entities.Person.AsPassengers
+  nameWithType: Person.AsPassengers
 - uid: uDrive.Backend.Model.Entities.Person.Drivers
   name: Drivers
   href: api/uDrive.Backend.Model.Entities.Person.Drivers.html#uDrive_Backend_Model_Entities_Person_Drivers
@@ -4941,66 +4842,48 @@ references:
   commentId: Overload:uDrive.Backend.Model.Entities.Person.Verified
   fullName: uDrive.Backend.Model.Entities.Person.Verified
   nameWithType: Person.Verified
-- uid: uDrive.Backend.Model.Entities.SpontanesDrive
-  name: SpontanesDrive
-  href: api/uDrive.Backend.Model.Entities.SpontanesDrive.html
-  commentId: T:uDrive.Backend.Model.Entities.SpontanesDrive
-  fullName: uDrive.Backend.Model.Entities.SpontanesDrive
-  nameWithType: SpontanesDrive
-- uid: uDrive.Backend.Model.Entities.SpontanesDrive.Date
-  name: Date
-  href: api/uDrive.Backend.Model.Entities.SpontanesDrive.Date.html#uDrive_Backend_Model_Entities_SpontanesDrive_Date
-  commentId: P:uDrive.Backend.Model.Entities.SpontanesDrive.Date
-  fullName: uDrive.Backend.Model.Entities.SpontanesDrive.Date
-  nameWithType: SpontanesDrive.Date
-- uid: uDrive.Backend.Model.Entities.SpontanesDrive.Date*
-  name: Date
-  href: api/uDrive.Backend.Model.Entities.SpontanesDrive.Date.html
-  commentId: Overload:uDrive.Backend.Model.Entities.SpontanesDrive.Date
-  fullName: uDrive.Backend.Model.Entities.SpontanesDrive.Date
-  nameWithType: SpontanesDrive.Date
-- uid: uDrive.Backend.Model.Entities.SpontanesDrive.Id
-  name: Id
-  href: api/uDrive.Backend.Model.Entities.SpontanesDrive.Id.html#uDrive_Backend_Model_Entities_SpontanesDrive_Id
-  commentId: P:uDrive.Backend.Model.Entities.SpontanesDrive.Id
-  fullName: uDrive.Backend.Model.Entities.SpontanesDrive.Id
-  nameWithType: SpontanesDrive.Id
-- uid: uDrive.Backend.Model.Entities.SpontanesDrive.Id*
-  name: Id
-  href: api/uDrive.Backend.Model.Entities.SpontanesDrive.Id.html
-  commentId: Overload:uDrive.Backend.Model.Entities.SpontanesDrive.Id
-  fullName: uDrive.Backend.Model.Entities.SpontanesDrive.Id
-  nameWithType: SpontanesDrive.Id
-- uid: uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwrite
-  name: IdDrivingScheduleOverwrite
-  href: api/uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwrite.html#uDrive_Backend_Model_Entities_SpontanesDrive_IdDrivingScheduleOverwrite
-  commentId: P:uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwrite
-  fullName: uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwrite
-  nameWithType: SpontanesDrive.IdDrivingScheduleOverwrite
-- uid: uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwrite*
-  name: IdDrivingScheduleOverwrite
-  href: api/uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwrite.html
-  commentId: Overload:uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwrite
-  fullName: uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwrite
-  nameWithType: SpontanesDrive.IdDrivingScheduleOverwrite
-- uid: uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwriteNavigation
-  name: IdDrivingScheduleOverwriteNavigation
-  href: api/uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwriteNavigation.html#uDrive_Backend_Model_Entities_SpontanesDrive_IdDrivingScheduleOverwriteNavigation
-  commentId: P:uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwriteNavigation
-  fullName: uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwriteNavigation
-  nameWithType: SpontanesDrive.IdDrivingScheduleOverwriteNavigation
-- uid: uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwriteNavigation*
-  name: IdDrivingScheduleOverwriteNavigation
-  href: api/uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwriteNavigation.html
-  commentId: Overload:uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwriteNavigation
-  fullName: uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwriteNavigation
-  nameWithType: SpontanesDrive.IdDrivingScheduleOverwriteNavigation
 - uid: uDrive.Backend.Model.Entities.TourPlan
   name: TourPlan
   href: api/uDrive.Backend.Model.Entities.TourPlan.html
   commentId: T:uDrive.Backend.Model.Entities.TourPlan
   fullName: uDrive.Backend.Model.Entities.TourPlan
   nameWithType: TourPlan
+- uid: uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates
+  name: CurrentCoordinates
+  href: api/uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates.html#uDrive_Backend_Model_Entities_TourPlan_CurrentCoordinates
+  commentId: P:uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates
+  fullName: uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates
+  nameWithType: TourPlan.CurrentCoordinates
+- uid: uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates*
+  name: CurrentCoordinates
+  href: api/uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates.html
+  commentId: Overload:uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates
+  fullName: uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates
+  nameWithType: TourPlan.CurrentCoordinates
+- uid: uDrive.Backend.Model.Entities.TourPlan.CurrentLatitude
+  name: CurrentLatitude
+  href: api/uDrive.Backend.Model.Entities.TourPlan.CurrentLatitude.html#uDrive_Backend_Model_Entities_TourPlan_CurrentLatitude
+  commentId: P:uDrive.Backend.Model.Entities.TourPlan.CurrentLatitude
+  fullName: uDrive.Backend.Model.Entities.TourPlan.CurrentLatitude
+  nameWithType: TourPlan.CurrentLatitude
+- uid: uDrive.Backend.Model.Entities.TourPlan.CurrentLatitude*
+  name: CurrentLatitude
+  href: api/uDrive.Backend.Model.Entities.TourPlan.CurrentLatitude.html
+  commentId: Overload:uDrive.Backend.Model.Entities.TourPlan.CurrentLatitude
+  fullName: uDrive.Backend.Model.Entities.TourPlan.CurrentLatitude
+  nameWithType: TourPlan.CurrentLatitude
+- uid: uDrive.Backend.Model.Entities.TourPlan.CurrentLongitude
+  name: CurrentLongitude
+  href: api/uDrive.Backend.Model.Entities.TourPlan.CurrentLongitude.html#uDrive_Backend_Model_Entities_TourPlan_CurrentLongitude
+  commentId: P:uDrive.Backend.Model.Entities.TourPlan.CurrentLongitude
+  fullName: uDrive.Backend.Model.Entities.TourPlan.CurrentLongitude
+  nameWithType: TourPlan.CurrentLongitude
+- uid: uDrive.Backend.Model.Entities.TourPlan.CurrentLongitude*
+  name: CurrentLongitude
+  href: api/uDrive.Backend.Model.Entities.TourPlan.CurrentLongitude.html
+  commentId: Overload:uDrive.Backend.Model.Entities.TourPlan.CurrentLongitude
+  fullName: uDrive.Backend.Model.Entities.TourPlan.CurrentLongitude
+  nameWithType: TourPlan.CurrentLongitude
 - uid: uDrive.Backend.Model.Entities.TourPlan.Departure
   name: Departure
   href: api/uDrive.Backend.Model.Entities.TourPlan.Departure.html#uDrive_Backend_Model_Entities_TourPlan_Departure
@@ -5073,6 +4956,30 @@ references:
   commentId: Overload:uDrive.Backend.Model.Entities.TourPlan.IdDriver
   fullName: uDrive.Backend.Model.Entities.TourPlan.IdDriver
   nameWithType: TourPlan.IdDriver
+- uid: uDrive.Backend.Model.Entities.TourPlan.Message
+  name: Message
+  href: api/uDrive.Backend.Model.Entities.TourPlan.Message.html#uDrive_Backend_Model_Entities_TourPlan_Message
+  commentId: P:uDrive.Backend.Model.Entities.TourPlan.Message
+  fullName: uDrive.Backend.Model.Entities.TourPlan.Message
+  nameWithType: TourPlan.Message
+- uid: uDrive.Backend.Model.Entities.TourPlan.Message*
+  name: Message
+  href: api/uDrive.Backend.Model.Entities.TourPlan.Message.html
+  commentId: Overload:uDrive.Backend.Model.Entities.TourPlan.Message
+  fullName: uDrive.Backend.Model.Entities.TourPlan.Message
+  nameWithType: TourPlan.Message
+- uid: uDrive.Backend.Model.Entities.TourPlan.Passengers
+  name: Passengers
+  href: api/uDrive.Backend.Model.Entities.TourPlan.Passengers.html#uDrive_Backend_Model_Entities_TourPlan_Passengers
+  commentId: P:uDrive.Backend.Model.Entities.TourPlan.Passengers
+  fullName: uDrive.Backend.Model.Entities.TourPlan.Passengers
+  nameWithType: TourPlan.Passengers
+- uid: uDrive.Backend.Model.Entities.TourPlan.Passengers*
+  name: Passengers
+  href: api/uDrive.Backend.Model.Entities.TourPlan.Passengers.html
+  commentId: Overload:uDrive.Backend.Model.Entities.TourPlan.Passengers
+  fullName: uDrive.Backend.Model.Entities.TourPlan.Passengers
+  nameWithType: TourPlan.Passengers
 - uid: uDrive.Backend.Model.Entities.TourPlan.Start
   name: Start
   href: api/uDrive.Backend.Model.Entities.TourPlan.Start.html#uDrive_Backend_Model_Entities_TourPlan_Start
@@ -5097,48 +5004,6 @@ references:
   commentId: Overload:uDrive.Backend.Model.Entities.TourPlan.StopRequests
   fullName: uDrive.Backend.Model.Entities.TourPlan.StopRequests
   nameWithType: TourPlan.StopRequests
-- uid: uDrive.Backend.Model.Entities.Weekday
-  name: Weekday
-  href: api/uDrive.Backend.Model.Entities.Weekday.html
-  commentId: T:uDrive.Backend.Model.Entities.Weekday
-  fullName: uDrive.Backend.Model.Entities.Weekday
-  nameWithType: Weekday
-- uid: uDrive.Backend.Model.Entities.Weekday.DrivingSchedules
-  name: DrivingSchedules
-  href: api/uDrive.Backend.Model.Entities.Weekday.DrivingSchedules.html#uDrive_Backend_Model_Entities_Weekday_DrivingSchedules
-  commentId: P:uDrive.Backend.Model.Entities.Weekday.DrivingSchedules
-  fullName: uDrive.Backend.Model.Entities.Weekday.DrivingSchedules
-  nameWithType: Weekday.DrivingSchedules
-- uid: uDrive.Backend.Model.Entities.Weekday.DrivingSchedules*
-  name: DrivingSchedules
-  href: api/uDrive.Backend.Model.Entities.Weekday.DrivingSchedules.html
-  commentId: Overload:uDrive.Backend.Model.Entities.Weekday.DrivingSchedules
-  fullName: uDrive.Backend.Model.Entities.Weekday.DrivingSchedules
-  nameWithType: Weekday.DrivingSchedules
-- uid: uDrive.Backend.Model.Entities.Weekday.Id
-  name: Id
-  href: api/uDrive.Backend.Model.Entities.Weekday.Id.html#uDrive_Backend_Model_Entities_Weekday_Id
-  commentId: P:uDrive.Backend.Model.Entities.Weekday.Id
-  fullName: uDrive.Backend.Model.Entities.Weekday.Id
-  nameWithType: Weekday.Id
-- uid: uDrive.Backend.Model.Entities.Weekday.Id*
-  name: Id
-  href: api/uDrive.Backend.Model.Entities.Weekday.Id.html
-  commentId: Overload:uDrive.Backend.Model.Entities.Weekday.Id
-  fullName: uDrive.Backend.Model.Entities.Weekday.Id
-  nameWithType: Weekday.Id
-- uid: uDrive.Backend.Model.Entities.Weekday.Name
-  name: Name
-  href: api/uDrive.Backend.Model.Entities.Weekday.Name.html#uDrive_Backend_Model_Entities_Weekday_Name
-  commentId: P:uDrive.Backend.Model.Entities.Weekday.Name
-  fullName: uDrive.Backend.Model.Entities.Weekday.Name
-  nameWithType: Weekday.Name
-- uid: uDrive.Backend.Model.Entities.Weekday.Name*
-  name: Name
-  href: api/uDrive.Backend.Model.Entities.Weekday.Name.html
-  commentId: Overload:uDrive.Backend.Model.Entities.Weekday.Name
-  fullName: uDrive.Backend.Model.Entities.Weekday.Name
-  nameWithType: Weekday.Name
 - uid: uDrive.Backend.Model.EntityTypeConfigurationBase`1
   name: EntityTypeConfigurationBase<T>
   href: api/uDrive.Backend.Model.EntityTypeConfigurationBase-1.html
@@ -5308,6 +5173,90 @@ references:
   commentId: Overload:uDrive.Backend.Model.Migrations.changes.Up
   fullName: uDrive.Backend.Model.Migrations.changes.Up
   nameWithType: changes.Up
+- uid: uDrive.Backend.Model.Migrations.coordinates
+  name: coordinates
+  href: api/uDrive.Backend.Model.Migrations.coordinates.html
+  commentId: T:uDrive.Backend.Model.Migrations.coordinates
+  fullName: uDrive.Backend.Model.Migrations.coordinates
+  nameWithType: coordinates
+- uid: uDrive.Backend.Model.Migrations.coordinates.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  name: BuildTargetModel(ModelBuilder)
+  href: api/uDrive.Backend.Model.Migrations.coordinates.BuildTargetModel.html#uDrive_Backend_Model_Migrations_coordinates_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
+  commentId: M:uDrive.Backend.Model.Migrations.coordinates.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  fullName: uDrive.Backend.Model.Migrations.coordinates.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: coordinates.BuildTargetModel(ModelBuilder)
+- uid: uDrive.Backend.Model.Migrations.coordinates.BuildTargetModel*
+  name: BuildTargetModel
+  href: api/uDrive.Backend.Model.Migrations.coordinates.BuildTargetModel.html
+  commentId: Overload:uDrive.Backend.Model.Migrations.coordinates.BuildTargetModel
+  fullName: uDrive.Backend.Model.Migrations.coordinates.BuildTargetModel
+  nameWithType: coordinates.BuildTargetModel
+- uid: uDrive.Backend.Model.Migrations.coordinates.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Down(MigrationBuilder)
+  href: api/uDrive.Backend.Model.Migrations.coordinates.Down.html#uDrive_Backend_Model_Migrations_coordinates_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:uDrive.Backend.Model.Migrations.coordinates.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: uDrive.Backend.Model.Migrations.coordinates.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: coordinates.Down(MigrationBuilder)
+- uid: uDrive.Backend.Model.Migrations.coordinates.Down*
+  name: Down
+  href: api/uDrive.Backend.Model.Migrations.coordinates.Down.html
+  commentId: Overload:uDrive.Backend.Model.Migrations.coordinates.Down
+  fullName: uDrive.Backend.Model.Migrations.coordinates.Down
+  nameWithType: coordinates.Down
+- uid: uDrive.Backend.Model.Migrations.coordinates.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Up(MigrationBuilder)
+  href: api/uDrive.Backend.Model.Migrations.coordinates.Up.html#uDrive_Backend_Model_Migrations_coordinates_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:uDrive.Backend.Model.Migrations.coordinates.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: uDrive.Backend.Model.Migrations.coordinates.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: coordinates.Up(MigrationBuilder)
+- uid: uDrive.Backend.Model.Migrations.coordinates.Up*
+  name: Up
+  href: api/uDrive.Backend.Model.Migrations.coordinates.Up.html
+  commentId: Overload:uDrive.Backend.Model.Migrations.coordinates.Up
+  fullName: uDrive.Backend.Model.Migrations.coordinates.Up
+  nameWithType: coordinates.Up
+- uid: uDrive.Backend.Model.Migrations.extendDriver
+  name: extendDriver
+  href: api/uDrive.Backend.Model.Migrations.extendDriver.html
+  commentId: T:uDrive.Backend.Model.Migrations.extendDriver
+  fullName: uDrive.Backend.Model.Migrations.extendDriver
+  nameWithType: extendDriver
+- uid: uDrive.Backend.Model.Migrations.extendDriver.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  name: BuildTargetModel(ModelBuilder)
+  href: api/uDrive.Backend.Model.Migrations.extendDriver.BuildTargetModel.html#uDrive_Backend_Model_Migrations_extendDriver_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
+  commentId: M:uDrive.Backend.Model.Migrations.extendDriver.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  fullName: uDrive.Backend.Model.Migrations.extendDriver.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: extendDriver.BuildTargetModel(ModelBuilder)
+- uid: uDrive.Backend.Model.Migrations.extendDriver.BuildTargetModel*
+  name: BuildTargetModel
+  href: api/uDrive.Backend.Model.Migrations.extendDriver.BuildTargetModel.html
+  commentId: Overload:uDrive.Backend.Model.Migrations.extendDriver.BuildTargetModel
+  fullName: uDrive.Backend.Model.Migrations.extendDriver.BuildTargetModel
+  nameWithType: extendDriver.BuildTargetModel
+- uid: uDrive.Backend.Model.Migrations.extendDriver.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Down(MigrationBuilder)
+  href: api/uDrive.Backend.Model.Migrations.extendDriver.Down.html#uDrive_Backend_Model_Migrations_extendDriver_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:uDrive.Backend.Model.Migrations.extendDriver.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: uDrive.Backend.Model.Migrations.extendDriver.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: extendDriver.Down(MigrationBuilder)
+- uid: uDrive.Backend.Model.Migrations.extendDriver.Down*
+  name: Down
+  href: api/uDrive.Backend.Model.Migrations.extendDriver.Down.html
+  commentId: Overload:uDrive.Backend.Model.Migrations.extendDriver.Down
+  fullName: uDrive.Backend.Model.Migrations.extendDriver.Down
+  nameWithType: extendDriver.Down
+- uid: uDrive.Backend.Model.Migrations.extendDriver.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  name: Up(MigrationBuilder)
+  href: api/uDrive.Backend.Model.Migrations.extendDriver.Up.html#uDrive_Backend_Model_Migrations_extendDriver_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:uDrive.Backend.Model.Migrations.extendDriver.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: uDrive.Backend.Model.Migrations.extendDriver.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: extendDriver.Up(MigrationBuilder)
+- uid: uDrive.Backend.Model.Migrations.extendDriver.Up*
+  name: Up
+  href: api/uDrive.Backend.Model.Migrations.extendDriver.Up.html
+  commentId: Overload:uDrive.Backend.Model.Migrations.extendDriver.Up
+  fullName: uDrive.Backend.Model.Migrations.extendDriver.Up
+  nameWithType: extendDriver.Up
 - uid: uDrive.Backend.Model.ModelBuilderExtension
   name: ModelBuilderExtension
   href: api/uDrive.Backend.Model.ModelBuilderExtension.html
@@ -5440,132 +5389,6 @@ references:
   commentId: F:uDrive.Backend.Model.UDriveRoles.Secretary
   fullName: uDrive.Backend.Model.UDriveRoles.Secretary
   nameWithType: UDriveRoles.Secretary
-- uid: uDrive.Backend.Pages
-  name: uDrive.Backend.Pages
-  href: api/uDrive.Backend.Pages.html
-  commentId: N:uDrive.Backend.Pages
-  fullName: uDrive.Backend.Pages
-  nameWithType: uDrive.Backend.Pages
-- uid: uDrive.Backend.Pages.ApplicationDbContext
-  name: ApplicationDbContext
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.html
-  commentId: T:uDrive.Backend.Pages.ApplicationDbContext
-  fullName: uDrive.Backend.Pages.ApplicationDbContext
-  nameWithType: ApplicationDbContext
-- uid: uDrive.Backend.Pages.ApplicationDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{uDrive.Backend.Pages.ApplicationDbContext})
-  name: ApplicationDbContext(DbContextOptions<ApplicationDbContext>)
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.-ctor.html#uDrive_Backend_Pages_ApplicationDbContext__ctor_Microsoft_EntityFrameworkCore_DbContextOptions_uDrive_Backend_Pages_ApplicationDbContext__
-  commentId: M:uDrive.Backend.Pages.ApplicationDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{uDrive.Backend.Pages.ApplicationDbContext})
-  name.vb: New(DbContextOptions(Of ApplicationDbContext))
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.ApplicationDbContext(Microsoft.EntityFrameworkCore.DbContextOptions<uDrive.Backend.Pages.ApplicationDbContext>)
-  fullName.vb: uDrive.Backend.Pages.ApplicationDbContext.New(Microsoft.EntityFrameworkCore.DbContextOptions(Of uDrive.Backend.Pages.ApplicationDbContext))
-  nameWithType: ApplicationDbContext.ApplicationDbContext(DbContextOptions<ApplicationDbContext>)
-  nameWithType.vb: ApplicationDbContext.New(DbContextOptions(Of ApplicationDbContext))
-- uid: uDrive.Backend.Pages.ApplicationDbContext.#ctor*
-  name: ApplicationDbContext
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.-ctor.html
-  commentId: Overload:uDrive.Backend.Pages.ApplicationDbContext.#ctor
-  name.vb: New
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.ApplicationDbContext
-  fullName.vb: uDrive.Backend.Pages.ApplicationDbContext.New
-  nameWithType: ApplicationDbContext.ApplicationDbContext
-  nameWithType.vb: ApplicationDbContext.New
-- uid: uDrive.Backend.Pages.ApplicationDbContext.Drivers
-  name: Drivers
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.Drivers.html#uDrive_Backend_Pages_ApplicationDbContext_Drivers
-  commentId: P:uDrive.Backend.Pages.ApplicationDbContext.Drivers
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.Drivers
-  nameWithType: ApplicationDbContext.Drivers
-- uid: uDrive.Backend.Pages.ApplicationDbContext.Drivers*
-  name: Drivers
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.Drivers.html
-  commentId: Overload:uDrive.Backend.Pages.ApplicationDbContext.Drivers
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.Drivers
-  nameWithType: ApplicationDbContext.Drivers
-- uid: uDrive.Backend.Pages.ApplicationDbContext.DrivingLicences
-  name: DrivingLicences
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.DrivingLicences.html#uDrive_Backend_Pages_ApplicationDbContext_DrivingLicences
-  commentId: P:uDrive.Backend.Pages.ApplicationDbContext.DrivingLicences
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.DrivingLicences
-  nameWithType: ApplicationDbContext.DrivingLicences
-- uid: uDrive.Backend.Pages.ApplicationDbContext.DrivingLicences*
-  name: DrivingLicences
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.DrivingLicences.html
-  commentId: Overload:uDrive.Backend.Pages.ApplicationDbContext.DrivingLicences
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.DrivingLicences
-  nameWithType: ApplicationDbContext.DrivingLicences
-- uid: uDrive.Backend.Pages.ApplicationDbContext.DrivingSchedules
-  name: DrivingSchedules
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.DrivingSchedules.html#uDrive_Backend_Pages_ApplicationDbContext_DrivingSchedules
-  commentId: P:uDrive.Backend.Pages.ApplicationDbContext.DrivingSchedules
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.DrivingSchedules
-  nameWithType: ApplicationDbContext.DrivingSchedules
-- uid: uDrive.Backend.Pages.ApplicationDbContext.DrivingSchedules*
-  name: DrivingSchedules
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.DrivingSchedules.html
-  commentId: Overload:uDrive.Backend.Pages.ApplicationDbContext.DrivingSchedules
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.DrivingSchedules
-  nameWithType: ApplicationDbContext.DrivingSchedules
-- uid: uDrive.Backend.Pages.ApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
-  name: OnModelCreating(ModelBuilder)
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.OnModelCreating.html#uDrive_Backend_Pages_ApplicationDbContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_
-  commentId: M:uDrive.Backend.Pages.ApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
-  nameWithType: ApplicationDbContext.OnModelCreating(ModelBuilder)
-- uid: uDrive.Backend.Pages.ApplicationDbContext.OnModelCreating*
-  name: OnModelCreating
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.OnModelCreating.html
-  commentId: Overload:uDrive.Backend.Pages.ApplicationDbContext.OnModelCreating
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.OnModelCreating
-  nameWithType: ApplicationDbContext.OnModelCreating
-- uid: uDrive.Backend.Pages.ApplicationDbContext.Persons
-  name: Persons
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.Persons.html#uDrive_Backend_Pages_ApplicationDbContext_Persons
-  commentId: P:uDrive.Backend.Pages.ApplicationDbContext.Persons
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.Persons
-  nameWithType: ApplicationDbContext.Persons
-- uid: uDrive.Backend.Pages.ApplicationDbContext.Persons*
-  name: Persons
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.Persons.html
-  commentId: Overload:uDrive.Backend.Pages.ApplicationDbContext.Persons
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.Persons
-  nameWithType: ApplicationDbContext.Persons
-- uid: uDrive.Backend.Pages.ApplicationDbContext.SpontanesDrives
-  name: SpontanesDrives
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.SpontanesDrives.html#uDrive_Backend_Pages_ApplicationDbContext_SpontanesDrives
-  commentId: P:uDrive.Backend.Pages.ApplicationDbContext.SpontanesDrives
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.SpontanesDrives
-  nameWithType: ApplicationDbContext.SpontanesDrives
-- uid: uDrive.Backend.Pages.ApplicationDbContext.SpontanesDrives*
-  name: SpontanesDrives
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.SpontanesDrives.html
-  commentId: Overload:uDrive.Backend.Pages.ApplicationDbContext.SpontanesDrives
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.SpontanesDrives
-  nameWithType: ApplicationDbContext.SpontanesDrives
-- uid: uDrive.Backend.Pages.ApplicationDbContext.TourPlans
-  name: TourPlans
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.TourPlans.html#uDrive_Backend_Pages_ApplicationDbContext_TourPlans
-  commentId: P:uDrive.Backend.Pages.ApplicationDbContext.TourPlans
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.TourPlans
-  nameWithType: ApplicationDbContext.TourPlans
-- uid: uDrive.Backend.Pages.ApplicationDbContext.TourPlans*
-  name: TourPlans
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.TourPlans.html
-  commentId: Overload:uDrive.Backend.Pages.ApplicationDbContext.TourPlans
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.TourPlans
-  nameWithType: ApplicationDbContext.TourPlans
-- uid: uDrive.Backend.Pages.ApplicationDbContext.Weekdays
-  name: Weekdays
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.Weekdays.html#uDrive_Backend_Pages_ApplicationDbContext_Weekdays
-  commentId: P:uDrive.Backend.Pages.ApplicationDbContext.Weekdays
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.Weekdays
-  nameWithType: ApplicationDbContext.Weekdays
-- uid: uDrive.Backend.Pages.ApplicationDbContext.Weekdays*
-  name: Weekdays
-  href: api/uDrive.Backend.Pages.ApplicationDbContext.Weekdays.html
-  commentId: Overload:uDrive.Backend.Pages.ApplicationDbContext.Weekdays
-  fullName: uDrive.Backend.Pages.ApplicationDbContext.Weekdays
-  nameWithType: ApplicationDbContext.Weekdays
 - uid: uDrive.Backend.Pages.Areas.Identity.Pages.Account
   name: uDrive.Backend.Pages.Areas.Identity.Pages.Account
   href: api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.html
@@ -6916,13 +6739,13 @@ references:
   commentId: T:uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel
   fullName: uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel
   nameWithType: IndexModel
-- uid: uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{uDrive.Backend.Model.Entities.Person},Microsoft.AspNetCore.Identity.IUserStore{uDrive.Backend.Model.Entities.Person},Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel},uDrive.Backend.Pages.ApplicationDbContext)
+- uid: uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{uDrive.Backend.Model.Entities.Person},Microsoft.AspNetCore.Identity.IUserStore{uDrive.Backend.Model.Entities.Person},Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel},uDrive.Backend.Model.ApplicationDbContext)
   name: IndexModel(UserManager<Person>, IUserStore<Person>, ILogger<IndexModel>, ApplicationDbContext)
-  href: api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.-ctor.html#uDrive_Backend_Pages_Areas_Secretariat_Pages_Drivers_IndexModel__ctor_Microsoft_AspNetCore_Identity_UserManager_uDrive_Backend_Model_Entities_Person__Microsoft_AspNetCore_Identity_IUserStore_uDrive_Backend_Model_Entities_Person__Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Pages_Areas_Secretariat_Pages_Drivers_IndexModel__uDrive_Backend_Pages_ApplicationDbContext_
-  commentId: M:uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{uDrive.Backend.Model.Entities.Person},Microsoft.AspNetCore.Identity.IUserStore{uDrive.Backend.Model.Entities.Person},Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel},uDrive.Backend.Pages.ApplicationDbContext)
+  href: api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.-ctor.html#uDrive_Backend_Pages_Areas_Secretariat_Pages_Drivers_IndexModel__ctor_Microsoft_AspNetCore_Identity_UserManager_uDrive_Backend_Model_Entities_Person__Microsoft_AspNetCore_Identity_IUserStore_uDrive_Backend_Model_Entities_Person__Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Pages_Areas_Secretariat_Pages_Drivers_IndexModel__uDrive_Backend_Model_ApplicationDbContext_
+  commentId: M:uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.#ctor(Microsoft.AspNetCore.Identity.UserManager{uDrive.Backend.Model.Entities.Person},Microsoft.AspNetCore.Identity.IUserStore{uDrive.Backend.Model.Entities.Person},Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel},uDrive.Backend.Model.ApplicationDbContext)
   name.vb: New(UserManager(Of Person), IUserStore(Of Person), ILogger(Of IndexModel), ApplicationDbContext)
-  fullName: uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.IndexModel(Microsoft.AspNetCore.Identity.UserManager<uDrive.Backend.Model.Entities.Person>, Microsoft.AspNetCore.Identity.IUserStore<uDrive.Backend.Model.Entities.Person>, Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel>, uDrive.Backend.Pages.ApplicationDbContext)
-  fullName.vb: uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.New(Microsoft.AspNetCore.Identity.UserManager(Of uDrive.Backend.Model.Entities.Person), Microsoft.AspNetCore.Identity.IUserStore(Of uDrive.Backend.Model.Entities.Person), Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel), uDrive.Backend.Pages.ApplicationDbContext)
+  fullName: uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.IndexModel(Microsoft.AspNetCore.Identity.UserManager<uDrive.Backend.Model.Entities.Person>, Microsoft.AspNetCore.Identity.IUserStore<uDrive.Backend.Model.Entities.Person>, Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel>, uDrive.Backend.Model.ApplicationDbContext)
+  fullName.vb: uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.New(Microsoft.AspNetCore.Identity.UserManager(Of uDrive.Backend.Model.Entities.Person), Microsoft.AspNetCore.Identity.IUserStore(Of uDrive.Backend.Model.Entities.Person), Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel), uDrive.Backend.Model.ApplicationDbContext)
   nameWithType: IndexModel.IndexModel(UserManager<Person>, IUserStore<Person>, ILogger<IndexModel>, ApplicationDbContext)
   nameWithType.vb: IndexModel.New(UserManager(Of Person), IUserStore(Of Person), ILogger(Of IndexModel), ApplicationDbContext)
 - uid: uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.#ctor*

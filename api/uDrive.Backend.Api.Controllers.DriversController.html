@@ -90,7 +90,7 @@
 
   <h1 id="uDrive_Backend_Api_Controllers_DriversController" data-uid="uDrive.Backend.Api.Controllers.DriversController" class="text-break">
     Class DriversController
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/DriversController.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/DriversController.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,11 +98,13 @@
   <dl><dt>Assembly</dt><dd>uDrive.Backend.Api.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Controller to access and modify <a class="xref" href="uDrive.Backend.Model.Entities.Driver.html">Driver</a> Entities.
+Inherits from <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.PersonRoleController-1.html">PersonRoleController&lt;TEntity&gt;</a>.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DriversController : PersonRoleController&lt;Driver&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class DriversController : SecretaryRoleController&lt;Driver&gt;</code></pre>
   </div>
 
 
@@ -115,6 +117,8 @@
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controllerbase">ControllerBase</a></div>
       <div><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.html">AnonymousController</a>&lt;<a class="xref" href="uDrive.Backend.Model.Entities.Driver.html">Driver</a>&gt;</div>
       <div><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.PersonRoleController-1.html">PersonRoleController</a>&lt;<a class="xref" href="uDrive.Backend.Model.Entities.Driver.html">Driver</a>&gt;</div>
+      <div><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.DriverRoleController-1.html">DriverRoleController</a>&lt;<a class="xref" href="uDrive.Backend.Model.Entities.Driver.html">Driver</a>&gt;</div>
+      <div><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController-1.html">SecretaryRoleController</a>&lt;<a class="xref" href="uDrive.Backend.Model.Entities.Driver.html">Driver</a>&gt;</div>
       <div><span class="xref">DriversController</span></div>
     </dd>
   </dl>
@@ -689,13 +693,17 @@
 </h2>
 
   <dl class="jumplist">
-    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.DriversController.-ctor.html#uDrive_Backend_Api_Controllers_DriversController__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_DriversController__uDrive_Backend_Model_ApplicationDbContext_">DriversController(ILogger&lt;DriversController&gt;, ApplicationDbContext)</a></dt>
+    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.DriversController.-ctor.html#uDrive_Backend_Api_Controllers_DriversController__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_DriversController__uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_">DriversController(ILogger&lt;DriversController&gt;, ApplicationDbContext, IAuthService)</a></dt>
     <dd></dd>
   </dl>
 
   <h2 class="section" id="fields">Fields
 </h2>
 
+  <dl class="jumplist">
+    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.DriversController._authService.html">_authService</a></dt>
+    <dd></dd>
+  </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="uDrive.Backend.Api.Controllers.DriversController._context.html">_context</a></dt>
     <dd></dd>
@@ -704,10 +712,6 @@
   <h2 class="section" id="methods">Methods
 </h2>
 
-  <dl class="jumplist">
-    <dt><a class="xref" href="uDrive.Backend.Api.Controllers.DriversController.GetScheduledDriversAsync.html#uDrive_Backend_Api_Controllers_DriversController_GetScheduledDriversAsync">GetScheduledDriversAsync()</a></dt>
-    <dd></dd>
-  </dl>
   <dl class="jumplist">
     <dt><a class="xref" href="uDrive.Backend.Api.Controllers.DriversController.PostAddDrivingLicenceWithNewDriverAsync.html#uDrive_Backend_Api_Controllers_DriversController_PostAddDrivingLicenceWithNewDriverAsync_System_String_uDrive_Backend_Model_Entities_DrivingLicence_">PostAddDrivingLicenceWithNewDriverAsync(string, DrivingLicence)</a></dt>
     <dd></dd>
@@ -718,7 +722,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/DriversController.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/DriversController.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
         

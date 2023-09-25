@@ -4001,17 +4001,7 @@
       "source_relative_path": "api/uDrive.Backend.Api.Controllers.DistanceController.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Api.Controllers.DistanceController.GetAsync.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Api.Controllers.DistanceController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongAndLong.html"
+          "relative_path": "api/uDrive.Backend.Api.Controllers.DistanceController.ConvertToLongitudeAndLattiude.html"
         }
       },
       "version": ""
@@ -4041,7 +4031,7 @@
       "source_relative_path": "api/uDrive.Backend.Api.Controllers.DriversController.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Api.Controllers.DriversController.-ctor.html"
+          "relative_path": "api/uDrive.Backend.Api.Controllers.DriversController._authService.html"
         }
       },
       "version": ""
@@ -4051,7 +4041,7 @@
       "source_relative_path": "api/uDrive.Backend.Api.Controllers.DriversController.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Api.Controllers.DriversController.GetScheduledDriversAsync.html"
+          "relative_path": "api/uDrive.Backend.Api.Controllers.DriversController.-ctor.html"
         }
       },
       "version": ""
@@ -4208,6 +4198,96 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController._logger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController._context.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController.GetScheduledDriversAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController.FilterDriversBy5kmRadiusAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController.AssignForTourAsPassenger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController.MatchDistance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController.ConvertToLongitudeAndLatitude.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Api.Controllers.ScheduleTourController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/uDrive.Backend.Api.Controllers.TourPlansController.yml",
       "output": {
         ".html": {
@@ -4222,56 +4302,6 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Api.Controllers.TourPlansController.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Api.Controllers.WeekdaysController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Api.Controllers.WeekdaysController._context.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Api.Controllers.WeekdaysController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Api.Controllers.WeekdaysController.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Api.Controllers.WeekdaysController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Api.Controllers.WeekdaysController.PutAsync.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Api.Controllers.WeekdaysController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Api.Controllers.WeekdaysController.PatchAsync.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Api.Controllers.WeekdaysController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Api.Controllers.WeekdaysController.html"
         }
       },
       "version": ""
@@ -4371,6 +4401,16 @@
       "source_relative_path": "api/uDrive.Backend.Api.Services.AuthService.yml",
       "output": {
         ".html": {
+          "relative_path": "api/uDrive.Backend.Api.Services.AuthService.AssignPersonToRoleAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Api.Services.AuthService.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/uDrive.Backend.Api.Services.AuthService.GenerateJWTTokenAsync.html"
         }
       },
@@ -4382,6 +4422,16 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Api.Services.AuthService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Api.Services.Interfaces.IAuthService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Api.Services.Interfaces.IAuthService.AssignPersonToRoleAsync.html"
         }
       },
       "version": ""
@@ -4491,16 +4541,6 @@
       "source_relative_path": "api/uDrive.Backend.Model.ApplicationDbContext.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Model.ApplicationDbContext.DrivingSchedules.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.ApplicationDbContext.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Model.ApplicationDbContext.Persons.html"
         }
       },
@@ -4512,26 +4552,6 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Model.ApplicationDbContext.TourPlans.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.ApplicationDbContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.ApplicationDbContext.SpontanesDrives.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.ApplicationDbContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.ApplicationDbContext.Weekdays.html"
         }
       },
       "version": ""
@@ -4658,106 +4678,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.TableSchema.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.Table.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.Configure.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.ConfigureEntityProperties.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Configuration.DrivingScheduleEntityTypeConfiguration.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.TableSchema.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.Table.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.Configure.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.ConfigureEntityProperties.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Configuration.SpontanesDriveEntityTypeConfiguration.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/uDrive.Backend.Model.Configuration.TourPlanEntityTypeConfiguration.yml",
       "output": {
         ".html": {
@@ -4808,56 +4728,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.ConfigureEntityProperties.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.TableSchema.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.Table.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Configuration.WeekdayEntityTypeConfiguration.Configure.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/uDrive.Backend.Model.Configuration.yml",
       "output": {
         ".html": {
@@ -4868,10 +4738,80 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.yml",
+      "source_relative_path": "api/uDrive.Backend.Model.DTO.DriversInRangeDTO.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.DriverPos.html"
+          "relative_path": "api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Distance.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.DTO.DriversInRangeDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Firstname.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.DTO.DriversInRangeDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Lastname.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.DTO.DriversInRangeDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.DTO.DriversInRangeDTO.UserName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.DTO.DriversInRangeDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.DTO.DriversInRangeDTO.idPerson.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.DTO.DriversInRangeDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.DTO.DriversInRangeDTO.Driver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.DTO.DriversInRangeDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.DTO.DriversInRangeDTO.TourPlan.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.DTO.DriversInRangeDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.DTO.DriversInRangeDTO.html"
         }
       },
       "version": ""
@@ -4881,7 +4821,27 @@
       "source_relative_path": "api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.PersonPos.html"
+          "relative_path": "api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLatitude.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.CurrentLongitude.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.DTO.GeocoordinatesDTO.Coordinates.html"
         }
       },
       "version": ""
@@ -5101,16 +5061,6 @@
       "source_relative_path": "api/uDrive.Backend.Model.DTO.SignInUserDTO.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Model.DTO.SignInUserDTO.UserName.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.DTO.SignInUserDTO.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Model.DTO.SignInUserDTO.Password.html"
         }
       },
@@ -5132,6 +5082,16 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Model.DTO.SignInUserDTO.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.DTO.SignInUserDTO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.DTO.SignInUserDTO.UserName.html"
         }
       },
       "version": ""
@@ -5181,6 +5141,16 @@
       "source_relative_path": "api/uDrive.Backend.Model.Entities.Driver.yml",
       "output": {
         ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Entities.Driver.Seats.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Entities.Driver.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/uDrive.Backend.Model.Entities.Driver.IdDrivinglicenseNavigation.html"
         }
       },
@@ -5192,16 +5162,6 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Model.Entities.Driver.IdPersonNavigation.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.Driver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.Driver.DrivingSchedules.html"
         }
       },
       "version": ""
@@ -5272,86 +5232,6 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Model.Entities.DrivingLicence.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.DrivingSchedule.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.DrivingSchedule.Id.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.DrivingSchedule.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.DrivingSchedule.Start.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.DrivingSchedule.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.DrivingSchedule.Arrival.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.DrivingSchedule.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekday.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.DrivingSchedule.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.DrivingSchedule.IdWeekdayNavigation.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.DrivingSchedule.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.DrivingSchedule.SpontanesDrives.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.DrivingSchedule.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.DrivingSchedule.Drivers.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.DrivingSchedule.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.DrivingSchedule.html"
         }
       },
       "version": ""
@@ -5431,57 +5311,17 @@
       "source_relative_path": "api/uDrive.Backend.Model.Entities.Person.yml",
       "output": {
         ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Entities.Person.AsPassengers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Entities.Person.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/uDrive.Backend.Model.Entities.Person.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.SpontanesDrive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.SpontanesDrive.Id.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.SpontanesDrive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.SpontanesDrive.Date.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.SpontanesDrive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwrite.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.SpontanesDrive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.SpontanesDrive.IdDrivingScheduleOverwriteNavigation.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.SpontanesDrive.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.SpontanesDrive.html"
         }
       },
       "version": ""
@@ -5561,6 +5401,46 @@
       "source_relative_path": "api/uDrive.Backend.Model.Entities.TourPlan.yml",
       "output": {
         ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Entities.TourPlan.Message.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Entities.TourPlan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Entities.TourPlan.CurrentCoordinates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Entities.TourPlan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Entities.TourPlan.CurrentLatitude.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Entities.TourPlan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Entities.TourPlan.CurrentLongitude.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Entities.TourPlan.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/uDrive.Backend.Model.Entities.TourPlan.Driver.html"
         }
       },
@@ -5571,47 +5451,17 @@
       "source_relative_path": "api/uDrive.Backend.Model.Entities.TourPlan.yml",
       "output": {
         ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Entities.TourPlan.Passengers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Entities.TourPlan.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/uDrive.Backend.Model.Entities.TourPlan.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.Weekday.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.Weekday.Id.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.Weekday.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.Weekday.Name.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.Weekday.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.Weekday.DrivingSchedules.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.Weekday.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.Weekday.html"
         }
       },
       "version": ""
@@ -5772,6 +5622,86 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Model.Migrations.changes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Migrations.coordinates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Migrations.coordinates.Up.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Migrations.coordinates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Migrations.coordinates.Down.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Migrations.coordinates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Migrations.coordinates.BuildTargetModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Migrations.coordinates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Migrations.coordinates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Migrations.extendDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Migrations.extendDriver.Up.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Migrations.extendDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Migrations.extendDriver.Down.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Migrations.extendDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Migrations.extendDriver.BuildTargetModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Migrations.extendDriver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Migrations.extendDriver.html"
         }
       },
       "version": ""
@@ -5942,106 +5872,6 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Model.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.-ctor.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.Drivers.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.DrivingLicences.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.DrivingSchedules.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.Persons.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.TourPlans.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.SpontanesDrives.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.Weekdays.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.OnModelCreating.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.ApplicationDbContext.html"
         }
       },
       "version": ""
@@ -6261,6 +6091,26 @@
       "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel.yml",
       "output": {
         ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel._userManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel._logger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel.-ctor.html"
         }
       },
@@ -6292,26 +6142,6 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel._userManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel._logger.html"
         }
       },
       "version": ""
@@ -6651,36 +6481,6 @@
       "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.Index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.Email.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.ChangePassword.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.DownloadPersonalData.html"
         }
       },
@@ -6828,6 +6628,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.Index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.Email.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.ChangePassword.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.PersonalDataModel.yml",
       "output": {
         ".html": {
@@ -6872,6 +6702,46 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.PersonalDataModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel._userManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel._signInManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel._logger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.-ctor.html"
         }
       },
       "version": ""
@@ -6952,46 +6822,6 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel._userManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel._signInManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel._logger.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.-ctor.html"
         }
       },
       "version": ""
@@ -8712,16 +8542,6 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.html"
         }
       },
       "version": ""
