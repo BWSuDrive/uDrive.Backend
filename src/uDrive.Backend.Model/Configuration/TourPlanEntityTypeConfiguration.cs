@@ -49,8 +49,6 @@ internal class TourPlanEntityTypeConfiguration
 
         _ = builder.Property(e => e.Message);
 
-        _ = builder.Property(e => e.CurrentCoordinates);
-
         _ = builder.Property(e => e.CurrentLatitude).HasColumnType("float");
         ;
 
@@ -63,5 +61,10 @@ internal class TourPlanEntityTypeConfiguration
                        .HasForeignKey(d => d.IdDriver)
                        .OnDelete(DeleteBehavior.ClientSetNull)
             .HasConstraintName("FK_TourPlan_Driver");
+
+        _ = builder.HasMany(d => d.PassengerRequests).WithOne(p => p.TourPlan)
+            .HasForeignKey(d => d.idTourPlan)
+            .OnDelete(DeleteBehavior.ClientSetNull)
+            .HasConstraintName("FK_TourPlan_PassengarRequests");
     }
 }

@@ -1,0 +1,47 @@
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore;
+using System.Reflection.Emit;
+using uDrive.Backend.Model.Entities;
+
+namespace uDrive.Backend.Model.Configuration;
+
+internal class PassengerRequestEntityTypeConfiguration
+    : EntityTypeConfigurationBase<PassengerRequest>,
+    IEntityTypeConfiguration<PassengerRequest>
+{
+    private const string TableSchema = "uDrive";
+    private const string Table = "passengerRequest";
+
+    public void Configure(EntityTypeBuilder<PassengerRequest> builder)
+    {
+        // Calls a base class method for default settings
+        ConfigureDefaults(builder, Table, TableSchema);
+        // Calls method in this class for the entity-specific settings
+        ConfigureEntityProperties(builder);
+    }
+
+    private static void ConfigureEntityProperties(EntityTypeBuilder<PassengerRequest> builder)
+    {
+        //_ = builder.Property(e => e.Id).HasColumnName("id");
+        _ = builder.Property(e => e.idTourPlan)
+            .HasMaxLength(450)
+            .HasColumnName("idTourPlan");
+
+        _ = builder.Property(e => e.idPerson)
+            .HasMaxLength(450)
+            .HasColumnName("idPerson");
+
+        _ = builder.Property(e => e.Message).HasColumnName("message");
+
+        _ = builder.HasOne(d => d.Person).WithMany(p => p.PassengerRequests)
+            .HasForeignKey(d => d.idPerson)
+            .OnDelete(DeleteBehavior.ClientSetNull)
+            .HasConstraintName("FK_Person_PassengarRequests");
+
+        _ = builder.HasOne(d => d.TourPlan).WithMany(p => p.PassengerRequests)
+            .HasForeignKey(d => d.idTourPlan)
+            .OnDelete(DeleteBehavior.ClientSetNull)
+            .HasConstraintName("FK_TourPlan_PassengarRequests");
+
+    }
+}

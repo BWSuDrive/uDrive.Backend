@@ -4,12 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace uDrive.Backend.Model.DTO;
+namespace uDrive.Backend.Model.Entities;
 
-public class GeocoordinatesDTO
+public class PassengerRequest : IEntity
 {
-    //public string DriverPos { get; set; }
-    //public string PersonPos { get; set; }
+    public string? Id { get; set; }
+    
+    public string idPerson { get; set; }
+
+    public string idTourPlan { get; set; }
+    public string? Message { get; set; }
 
     /// <summary>
     /// The current Latitude
@@ -20,4 +24,9 @@ public class GeocoordinatesDTO
     /// The current Longitude
     /// </summary>
     public double CurrentLongitude { get; set; }
+
+    public virtual Person? Person { get; }
+
+    public virtual TourPlan? TourPlan { get; }
+
 }

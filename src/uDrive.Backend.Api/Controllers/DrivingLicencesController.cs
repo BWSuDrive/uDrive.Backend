@@ -7,20 +7,24 @@ using static Microsoft.AspNetCore.Http.StatusCodes;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using NuGet.Packaging.Licenses;
+using uDrive.Backend.Api.Services.Interfaces;
 
 namespace uDrive.Backend.Api.Controllers;
 
+/// <summary>
+/// Controller to access and modify <see cref="DrivingLicence"/> Entities. 
+/// Inherits from <see cref="SecretaryRoleController{TEntity}"/>.
+/// </summary>
 public class DrivingLicencesController : SecretaryRoleController<DrivingLicence>
 {
-    private static ApplicationDbContext _context;
-
+    /// <inheritdoc />
     public DrivingLicencesController(
     ILogger<DrivingLicencesController> logger,
-    ApplicationDbContext context
+    ApplicationDbContext context,
+    IAuthService authService
 )
-    : base(logger, context) { 
+    : base(logger, context, authService) { 
     
-    _context = context;
     }
 
    

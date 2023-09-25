@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using uDrive.Backend.Api.Controllers.Abstract;
+using uDrive.Backend.Api.Services.Interfaces;
 using uDrive.Backend.Model;
 using uDrive.Backend.Model.DTO;
 using uDrive.Backend.Model.Entities;
@@ -20,7 +21,7 @@ public class ScheduleTourController : ControllerBase
     protected ILogger _logger;
 
     private static ApplicationDbContext _context;
-    public ScheduleTourController(ILogger<ScheduleTourController> logger, ApplicationDbContext context)
+    public ScheduleTourController(ILogger<ScheduleTourController> logger, ApplicationDbContext context, IAuthService authService)
     {
         _logger = logger;
         _context = context;
@@ -153,10 +154,7 @@ public class ScheduleTourController : ControllerBase
             response.Add(new DriversInRangeDTO()
             {
                 Distance = tour.distance,
-                Firstname = person.Firstname,
-                Lastname = person.Lastname,
-                UserName = person.UserName,
-                idPerson = person.Id,
+                Person = person,
                 Driver = driver,
                 TourPlan = tour.driverTourPlan
             });
@@ -166,33 +164,36 @@ public class ScheduleTourController : ControllerBase
 
     }
 
-    [HttpPost("AssignForTourAsPassenger/{personId}")]
-    public async ValueTask<ActionResult> AssignForTourAsPassenger([FromBody] TourPlan tourPlan, [FromRoute] string personId)
-    {
-        if (!ModelState.IsValid)
-        {
-            return BadRequest(ModelState);
-        }
-        var findTour = await _context.TourPlans.Where(x => x.Id == tourPlan.Id).FirstOrDefaultAsync().ConfigureAwait(false);
+    //[HttpPost("RequestForTourAsPassenger/{personId}")]
+    //public async ValueTask<ActionResult> RequestForTourAsPassenger([FromBody] PassengerRequest passengerRequest)
+    //{
+    //    if (!ModelState.IsValid)
+    //    {
+    //        return BadRequest(ModelState);
+    //    }
 
-        if (findTour is null)
-        {
-            return BadRequest();
-        }
+    //    _ = await _context.PassengerRequests.AddAsync(passengerRequest).ConfigureAwait(false);
 
-        var person = await _context.Persons.Where(x => x.Id == personId).FirstOrDefaultAsync().ConfigureAwait(false);
+    //    //var findTour = await _context.TourPlans.Where(x => x.Id == passengerRequest.idTourPlan).FirstOrDefaultAsync().ConfigureAwait(false);
 
-        if (person is null)
-        {
-            return BadRequest($"{personId} not found");
-        }
+    //    //if (findTour is null)
+    //    //{
+    //    //    return BadRequest();
+    //    //}
 
-        person.AsPassengers.Add(findTour);
-        findTour.Passengers.Add(person);
-        _= await _context.SaveChangesAsync().ConfigureAwait(false);
-        return Ok();
+    //    //var person = await _context.Persons.Where(x => x.Id == passengerRequest.idPerson).FirstOrDefaultAsync().ConfigureAwait(false);
 
-    }
+    //    //if (person is null)
+    //    //{
+    //    //    return BadRequest($"{passengerRequest.idPerson} not found");
+    //    //}
+
+    //    ////person.AsPassengers.Add(findTour);
+    //    ////findTour.Passengers.Add(person);
+    //    _= await _context.SaveChangesAsync().ConfigureAwait(false);
+    //    return Ok();
+
+    //}
 
 
     private (bool inRange, double distance, TourPlan driverTourPlan) MatchDistance(TourPlan driverTourPlan, GeocoordinatesDTO personPosition, int maxRadius)
@@ -204,14 +205,4 @@ public class ScheduleTourController : ControllerBase
 
     }
 
-    /// <summary>
-    /// Helper method to get the Longitude and Latitude from an string
-    /// </summary>
-    /// <param name="val">The coordinates</param>
-    /// <returns>Tuple with Latitude and longitude</returns>
-    private (double longitude, double latitude) ConvertToLongitudeAndLatitude(string val)
-    {
-        var split = val.Split(',');
-        return (double.Parse(split[0], System.Globalization.CultureInfo.InvariantCulture), double.Parse(split[1], System.Globalization.CultureInfo.InvariantCulture));
-    }
 }
