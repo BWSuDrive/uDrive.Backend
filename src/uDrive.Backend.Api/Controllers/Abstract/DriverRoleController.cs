@@ -10,7 +10,7 @@ namespace uDrive.Backend.Api.Controllers.Abstract;
 /// Basic Controller for Get,Post,Put,Patch,Delete Methods, which need at least an <see cref="UDriveRoles.Driver"/> Role
 /// </summary>
 /// <typeparam name="TEntity"></typeparam>
-[Authorize(Roles = $"{UDriveRoles.Secretary},{UDriveRoles.Administrator},{UDriveRoles.Person}")]
+[Authorize(Roles = $"{UDriveRoles.Secretary},{UDriveRoles.Administrator},{UDriveRoles.Driver}")]
 public class DriverRoleController<TEntity> : PersonRoleController<TEntity>
     where TEntity : class, IEntity
 {

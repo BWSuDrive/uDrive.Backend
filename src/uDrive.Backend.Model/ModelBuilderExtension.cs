@@ -9,8 +9,8 @@ namespace uDrive.Backend.Model
         private static List<string> BlankRoles = new List<string>()
         {   UDriveRoles.Administrator,
             UDriveRoles.Secretary,
-                UDriveRoles.Driver,
-                UDriveRoles.Person
+            UDriveRoles.Driver,
+            UDriveRoles.Person
         };
 
 
@@ -50,7 +50,9 @@ namespace uDrive.Backend.Model
                     EmailConfirmed = true,
                     UserName = email,
                     NormalizedEmail = email.ToUpper(),
-                    NormalizedUserName = email.ToUpper()
+                    NormalizedUserName = email.ToUpper(),
+                    PhoneNumber = "0049619229040",
+                    PhoneNumberConfirmed = true
                 });
             }
             return persons;
@@ -83,7 +85,7 @@ namespace uDrive.Backend.Model
             foreach (var role in Roles)
             {
                 var person = Persons.Find(x => x.Firstname == role.Name);
-                
+
                 if (person is not null)
                 {
                     modelBuilder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>

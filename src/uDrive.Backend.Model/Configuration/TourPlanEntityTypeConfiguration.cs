@@ -63,7 +63,7 @@ internal class TourPlanEntityTypeConfiguration
             .HasConstraintName("FK_TourPlan_Driver");
 
         _ = builder.HasMany(d => d.PassengerRequests).WithOne(p => p.TourPlan)
-            .HasForeignKey(d => d.idTourPlan)
+            .HasForeignKey(d => d.IdTourPlan)
             .OnDelete(DeleteBehavior.ClientSetNull)
             .HasConstraintName("FK_TourPlan_PassengarRequests");
     }

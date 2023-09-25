@@ -9,6 +9,8 @@ using System.Security.Claims;
 using System.Text;
 using System.Data;
 using Microsoft.Extensions.Primitives;
+using uDrive.Backend.Model;
+using Microsoft.EntityFrameworkCore;
 
 namespace uDrive.Backend.Api.Services;
 
@@ -17,16 +19,21 @@ public class AuthService : IAuthService
     private readonly UserManager<Person> _userManager;
     private readonly RoleManager<IdentityRole> _roleManager;
     private readonly IConfiguration _configuration;
-    public AuthService(UserManager<Person> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration)
+    private readonly ApplicationDbContext _context;
+
+    public AuthService(UserManager<Person> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration, ApplicationDbContext context)
     {
         this._userManager = userManager;
         this._roleManager = roleManager;
         _configuration = configuration;
+        _context = context;
+
 
     }
 
-    public async Task<Person> GetLogedInPerson(StringValues token)
+    public async Task<Person> GetLogedInPerson(HttpContext context)
     {
+        var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
         var tokenHandler = new JwtSecurityTokenHandler();
         var SecretKey = _configuration["JWTKey:Secret"];
         var key = Encoding.UTF8.GetBytes(SecretKey);
@@ -42,8 +49,13 @@ public class AuthService : IAuthService
         }, out SecurityToken validatedToken);
 
         var jwtToken = (JwtSecurityToken)validatedToken;
-        var userId = jwtToken.Claims.First(x => x.Type == "NameIdentifier").Value;
-        var user = await _userManager.FindByIdAsync(userId).ConfigureAwait(false);
+        var userId = jwtToken.Claims.First(x => x.Type == ClaimTypes.Name).Value;
+        var user = await _userManager.FindByNameAsync(userId).ConfigureAwait(false);
+        if(user is null)
+        {
+            throw new InvalidOperationException();
+        }    
+        var dbUser = _context.Persons.Where(x => x.Id == user.Id).AsTracking().Include(driver => driver.Drivers).FirstOrDefault();
         return user;
     }
 
@@ -107,6 +119,7 @@ public class AuthService : IAuthService
         {
             new Claim(ClaimTypes.Name, user.UserName),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim("id",user.Id)
         };
         foreach (var userRole in userRoles)
         {
@@ -161,6 +174,8 @@ public class AuthService : IAuthService
             {
                new Claim(ClaimTypes.Name, user.UserName),
                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim("id",user.Id)
+
             };
 
         foreach (var userRole in userRoles)
