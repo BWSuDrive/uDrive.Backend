@@ -82,17 +82,17 @@ public class AuthService : IAuthService
                 Firstname = user.Firstname,
                 Lastname = user.Lastname,
                 Email = user.Email,
-                Roles = result.roles,
+                Roles = new List<string>(),
                 Token = result.token
             },
         };
     }
 
-    public async Task<(int identifier, string token, Person? user, List<string>? roles)> RegistrationAsync(RegisterDTO model)
+    public async Task<(int identifier, string token, Person? user)> RegistrationAsync(RegisterDTO model)
     {
         var userExists = await _userManager.FindByNameAsync(model.UserName);
         if (userExists != null)
-            return (0, "User already exists", null,null);
+            return (0, "User already exists", null);
 
         Person user = new()
         {
@@ -110,24 +110,24 @@ public class AuthService : IAuthService
         };
         var createUserResult = await _userManager.CreateAsync(user, model.Password);
         if (!createUserResult.Succeeded)
-            return (0, "User creation failed! Please check user details and try again.",null, null);
+            return (0, "User creation failed! Please check user details and try again.",null);
 
         await _userManager.AddToRoleAsync(user, "Person");
         var createdUser = await _userManager.FindByIdAsync(user.Id).ConfigureAwait(false);
-        var userRoles = new List<string>() { "Person" };
+        //var userRoles = new List<string>() { "Person" };
         var authClaims = new List<Claim>
         {
             new Claim(ClaimTypes.Name, user.UserName),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim("id",user.Id)
         };
-        foreach (var userRole in userRoles)
-        {
-            authClaims.Add(new Claim(ClaimTypes.Role, userRole));
-        }
+        //foreach (var userRole in userRoles)
+        //{
+        //    authClaims.Add(new Claim(ClaimTypes.Role, userRole));
+        //}
         string token = await GenerateJWTTokenAsync(user, authClaims).ConfigureAwait(false);
 
-        return (1, token, createdUser, userRoles);
+        return (1, token, createdUser);
     }
 
     public async Task<Response<LoginResponseDTO>> LoginSystemUserAsync(SignInUserDTO credentials)
