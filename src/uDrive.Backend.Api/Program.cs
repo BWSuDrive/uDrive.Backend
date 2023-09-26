@@ -9,8 +9,8 @@ using uDrive.Backend.Api.Services;
 using uDrive.Backend.Api.Services.Interfaces;
 using uDrive.Backend.Model;
 using uDrive.Backend.Model.Entities;
-
-internal class Program
+namespace uDrive.Backend.Api;
+public sealed class Program
 {
     private static void Main(string[] args)
     {
