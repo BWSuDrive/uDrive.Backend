@@ -2,18 +2,33 @@
 @model uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel
 @{
 }
-<div class="container">  
+<div class="container">
     <div class="row">
         <div class="col">Firstname</div>
         <div class="col">Lastname</div>
+        <div class="col">Expire Date</div>
+        <div class="col">Licence Class</div>
+        <div class="col">Free Seats</div>
         <div class="col"></div>
     </div>
-    @foreach (var user in Model.Users)
-    {<div class="row">
-            <div class="col">@user.Firstname</div>
-            <div class="col">@user.Lastname</div>
-            <div class="col"><button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Add as Driver</button></div>
-        </div>
-    }
+        @foreach (var user in Model.Users)
+    {
+            <form method="post">
+
+            <div class="row">
+                <div class="col">@user.Firstname</div>
+                <div class="col">@user.Lastname</div>
+                <div class="col"><input type="date" asp-for="Licence.ExpireDate" /></div>
+                <div class="col"><input asp-for="Licence.LicenceClass" /></div>
+                <div class="col">  <input type="number" name="NewDriver.Seats" /></div>
+
+
+
+                <input type="hidden" name="NewDriver.idPerson" value="@user.Id" />
+                <div class="col"><button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Add as Driver</button></div>
+            </div>
+        </form>
+
+        }
 </div>
 

@@ -14,6 +14,6 @@ namespace uDrive.Backend.Api.Services.Interfaces
         Task<(int identifier, string token, Person? user, List<string>? roles)> LoginAsync(SignInUserDTO model);
         Task<Response<LoginResponseDTO>> LoginSystemUserAsync(SignInUserDTO credentials);
         Task<Response<LoginResponseDTO>> RegisterSystemUserAsync(RegisterDTO registerDTO);
-        Task<(int identifier, string token, Person? user, List<string>? roles)> RegistrationAsync(RegisterDTO model);
+        Task<(int identifier, string token, Person? user)> RegistrationAsync(RegisterDTO model);
     }
 }
