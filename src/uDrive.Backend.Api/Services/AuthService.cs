@@ -104,9 +104,9 @@ public class AuthService : IAuthService
             EmailConfirmed = true,
             NormalizedEmail = model.Email.ToUpper(),
             NormalizedUserName = model.UserName.ToUpper(),
-            Verified = true,
+            Verified = false,
             PhoneNumber = model.PhoneNumber,
-            PhoneNumberConfirmed = true // TODO : change afterwards
+            PhoneNumberConfirmed = false // TODO : change afterwards
         };
         var createUserResult = await _userManager.CreateAsync(user, model.Password);
         if (!createUserResult.Succeeded)
