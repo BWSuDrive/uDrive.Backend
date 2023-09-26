@@ -3565,6 +3565,12 @@ references:
   commentId: Overload:AspNetCoreGeneratedDocument.Areas_Secretariat_Pages__ViewStart.Url
   fullName: AspNetCoreGeneratedDocument.Areas_Secretariat_Pages__ViewStart.Url
   nameWithType: Areas_Secretariat_Pages__ViewStart.Url
+- uid: uDrive.Backend.Api
+  name: uDrive.Backend.Api
+  href: api/uDrive.Backend.Api.html
+  commentId: N:uDrive.Backend.Api
+  fullName: uDrive.Backend.Api
+  nameWithType: uDrive.Backend.Api
 - uid: uDrive.Backend.Api.Controllers
   name: uDrive.Backend.Api.Controllers
   href: api/uDrive.Backend.Api.Controllers.html
@@ -4310,6 +4316,27 @@ references:
   commentId: F:uDrive.Backend.Api.Controllers.TourPlansController._logger
   fullName: uDrive.Backend.Api.Controllers.TourPlansController._logger
   nameWithType: TourPlansController._logger
+- uid: uDrive.Backend.Api.Program
+  name: Program
+  href: api/uDrive.Backend.Api.Program.html
+  commentId: T:uDrive.Backend.Api.Program
+  fullName: uDrive.Backend.Api.Program
+  nameWithType: Program
+- uid: uDrive.Backend.Api.Program.Main(System.String[])
+  name: Main(string[])
+  href: api/uDrive.Backend.Api.Program.Main.html#uDrive_Backend_Api_Program_Main_System_String___
+  commentId: M:uDrive.Backend.Api.Program.Main(System.String[])
+  name.vb: Main(String())
+  fullName: uDrive.Backend.Api.Program.Main(string[])
+  fullName.vb: uDrive.Backend.Api.Program.Main(String())
+  nameWithType: Program.Main(string[])
+  nameWithType.vb: Program.Main(String())
+- uid: uDrive.Backend.Api.Program.Main*
+  name: Main
+  href: api/uDrive.Backend.Api.Program.Main.html
+  commentId: Overload:uDrive.Backend.Api.Program.Main
+  fullName: uDrive.Backend.Api.Program.Main
+  nameWithType: Program.Main
 - uid: uDrive.Backend.Api.Services
   name: uDrive.Backend.Api.Services
   href: api/uDrive.Backend.Api.Services.html
