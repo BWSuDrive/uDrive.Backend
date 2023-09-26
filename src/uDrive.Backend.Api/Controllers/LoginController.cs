@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
+using System.Net;
 using uDrive.Backend.Api.Services.Interfaces;
 using uDrive.Backend.Model.DTO;
 using static Microsoft.AspNetCore.Http.StatusCodes;
@@ -79,6 +82,11 @@ public class LoginController : ControllerBase
         if (!response.Success)
         {
             return BadRequest(response);
+        }
+
+        if(!response.Data.Roles.Any())
+        {
+            return StatusCode(Status403Forbidden);
         }
         return Ok(response);
     }

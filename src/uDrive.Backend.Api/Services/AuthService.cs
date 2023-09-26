@@ -112,7 +112,7 @@ public class AuthService : IAuthService
         if (!createUserResult.Succeeded)
             return (0, "User creation failed! Please check user details and try again.",null);
 
-        await _userManager.AddToRoleAsync(user, "Person");
+        //await _userManager.AddToRoleAsync(user, "Person");
         var createdUser = await _userManager.FindByIdAsync(user.Id).ConfigureAwait(false);
         //var userRoles = new List<string>() { "Person" };
         var authClaims = new List<Claim>
