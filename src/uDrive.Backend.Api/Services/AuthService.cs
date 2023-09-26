@@ -8,7 +8,6 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Data;
-using Microsoft.Extensions.Primitives;
 using uDrive.Backend.Model;
 using Microsoft.EntityFrameworkCore;
 
@@ -37,7 +36,6 @@ public class AuthService : IAuthService
         var tokenHandler = new JwtSecurityTokenHandler();
         var SecretKey = _configuration["JWTKey:Secret"];
         var key = Encoding.UTF8.GetBytes(SecretKey);
-       // var token = HttpContext.Request.Headers["Authorization"];
 
         tokenHandler.ValidateToken(token, new TokenValidationParameters
         {
@@ -106,25 +104,20 @@ public class AuthService : IAuthService
             NormalizedUserName = model.UserName.ToUpper(),
             Verified = false,
             PhoneNumber = model.PhoneNumber,
-            PhoneNumberConfirmed = false // TODO : change afterwards
+            PhoneNumberConfirmed = false 
         };
         var createUserResult = await _userManager.CreateAsync(user, model.Password);
         if (!createUserResult.Succeeded)
             return (0, "User creation failed! Please check user details and try again.",null);
 
-        //await _userManager.AddToRoleAsync(user, "Person");
         var createdUser = await _userManager.FindByIdAsync(user.Id).ConfigureAwait(false);
-        //var userRoles = new List<string>() { "Person" };
         var authClaims = new List<Claim>
         {
             new Claim(ClaimTypes.Name, user.UserName),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
             new Claim("id",user.Id)
         };
-        //foreach (var userRole in userRoles)
-        //{
-        //    authClaims.Add(new Claim(ClaimTypes.Role, userRole));
-        //}
+
         string token = await GenerateJWTTokenAsync(user, authClaims).ConfigureAwait(false);
 
         return (1, token, createdUser);

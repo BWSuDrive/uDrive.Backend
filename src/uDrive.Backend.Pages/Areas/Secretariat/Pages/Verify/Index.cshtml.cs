@@ -56,6 +56,7 @@ namespace uDrive.Backend.Pages.Areas.Secretariat.Pages.Verify
             var us = await _userManager.FindByIdAsync(Id).ConfigureAwait(false);
             us.Verified = true;
             us.PhoneNumberConfirmed = true;
+            await _userManager.AddToRoleAsync(us,UDriveRoles.Person).ConfigureAwait(false);
             await _context.SaveChangesAsync();
             await PopulateAsync("");
             return Page();
