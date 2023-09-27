@@ -51,29 +51,29 @@ namespace uDrive.Backend.Model.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "2be1d292-4c01-4cfe-9cd8-c7b7012a5683",
-                            ConcurrencyStamp = "2be1d292-4c01-4cfe-9cd8-c7b7012a5683",
+                            Id = "08472ac6-afa5-4ad8-b3fb-e8935300a1a7",
+                            ConcurrencyStamp = "08472ac6-afa5-4ad8-b3fb-e8935300a1a7",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         },
                         new
                         {
-                            Id = "96288eaf-d4d3-4937-a67f-346ccee73b73",
-                            ConcurrencyStamp = "96288eaf-d4d3-4937-a67f-346ccee73b73",
+                            Id = "a7f16504-2bb3-4dee-9242-02f5109a3d97",
+                            ConcurrencyStamp = "a7f16504-2bb3-4dee-9242-02f5109a3d97",
                             Name = "Secretary",
                             NormalizedName = "SECRETARY"
                         },
                         new
                         {
-                            Id = "ce743c88-4ebd-4375-a627-387c69171052",
-                            ConcurrencyStamp = "ce743c88-4ebd-4375-a627-387c69171052",
+                            Id = "dbe4e9ba-17ad-4c1e-88b6-bdb0daae8775",
+                            ConcurrencyStamp = "dbe4e9ba-17ad-4c1e-88b6-bdb0daae8775",
                             Name = "Driver",
                             NormalizedName = "DRIVER"
                         },
                         new
                         {
-                            Id = "39f6894e-9781-4f87-9f23-8f145d7d1e33",
-                            ConcurrencyStamp = "39f6894e-9781-4f87-9f23-8f145d7d1e33",
+                            Id = "f9da1718-3815-4125-a8bb-a72404bd68cd",
+                            ConcurrencyStamp = "f9da1718-3815-4125-a8bb-a72404bd68cd",
                             Name = "Person",
                             NormalizedName = "PERSON"
                         });
@@ -170,23 +170,23 @@ namespace uDrive.Backend.Model.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "415fe08c-7c80-442f-981a-c1ecbe7b9daa",
-                            RoleId = "2be1d292-4c01-4cfe-9cd8-c7b7012a5683"
+                            UserId = "7b275be7-65d7-4aca-bd3e-b20119a2840e",
+                            RoleId = "08472ac6-afa5-4ad8-b3fb-e8935300a1a7"
                         },
                         new
                         {
-                            UserId = "bbcb6bae-9fc7-47de-9d82-ad4dac5691ac",
-                            RoleId = "96288eaf-d4d3-4937-a67f-346ccee73b73"
+                            UserId = "fdb668a2-2ff9-4afe-88bb-38239c56d3aa",
+                            RoleId = "a7f16504-2bb3-4dee-9242-02f5109a3d97"
                         },
                         new
                         {
-                            UserId = "9f9b0461-ada7-4ec3-a7cd-44b66c6650cc",
-                            RoleId = "ce743c88-4ebd-4375-a627-387c69171052"
+                            UserId = "5d04f148-3527-4f7c-b343-9a03e557faa7",
+                            RoleId = "dbe4e9ba-17ad-4c1e-88b6-bdb0daae8775"
                         },
                         new
                         {
-                            UserId = "167312eb-965f-4053-834f-eb8a9d6d11eb",
-                            RoleId = "39f6894e-9781-4f87-9f23-8f145d7d1e33"
+                            UserId = "64457a76-580d-407c-9b04-06791f7960d5",
+                            RoleId = "f9da1718-3815-4125-a8bb-a72404bd68cd"
                         });
                 });
 
@@ -252,9 +252,11 @@ namespace uDrive.Backend.Model.Migrations
                     b.HasKey("Id")
                         .HasName("PK_uDrive_driver");
 
-                    b.HasIndex("IdDrivinglicense");
+                    b.HasIndex("IdDrivinglicense")
+                        .IsUnique();
 
-                    b.HasIndex("IdPerson");
+                    b.HasIndex("IdPerson")
+                        .IsUnique();
 
                     b.ToTable("driver", "uDrive");
                 });
@@ -407,9 +409,9 @@ namespace uDrive.Backend.Model.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "415fe08c-7c80-442f-981a-c1ecbe7b9daa",
+                            Id = "7b275be7-65d7-4aca-bd3e-b20119a2840e",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d4b44abe-4e14-4bbd-8968-4875b3ec93cd",
+                            ConcurrencyStamp = "8681d6f8-3533-4253-a711-6ca0949b48a7",
                             Email = "Administrator@udrive.de",
                             EmailConfirmed = true,
                             Firstname = "Administrator",
@@ -417,19 +419,19 @@ namespace uDrive.Backend.Model.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMINISTRATOR@UDRIVE.DE",
                             NormalizedUserName = "ADMINISTRATOR@UDRIVE.DE",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKhEYfqf4SEPgiidjWoFZ1fOGPxUJwyMKpn2ZoEAris8rZChMSV+rDIEVbPOjcfq8Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFk0K2d+7/DIUPV/aAWL7osInqXUdhf8HnSnk6pmKIecypZEhVz2ojrhSr94DRkFCQ==",
                             PhoneNumber = "0049619229040",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "73660b4a-8878-4ea5-bf5e-68efd95cc8de",
+                            SecurityStamp = "744c1c31-0432-446f-8221-0975a1f38ab0",
                             TwoFactorEnabled = false,
                             UserName = "Administrator@udrive.de",
                             Verified = false
                         },
                         new
                         {
-                            Id = "bbcb6bae-9fc7-47de-9d82-ad4dac5691ac",
+                            Id = "fdb668a2-2ff9-4afe-88bb-38239c56d3aa",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "b30d3b5d-7234-4d36-ab74-b911ac76c866",
+                            ConcurrencyStamp = "f65461be-203e-4be4-9403-4e95ca683c50",
                             Email = "Secretary@udrive.de",
                             EmailConfirmed = true,
                             Firstname = "Secretary",
@@ -437,19 +439,19 @@ namespace uDrive.Backend.Model.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "SECRETARY@UDRIVE.DE",
                             NormalizedUserName = "SECRETARY@UDRIVE.DE",
-                            PasswordHash = "AQAAAAIAAYagAAAAEMPsxnQzFEl6Woz7p9MXWZcTI4dstKbSPXI7w6uqp1/geC9c1MPgKl8ckCqPyxaE3Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELzmYLzXYWNso/0PExkBrYzoBPQz1Dfn5mx1P6ZVAH5q+cVUsmHezO2p2ffqPVVNaw==",
                             PhoneNumber = "0049619229040",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "d14fd0d5-6aa9-470f-a717-d200028ff80f",
+                            SecurityStamp = "258de42e-55ea-4b60-ae1e-f4dc87af5219",
                             TwoFactorEnabled = false,
                             UserName = "Secretary@udrive.de",
                             Verified = false
                         },
                         new
                         {
-                            Id = "9f9b0461-ada7-4ec3-a7cd-44b66c6650cc",
+                            Id = "5d04f148-3527-4f7c-b343-9a03e557faa7",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "46d4c50f-8c33-4c2c-a797-c5f0883737c3",
+                            ConcurrencyStamp = "b396d19d-29e2-4b76-a74d-3f4ff59730c1",
                             Email = "Driver@udrive.de",
                             EmailConfirmed = true,
                             Firstname = "Driver",
@@ -457,19 +459,19 @@ namespace uDrive.Backend.Model.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "DRIVER@UDRIVE.DE",
                             NormalizedUserName = "DRIVER@UDRIVE.DE",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDZV2vp/+kmgfT/IS1GRz858Jmw0GUGIdNK9UDp7bp+GdJ2/heXNWZn9pCfIdk0Qkw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIL0EdRPUdIfSbGNc5bKHWeRCp3kd6+/eNMkoe7+R8qPl7qrc/7wNTuRdoToY22b5Q==",
                             PhoneNumber = "0049619229040",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "74e384d6-ffc8-46c5-8ccf-659f7a9b6ad1",
+                            SecurityStamp = "1cfa8cac-8579-4009-8c66-d22bedf3575b",
                             TwoFactorEnabled = false,
                             UserName = "Driver@udrive.de",
                             Verified = false
                         },
                         new
                         {
-                            Id = "167312eb-965f-4053-834f-eb8a9d6d11eb",
+                            Id = "64457a76-580d-407c-9b04-06791f7960d5",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4157289f-8b3b-4839-8264-8470a6ef2623",
+                            ConcurrencyStamp = "ae9b0a96-37e1-423b-9d33-63dc64fcea04",
                             Email = "Person@udrive.de",
                             EmailConfirmed = true,
                             Firstname = "Person",
@@ -477,10 +479,10 @@ namespace uDrive.Backend.Model.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "PERSON@UDRIVE.DE",
                             NormalizedUserName = "PERSON@UDRIVE.DE",
-                            PasswordHash = "AQAAAAIAAYagAAAAEND1R0/z/oWlzA16FjIEmgs+A46Izey5AcfnLlzbVZ630IBXzIjBRFtNBXRaFCDtMg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAED7ep8XQ55Ldl1fWZlCDjb0GN+o9h3GahbR23I6iyOBqbjHVDW3+bAheGi1pGrOFhg==",
                             PhoneNumber = "0049619229040",
                             PhoneNumberConfirmed = true,
-                            SecurityStamp = "4aa05674-6a32-42bb-b8a8-4e423fff223a",
+                            SecurityStamp = "a69cb709-752e-419a-bc31-1e04c73a4423",
                             TwoFactorEnabled = false,
                             UserName = "Person@udrive.de",
                             Verified = false
@@ -603,14 +605,16 @@ namespace uDrive.Backend.Model.Migrations
             modelBuilder.Entity("uDrive.Backend.Model.Entities.Driver", b =>
                 {
                     b.HasOne("uDrive.Backend.Model.Entities.DrivingLicence", "IdDrivinglicenseNavigation")
-                        .WithMany("Drivers")
-                        .HasForeignKey("IdDrivinglicense")
+                        .WithOne("Driver")
+                        .HasForeignKey("uDrive.Backend.Model.Entities.Driver", "IdDrivinglicense")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_Driver_DrivingLicence");
 
                     b.HasOne("uDrive.Backend.Model.Entities.Person", "IdPersonNavigation")
-                        .WithMany("Drivers")
-                        .HasForeignKey("IdPerson")
+                        .WithOne("Driver")
+                        .HasForeignKey("uDrive.Backend.Model.Entities.Driver", "IdPerson")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_Driver_Person");
 
@@ -624,12 +628,14 @@ namespace uDrive.Backend.Model.Migrations
                     b.HasOne("uDrive.Backend.Model.Entities.Person", "Person")
                         .WithMany("PassengerRequests")
                         .HasForeignKey("IdPerson")
+                        .OnDelete(DeleteBehavior.ClientCascade)
                         .IsRequired()
                         .HasConstraintName("FK_Person_PassengarRequests");
 
                     b.HasOne("uDrive.Backend.Model.Entities.TourPlan", "TourPlan")
                         .WithMany("PassengerRequests")
                         .HasForeignKey("IdTourPlan")
+                        .OnDelete(DeleteBehavior.ClientCascade)
                         .IsRequired()
                         .HasConstraintName("FK_TourPlan_PassengarRequests");
 
@@ -643,6 +649,7 @@ namespace uDrive.Backend.Model.Migrations
                     b.HasOne("uDrive.Backend.Model.Entities.Driver", "Driver")
                         .WithMany("TourPlans")
                         .HasForeignKey("IdDriver")
+                        .OnDelete(DeleteBehavior.ClientCascade)
                         .IsRequired()
                         .HasConstraintName("FK_TourPlan_Driver");
 
@@ -656,12 +663,12 @@ namespace uDrive.Backend.Model.Migrations
 
             modelBuilder.Entity("uDrive.Backend.Model.Entities.DrivingLicence", b =>
                 {
-                    b.Navigation("Drivers");
+                    b.Navigation("Driver");
                 });
 
             modelBuilder.Entity("uDrive.Backend.Model.Entities.Person", b =>
                 {
-                    b.Navigation("Drivers");
+                    b.Navigation("Driver");
 
                     b.Navigation("PassengerRequests");
                 });
