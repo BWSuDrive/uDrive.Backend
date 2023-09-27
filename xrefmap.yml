@@ -4193,6 +4193,18 @@ references:
   commentId: Overload:uDrive.Backend.Api.Controllers.PersonsController.AddRoleToUser
   fullName: uDrive.Backend.Api.Controllers.PersonsController.AddRoleToUser
   nameWithType: PersonsController.AddRoleToUser
+- uid: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonDeep(uDrive.Backend.Model.Entities.Person)
+  name: DeletePersonDeep(Person)
+  href: api/uDrive.Backend.Api.Controllers.PersonsController.DeletePersonDeep.html#uDrive_Backend_Api_Controllers_PersonsController_DeletePersonDeep_uDrive_Backend_Model_Entities_Person_
+  commentId: M:uDrive.Backend.Api.Controllers.PersonsController.DeletePersonDeep(uDrive.Backend.Model.Entities.Person)
+  fullName: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonDeep(uDrive.Backend.Model.Entities.Person)
+  nameWithType: PersonsController.DeletePersonDeep(Person)
+- uid: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonDeep*
+  name: DeletePersonDeep
+  href: api/uDrive.Backend.Api.Controllers.PersonsController.DeletePersonDeep.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.PersonsController.DeletePersonDeep
+  fullName: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonDeep
+  nameWithType: PersonsController.DeletePersonDeep
 - uid: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithEmailAsync(System.String)
   name: DeletePersonWithEmailAsync(string)
   href: api/uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithEmailAsync.html#uDrive_Backend_Api_Controllers_PersonsController_DeletePersonWithEmailAsync_System_String_
@@ -4223,6 +4235,18 @@ references:
   commentId: Overload:uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithIdAsync
   fullName: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithIdAsync
   nameWithType: PersonsController.DeletePersonWithIdAsync
+- uid: uDrive.Backend.Api.Controllers.PersonsController.DeleteTours(uDrive.Backend.Model.Entities.Driver)
+  name: DeleteTours(Driver)
+  href: api/uDrive.Backend.Api.Controllers.PersonsController.DeleteTours.html#uDrive_Backend_Api_Controllers_PersonsController_DeleteTours_uDrive_Backend_Model_Entities_Driver_
+  commentId: M:uDrive.Backend.Api.Controllers.PersonsController.DeleteTours(uDrive.Backend.Model.Entities.Driver)
+  fullName: uDrive.Backend.Api.Controllers.PersonsController.DeleteTours(uDrive.Backend.Model.Entities.Driver)
+  nameWithType: PersonsController.DeleteTours(Driver)
+- uid: uDrive.Backend.Api.Controllers.PersonsController.DeleteTours*
+  name: DeleteTours
+  href: api/uDrive.Backend.Api.Controllers.PersonsController.DeleteTours.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.PersonsController.DeleteTours
+  fullName: uDrive.Backend.Api.Controllers.PersonsController.DeleteTours
+  nameWithType: PersonsController.DeleteTours
 - uid: uDrive.Backend.Api.Controllers.PersonsController.VerifyPersonAsync(System.String)
   name: VerifyPersonAsync(string)
   href: api/uDrive.Backend.Api.Controllers.PersonsController.VerifyPersonAsync.html#uDrive_Backend_Api_Controllers_PersonsController_VerifyPersonAsync_System_String_
@@ -5456,18 +5480,18 @@ references:
   commentId: T:uDrive.Backend.Model.Entities.DrivingLicence
   fullName: uDrive.Backend.Model.Entities.DrivingLicence
   nameWithType: DrivingLicence
-- uid: uDrive.Backend.Model.Entities.DrivingLicence.Drivers
-  name: Drivers
-  href: api/uDrive.Backend.Model.Entities.DrivingLicence.Drivers.html#uDrive_Backend_Model_Entities_DrivingLicence_Drivers
-  commentId: P:uDrive.Backend.Model.Entities.DrivingLicence.Drivers
-  fullName: uDrive.Backend.Model.Entities.DrivingLicence.Drivers
-  nameWithType: DrivingLicence.Drivers
-- uid: uDrive.Backend.Model.Entities.DrivingLicence.Drivers*
-  name: Drivers
-  href: api/uDrive.Backend.Model.Entities.DrivingLicence.Drivers.html
-  commentId: Overload:uDrive.Backend.Model.Entities.DrivingLicence.Drivers
-  fullName: uDrive.Backend.Model.Entities.DrivingLicence.Drivers
-  nameWithType: DrivingLicence.Drivers
+- uid: uDrive.Backend.Model.Entities.DrivingLicence.Driver
+  name: Driver
+  href: api/uDrive.Backend.Model.Entities.DrivingLicence.Driver.html#uDrive_Backend_Model_Entities_DrivingLicence_Driver
+  commentId: P:uDrive.Backend.Model.Entities.DrivingLicence.Driver
+  fullName: uDrive.Backend.Model.Entities.DrivingLicence.Driver
+  nameWithType: DrivingLicence.Driver
+- uid: uDrive.Backend.Model.Entities.DrivingLicence.Driver*
+  name: Driver
+  href: api/uDrive.Backend.Model.Entities.DrivingLicence.Driver.html
+  commentId: Overload:uDrive.Backend.Model.Entities.DrivingLicence.Driver
+  fullName: uDrive.Backend.Model.Entities.DrivingLicence.Driver
+  nameWithType: DrivingLicence.Driver
 - uid: uDrive.Backend.Model.Entities.DrivingLicence.ExpireDate
   name: ExpireDate
   href: api/uDrive.Backend.Model.Entities.DrivingLicence.ExpireDate.html#uDrive_Backend_Model_Entities_DrivingLicence_ExpireDate
@@ -5648,18 +5672,18 @@ references:
   commentId: Overload:uDrive.Backend.Model.Entities.Person.AsPassengers
   fullName: uDrive.Backend.Model.Entities.Person.AsPassengers
   nameWithType: Person.AsPassengers
-- uid: uDrive.Backend.Model.Entities.Person.Drivers
-  name: Drivers
-  href: api/uDrive.Backend.Model.Entities.Person.Drivers.html#uDrive_Backend_Model_Entities_Person_Drivers
-  commentId: P:uDrive.Backend.Model.Entities.Person.Drivers
-  fullName: uDrive.Backend.Model.Entities.Person.Drivers
-  nameWithType: Person.Drivers
-- uid: uDrive.Backend.Model.Entities.Person.Drivers*
-  name: Drivers
-  href: api/uDrive.Backend.Model.Entities.Person.Drivers.html
-  commentId: Overload:uDrive.Backend.Model.Entities.Person.Drivers
-  fullName: uDrive.Backend.Model.Entities.Person.Drivers
-  nameWithType: Person.Drivers
+- uid: uDrive.Backend.Model.Entities.Person.Driver
+  name: Driver
+  href: api/uDrive.Backend.Model.Entities.Person.Driver.html#uDrive_Backend_Model_Entities_Person_Driver
+  commentId: P:uDrive.Backend.Model.Entities.Person.Driver
+  fullName: uDrive.Backend.Model.Entities.Person.Driver
+  nameWithType: Person.Driver
+- uid: uDrive.Backend.Model.Entities.Person.Driver*
+  name: Driver
+  href: api/uDrive.Backend.Model.Entities.Person.Driver.html
+  commentId: Overload:uDrive.Backend.Model.Entities.Person.Driver
+  fullName: uDrive.Backend.Model.Entities.Person.Driver
+  nameWithType: Person.Driver
 - uid: uDrive.Backend.Model.Entities.Person.Firstname
   name: Firstname
   href: api/uDrive.Backend.Model.Entities.Person.Firstname.html#uDrive_Backend_Model_Entities_Person_Firstname
@@ -5955,48 +5979,48 @@ references:
   commentId: Overload:uDrive.Backend.Model.Migrations.ApplicationDbContextModelSnapshot.BuildModel
   fullName: uDrive.Backend.Model.Migrations.ApplicationDbContextModelSnapshot.BuildModel
   nameWithType: ApplicationDbContextModelSnapshot.BuildModel
-- uid: uDrive.Backend.Model.Migrations.Initial
-  name: Initial
-  href: api/uDrive.Backend.Model.Migrations.Initial.html
-  commentId: T:uDrive.Backend.Model.Migrations.Initial
-  fullName: uDrive.Backend.Model.Migrations.Initial
-  nameWithType: Initial
-- uid: uDrive.Backend.Model.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+- uid: uDrive.Backend.Model.Migrations.Inital
+  name: Inital
+  href: api/uDrive.Backend.Model.Migrations.Inital.html
+  commentId: T:uDrive.Backend.Model.Migrations.Inital
+  fullName: uDrive.Backend.Model.Migrations.Inital
+  nameWithType: Inital
+- uid: uDrive.Backend.Model.Migrations.Inital.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
   name: BuildTargetModel(ModelBuilder)
-  href: api/uDrive.Backend.Model.Migrations.Initial.BuildTargetModel.html#uDrive_Backend_Model_Migrations_Initial_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
-  commentId: M:uDrive.Backend.Model.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  fullName: uDrive.Backend.Model.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
-  nameWithType: Initial.BuildTargetModel(ModelBuilder)
-- uid: uDrive.Backend.Model.Migrations.Initial.BuildTargetModel*
+  href: api/uDrive.Backend.Model.Migrations.Inital.BuildTargetModel.html#uDrive_Backend_Model_Migrations_Inital_BuildTargetModel_Microsoft_EntityFrameworkCore_ModelBuilder_
+  commentId: M:uDrive.Backend.Model.Migrations.Inital.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  fullName: uDrive.Backend.Model.Migrations.Inital.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)
+  nameWithType: Inital.BuildTargetModel(ModelBuilder)
+- uid: uDrive.Backend.Model.Migrations.Inital.BuildTargetModel*
   name: BuildTargetModel
-  href: api/uDrive.Backend.Model.Migrations.Initial.BuildTargetModel.html
-  commentId: Overload:uDrive.Backend.Model.Migrations.Initial.BuildTargetModel
-  fullName: uDrive.Backend.Model.Migrations.Initial.BuildTargetModel
-  nameWithType: Initial.BuildTargetModel
-- uid: uDrive.Backend.Model.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  href: api/uDrive.Backend.Model.Migrations.Inital.BuildTargetModel.html
+  commentId: Overload:uDrive.Backend.Model.Migrations.Inital.BuildTargetModel
+  fullName: uDrive.Backend.Model.Migrations.Inital.BuildTargetModel
+  nameWithType: Inital.BuildTargetModel
+- uid: uDrive.Backend.Model.Migrations.Inital.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
   name: Down(MigrationBuilder)
-  href: api/uDrive.Backend.Model.Migrations.Initial.Down.html#uDrive_Backend_Model_Migrations_Initial_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
-  commentId: M:uDrive.Backend.Model.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  fullName: uDrive.Backend.Model.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  nameWithType: Initial.Down(MigrationBuilder)
-- uid: uDrive.Backend.Model.Migrations.Initial.Down*
+  href: api/uDrive.Backend.Model.Migrations.Inital.Down.html#uDrive_Backend_Model_Migrations_Inital_Down_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:uDrive.Backend.Model.Migrations.Inital.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: uDrive.Backend.Model.Migrations.Inital.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: Inital.Down(MigrationBuilder)
+- uid: uDrive.Backend.Model.Migrations.Inital.Down*
   name: Down
-  href: api/uDrive.Backend.Model.Migrations.Initial.Down.html
-  commentId: Overload:uDrive.Backend.Model.Migrations.Initial.Down
-  fullName: uDrive.Backend.Model.Migrations.Initial.Down
-  nameWithType: Initial.Down
-- uid: uDrive.Backend.Model.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  href: api/uDrive.Backend.Model.Migrations.Inital.Down.html
+  commentId: Overload:uDrive.Backend.Model.Migrations.Inital.Down
+  fullName: uDrive.Backend.Model.Migrations.Inital.Down
+  nameWithType: Inital.Down
+- uid: uDrive.Backend.Model.Migrations.Inital.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
   name: Up(MigrationBuilder)
-  href: api/uDrive.Backend.Model.Migrations.Initial.Up.html#uDrive_Backend_Model_Migrations_Initial_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
-  commentId: M:uDrive.Backend.Model.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  fullName: uDrive.Backend.Model.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
-  nameWithType: Initial.Up(MigrationBuilder)
-- uid: uDrive.Backend.Model.Migrations.Initial.Up*
+  href: api/uDrive.Backend.Model.Migrations.Inital.Up.html#uDrive_Backend_Model_Migrations_Inital_Up_Microsoft_EntityFrameworkCore_Migrations_MigrationBuilder_
+  commentId: M:uDrive.Backend.Model.Migrations.Inital.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  fullName: uDrive.Backend.Model.Migrations.Inital.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)
+  nameWithType: Inital.Up(MigrationBuilder)
+- uid: uDrive.Backend.Model.Migrations.Inital.Up*
   name: Up
-  href: api/uDrive.Backend.Model.Migrations.Initial.Up.html
-  commentId: Overload:uDrive.Backend.Model.Migrations.Initial.Up
-  fullName: uDrive.Backend.Model.Migrations.Initial.Up
-  nameWithType: Initial.Up
+  href: api/uDrive.Backend.Model.Migrations.Inital.Up.html
+  commentId: Overload:uDrive.Backend.Model.Migrations.Inital.Up
+  fullName: uDrive.Backend.Model.Migrations.Inital.Up
+  nameWithType: Inital.Up
 - uid: uDrive.Backend.Model.ModelBuilderExtension
   name: ModelBuilderExtension
   href: api/uDrive.Backend.Model.ModelBuilderExtension.html
