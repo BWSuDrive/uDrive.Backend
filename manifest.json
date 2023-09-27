@@ -4901,6 +4901,16 @@
       "source_relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController.yml",
       "output": {
         ".html": {
+          "relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController._logger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController._authService.html"
         }
       },
@@ -4932,16 +4942,6 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController._logger.html"
         }
       },
       "version": ""
@@ -5311,16 +5311,6 @@
       "source_relative_path": "api/uDrive.Backend.Model.ApplicationDbContext.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Model.ApplicationDbContext.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.ApplicationDbContext.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Model.ApplicationDbContext.-ctor.html"
         }
       },
@@ -5382,6 +5372,16 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Model.ApplicationDbContext.OnModelCreating.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.ApplicationDbContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.ApplicationDbContext.html"
         }
       },
       "version": ""
@@ -6471,16 +6471,6 @@
       "source_relative_path": "api/uDrive.Backend.Model.Migrations.Initial.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Migrations.Initial.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Migrations.Initial.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Model.Migrations.Initial.Up.html"
         }
       },
@@ -6502,6 +6492,16 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Model.Migrations.Initial.BuildTargetModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Migrations.Initial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Migrations.Initial.html"
         }
       },
       "version": ""
@@ -7511,36 +7511,6 @@
       "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel._userManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel._signInManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel._logger.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.-ctor.html"
         }
       },
@@ -7622,6 +7592,36 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel._userManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel._signInManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel._logger.html"
         }
       },
       "version": ""
@@ -8401,26 +8401,6 @@
       "source_relative_path": "api/uDrive.Backend.Pages.Pages.IndexModel.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.IndexModel.OnGet.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.IndexModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.IndexModel.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.IndexModel.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.IndexModel._logger.html"
         }
       },
@@ -8432,6 +8412,26 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.IndexModel.-ctor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.IndexModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.IndexModel.OnGet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.IndexModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.IndexModel.html"
         }
       },
       "version": ""
@@ -9511,6 +9511,36 @@
       "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.yml",
       "output": {
         ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.__tagHelperAttribute_0.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.__tagHelperAttribute_1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.__tagHelperExecutionContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.__tagHelperRunner.html"
         }
       },
@@ -9622,36 +9652,6 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.__tagHelperAttribute_0.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.__tagHelperAttribute_1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.__tagHelperExecutionContext.html"
         }
       },
       "version": ""
