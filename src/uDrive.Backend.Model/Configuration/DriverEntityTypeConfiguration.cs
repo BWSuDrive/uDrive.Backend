@@ -35,13 +35,19 @@ internal class DriverEntityTypeConfiguration
 
         _ = builder.HasOne(d => d.IdDrivinglicenseNavigation).WithOne(p => p.Driver)
             .HasForeignKey<Driver>(d => d.IdDrivinglicense)
-            .OnDelete(DeleteBehavior.Cascade)
+            .OnDelete(DeleteBehavior.ClientSetNull)
             .HasConstraintName("FK_Driver_DrivingLicence");
 
         _ = builder.HasOne(d => d.IdPersonNavigation).WithOne(p => p.Driver)
             .HasForeignKey<Driver>(d => d.IdPerson)
-            .OnDelete(DeleteBehavior.Cascade)
+            .OnDelete(DeleteBehavior.ClientSetNull)
             .HasConstraintName("FK_Driver_Person");
+
+        _ = builder.HasMany(d => d.TourPlans)
+                       .WithOne(p => p.Driver)
+                       .HasForeignKey(d => d.IdDriver)
+                       .OnDelete(DeleteBehavior.ClientSetNull)
+            .HasConstraintName("FK_TourPlan_Driver");
 
     }
 }

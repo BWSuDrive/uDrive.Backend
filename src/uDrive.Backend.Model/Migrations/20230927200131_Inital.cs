@@ -209,15 +209,13 @@ namespace uDrive.Backend.Model.Migrations
                         column: x => x.idDrivinglicense,
                         principalSchema: "uDrive",
                         principalTable: "drivingLicence",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "id");
                     table.ForeignKey(
                         name: "FK_Driver_Person",
                         column: x => x.idPerson,
                         principalSchema: "uDrive",
                         principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -269,7 +267,8 @@ namespace uDrive.Backend.Model.Migrations
                         column: x => x.idPerson,
                         principalSchema: "uDrive",
                         principalTable: "AspNetUsers",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_TourPlan_PassengarRequests",
                         column: x => x.idTourPlan,
@@ -311,10 +310,10 @@ namespace uDrive.Backend.Model.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "08472ac6-afa5-4ad8-b3fb-e8935300a1a7", "08472ac6-afa5-4ad8-b3fb-e8935300a1a7", "Administrator", "ADMINISTRATOR" },
-                    { "a7f16504-2bb3-4dee-9242-02f5109a3d97", "a7f16504-2bb3-4dee-9242-02f5109a3d97", "Secretary", "SECRETARY" },
-                    { "dbe4e9ba-17ad-4c1e-88b6-bdb0daae8775", "dbe4e9ba-17ad-4c1e-88b6-bdb0daae8775", "Driver", "DRIVER" },
-                    { "f9da1718-3815-4125-a8bb-a72404bd68cd", "f9da1718-3815-4125-a8bb-a72404bd68cd", "Person", "PERSON" }
+                    { "5ab3e8a8-ba3e-44eb-b53f-9a0f82640272", "5ab3e8a8-ba3e-44eb-b53f-9a0f82640272", "Person", "PERSON" },
+                    { "a0523c72-95c5-4c8d-aefd-ab5d51dd91b6", "a0523c72-95c5-4c8d-aefd-ab5d51dd91b6", "Secretary", "SECRETARY" },
+                    { "b17b4cd4-3c4a-4f89-a7e5-f88405f27dd6", "b17b4cd4-3c4a-4f89-a7e5-f88405f27dd6", "Driver", "DRIVER" },
+                    { "bc56875b-72bf-4c07-bc14-b41766715d02", "bc56875b-72bf-4c07-bc14-b41766715d02", "Administrator", "ADMINISTRATOR" }
                 });
 
             migrationBuilder.InsertData(
@@ -323,10 +322,10 @@ namespace uDrive.Backend.Model.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "Firstname", "Lastname", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName", "Verified" },
                 values: new object[,]
                 {
-                    { "5d04f148-3527-4f7c-b343-9a03e557faa7", 0, "b396d19d-29e2-4b76-a74d-3f4ff59730c1", "Driver@udrive.de", true, "Driver", "Driver", false, null, "DRIVER@UDRIVE.DE", "DRIVER@UDRIVE.DE", "AQAAAAIAAYagAAAAEIL0EdRPUdIfSbGNc5bKHWeRCp3kd6+/eNMkoe7+R8qPl7qrc/7wNTuRdoToY22b5Q==", "0049619229040", true, "1cfa8cac-8579-4009-8c66-d22bedf3575b", false, "Driver@udrive.de", false },
-                    { "64457a76-580d-407c-9b04-06791f7960d5", 0, "ae9b0a96-37e1-423b-9d33-63dc64fcea04", "Person@udrive.de", true, "Person", "Person", false, null, "PERSON@UDRIVE.DE", "PERSON@UDRIVE.DE", "AQAAAAIAAYagAAAAED7ep8XQ55Ldl1fWZlCDjb0GN+o9h3GahbR23I6iyOBqbjHVDW3+bAheGi1pGrOFhg==", "0049619229040", true, "a69cb709-752e-419a-bc31-1e04c73a4423", false, "Person@udrive.de", false },
-                    { "7b275be7-65d7-4aca-bd3e-b20119a2840e", 0, "8681d6f8-3533-4253-a711-6ca0949b48a7", "Administrator@udrive.de", true, "Administrator", "Administrator", false, null, "ADMINISTRATOR@UDRIVE.DE", "ADMINISTRATOR@UDRIVE.DE", "AQAAAAIAAYagAAAAEFk0K2d+7/DIUPV/aAWL7osInqXUdhf8HnSnk6pmKIecypZEhVz2ojrhSr94DRkFCQ==", "0049619229040", true, "744c1c31-0432-446f-8221-0975a1f38ab0", false, "Administrator@udrive.de", false },
-                    { "fdb668a2-2ff9-4afe-88bb-38239c56d3aa", 0, "f65461be-203e-4be4-9403-4e95ca683c50", "Secretary@udrive.de", true, "Secretary", "Secretary", false, null, "SECRETARY@UDRIVE.DE", "SECRETARY@UDRIVE.DE", "AQAAAAIAAYagAAAAELzmYLzXYWNso/0PExkBrYzoBPQz1Dfn5mx1P6ZVAH5q+cVUsmHezO2p2ffqPVVNaw==", "0049619229040", true, "258de42e-55ea-4b60-ae1e-f4dc87af5219", false, "Secretary@udrive.de", false }
+                    { "667b8877-92d3-4fca-8ceb-6658714ab9ff", 0, "d542d0a6-ef4d-40b4-9208-13c633415c5d", "Secretary@udrive.de", true, "Secretary", "Secretary", false, null, "SECRETARY@UDRIVE.DE", "SECRETARY@UDRIVE.DE", "AQAAAAIAAYagAAAAEAXYx2B5If49Z7eusofWDeH8VyVSlJ1cjauZqgd5tQ1HsJsfpMvYy9TJqssasdoNew==", "0049619229040", true, "91be4285-5345-43f1-a57d-e0c44da26d06", false, "Secretary@udrive.de", false },
+                    { "691559b0-1394-48e3-a4d7-39270761b625", 0, "2017e71b-5ee8-4470-9d58-38764205f3b5", "Person@udrive.de", true, "Person", "Person", false, null, "PERSON@UDRIVE.DE", "PERSON@UDRIVE.DE", "AQAAAAIAAYagAAAAEDK7kffCDQj4zJx9nIc2d0Oagf6007Irl5l1HLoICWb2LSVF2JuKl8cjMEcKI18v5g==", "0049619229040", true, "ac2df993-57e5-4ca4-9b03-c175a747e646", false, "Person@udrive.de", false },
+                    { "be002a19-4554-473d-a262-a62b2e75c176", 0, "444a0675-674f-461c-906c-2bf3ce860886", "Administrator@udrive.de", true, "Administrator", "Administrator", false, null, "ADMINISTRATOR@UDRIVE.DE", "ADMINISTRATOR@UDRIVE.DE", "AQAAAAIAAYagAAAAEAAvxwGMm3VbTm6GigbNr8y9kKHAK2vHQrGwbzKtcqHT1EBEfZ4H0fdRyhUNAXI/uQ==", "0049619229040", true, "0a72d943-f3b4-41cf-9374-b1af61c47afe", false, "Administrator@udrive.de", false },
+                    { "db960c2a-dc60-492b-ae56-90c4e2f36f89", 0, "f880e9e2-bb5b-4f74-bb7d-8ab0addf227a", "Driver@udrive.de", true, "Driver", "Driver", false, null, "DRIVER@UDRIVE.DE", "DRIVER@UDRIVE.DE", "AQAAAAIAAYagAAAAEKQAJhmD6C5LSzdb4/7Aq//NZZa9masT63EQrlKpQPFRAAceA+OYZCkp1BpDedlz2w==", "0049619229040", true, "0f5bea06-8ab0-404b-bc5d-0402ac126f36", false, "Driver@udrive.de", false }
                 });
 
             migrationBuilder.InsertData(
@@ -335,10 +334,10 @@ namespace uDrive.Backend.Model.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "dbe4e9ba-17ad-4c1e-88b6-bdb0daae8775", "5d04f148-3527-4f7c-b343-9a03e557faa7" },
-                    { "f9da1718-3815-4125-a8bb-a72404bd68cd", "64457a76-580d-407c-9b04-06791f7960d5" },
-                    { "08472ac6-afa5-4ad8-b3fb-e8935300a1a7", "7b275be7-65d7-4aca-bd3e-b20119a2840e" },
-                    { "a7f16504-2bb3-4dee-9242-02f5109a3d97", "fdb668a2-2ff9-4afe-88bb-38239c56d3aa" }
+                    { "a0523c72-95c5-4c8d-aefd-ab5d51dd91b6", "667b8877-92d3-4fca-8ceb-6658714ab9ff" },
+                    { "5ab3e8a8-ba3e-44eb-b53f-9a0f82640272", "691559b0-1394-48e3-a4d7-39270761b625" },
+                    { "bc56875b-72bf-4c07-bc14-b41766715d02", "be002a19-4554-473d-a262-a62b2e75c176" },
+                    { "b17b4cd4-3c4a-4f89-a7e5-f88405f27dd6", "db960c2a-dc60-492b-ae56-90c4e2f36f89" }
                 });
 
             migrationBuilder.CreateIndex(

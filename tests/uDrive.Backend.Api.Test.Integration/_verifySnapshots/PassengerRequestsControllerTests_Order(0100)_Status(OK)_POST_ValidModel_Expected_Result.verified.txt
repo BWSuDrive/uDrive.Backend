@@ -1,0 +1,55 @@
+﻿{
+  requestPath: /PassengerRequests,
+  requestBody: {
+    id: null,
+    idPerson: ,
+    idTourPlan: Guid_1,
+    message: Will mit!!,
+    currentLatitude: 0.0,
+    currentLongitude: 0.0,
+    isPending: true,
+    isDenied: false,
+    person: null,
+    tourPlan: null
+  },
+  requestHeader: [],
+  requestMethod: POST,
+  responseBody: {
+    id: Guid_2,
+    idPerson: Guid_3,
+    idTourPlan: Guid_1,
+    message: Will mit!!,
+    currentLatitude: 0,
+    currentLongitude: 0,
+    isPending: true,
+    isDenied: false,
+    person: {
+      firstname: Test,
+      lastname: Test,
+      verified: true,
+      driver: null,
+      passengerRequests: [
+        null
+      ],
+      id: Guid_3,
+      userName: TestUser20230927220158@udrive.de,
+      normalizedUserName: TESTUSER20230927220158@UDRIVE.DE,
+      email: TestUser20230927220158@udrive.de,
+      normalizedEmail: TESTUSER20230927220158@UDRIVE.DE,
+      emailConfirmed: true,
+      passwordHash: AQAAAAIAAYagAAAAEOahoIAK3bx+UJe01RqOZlnfn+a3JAB34udWIfOb8EMvQc2goJ93OAnowkzDXE2nMQ==,
+      securityStamp: OK6W6K74M3QHBQ543KXO7MU32OBBXCKT,
+      concurrencyStamp: Guid_4,
+      phoneNumber: 1234567890,
+      phoneNumberConfirmed: false,
+      twoFactorEnabled: false,
+      lockoutEnd: null,
+      lockoutEnabled: true,
+      accessFailedCount: 0
+    },
+    tourPlan: null
+  },
+  responseHeader: [],
+  statusCode: OK,
+  statusCodeExpected: true
+}
