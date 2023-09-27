@@ -22,11 +22,15 @@ internal class DrivingLicenceEntityTypeConfiguration
 
     private static void ConfigureEntityProperties(EntityTypeBuilder<DrivingLicence> builder)
     {
-        //_ = builder.Property(e => e.Id).HasColumnName("id");
         _ = builder.Property(e => e.ExpireDate).HasColumnName("expireDate");
         _ = builder.Property(e => e.LicenceClass)
             .HasMaxLength(20)
             .HasColumnName("licenceClass");
+
+        _ = builder.HasOne(d => d.Driver).WithOne(p => p.IdDrivinglicenseNavigation)
+            .HasForeignKey<Driver>(d => d.IdDrivinglicense)
+            .OnDelete(DeleteBehavior.Cascade)
+            .HasConstraintName("FK_Driver_DrivingLicence");
 
     }
 }

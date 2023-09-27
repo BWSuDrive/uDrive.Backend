@@ -137,14 +137,17 @@ public abstract class AnonymousRoleController<TEntity> : ControllerBase where TE
         {
             return BadRequest("The Id must be set.");
         }
-        var savedEntity = Entities.SingleOrDefault(x => x.Id == key);
+        using var dbTransaction = _context.Database.BeginTransaction();
+        var savedEntity = Entities.Where(x => x.Id == key);
 
         if (savedEntity == null)
         {
             return NotFound($"{nameof(TEntity)} with id {key} not found");
         }
-        _ = _context.Set<TEntity>().Remove(savedEntity);
-        await _context.SaveChangesAsync();
+        _ = await savedEntity.ExecuteDeleteAsync().ConfigureAwait(false);
+        // _context.Set<TEntity>().Remove(savedEntity);
+        await dbTransaction.CommitAsync().ConfigureAwait(false);
+        //await _context.SaveChangesAsync().ConfigureAwait(false);
         return NoContent();
     }
 }

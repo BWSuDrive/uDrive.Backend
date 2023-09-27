@@ -6,27 +6,14 @@
     {
       id: Guid_1,
       expireDate: DateTimeOffset_1,
-      licenceClass: Z
+      licenceClass: Z,
+      driver: null
     },
     {
       id: Guid_2,
-      expireDate: DateTimeOffset_2,
-      licenceClass: B
-    },
-    {
-      id: Guid_3,
-      expireDate: DateTimeOffset_3,
-      licenceClass: b
-    },
-    {
-      id: Guid_4,
-      expireDate: DateTimeOffset_4,
-      licenceClass: a
-    },
-    {
-      id: Guid_5,
-      expireDate: DateTimeOffset_5,
-      licenceClass: a
+      expireDate: DateTimeOffset_1,
+      licenceClass: X,
+      driver: null
     }
   ],
   responseHeader: [],
