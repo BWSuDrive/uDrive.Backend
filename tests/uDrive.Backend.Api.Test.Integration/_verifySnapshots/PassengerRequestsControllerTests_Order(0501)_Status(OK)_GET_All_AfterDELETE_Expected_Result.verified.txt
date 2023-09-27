@@ -1,0 +1,8 @@
+﻿{
+  requestPath: /PassengerRequests,
+  requestHeader: [],
+  requestMethod: GET,
+  responseHeader: [],
+  statusCode: OK,
+  statusCodeExpected: true
+}

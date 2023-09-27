@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Threading;
 using uDrive.Backend.Api.Controllers.Abstract;
 using uDrive.Backend.Api.Services.Interfaces;
 using uDrive.Backend.Model;
@@ -101,25 +102,45 @@ public class PersonsController : ControllerBase
         {
             return NotFound();
         }
+        await DeletePersonDeep(user).ConfigureAwait(false);
         await _userManager.DeleteAsync(user).ConfigureAwait(false);
         await _context.SaveChangesAsync().ConfigureAwait(false);
 
         return NoContent();
     }
 
-    //private async Task DeletePersonDeep(Person person)
-    //{
-    //    var store = _context.Persons.Where(x =>  x.Id == person.Id).AsTracking().Include(driver => driver.Drivers);
-    //    foreach(var driver in store.)
-    //}
+    private async Task DeletePersonDeep(Person person)
+    {
+        using var dbTransaction = _context.Database.BeginTransaction();
 
-    //private async Task DeleteTours(Driver driver)
-    //{
-    //    foreach(var tour in driver.TourPlans)
-    //    {
-            
-    //    }
-    //}
+        var store = _context.Persons.Where(x => x.Id == person.Id).AsTracking().Include(x => x.Driver).ThenInclude(o => o.TourPlans).Include(x => x.AsPassengers).Include(x => x.PassengerRequests).FirstOrDefault();
+
+
+        //   await store.ExecuteDeleteAsync().ConfigureAwait(false);
+        var foundDriver = store.Driver;
+        //var licence = _context.DrivingLicences.Where(x => x.Id == foundDriver.IdDrivinglicense);
+        //_ = await licence.ExecuteDeleteAsync().ConfigureAwait(false);
+
+        //var tourplans = _context.TourPlans.Where(x => x.IdDriver == foundDriver.Id);
+        //_ = await tourplans.ExecuteDeleteAsync().ConfigureAwait(false);
+
+        //var passengerrequests = _context.PassengerRequests.Where(x => x.IdPerson == store.Id);
+        //_ = await passengerrequests.ExecuteDeleteAsync().ConfigureAwait(false);
+        var driver = _context.Drivers.Where(x => x.Id == foundDriver.Id);
+        _ = await driver.ExecuteDeleteAsync().ConfigureAwait(false);
+
+        dbTransaction.Commit();
+
+
+    }
+
+    private async Task DeleteTours(Driver driver)
+    {
+        foreach (var tour in driver.TourPlans)
+        {
+
+        }
+    }
 
 
     [Authorize(Roles = $"{UDriveRoles.Administrator}")]

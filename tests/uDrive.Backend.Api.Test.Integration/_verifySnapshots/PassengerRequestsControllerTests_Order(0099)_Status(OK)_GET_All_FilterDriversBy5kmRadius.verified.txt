@@ -1,0 +1,65 @@
+﻿{
+  requestPath: /PassengerRequests/FilterDriversBy5kmRadius,
+  requestHeader: [],
+  requestMethod: POST,
+  responseBody: [
+    {
+      distance: 0,
+      person: {
+        firstname: Test,
+        lastname: Test,
+        verified: true,
+        driver: null,
+        id: Guid_1,
+        userName: TestUser20230927220153@udrive.de,
+        normalizedUserName: TESTUSER20230927220153@UDRIVE.DE,
+        email: TestUser20230927220153@udrive.de,
+        normalizedEmail: TESTUSER20230927220153@UDRIVE.DE,
+        emailConfirmed: true,
+        passwordHash: AQAAAAIAAYagAAAAEMwYvoD3g3O1HXEATWY4ikO/2dYVe3N1eLso7OJ32eytY+Vpi5qolTFUUlExn7OV5Q==,
+        securityStamp: UQBBGF7V6OERHQIF2BSB7ACXDEINZUWJ,
+        concurrencyStamp: Guid_2,
+        phoneNumber: 1234567890,
+        phoneNumberConfirmed: false,
+        twoFactorEnabled: false,
+        lockoutEnd: null,
+        lockoutEnabled: true,
+        accessFailedCount: 0
+      },
+      driver: {
+        id: Guid_3,
+        idDrivinglicense: Guid_4,
+        idPerson: Guid_1,
+        seats: 0,
+        idDrivinglicenseNavigation: null,
+        idPersonNavigation: null
+      },
+      tourPlan: {
+        id: Guid_5,
+        idDriver: Guid_3,
+        departure: DateTimeOffset_1,
+        stopRequests: 0,
+        eta: 00:00:10,
+        start: Zuhause,
+        destination: Schule,
+        message: Fahre gern zu zweit,
+        currentLatitude: 0,
+        currentLongitude: 0,
+        driver: {
+          id: Guid_3,
+          idDrivinglicense: Guid_4,
+          idPerson: Guid_1,
+          seats: 0,
+          idDrivinglicenseNavigation: null,
+          idPersonNavigation: null,
+          tourPlans: [
+            null
+          ]
+        }
+      }
+    }
+  ],
+  responseHeader: [],
+  statusCode: OK,
+  statusCodeExpected: true
+}
