@@ -173,16 +173,20 @@ public class PassengerRequestsController : PersonRoleController<PassengerRequest
         {
             return BadRequest();
         }
-
-        var savedEntity = person.PassengerRequests.SingleOrDefault(x => x.Id == key);
+        var entities = _context.Persons.Where(x => x.Id == person.Id).AsTracking().Include( x => x.PassengerRequests).FirstOrDefault();
+        if (entities is null)
+        {
+            return NotFound(); 
+        }
+        var savedEntity = entities.PassengerRequests.SingleOrDefault(x => x.Id == key);
 
         if (savedEntity == null)
         {
-            return NotFound($"{nameof(TourPlan)} with id {key} not found");
+            return NotFound($"{nameof(PassengerRequest)} with id {key} not found");
         }
-        _ = _context.Set<PassengerRequest>().Remove(savedEntity);
+         _context.Set<PassengerRequest>().Remove(savedEntity);
         await _context.SaveChangesAsync();
-        return Ok();
+        return NoContent();
     }
 
     /// <summary>

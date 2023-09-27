@@ -29,7 +29,7 @@ internal class DrivingLicenceEntityTypeConfiguration
 
         _ = builder.HasOne(d => d.Driver).WithOne(p => p.IdDrivinglicenseNavigation)
             .HasForeignKey<Driver>(d => d.IdDrivinglicense)
-            .OnDelete(DeleteBehavior.Cascade)
+            .OnDelete(DeleteBehavior.ClientSetNull)
             .HasConstraintName("FK_Driver_DrivingLicence");
 
     }

@@ -199,7 +199,7 @@ public class TourPlansController : DriverRoleController<TourPlan>
         }
         _ = _context.Set<TourPlan>().Remove(savedEntity);
         await _context.SaveChangesAsync();
-        return Ok();
+        return NoContent();
     }
 
 }

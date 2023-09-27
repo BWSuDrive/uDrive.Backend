@@ -1,0 +1,53 @@
+﻿{
+  requestPath: /TourPlans,
+  requestHeader: [],
+  requestMethod: GET,
+  responseBody: [
+    {
+      id: Guid_1,
+      idDriver: Guid_2,
+      departure: DateTimeOffset_1,
+      stopRequests: 0,
+      eta: 00:00:10,
+      start: Zuhause,
+      destination: Schule,
+      message: Fahre gern zu zweit,
+      currentLatitude: 0,
+      currentLongitude: 0,
+      driver: {
+        id: Guid_2,
+        idDrivinglicense: Guid_3,
+        idPerson: Guid_4,
+        seats: 0,
+        idDrivinglicenseNavigation: null,
+        idPersonNavigation: {
+          firstname: Test,
+          lastname: Test,
+          verified: true,
+          driver: null,
+          id: Guid_4,
+          userName: TestUser20230927220153@udrive.de,
+          normalizedUserName: TESTUSER20230927220153@UDRIVE.DE,
+          email: TestUser20230927220153@udrive.de,
+          normalizedEmail: TESTUSER20230927220153@UDRIVE.DE,
+          emailConfirmed: true,
+          passwordHash: AQAAAAIAAYagAAAAEMwYvoD3g3O1HXEATWY4ikO/2dYVe3N1eLso7OJ32eytY+Vpi5qolTFUUlExn7OV5Q==,
+          securityStamp: UQBBGF7V6OERHQIF2BSB7ACXDEINZUWJ,
+          concurrencyStamp: Guid_5,
+          phoneNumber: 1234567890,
+          phoneNumberConfirmed: false,
+          twoFactorEnabled: false,
+          lockoutEnd: null,
+          lockoutEnabled: true,
+          accessFailedCount: 0
+        },
+        tourPlans: [
+          null
+        ]
+      }
+    }
+  ],
+  responseHeader: [],
+  statusCode: OK,
+  statusCodeExpected: true
+}

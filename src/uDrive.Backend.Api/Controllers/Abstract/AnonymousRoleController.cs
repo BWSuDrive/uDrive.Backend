@@ -147,7 +147,6 @@ public abstract class AnonymousRoleController<TEntity> : ControllerBase where TE
         _ = await savedEntity.ExecuteDeleteAsync().ConfigureAwait(false);
         // _context.Set<TEntity>().Remove(savedEntity);
         await dbTransaction.CommitAsync().ConfigureAwait(false);
-        //await _context.SaveChangesAsync().ConfigureAwait(false);
         return NoContent();
     }
 }

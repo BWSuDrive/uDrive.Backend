@@ -1,0 +1,8 @@
+﻿{
+  requestPath: /PassengerRequests/ID,
+  requestHeader: [],
+  requestMethod: DELETE,
+  responseHeader: [],
+  statusCode: NoContent,
+  statusCodeExpected: true
+}
