@@ -17,7 +17,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BWSuDrive/uDrive.Backend/new/main/apiSpec/new?filename=uDrive_Backend_Api_Controllers_Abstract_DriverRoleController_1.md&amp;value=---%0Auid%3A%20uDrive.Backend.Api.Controllers.Abstract.DriverRoleController%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/BWSuDrive/uDrive.Backend/new/47/merge/apiSpec/new?filename=uDrive_Backend_Api_Controllers_Abstract_DriverRoleController_1.md&amp;value=---%0Auid%3A%20uDrive.Backend.Api.Controllers.Abstract.DriverRoleController%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -90,7 +90,7 @@
 
   <h1 id="uDrive_Backend_Api_Controllers_Abstract_DriverRoleController_1" data-uid="uDrive.Backend.Api.Controllers.Abstract.DriverRoleController`1" class="text-break">
     Class DriverRoleController&lt;TEntity&gt;
-  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/Abstract/DriverRoleController.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/BWSuDrive/uDrive.Backend/blob/47/merge/src/uDrive.Backend.Api/Controllers/Abstract/DriverRoleController.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -104,7 +104,7 @@
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[Authorize(Roles = &quot;Secretary,Administrator,Driver&quot;)]
-public class DriverRoleController&lt;TEntity&gt; : PersonRoleController&lt;TEntity&gt; where TEntity : class, IEntity</code></pre>
+public abstract class DriverRoleController&lt;TEntity&gt; : PersonRoleController&lt;TEntity&gt; where TEntity : class, IEntity</code></pre>
   </div>
 
 
@@ -120,7 +120,7 @@ public class DriverRoleController&lt;TEntity&gt; : PersonRoleController&lt;TEnti
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controllerbase">ControllerBase</a></div>
-      <div><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.html">AnonymousController</a>&lt;TEntity&gt;</div>
+      <div><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.html">AnonymousRoleController</a>&lt;TEntity&gt;</div>
       <div><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.PersonRoleController-1.html">PersonRoleController</a>&lt;TEntity&gt;</div>
       <div><span class="xref">DriverRoleController&lt;TEntity&gt;</span></div>
     </dd>
@@ -131,6 +131,7 @@ public class DriverRoleController&lt;TEntity&gt; : PersonRoleController&lt;TEnti
     <dt>Derived</dt>
     <dd>
       <div><a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.SecretaryRoleController-1.html">SecretaryRoleController&lt;TEntity&gt;</a></div>
+      <div><a class="xref" href="uDrive.Backend.Api.Controllers.TourPlansController.html">TourPlansController</a></div>
     </dd>
   </dl>
 
@@ -138,28 +139,28 @@ public class DriverRoleController&lt;TEntity&gt; : PersonRoleController&lt;TEnti
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1._authService.html">AnonymousController&lt;TEntity&gt;._authService</a>
+      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1._authService.html">AnonymousRoleController&lt;TEntity&gt;._authService</a>
     </div>
     <div>
-      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1._logger.html">AnonymousController&lt;TEntity&gt;._logger</a>
+      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1._logger.html">AnonymousRoleController&lt;TEntity&gt;._logger</a>
     </div>
     <div>
-      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1._context.html">AnonymousController&lt;TEntity&gt;._context</a>
+      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1._context.html">AnonymousRoleController&lt;TEntity&gt;._context</a>
     </div>
     <div>
-      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.Entities.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_Entities">AnonymousController&lt;TEntity&gt;.Entities</a>
+      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.Entities.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousRoleController_1_Entities">AnonymousRoleController&lt;TEntity&gt;.Entities</a>
     </div>
     <div>
-      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.Get.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_Get">AnonymousController&lt;TEntity&gt;.Get()</a>
+      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.GetAsync.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousRoleController_1_GetAsync">AnonymousRoleController&lt;TEntity&gt;.GetAsync()</a>
     </div>
     <div>
-      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.GetById.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_GetById_System_String_">AnonymousController&lt;TEntity&gt;.GetById(string)</a>
+      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.GetByIdAsync.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousRoleController_1_GetByIdAsync_System_String_">AnonymousRoleController&lt;TEntity&gt;.GetByIdAsync(string)</a>
     </div>
     <div>
-      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.PostAsync.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_PostAsync__0_">AnonymousController&lt;TEntity&gt;.PostAsync(TEntity)</a>
+      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.PostAsync.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousRoleController_1_PostAsync__0_">AnonymousRoleController&lt;TEntity&gt;.PostAsync(TEntity)</a>
     </div>
     <div>
-      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.DeleteAsync.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_DeleteAsync_System_String_">AnonymousController&lt;TEntity&gt;.DeleteAsync(string)</a>
+      <a class="xref" href="uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.DeleteAsync.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousRoleController_1_DeleteAsync_System_String_">AnonymousRoleController&lt;TEntity&gt;.DeleteAsync(string)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.controllerbase.statuscode#microsoft-aspnetcore-mvc-controllerbase-statuscode(system-int32)">ControllerBase.StatusCode(int)</a>
@@ -717,7 +718,7 @@ public class DriverRoleController&lt;TEntity&gt; : PersonRoleController&lt;TEnti
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/src/uDrive.Backend.Api/Controllers/Abstract/DriverRoleController.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BWSuDrive/uDrive.Backend/blob/47/merge/src/uDrive.Backend.Api/Controllers/Abstract/DriverRoleController.cs/#L13" class="edit-link">Edit this page</a>
         </div>
 
         

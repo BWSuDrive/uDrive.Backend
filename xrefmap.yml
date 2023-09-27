@@ -3610,139 +3610,139 @@ references:
   fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AdministratorRoleController(Of TEntity).New
   nameWithType: AdministratorRoleController<TEntity>.AdministratorRoleController
   nameWithType.vb: AdministratorRoleController(Of TEntity).New
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1
-  name: AnonymousController<TEntity>
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.html
-  commentId: T:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1
-  name.vb: AnonymousController(Of TEntity)
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity)
-  nameWithType: AnonymousController<TEntity>
-  nameWithType.vb: AnonymousController(Of TEntity)
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.AnonymousController{`0}},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
-  name: AnonymousController(ILogger<AnonymousController<TEntity>>, ApplicationDbContext, IAuthService)
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.-ctor.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_Abstract_AnonymousController__0___uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_
-  commentId: M:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.AnonymousController{`0}},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
-  name.vb: New(ILogger(Of AnonymousController(Of TEntity)), ApplicationDbContext, IAuthService)
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>.AnonymousController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>>, uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity).New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity)), uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
-  nameWithType: AnonymousController<TEntity>.AnonymousController(ILogger<AnonymousController<TEntity>>, ApplicationDbContext, IAuthService)
-  nameWithType.vb: AnonymousController(Of TEntity).New(ILogger(Of AnonymousController(Of TEntity)), ApplicationDbContext, IAuthService)
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.#ctor*
-  name: AnonymousController
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.-ctor.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.#ctor
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1
+  name: AnonymousRoleController<TEntity>
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.html
+  commentId: T:uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1
+  name.vb: AnonymousRoleController(Of TEntity)
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity)
+  nameWithType: AnonymousRoleController<TEntity>
+  nameWithType.vb: AnonymousRoleController(Of TEntity)
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name: AnonymousRoleController(ILogger<AnonymousRoleController<TEntity>>, ApplicationDbContext, IAuthService)
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.-ctor.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousRoleController_1__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_Abstract_AnonymousRoleController__0___uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_
+  commentId: M:uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController{`0}},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  name.vb: New(ILogger(Of AnonymousRoleController(Of TEntity)), ApplicationDbContext, IAuthService)
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>.AnonymousRoleController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>>, uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity).New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity)), uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
+  nameWithType: AnonymousRoleController<TEntity>.AnonymousRoleController(ILogger<AnonymousRoleController<TEntity>>, ApplicationDbContext, IAuthService)
+  nameWithType.vb: AnonymousRoleController(Of TEntity).New(ILogger(Of AnonymousRoleController(Of TEntity)), ApplicationDbContext, IAuthService)
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.#ctor*
+  name: AnonymousRoleController
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.-ctor.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.#ctor
   name.vb: New
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>.AnonymousController
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity).New
-  nameWithType: AnonymousController<TEntity>.AnonymousController
-  nameWithType.vb: AnonymousController(Of TEntity).New
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.DeleteAsync(System.String)
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>.AnonymousRoleController
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity).New
+  nameWithType: AnonymousRoleController<TEntity>.AnonymousRoleController
+  nameWithType.vb: AnonymousRoleController(Of TEntity).New
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.DeleteAsync(System.String)
   name: DeleteAsync(string)
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.DeleteAsync.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_DeleteAsync_System_String_
-  commentId: M:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.DeleteAsync(System.String)
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.DeleteAsync.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousRoleController_1_DeleteAsync_System_String_
+  commentId: M:uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.DeleteAsync(System.String)
   name.vb: DeleteAsync(String)
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>.DeleteAsync(string)
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity).DeleteAsync(String)
-  nameWithType: AnonymousController<TEntity>.DeleteAsync(string)
-  nameWithType.vb: AnonymousController(Of TEntity).DeleteAsync(String)
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.DeleteAsync*
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>.DeleteAsync(string)
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity).DeleteAsync(String)
+  nameWithType: AnonymousRoleController<TEntity>.DeleteAsync(string)
+  nameWithType.vb: AnonymousRoleController(Of TEntity).DeleteAsync(String)
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.DeleteAsync*
   name: DeleteAsync
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.DeleteAsync.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.DeleteAsync
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>.DeleteAsync
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity).DeleteAsync
-  nameWithType: AnonymousController<TEntity>.DeleteAsync
-  nameWithType.vb: AnonymousController(Of TEntity).DeleteAsync
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.Entities
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.DeleteAsync.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.DeleteAsync
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>.DeleteAsync
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity).DeleteAsync
+  nameWithType: AnonymousRoleController<TEntity>.DeleteAsync
+  nameWithType.vb: AnonymousRoleController(Of TEntity).DeleteAsync
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.Entities
   name: Entities
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.Entities.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_Entities
-  commentId: P:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.Entities
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>.Entities
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity).Entities
-  nameWithType: AnonymousController<TEntity>.Entities
-  nameWithType.vb: AnonymousController(Of TEntity).Entities
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.Entities*
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.Entities.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousRoleController_1_Entities
+  commentId: P:uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.Entities
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>.Entities
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity).Entities
+  nameWithType: AnonymousRoleController<TEntity>.Entities
+  nameWithType.vb: AnonymousRoleController(Of TEntity).Entities
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.Entities*
   name: Entities
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.Entities.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.Entities
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>.Entities
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity).Entities
-  nameWithType: AnonymousController<TEntity>.Entities
-  nameWithType.vb: AnonymousController(Of TEntity).Entities
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.Get
-  name: Get()
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.Get.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_Get
-  commentId: M:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.Get
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>.Get()
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity).Get()
-  nameWithType: AnonymousController<TEntity>.Get()
-  nameWithType.vb: AnonymousController(Of TEntity).Get()
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.Get*
-  name: Get
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.Get.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.Get
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>.Get
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity).Get
-  nameWithType: AnonymousController<TEntity>.Get
-  nameWithType.vb: AnonymousController(Of TEntity).Get
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.GetById(System.String)
-  name: GetById(string)
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.GetById.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_GetById_System_String_
-  commentId: M:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.GetById(System.String)
-  name.vb: GetById(String)
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>.GetById(string)
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity).GetById(String)
-  nameWithType: AnonymousController<TEntity>.GetById(string)
-  nameWithType.vb: AnonymousController(Of TEntity).GetById(String)
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.GetById*
-  name: GetById
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.GetById.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.GetById
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>.GetById
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity).GetById
-  nameWithType: AnonymousController<TEntity>.GetById
-  nameWithType.vb: AnonymousController(Of TEntity).GetById
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.PostAsync(`0)
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.Entities.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.Entities
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>.Entities
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity).Entities
+  nameWithType: AnonymousRoleController<TEntity>.Entities
+  nameWithType.vb: AnonymousRoleController(Of TEntity).Entities
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.GetAsync
+  name: GetAsync()
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.GetAsync.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousRoleController_1_GetAsync
+  commentId: M:uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.GetAsync
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>.GetAsync()
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity).GetAsync()
+  nameWithType: AnonymousRoleController<TEntity>.GetAsync()
+  nameWithType.vb: AnonymousRoleController(Of TEntity).GetAsync()
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.GetAsync*
+  name: GetAsync
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.GetAsync.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.GetAsync
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>.GetAsync
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity).GetAsync
+  nameWithType: AnonymousRoleController<TEntity>.GetAsync
+  nameWithType.vb: AnonymousRoleController(Of TEntity).GetAsync
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.GetByIdAsync(System.String)
+  name: GetByIdAsync(string)
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.GetByIdAsync.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousRoleController_1_GetByIdAsync_System_String_
+  commentId: M:uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.GetByIdAsync(System.String)
+  name.vb: GetByIdAsync(String)
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>.GetByIdAsync(string)
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity).GetByIdAsync(String)
+  nameWithType: AnonymousRoleController<TEntity>.GetByIdAsync(string)
+  nameWithType.vb: AnonymousRoleController(Of TEntity).GetByIdAsync(String)
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.GetByIdAsync*
+  name: GetByIdAsync
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.GetByIdAsync.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.GetByIdAsync
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>.GetByIdAsync
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity).GetByIdAsync
+  nameWithType: AnonymousRoleController<TEntity>.GetByIdAsync
+  nameWithType.vb: AnonymousRoleController(Of TEntity).GetByIdAsync
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.PostAsync(`0)
   name: PostAsync(TEntity)
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.PostAsync.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousController_1_PostAsync__0_
-  commentId: M:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.PostAsync(`0)
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>.PostAsync(TEntity)
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity).PostAsync(TEntity)
-  nameWithType: AnonymousController<TEntity>.PostAsync(TEntity)
-  nameWithType.vb: AnonymousController(Of TEntity).PostAsync(TEntity)
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.PostAsync*
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.PostAsync.html#uDrive_Backend_Api_Controllers_Abstract_AnonymousRoleController_1_PostAsync__0_
+  commentId: M:uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.PostAsync(`0)
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>.PostAsync(TEntity)
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity).PostAsync(TEntity)
+  nameWithType: AnonymousRoleController<TEntity>.PostAsync(TEntity)
+  nameWithType.vb: AnonymousRoleController(Of TEntity).PostAsync(TEntity)
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.PostAsync*
   name: PostAsync
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1.PostAsync.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1.PostAsync
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>.PostAsync
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity).PostAsync
-  nameWithType: AnonymousController<TEntity>.PostAsync
-  nameWithType.vb: AnonymousController(Of TEntity).PostAsync
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1._authService
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1.PostAsync.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1.PostAsync
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>.PostAsync
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity).PostAsync
+  nameWithType: AnonymousRoleController<TEntity>.PostAsync
+  nameWithType.vb: AnonymousRoleController(Of TEntity).PostAsync
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1._authService
   name: _authService
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1._authService.html
-  commentId: F:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1._authService
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>._authService
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity)._authService
-  nameWithType: AnonymousController<TEntity>._authService
-  nameWithType.vb: AnonymousController(Of TEntity)._authService
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1._context
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1._authService.html
+  commentId: F:uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1._authService
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>._authService
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity)._authService
+  nameWithType: AnonymousRoleController<TEntity>._authService
+  nameWithType.vb: AnonymousRoleController(Of TEntity)._authService
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1._context
   name: _context
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1._context.html
-  commentId: F:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1._context
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>._context
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity)._context
-  nameWithType: AnonymousController<TEntity>._context
-  nameWithType.vb: AnonymousController(Of TEntity)._context
-- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1._logger
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1._context.html
+  commentId: F:uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1._context
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>._context
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity)._context
+  nameWithType: AnonymousRoleController<TEntity>._context
+  nameWithType.vb: AnonymousRoleController(Of TEntity)._context
+- uid: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1._logger
   name: _logger
-  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousController-1._logger.html
-  commentId: F:uDrive.Backend.Api.Controllers.Abstract.AnonymousController`1._logger
-  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousController<TEntity>._logger
-  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousController(Of TEntity)._logger
-  nameWithType: AnonymousController<TEntity>._logger
-  nameWithType.vb: AnonymousController(Of TEntity)._logger
+  href: api/uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController-1._logger.html
+  commentId: F:uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController`1._logger
+  fullName: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController<TEntity>._logger
+  fullName.vb: uDrive.Backend.Api.Controllers.Abstract.AnonymousRoleController(Of TEntity)._logger
+  nameWithType: AnonymousRoleController<TEntity>._logger
+  nameWithType.vb: AnonymousRoleController(Of TEntity)._logger
 - uid: uDrive.Backend.Api.Controllers.Abstract.DriverRoleController`1
   name: DriverRoleController<TEntity>
   href: api/uDrive.Backend.Api.Controllers.Abstract.DriverRoleController-1.html
@@ -4034,6 +4034,21 @@ references:
   commentId: Overload:uDrive.Backend.Api.Controllers.PassengerRequestsController.FilterDriversBy5kmRadiusAsync
   fullName: uDrive.Backend.Api.Controllers.PassengerRequestsController.FilterDriversBy5kmRadiusAsync
   nameWithType: PassengerRequestsController.FilterDriversBy5kmRadiusAsync
+- uid: uDrive.Backend.Api.Controllers.PassengerRequestsController.FilterDriversBy5kmRadiusAtDaysAsync(uDrive.Backend.Model.DTO.GeocoordinatesDTO,System.Int32)
+  name: FilterDriversBy5kmRadiusAtDaysAsync(GeocoordinatesDTO, int)
+  href: api/uDrive.Backend.Api.Controllers.PassengerRequestsController.FilterDriversBy5kmRadiusAtDaysAsync.html#uDrive_Backend_Api_Controllers_PassengerRequestsController_FilterDriversBy5kmRadiusAtDaysAsync_uDrive_Backend_Model_DTO_GeocoordinatesDTO_System_Int32_
+  commentId: M:uDrive.Backend.Api.Controllers.PassengerRequestsController.FilterDriversBy5kmRadiusAtDaysAsync(uDrive.Backend.Model.DTO.GeocoordinatesDTO,System.Int32)
+  name.vb: FilterDriversBy5kmRadiusAtDaysAsync(GeocoordinatesDTO, Integer)
+  fullName: uDrive.Backend.Api.Controllers.PassengerRequestsController.FilterDriversBy5kmRadiusAtDaysAsync(uDrive.Backend.Model.DTO.GeocoordinatesDTO, int)
+  fullName.vb: uDrive.Backend.Api.Controllers.PassengerRequestsController.FilterDriversBy5kmRadiusAtDaysAsync(uDrive.Backend.Model.DTO.GeocoordinatesDTO, Integer)
+  nameWithType: PassengerRequestsController.FilterDriversBy5kmRadiusAtDaysAsync(GeocoordinatesDTO, int)
+  nameWithType.vb: PassengerRequestsController.FilterDriversBy5kmRadiusAtDaysAsync(GeocoordinatesDTO, Integer)
+- uid: uDrive.Backend.Api.Controllers.PassengerRequestsController.FilterDriversBy5kmRadiusAtDaysAsync*
+  name: FilterDriversBy5kmRadiusAtDaysAsync
+  href: api/uDrive.Backend.Api.Controllers.PassengerRequestsController.FilterDriversBy5kmRadiusAtDaysAsync.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.PassengerRequestsController.FilterDriversBy5kmRadiusAtDaysAsync
+  fullName: uDrive.Backend.Api.Controllers.PassengerRequestsController.FilterDriversBy5kmRadiusAtDaysAsync
+  nameWithType: PassengerRequestsController.FilterDriversBy5kmRadiusAtDaysAsync
 - uid: uDrive.Backend.Api.Controllers.PassengerRequestsController.GetAsync
   name: GetAsync()
   href: api/uDrive.Backend.Api.Controllers.PassengerRequestsController.GetAsync.html#uDrive_Backend_Api_Controllers_PassengerRequestsController_GetAsync
@@ -4061,6 +4076,21 @@ references:
   commentId: Overload:uDrive.Backend.Api.Controllers.PassengerRequestsController.GetByIdAsync
   fullName: uDrive.Backend.Api.Controllers.PassengerRequestsController.GetByIdAsync
   nameWithType: PassengerRequestsController.GetByIdAsync
+- uid: uDrive.Backend.Api.Controllers.PassengerRequestsController.GetDriversBy5kmRadiusAsync(uDrive.Backend.Model.DTO.GeocoordinatesDTO,System.DateTime)
+  name: GetDriversBy5kmRadiusAsync(GeocoordinatesDTO, DateTime)
+  href: api/uDrive.Backend.Api.Controllers.PassengerRequestsController.GetDriversBy5kmRadiusAsync.html#uDrive_Backend_Api_Controllers_PassengerRequestsController_GetDriversBy5kmRadiusAsync_uDrive_Backend_Model_DTO_GeocoordinatesDTO_System_DateTime_
+  commentId: M:uDrive.Backend.Api.Controllers.PassengerRequestsController.GetDriversBy5kmRadiusAsync(uDrive.Backend.Model.DTO.GeocoordinatesDTO,System.DateTime)
+  name.vb: GetDriversBy5kmRadiusAsync(GeocoordinatesDTO, Date)
+  fullName: uDrive.Backend.Api.Controllers.PassengerRequestsController.GetDriversBy5kmRadiusAsync(uDrive.Backend.Model.DTO.GeocoordinatesDTO, System.DateTime)
+  fullName.vb: uDrive.Backend.Api.Controllers.PassengerRequestsController.GetDriversBy5kmRadiusAsync(uDrive.Backend.Model.DTO.GeocoordinatesDTO, Date)
+  nameWithType: PassengerRequestsController.GetDriversBy5kmRadiusAsync(GeocoordinatesDTO, DateTime)
+  nameWithType.vb: PassengerRequestsController.GetDriversBy5kmRadiusAsync(GeocoordinatesDTO, Date)
+- uid: uDrive.Backend.Api.Controllers.PassengerRequestsController.GetDriversBy5kmRadiusAsync*
+  name: GetDriversBy5kmRadiusAsync
+  href: api/uDrive.Backend.Api.Controllers.PassengerRequestsController.GetDriversBy5kmRadiusAsync.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.PassengerRequestsController.GetDriversBy5kmRadiusAsync
+  fullName: uDrive.Backend.Api.Controllers.PassengerRequestsController.GetDriversBy5kmRadiusAsync
+  nameWithType: PassengerRequestsController.GetDriversBy5kmRadiusAsync
 - uid: uDrive.Backend.Api.Controllers.PassengerRequestsController.GetPassengerRequestsAsync
   name: GetPassengerRequestsAsync()
   href: api/uDrive.Backend.Api.Controllers.PassengerRequestsController.GetPassengerRequestsAsync.html#uDrive_Backend_Api_Controllers_PassengerRequestsController_GetPassengerRequestsAsync
@@ -4124,6 +4154,114 @@ references:
   commentId: F:uDrive.Backend.Api.Controllers.PassengerRequestsController._context
   fullName: uDrive.Backend.Api.Controllers.PassengerRequestsController._context
   nameWithType: PassengerRequestsController._context
+- uid: uDrive.Backend.Api.Controllers.PersonsController
+  name: PersonsController
+  href: api/uDrive.Backend.Api.Controllers.PersonsController.html
+  commentId: T:uDrive.Backend.Api.Controllers.PersonsController
+  fullName: uDrive.Backend.Api.Controllers.PersonsController
+  nameWithType: PersonsController
+- uid: uDrive.Backend.Api.Controllers.PersonsController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.PersonsController},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService,Microsoft.AspNetCore.Identity.UserManager{uDrive.Backend.Model.Entities.Person})
+  name: PersonsController(ILogger<PersonsController>, ApplicationDbContext, IAuthService, UserManager<Person>)
+  href: api/uDrive.Backend.Api.Controllers.PersonsController.-ctor.html#uDrive_Backend_Api_Controllers_PersonsController__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_PersonsController__uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_Microsoft_AspNetCore_Identity_UserManager_uDrive_Backend_Model_Entities_Person__
+  commentId: M:uDrive.Backend.Api.Controllers.PersonsController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.PersonsController},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService,Microsoft.AspNetCore.Identity.UserManager{uDrive.Backend.Model.Entities.Person})
+  name.vb: New(ILogger(Of PersonsController), ApplicationDbContext, IAuthService, UserManager(Of Person))
+  fullName: uDrive.Backend.Api.Controllers.PersonsController.PersonsController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.PersonsController>, uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService, Microsoft.AspNetCore.Identity.UserManager<uDrive.Backend.Model.Entities.Person>)
+  fullName.vb: uDrive.Backend.Api.Controllers.PersonsController.New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.PersonsController), uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService, Microsoft.AspNetCore.Identity.UserManager(Of uDrive.Backend.Model.Entities.Person))
+  nameWithType: PersonsController.PersonsController(ILogger<PersonsController>, ApplicationDbContext, IAuthService, UserManager<Person>)
+  nameWithType.vb: PersonsController.New(ILogger(Of PersonsController), ApplicationDbContext, IAuthService, UserManager(Of Person))
+- uid: uDrive.Backend.Api.Controllers.PersonsController.#ctor*
+  name: PersonsController
+  href: api/uDrive.Backend.Api.Controllers.PersonsController.-ctor.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.PersonsController.#ctor
+  name.vb: New
+  fullName: uDrive.Backend.Api.Controllers.PersonsController.PersonsController
+  fullName.vb: uDrive.Backend.Api.Controllers.PersonsController.New
+  nameWithType: PersonsController.PersonsController
+  nameWithType.vb: PersonsController.New
+- uid: uDrive.Backend.Api.Controllers.PersonsController.AddRoleToUser(System.String,System.String)
+  name: AddRoleToUser(string, string)
+  href: api/uDrive.Backend.Api.Controllers.PersonsController.AddRoleToUser.html#uDrive_Backend_Api_Controllers_PersonsController_AddRoleToUser_System_String_System_String_
+  commentId: M:uDrive.Backend.Api.Controllers.PersonsController.AddRoleToUser(System.String,System.String)
+  name.vb: AddRoleToUser(String, String)
+  fullName: uDrive.Backend.Api.Controllers.PersonsController.AddRoleToUser(string, string)
+  fullName.vb: uDrive.Backend.Api.Controllers.PersonsController.AddRoleToUser(String, String)
+  nameWithType: PersonsController.AddRoleToUser(string, string)
+  nameWithType.vb: PersonsController.AddRoleToUser(String, String)
+- uid: uDrive.Backend.Api.Controllers.PersonsController.AddRoleToUser*
+  name: AddRoleToUser
+  href: api/uDrive.Backend.Api.Controllers.PersonsController.AddRoleToUser.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.PersonsController.AddRoleToUser
+  fullName: uDrive.Backend.Api.Controllers.PersonsController.AddRoleToUser
+  nameWithType: PersonsController.AddRoleToUser
+- uid: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithEmailAsync(System.String)
+  name: DeletePersonWithEmailAsync(string)
+  href: api/uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithEmailAsync.html#uDrive_Backend_Api_Controllers_PersonsController_DeletePersonWithEmailAsync_System_String_
+  commentId: M:uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithEmailAsync(System.String)
+  name.vb: DeletePersonWithEmailAsync(String)
+  fullName: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithEmailAsync(string)
+  fullName.vb: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithEmailAsync(String)
+  nameWithType: PersonsController.DeletePersonWithEmailAsync(string)
+  nameWithType.vb: PersonsController.DeletePersonWithEmailAsync(String)
+- uid: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithEmailAsync*
+  name: DeletePersonWithEmailAsync
+  href: api/uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithEmailAsync.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithEmailAsync
+  fullName: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithEmailAsync
+  nameWithType: PersonsController.DeletePersonWithEmailAsync
+- uid: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithIdAsync(System.String)
+  name: DeletePersonWithIdAsync(string)
+  href: api/uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithIdAsync.html#uDrive_Backend_Api_Controllers_PersonsController_DeletePersonWithIdAsync_System_String_
+  commentId: M:uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithIdAsync(System.String)
+  name.vb: DeletePersonWithIdAsync(String)
+  fullName: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithIdAsync(string)
+  fullName.vb: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithIdAsync(String)
+  nameWithType: PersonsController.DeletePersonWithIdAsync(string)
+  nameWithType.vb: PersonsController.DeletePersonWithIdAsync(String)
+- uid: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithIdAsync*
+  name: DeletePersonWithIdAsync
+  href: api/uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithIdAsync.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithIdAsync
+  fullName: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithIdAsync
+  nameWithType: PersonsController.DeletePersonWithIdAsync
+- uid: uDrive.Backend.Api.Controllers.PersonsController.VerifyPersonAsync(System.String)
+  name: VerifyPersonAsync(string)
+  href: api/uDrive.Backend.Api.Controllers.PersonsController.VerifyPersonAsync.html#uDrive_Backend_Api_Controllers_PersonsController_VerifyPersonAsync_System_String_
+  commentId: M:uDrive.Backend.Api.Controllers.PersonsController.VerifyPersonAsync(System.String)
+  name.vb: VerifyPersonAsync(String)
+  fullName: uDrive.Backend.Api.Controllers.PersonsController.VerifyPersonAsync(string)
+  fullName.vb: uDrive.Backend.Api.Controllers.PersonsController.VerifyPersonAsync(String)
+  nameWithType: PersonsController.VerifyPersonAsync(string)
+  nameWithType.vb: PersonsController.VerifyPersonAsync(String)
+- uid: uDrive.Backend.Api.Controllers.PersonsController.VerifyPersonAsync*
+  name: VerifyPersonAsync
+  href: api/uDrive.Backend.Api.Controllers.PersonsController.VerifyPersonAsync.html
+  commentId: Overload:uDrive.Backend.Api.Controllers.PersonsController.VerifyPersonAsync
+  fullName: uDrive.Backend.Api.Controllers.PersonsController.VerifyPersonAsync
+  nameWithType: PersonsController.VerifyPersonAsync
+- uid: uDrive.Backend.Api.Controllers.PersonsController._authService
+  name: _authService
+  href: api/uDrive.Backend.Api.Controllers.PersonsController._authService.html
+  commentId: F:uDrive.Backend.Api.Controllers.PersonsController._authService
+  fullName: uDrive.Backend.Api.Controllers.PersonsController._authService
+  nameWithType: PersonsController._authService
+- uid: uDrive.Backend.Api.Controllers.PersonsController._context
+  name: _context
+  href: api/uDrive.Backend.Api.Controllers.PersonsController._context.html
+  commentId: F:uDrive.Backend.Api.Controllers.PersonsController._context
+  fullName: uDrive.Backend.Api.Controllers.PersonsController._context
+  nameWithType: PersonsController._context
+- uid: uDrive.Backend.Api.Controllers.PersonsController._logger
+  name: _logger
+  href: api/uDrive.Backend.Api.Controllers.PersonsController._logger.html
+  commentId: F:uDrive.Backend.Api.Controllers.PersonsController._logger
+  fullName: uDrive.Backend.Api.Controllers.PersonsController._logger
+  nameWithType: PersonsController._logger
+- uid: uDrive.Backend.Api.Controllers.PersonsController._userManager
+  name: _userManager
+  href: api/uDrive.Backend.Api.Controllers.PersonsController._userManager.html
+  commentId: F:uDrive.Backend.Api.Controllers.PersonsController._userManager
+  fullName: uDrive.Backend.Api.Controllers.PersonsController._userManager
+  nameWithType: PersonsController._userManager
 - uid: uDrive.Backend.Api.Controllers.RegisterController
   name: RegisterController
   href: api/uDrive.Backend.Api.Controllers.RegisterController.html
@@ -4172,42 +4310,6 @@ references:
   commentId: F:uDrive.Backend.Api.Controllers.RegisterController._logger
   fullName: uDrive.Backend.Api.Controllers.RegisterController._logger
   nameWithType: RegisterController._logger
-- uid: uDrive.Backend.Api.Controllers.ScheduleTourController
-  name: ScheduleTourController
-  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.html
-  commentId: T:uDrive.Backend.Api.Controllers.ScheduleTourController
-  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController
-  nameWithType: ScheduleTourController
-- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.ScheduleTourController},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
-  name: ScheduleTourController(ILogger<ScheduleTourController>, ApplicationDbContext, IAuthService)
-  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.-ctor.html#uDrive_Backend_Api_Controllers_ScheduleTourController__ctor_Microsoft_Extensions_Logging_ILogger_uDrive_Backend_Api_Controllers_ScheduleTourController__uDrive_Backend_Model_ApplicationDbContext_uDrive_Backend_Api_Services_Interfaces_IAuthService_
-  commentId: M:uDrive.Backend.Api.Controllers.ScheduleTourController.#ctor(Microsoft.Extensions.Logging.ILogger{uDrive.Backend.Api.Controllers.ScheduleTourController},uDrive.Backend.Model.ApplicationDbContext,uDrive.Backend.Api.Services.Interfaces.IAuthService)
-  name.vb: New(ILogger(Of ScheduleTourController), ApplicationDbContext, IAuthService)
-  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.ScheduleTourController(Microsoft.Extensions.Logging.ILogger<uDrive.Backend.Api.Controllers.ScheduleTourController>, uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
-  fullName.vb: uDrive.Backend.Api.Controllers.ScheduleTourController.New(Microsoft.Extensions.Logging.ILogger(Of uDrive.Backend.Api.Controllers.ScheduleTourController), uDrive.Backend.Model.ApplicationDbContext, uDrive.Backend.Api.Services.Interfaces.IAuthService)
-  nameWithType: ScheduleTourController.ScheduleTourController(ILogger<ScheduleTourController>, ApplicationDbContext, IAuthService)
-  nameWithType.vb: ScheduleTourController.New(ILogger(Of ScheduleTourController), ApplicationDbContext, IAuthService)
-- uid: uDrive.Backend.Api.Controllers.ScheduleTourController.#ctor*
-  name: ScheduleTourController
-  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController.-ctor.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.ScheduleTourController.#ctor
-  name.vb: New
-  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController.ScheduleTourController
-  fullName.vb: uDrive.Backend.Api.Controllers.ScheduleTourController.New
-  nameWithType: ScheduleTourController.ScheduleTourController
-  nameWithType.vb: ScheduleTourController.New
-- uid: uDrive.Backend.Api.Controllers.ScheduleTourController._context
-  name: _context
-  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController._context.html
-  commentId: F:uDrive.Backend.Api.Controllers.ScheduleTourController._context
-  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController._context
-  nameWithType: ScheduleTourController._context
-- uid: uDrive.Backend.Api.Controllers.ScheduleTourController._logger
-  name: _logger
-  href: api/uDrive.Backend.Api.Controllers.ScheduleTourController._logger.html
-  commentId: F:uDrive.Backend.Api.Controllers.ScheduleTourController._logger
-  fullName: uDrive.Backend.Api.Controllers.ScheduleTourController._logger
-  nameWithType: ScheduleTourController._logger
 - uid: uDrive.Backend.Api.Controllers.TourPlansController
   name: TourPlansController
   href: api/uDrive.Backend.Api.Controllers.TourPlansController.html
@@ -5402,36 +5504,6 @@ references:
   commentId: Overload:uDrive.Backend.Model.Entities.DrivingLicence.LicenceClass
   fullName: uDrive.Backend.Model.Entities.DrivingLicence.LicenceClass
   nameWithType: DrivingLicence.LicenceClass
-- uid: uDrive.Backend.Model.Entities.ErrorViewModel
-  name: ErrorViewModel
-  href: api/uDrive.Backend.Model.Entities.ErrorViewModel.html
-  commentId: T:uDrive.Backend.Model.Entities.ErrorViewModel
-  fullName: uDrive.Backend.Model.Entities.ErrorViewModel
-  nameWithType: ErrorViewModel
-- uid: uDrive.Backend.Model.Entities.ErrorViewModel.RequestId
-  name: RequestId
-  href: api/uDrive.Backend.Model.Entities.ErrorViewModel.RequestId.html#uDrive_Backend_Model_Entities_ErrorViewModel_RequestId
-  commentId: P:uDrive.Backend.Model.Entities.ErrorViewModel.RequestId
-  fullName: uDrive.Backend.Model.Entities.ErrorViewModel.RequestId
-  nameWithType: ErrorViewModel.RequestId
-- uid: uDrive.Backend.Model.Entities.ErrorViewModel.RequestId*
-  name: RequestId
-  href: api/uDrive.Backend.Model.Entities.ErrorViewModel.RequestId.html
-  commentId: Overload:uDrive.Backend.Model.Entities.ErrorViewModel.RequestId
-  fullName: uDrive.Backend.Model.Entities.ErrorViewModel.RequestId
-  nameWithType: ErrorViewModel.RequestId
-- uid: uDrive.Backend.Model.Entities.ErrorViewModel.ShowRequestId
-  name: ShowRequestId
-  href: api/uDrive.Backend.Model.Entities.ErrorViewModel.ShowRequestId.html#uDrive_Backend_Model_Entities_ErrorViewModel_ShowRequestId
-  commentId: P:uDrive.Backend.Model.Entities.ErrorViewModel.ShowRequestId
-  fullName: uDrive.Backend.Model.Entities.ErrorViewModel.ShowRequestId
-  nameWithType: ErrorViewModel.ShowRequestId
-- uid: uDrive.Backend.Model.Entities.ErrorViewModel.ShowRequestId*
-  name: ShowRequestId
-  href: api/uDrive.Backend.Model.Entities.ErrorViewModel.ShowRequestId.html
-  commentId: Overload:uDrive.Backend.Model.Entities.ErrorViewModel.ShowRequestId
-  fullName: uDrive.Backend.Model.Entities.ErrorViewModel.ShowRequestId
-  nameWithType: ErrorViewModel.ShowRequestId
 - uid: uDrive.Backend.Model.Entities.PassengerRequest
   name: PassengerRequest
   href: api/uDrive.Backend.Model.Entities.PassengerRequest.html
