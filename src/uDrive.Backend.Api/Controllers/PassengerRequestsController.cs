@@ -241,7 +241,7 @@ public class PassengerRequestsController : PersonRoleController<PassengerRequest
             return BadRequest();
         }
         var extend = _context.Persons.Where(x => x.Id == driver.Id).AsTracking()
-            .Include(driver => driver.Drivers)
+            .Include(driver => driver.Driver)
             .ThenInclude(tourplan => tourplan.TourPlans)
             .ThenInclude(passReq => passReq.PassengerRequests)
             .ThenInclude(per => per.Person);
@@ -250,7 +250,7 @@ public class PassengerRequestsController : PersonRoleController<PassengerRequest
             return NoContent();
         }
 
-        var requests = extend.SelectMany(x => x.Drivers.SelectMany(x => x.TourPlans.SelectMany(x => x.PassengerRequests).Where(x => x.IsPending)));
+        var requests = extend.Select(x => x.Driver.TourPlans.SelectMany(x => x.PassengerRequests).Where(x => x.IsPending));
         if (!requests.Any())
         {
             return NoContent();
