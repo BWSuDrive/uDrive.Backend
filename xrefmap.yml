@@ -4193,18 +4193,6 @@ references:
   commentId: Overload:uDrive.Backend.Api.Controllers.PersonsController.AddRoleToUser
   fullName: uDrive.Backend.Api.Controllers.PersonsController.AddRoleToUser
   nameWithType: PersonsController.AddRoleToUser
-- uid: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonDeep(uDrive.Backend.Model.Entities.Person)
-  name: DeletePersonDeep(Person)
-  href: api/uDrive.Backend.Api.Controllers.PersonsController.DeletePersonDeep.html#uDrive_Backend_Api_Controllers_PersonsController_DeletePersonDeep_uDrive_Backend_Model_Entities_Person_
-  commentId: M:uDrive.Backend.Api.Controllers.PersonsController.DeletePersonDeep(uDrive.Backend.Model.Entities.Person)
-  fullName: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonDeep(uDrive.Backend.Model.Entities.Person)
-  nameWithType: PersonsController.DeletePersonDeep(Person)
-- uid: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonDeep*
-  name: DeletePersonDeep
-  href: api/uDrive.Backend.Api.Controllers.PersonsController.DeletePersonDeep.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.PersonsController.DeletePersonDeep
-  fullName: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonDeep
-  nameWithType: PersonsController.DeletePersonDeep
 - uid: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithEmailAsync(System.String)
   name: DeletePersonWithEmailAsync(string)
   href: api/uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithEmailAsync.html#uDrive_Backend_Api_Controllers_PersonsController_DeletePersonWithEmailAsync_System_String_
@@ -4235,18 +4223,6 @@ references:
   commentId: Overload:uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithIdAsync
   fullName: uDrive.Backend.Api.Controllers.PersonsController.DeletePersonWithIdAsync
   nameWithType: PersonsController.DeletePersonWithIdAsync
-- uid: uDrive.Backend.Api.Controllers.PersonsController.DeleteTours(uDrive.Backend.Model.Entities.Driver)
-  name: DeleteTours(Driver)
-  href: api/uDrive.Backend.Api.Controllers.PersonsController.DeleteTours.html#uDrive_Backend_Api_Controllers_PersonsController_DeleteTours_uDrive_Backend_Model_Entities_Driver_
-  commentId: M:uDrive.Backend.Api.Controllers.PersonsController.DeleteTours(uDrive.Backend.Model.Entities.Driver)
-  fullName: uDrive.Backend.Api.Controllers.PersonsController.DeleteTours(uDrive.Backend.Model.Entities.Driver)
-  nameWithType: PersonsController.DeleteTours(Driver)
-- uid: uDrive.Backend.Api.Controllers.PersonsController.DeleteTours*
-  name: DeleteTours
-  href: api/uDrive.Backend.Api.Controllers.PersonsController.DeleteTours.html
-  commentId: Overload:uDrive.Backend.Api.Controllers.PersonsController.DeleteTours
-  fullName: uDrive.Backend.Api.Controllers.PersonsController.DeleteTours
-  nameWithType: PersonsController.DeleteTours
 - uid: uDrive.Backend.Api.Controllers.PersonsController.VerifyPersonAsync(System.String)
   name: VerifyPersonAsync(string)
   href: api/uDrive.Backend.Api.Controllers.PersonsController.VerifyPersonAsync.html#uDrive_Backend_Api_Controllers_PersonsController_VerifyPersonAsync_System_String_
