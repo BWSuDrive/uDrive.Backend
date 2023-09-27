@@ -15,16 +15,27 @@ namespace uDrive.Backend.Api.Test.Integration.Abstractions
     where TController : SecretaryRoleController<TEntity>
     where TEntity : class, IEntity
     {
-        protected override SignInUserDTO ProvideCredentials()
-       =>
-            new SignInUserDTO()
+
+
+        protected override string ProvideNewRole() => UDriveRoles.Secretary;
+
+        [Test]
+        [Order(13)]
+        public async Task GIveNewUserHigherRoleAsync()
+        {
+            var uri = ClientUriBuilder
+            .Create()
+            .AddSegments("Persons", "AddRoleToUser",ProvideNewRole(),NewUserId)
+            .Build();
+            using var request = new HttpRequestMessage(HttpMethod.Put, uri)
             {
-                Email = "Secretary@udrive.de",
-                Password = "SecretarySTrongPassword!2345",
-                UserName = "Secretary@udrive.de",
-
             };
+            var response = await AdminClient
+                .SendAsync(request, HttpCompletionOption.ResponseContentRead)
+                .ConfigureAwait(false);
 
+            Assert.IsTrue(response.IsSuccessStatusCode);
+        }
 
 
        

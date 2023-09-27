@@ -6,31 +6,26 @@
     {
       id: Guid_1,
       expireDate: DateTimeOffset_1,
-      licenceClass: B
+      licenceClass: Z
     },
     {
       id: Guid_2,
       expireDate: DateTimeOffset_2,
-      licenceClass: b
+      licenceClass: B
     },
     {
       id: Guid_3,
       expireDate: DateTimeOffset_3,
-      licenceClass: Z
+      licenceClass: b
     },
     {
       id: Guid_4,
       expireDate: DateTimeOffset_4,
-      licenceClass: Z
+      licenceClass: a
     },
     {
       id: Guid_5,
       expireDate: DateTimeOffset_5,
-      licenceClass: a
-    },
-    {
-      id: Guid_6,
-      expireDate: DateTimeOffset_6,
       licenceClass: a
     }
   ],

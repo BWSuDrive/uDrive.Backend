@@ -85,6 +85,7 @@ public class PersonsController : ControllerBase
 
         return NoContent();
     }
+
     [HttpDelete("DeletePersonWithEmail/{emailPerson}")]
     public async Task<ActionResult> DeletePersonWithEmailAsync([FromRoute] string emailPerson)
     {
@@ -102,5 +103,21 @@ public class PersonsController : ControllerBase
         await _context.SaveChangesAsync().ConfigureAwait(false);
 
         return NoContent();
+    }
+
+    [Authorize(Roles = $"{UDriveRoles.Administrator}")]
+    [HttpPut("AddRoleToUser/{role}/{idPerson}")]
+    public async Task<ActionResult> AddRoleToUser([FromRoute] string role, [FromRoute] string idPerson)
+    {
+        var user = await _userManager.FindByIdAsync(idPerson).ConfigureAwait(false);
+        if (user is null)
+        {
+            return NotFound();
+        }
+
+        await _userManager.AddToRoleAsync(user,role).ConfigureAwait(false);
+        await _context.SaveChangesAsync().ConfigureAwait(false);
+
+        return Ok();
     }
 }
