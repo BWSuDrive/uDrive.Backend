@@ -1,17 +1,27 @@
 ﻿using Microsoft.AspNetCore.Mvc.Testing;
-using NetEvolve.Extensions.NUnit;
-
-using Microsoft.VisualStudio.TestPlatform.TestHost;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
+using NetEvolve.Http.Correlation;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 namespace uDrive.Backend.Api.Test.Integration.Abstractions;
 
 public sealed class TestBaseFactory : WebApplicationFactory<Program>
 {
-   // public async Task InitAsync() => await _container.StartAsync().ConfigureAwait(false);
+    protected override IHost CreateHost(IHostBuilder builder)
+    {
+        if (builder is null)
+        {
+            throw new ArgumentNullException(nameof(builder));
+        }
+        _ = builder.ConfigureServices(services =>
+        {
+            _ = services.AddHttpCorrelation().WithTestGenerator();
+        });
+
+        return base.CreateHost(builder);
+    }
 
 
 }

@@ -10,7 +10,7 @@ namespace uDrive.Backend.Api.Controllers.Abstract;
 /// <typeparam name="TEntity"></typeparam>
 [Authorize(Roles = $"{UDriveRoles.Secretary},{UDriveRoles.Administrator},{UDriveRoles.Driver},{UDriveRoles.Person}")]
 
-public class PersonRoleController<TEntity> : AnonymousController<TEntity>
+public abstract class PersonRoleController<TEntity> : AnonymousRoleController<TEntity>
     where TEntity : class, IEntity
 {
 

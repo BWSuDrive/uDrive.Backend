@@ -100,8 +100,6 @@ namespace uDrive.Backend.Api.Controllers
             var newDriver = await _context.Drivers.AddAsync(driver).ConfigureAwait(false);
             await _context.SaveChangesAsync().ConfigureAwait(false);
             return Ok(newDriver.Entity.Id);
-
-
         }
 
 
