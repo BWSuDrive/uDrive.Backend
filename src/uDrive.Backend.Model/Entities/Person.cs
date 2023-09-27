@@ -3,6 +3,9 @@ using System.Collections.ObjectModel;
 
 namespace uDrive.Backend.Model.Entities;
 
+/// <summary>
+/// A <see cref="Person"/> is a <see cref="IdentityUser"/> who can use the app. All Users are a <see cref="Person"/>
+/// </summary>
 public class Person : IdentityUser
 {
 
