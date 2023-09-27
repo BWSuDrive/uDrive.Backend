@@ -16,11 +16,6 @@ namespace uDrive.Backend.Api.Controllers;
 /// Controller to access and modify <see cref="DrivingLicence"/> Entities. 
 /// Inherits from <see cref="SecretaryRoleController{TEntity}"/>.
 /// </summary>
-//[Produces(Application.Json)]
-//[Consumes(Application.Json)]
-//[Route("[controller]")]
-//[ApiController]
-//[Authorize(Roles = $"{UDriveRoles.Secretary},{UDriveRoles.Administrator},{UDriveRoles.Driver}")]
 public class TourPlansController : DriverRoleController<TourPlan>
 {
     private readonly IAuthService _authService;

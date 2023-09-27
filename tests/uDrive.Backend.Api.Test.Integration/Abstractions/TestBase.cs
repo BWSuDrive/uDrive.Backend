@@ -22,6 +22,7 @@ public abstract class TestBase : ContinuousTestBase
 {
     protected virtual string token { get; set; }
     protected virtual string adminToken { get; set; }
+    protected virtual string newId { get; set; }
 
     protected TestBaseFactory TestFactory { get; private set; }
     protected HttpClient Client => CreateClientWithToken();
@@ -56,8 +57,8 @@ public abstract class TestBase : ContinuousTestBase
             new AuthenticationHeaderValue("Bearer", adminToken);
             return client;
         }
-        
-        
+
+
     }
 
     [OneTimeSetUp]
@@ -119,10 +120,15 @@ public abstract class TestBase : ContinuousTestBase
         Assert.That(request, Is.Not.Null);
         Assert.That(request.RequestUri, Is.Not.Null);
 
+        string absolutePath = request.RequestUri.AbsolutePath;
+       var requestPA = newId is not null ?  absolutePath.Contains(newId) ? absolutePath.Replace(newId, "ID") : absolutePath : absolutePath;
+
+        
+
         _ = await Verify(
                 new
                 {
-                    requestPath = request.RequestUri.AbsolutePath,
+                    requestPath = requestPA,
                     requestQuery = string.IsNullOrWhiteSpace(request.RequestUri.Query)
                         ? null
                         : request.RequestUri.Query,

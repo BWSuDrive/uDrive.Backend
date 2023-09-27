@@ -13,15 +13,7 @@ namespace uDrive.Backend.Api.Test.Integration.Abstractions
     where TController : AdministratorRoleController<TEntity>
     where TEntity : class, IEntity
     {
-        protected override SignInUserDTO ProvideCredentials()
-       =>
-            new SignInUserDTO()
-            {
-                Email = "Administrator@udrive.de",
-                Password = "AdministratorSTrongPassword!2345",
-                UserName = "Administrator@udrive.de",
-
-            };
+ 
 
     }
 }
