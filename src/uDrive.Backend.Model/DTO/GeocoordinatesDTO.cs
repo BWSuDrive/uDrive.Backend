@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace uDrive.Backend.Model.DTO;
 
-namespace uDrive.Backend.Model.DTO;
-
+/// <summary>
+/// DTO to send Coordinates to the API
+/// </summary>
 public class GeocoordinatesDTO
 {
-    //public string DriverPos { get; set; }
-    //public string PersonPos { get; set; }
-
     /// <summary>
     /// The current Latitude
     /// </summary>
