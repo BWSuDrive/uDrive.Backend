@@ -16,12 +16,12 @@ namespace uDrive.Backend.Api.Controllers;
 /// Controller to access and modify <see cref="DrivingLicence"/> Entities. 
 /// Inherits from <see cref="SecretaryRoleController{TEntity}"/>.
 /// </summary>
-[Produces(Application.Json)]
-[Consumes(Application.Json)]
-[Route("[controller]")]
-[ApiController]
-[Authorize(Roles = $"{UDriveRoles.Secretary},{UDriveRoles.Administrator},{UDriveRoles.Driver}")]
-public class TourPlansController : ControllerBase
+//[Produces(Application.Json)]
+//[Consumes(Application.Json)]
+//[Route("[controller]")]
+//[ApiController]
+//[Authorize(Roles = $"{UDriveRoles.Secretary},{UDriveRoles.Administrator},{UDriveRoles.Driver}")]
+public class TourPlansController : DriverRoleController<TourPlan>
 {
     private readonly IAuthService _authService;
 
@@ -44,7 +44,7 @@ public class TourPlansController : ControllerBase
     ILogger<TourPlansController> logger,
     ApplicationDbContext context,
     IAuthService authService
-)
+) : base(logger, context, authService)
     {
         _logger = logger;
         _context = context;
@@ -60,7 +60,7 @@ public class TourPlansController : ControllerBase
     /// <response code="200">Returns a queryable collection of <typeparamref name="TourPlan"/>.</response>
     [HttpGet]
     [ProducesResponseType(Status200OK)]
-    public async ValueTask<ActionResult<IQueryable<TourPlan>>> GetAsync()
+    public override async ValueTask<ActionResult<IQueryable<TourPlan>>> GetAsync()
     {
         var person = await _authService.GetLogedInPerson(HttpContext).ConfigureAwait(false);
         if (person is null)
@@ -91,7 +91,7 @@ public class TourPlansController : ControllerBase
     [ProducesResponseType(Status200OK)]
     [ProducesResponseType(Status400BadRequest)]
     [ProducesResponseType(Status404NotFound)]
-    public async ValueTask<ActionResult<TourPlan>> GetByIdAsync(string id)
+    public override async ValueTask<ActionResult<TourPlan>> GetByIdAsync(string id)
     {
         var person = await _authService.GetLogedInPerson(HttpContext).ConfigureAwait(false);
         if (person is null)
@@ -130,7 +130,7 @@ public class TourPlansController : ControllerBase
     [HttpPost]
     [ProducesResponseType(Status200OK)]
     [ProducesResponseType(Status400BadRequest)]
-    public async ValueTask<ActionResult<TourPlan>> PostAsync([FromBody] TourPlan entity)
+    public override async ValueTask<ActionResult<TourPlan>> PostAsync([FromBody] TourPlan entity)
     {
         if (!ModelState.IsValid || entity is null)
         {
@@ -174,7 +174,7 @@ public class TourPlansController : ControllerBase
     [ProducesResponseType(Status200OK)]
     [ProducesResponseType(Status400BadRequest)]
     [ProducesResponseType(Status404NotFound)]
-    public async ValueTask<ActionResult> DeleteAsync([FromRoute] string key)
+    public override async ValueTask<ActionResult> DeleteAsync([FromRoute] string key)
     {
 
         if (key == string.Empty)

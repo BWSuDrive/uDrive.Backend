@@ -18,7 +18,7 @@ namespace uDrive.Backend.Api.Controllers.Abstract;
 [Consumes(Application.Json)]
 [Route("[controller]")]
 [ApiController]
-public class AnonymousController<TEntity> : ControllerBase where TEntity : class, IEntity
+public abstract class AnonymousRoleController<TEntity> : ControllerBase where TEntity : class, IEntity
 {
     private readonly IAuthService _authService;
 
@@ -42,7 +42,7 @@ public class AnonymousController<TEntity> : ControllerBase where TEntity : class
     /// </summary>
     /// <param name="logger">Logger, managed by dependency injection.</param>
     /// <param name="context">Context, managed by dependecy injection.</param>
-    public AnonymousController(ILogger<AnonymousController<TEntity>> logger, ApplicationDbContext context, IAuthService authService)
+    public AnonymousRoleController(ILogger<AnonymousRoleController<TEntity>> logger, ApplicationDbContext context, IAuthService authService)
     {
         _logger = logger;
         _context = context;
@@ -58,7 +58,7 @@ public class AnonymousController<TEntity> : ControllerBase where TEntity : class
     /// <response code="200">Returns a queryable collection of <typeparamref name="TEntity"/>.</response>
     [HttpGet]
     [ProducesResponseType(Status200OK)]
-    public ActionResult<IQueryable<TEntity>> Get()
+    public virtual async ValueTask<ActionResult<IQueryable<TEntity>>> GetAsync()
     {
         return Ok(Entities);
     }
@@ -74,7 +74,7 @@ public class AnonymousController<TEntity> : ControllerBase where TEntity : class
     [ProducesResponseType(Status200OK)]
     [ProducesResponseType(Status400BadRequest)]
     [ProducesResponseType(Status404NotFound)]
-    public ActionResult<TEntity> GetById(string id)
+    public virtual async ValueTask<ActionResult<TEntity>> GetByIdAsync(string id)
     {
         if (id == string.Empty)
         {
@@ -99,7 +99,7 @@ public class AnonymousController<TEntity> : ControllerBase where TEntity : class
     [HttpPost]
     [ProducesResponseType(Status200OK)]
     [ProducesResponseType(Status400BadRequest)]
-    public async ValueTask<ActionResult<TEntity>> PostAsync([FromBody] TEntity entity)
+    public virtual async ValueTask<ActionResult<TEntity>> PostAsync([FromBody] TEntity entity)
     {
         if (!ModelState.IsValid || entity is null)
         {
@@ -130,7 +130,7 @@ public class AnonymousController<TEntity> : ControllerBase where TEntity : class
     [ProducesResponseType(Status200OK)]
     [ProducesResponseType(Status400BadRequest)]
     [ProducesResponseType(Status404NotFound)]
-    public async ValueTask<ActionResult> DeleteAsync([FromRoute] string key)
+    public virtual async ValueTask<ActionResult> DeleteAsync([FromRoute] string key)
     {
 
         if (key == string.Empty)
@@ -145,6 +145,6 @@ public class AnonymousController<TEntity> : ControllerBase where TEntity : class
         }
         _ = _context.Set<TEntity>().Remove(savedEntity);
         await _context.SaveChangesAsync();
-        return Ok();
+        return NoContent();
     }
 }
