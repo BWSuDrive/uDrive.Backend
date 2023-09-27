@@ -1,0 +1,8 @@
+﻿{
+  requestPath: /DrivingLicences/96169394-70f2-4c62-ae10-ec17409d2246,
+  requestHeader: [],
+  requestMethod: DELETE,
+  responseHeader: [],
+  statusCode: NoContent,
+  statusCodeExpected: true
+}

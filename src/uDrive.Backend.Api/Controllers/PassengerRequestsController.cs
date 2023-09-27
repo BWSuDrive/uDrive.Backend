@@ -20,13 +20,13 @@ namespace uDrive.Backend.Api.Controllers;
 /// Controller to access and modify <see cref="PassengerRequest"/> Entities. 
 /// Inherits from <see cref="PersonRoleController{TEntity}"/>.
 /// </summary>
-[Produces(Application.Json)]
-[Consumes(Application.Json)]
-[Route("[controller]")]
-[ApiController]
-[Authorize(Roles = $"{UDriveRoles.Secretary},{UDriveRoles.Administrator},{UDriveRoles.Driver},{UDriveRoles.Person}")]
+//[Produces(Application.Json)]
+//[Consumes(Application.Json)]
+//[Route("[controller]")]
+//[ApiController]
+//[Authorize(Roles = $"{UDriveRoles.Secretary},{UDriveRoles.Administrator},{UDriveRoles.Driver},{UDriveRoles.Person}")]
 
-public class PassengerRequestsController : ControllerBase
+public class PassengerRequestsController : PersonRoleController<PassengerRequest>
 {
     /// <inheritdoc />
     private readonly IAuthService _authService;
@@ -45,7 +45,7 @@ public class PassengerRequestsController : ControllerBase
     ILogger<PassengerRequestsController> logger,
     ApplicationDbContext context,
     IAuthService authService
-)
+) : base(logger, context, authService)
     {
         _authService = authService;
         _context = context;
@@ -61,7 +61,7 @@ public class PassengerRequestsController : ControllerBase
     /// <response code="200">Returns a queryable collection of <see cref="PassengerRequest"/>.</response>
     [HttpGet]
     [ProducesResponseType(Status200OK)]
-    public async ValueTask<ActionResult<IQueryable<PassengerRequest>>> GetAsync()
+    public override async ValueTask<ActionResult<IQueryable<PassengerRequest>>> GetAsync()
     {
         var person = await _authService.GetLogedInPerson(HttpContext).ConfigureAwait(false);
         if (person is null)
@@ -87,7 +87,7 @@ public class PassengerRequestsController : ControllerBase
     [ProducesResponseType(Status200OK)]
     [ProducesResponseType(Status400BadRequest)]
     [ProducesResponseType(Status404NotFound)]
-    public async ValueTask<ActionResult<PassengerRequest>> GetByIdAsync(string id)
+    public override async ValueTask<ActionResult<PassengerRequest>> GetByIdAsync(string id)
     {
         var person = await _authService.GetLogedInPerson(HttpContext).ConfigureAwait(false);
         if (person is null)
@@ -121,7 +121,7 @@ public class PassengerRequestsController : ControllerBase
     [HttpPost]
     [ProducesResponseType(Status200OK)]
     [ProducesResponseType(Status400BadRequest)]
-    public async ValueTask<ActionResult<PassengerRequest>> PostAsync([FromBody] PassengerRequest entity)
+    public override async ValueTask<ActionResult<PassengerRequest>> PostAsync([FromBody] PassengerRequest entity)
     {
         if (!ModelState.IsValid || entity is null)
         {
@@ -160,7 +160,7 @@ public class PassengerRequestsController : ControllerBase
     [ProducesResponseType(Status200OK)]
     [ProducesResponseType(Status400BadRequest)]
     [ProducesResponseType(Status404NotFound)]
-    public async ValueTask<ActionResult> DeleteAsync([FromRoute] string key)
+    public override async ValueTask<ActionResult> DeleteAsync([FromRoute] string key)
     {
 
         if (key == string.Empty)

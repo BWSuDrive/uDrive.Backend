@@ -1,0 +1,35 @@
+﻿{
+  requestPath: /DrivingLicences,
+  requestHeader: [],
+  requestMethod: GET,
+  responseBody: [
+    {
+      id: Guid_1,
+      expireDate: DateTimeOffset_1,
+      licenceClass: B
+    },
+    {
+      id: Guid_2,
+      expireDate: DateTimeOffset_2,
+      licenceClass: b
+    },
+    {
+      id: Guid_3,
+      expireDate: DateTimeOffset_3,
+      licenceClass: Z
+    },
+    {
+      id: Guid_4,
+      expireDate: DateTimeOffset_4,
+      licenceClass: a
+    },
+    {
+      id: Guid_5,
+      expireDate: DateTimeOffset_5,
+      licenceClass: a
+    }
+  ],
+  responseHeader: [],
+  statusCode: OK,
+  statusCodeExpected: true
+}
