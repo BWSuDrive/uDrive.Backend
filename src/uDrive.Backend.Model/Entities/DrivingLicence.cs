@@ -1,5 +1,8 @@
 ﻿namespace uDrive.Backend.Model.Entities;
 
+/// <summary>
+/// The description of the <see cref="DrivingLicence"/>
+/// </summary>
 public class DrivingLicence : IEntity
 {
     /// <inheritdoc />

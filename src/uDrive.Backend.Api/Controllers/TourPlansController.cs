@@ -34,6 +34,7 @@ public class TourPlansController : DriverRoleController<TourPlan>
     /// internal queryable list of <see cref="TourPlan"/>
     /// </summary>
     public IQueryable<TourPlan> Entities => _context.Set<TourPlan>().AsQueryable();
+
     /// <inheritdoc />
     public TourPlansController(
     ILogger<TourPlansController> logger,
