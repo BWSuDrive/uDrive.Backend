@@ -1,14 +1,10 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 namespace uDrive.Backend.Model.Entities;
 
 public class Person : IdentityUser
 {
-
-    //public string Id { get; set; } = null!;
 
     /// <summary>
     /// Firstname of the registered Person
@@ -20,11 +16,24 @@ public class Person : IdentityUser
     /// </summary>
     public string Lastname { get; set; } = null!;
 
+    /// <summary>
+    /// Defines, if an <see cref="Person"/> is verified to use the app
+    /// </summary>
     public bool Verified { get; set; } = false;
 
+    /// <summary>
+    /// The corresponding <see cref="Entities.Driver"/> 
+    /// </summary>
     public virtual Driver? Driver { get; } = default;
 
+    /// <summary>
+    /// Collection of connected <see cref="Entities.TourPlan"/>, where the person was an passenger
+    /// </summary>
     public virtual ICollection<TourPlan> AsPassengers { get;} = new Collection<TourPlan>();
+
+    /// <summary>
+    /// Collection of <see cref="Entities.PassengerRequest"/>, which the <see cref="Person"/> send to an <see cref="Entities.Driver"/>
+    /// </summary>
     public virtual ICollection<PassengerRequest> PassengerRequests{ get; } = new Collection<PassengerRequest>();
 
 }

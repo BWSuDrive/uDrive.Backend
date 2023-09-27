@@ -11,6 +11,9 @@ using uDrive.Backend.Model.Entities;
 
 namespace uDrive.Backend.Api.Controllers;
 
+/// <summary>
+/// Helper Controller, to managed Registration
+/// </summary>
 [ApiController]
 [Route("[controller]")]
 public class RegisterController : ControllerBase
@@ -18,14 +21,29 @@ public class RegisterController : ControllerBase
     private readonly ILogger<RegisterController> _logger;
     private readonly IAuthService _authService;
 
-
+    /// <inheritdoc />
     public RegisterController(ILogger<RegisterController> logger, IAuthService authService)
     {
         _logger = logger;
         _authService = authService;
     }
 
-
+    /// <summary>
+    /// Method to registar a <see cref="Person"/>
+    /// </summary>
+    /// <param name="register">The <see cref="RegisterDTO"/> entity
+    /// <code>
+    /// {
+    /// "userName": "test@bundestag.de",
+    /// "password": "Test1234!",
+    /// "email": "test@bundestag.de",
+    /// "firstname": "Test",
+    /// "lastname": "Test",
+    /// "phonenumber" : "0049 619229040"
+    /// }
+    /// </code>
+    /// </param>
+    /// <returns></returns>
     [HttpPost]
     public async Task<IActionResult> RegisterAsync(RegisterDTO register)
     {
@@ -35,7 +53,7 @@ public class RegisterController : ControllerBase
         }
 
         var response = await _authService.RegisterSystemUserAsync(register).ConfigureAwait(false);
-        if(!response.Success)
+        if (!response.Success)
         {
             return BadRequest(response);
         }

@@ -20,11 +20,6 @@ namespace uDrive.Backend.Api.Controllers;
 /// Controller to access and modify <see cref="PassengerRequest"/> Entities. 
 /// Inherits from <see cref="PersonRoleController{TEntity}"/>.
 /// </summary>
-//[Produces(Application.Json)]
-//[Consumes(Application.Json)]
-//[Route("[controller]")]
-//[ApiController]
-//[Authorize(Roles = $"{UDriveRoles.Secretary},{UDriveRoles.Administrator},{UDriveRoles.Driver},{UDriveRoles.Person}")]
 
 public class PassengerRequestsController : PersonRoleController<PassengerRequest>
 {
@@ -426,11 +421,69 @@ public class PassengerRequestsController : PersonRoleController<PassengerRequest
     public async ValueTask<ActionResult<DriversInRangeDTO>> FilterDriversBy5kmRadiusAsync([FromBody] GeocoordinatesDTO dto)
     => await GetDriversBy5kmRadiusAsync(dto,DateTime.Now).ConfigureAwait(false);
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="dto">
+    /// <code>
+    /// {
+    /// "currentLatitude": 50.08486509467797, 
+    /// "currentLongitude": 8.458661956343363,
+    /// "coordinates": "string"
+    ///}
+    ///</code>
+    ///</param>
+    /// <param name="days">The amount of days in the future</param>
+    /// <returns>
+    /// /// <code>
+    /// [
+    ///    {
+    ///       "distance": 0.26,
+    ///       "firstname": "Firstname_Test2",
+    ///       "lastname": "Lastname_Test2",
+    ///       "userName": "TestDriver2@udrive.de",
+    ///       "idPerson": "ddebddc1-8747-42a8-896c-06563b280c12",
+    ///       "driver": {
+    ///           "id": "94bb701a-cc1c-42ce-9e98-02ae06809910",
+    ///           "idDrivinglicense": "433640da-6279-4c25-a6e8-c54219399a4b",
+    ///           "idPerson": "ddebddc1-8747-42a8-896c-06563b280c12",
+    ///           "seats": 2,
+    ///           "idDrivinglicenseNavigation": null,
+    ///           "idPersonNavigation": null,
+    ///           "tourPlans": []
+    ///   },
+    ///       "tourPlan": {
+    ///           "id": "9141c66b-98bd-458c-9248-80658988f097",
+    ///           "idDriver": "94bb701a-cc1c-42ce-9e98-02ae06809910",
+    ///           "departure": "2023-09-25T17:52:12.257",
+    ///           "stopRequests": 0,
+    ///           "eta": "00:15:00",
+    ///           "start": "string",
+    ///           "destination": "string",
+    ///           "message": "string",
+    ///           "currentCoordinates": "string",
+    ///           "currentLatitude": 50.08513701910111,
+    ///           "currentLongitude": 8.452825469725695,
+    ///           "driver": {
+    ///               ...
+    ///           },
+    ///           "passengers": []
+    ///       }
+    ///   }
+    ///]
+    /// </code>
+    /// </returns>
     [HttpPost("FilterDriversBy5kmRadius/{days}")]
     public async ValueTask<ActionResult<DriversInRangeDTO>> FilterDriversBy5kmRadiusAtDaysAsync([FromBody] GeocoordinatesDTO dto, int days)
    => await GetDriversBy5kmRadiusAsync(dto, DateTime.Now.AddDays(days)).ConfigureAwait(false);
 
 
+    /// <summary>
+    /// Helper function, to make the calculation accessible for other methods
+    /// </summary>
+    /// <param name="dto">The dto, provided by <see cref="FilterDriversBy5kmRadiusAsync(GeocoordinatesDTO)"/> and <see cref="FilterDriversBy5kmRadiusAtDaysAsync(GeocoordinatesDTO, int)"/></param>
+    /// <param name="today">The calculated day</param>
+    /// <returns>The List of matches</returns>
     private async ValueTask<ActionResult<DriversInRangeDTO>> GetDriversBy5kmRadiusAsync(GeocoordinatesDTO dto, DateTime today)
     {
         var getDrivers = _context.Drivers.AsTracking().Include(tour => tour.TourPlans).Where(x => x.TourPlans != null);
