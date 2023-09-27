@@ -32,22 +32,28 @@ public abstract class AnonymousRoleControllerTestBase<TController, TEntity> : Te
     where TEntity : class, IEntity
 {
     private protected readonly string _entityName;
-
     public List<TEntity> _entities;
 
-    protected virtual SignInUserDTO ProvideCredentials()
+    protected static SignInUserDTO ProvideCredentials()
         =>
-             new SignInUserDTO();
+             new SignInUserDTO()
+             {
+                 Email = "TestUser@udrive.de",
+                 Password = "Test1234!",
+                 UserName = "TestUser@udrive.de"
+             };
 
     protected RegisterDTO NewPerson = new RegisterDTO()
     {
-        Email = "TestUser@udrive.de",
+        Email = ProvideCredentials().Email,
         Firstname = "Test",
         Lastname = "Test",
-        Password = "Test1234!",
-        UserName = "TestUser@udrive.de",
+        Password = ProvideCredentials().Password,
+        UserName = ProvideCredentials().UserName,
         PhoneNumber = "1234567890"
     };
+    protected string NewUserId = string.Empty;
+
 
     protected SignInUserDTO AdminCredentials = new SignInUserDTO()
     {
@@ -57,7 +63,6 @@ public abstract class AnonymousRoleControllerTestBase<TController, TEntity> : Te
 
     };
 
-    protected string NewUserId = string.Empty;
 
     protected AnonymousRoleControllerTestBase()
     : base() =>
@@ -73,34 +78,9 @@ public abstract class AnonymousRoleControllerTestBase<TController, TEntity> : Te
     protected ClientUriBuilder CreateUri(params object[] additionalSegments) =>
        CreateUri().AddSegments(additionalSegments);
 
+
     [Test]
     [Order(10)]
-    public async Task Login()
-    {
-        var uri = ClientUriBuilder
-            .Create()
-            .AddSegments("Login")
-            .Build();
-
-        using var request = new HttpRequestMessage(HttpMethod.Post, uri)
-        {
-            Content = JsonContent.Create(ProvideCredentials())
-        };
-        var response = await Client
-            .SendAsync(request, HttpCompletionOption.ResponseContentRead)
-            .ConfigureAwait(false);
-
-        if (response.IsSuccessStatusCode)
-        {
-            string output = await response.Content.ReadAsStringAsync();
-            var deserialized = JsonConvert.DeserializeObject<Response<LoginResponseDTO>>(output);
-            token = deserialized.Data.Token;
-        }
-
-        Assert.IsTrue(response.IsSuccessStatusCode);
-    }
-    [Test]
-    [Order(11)]
     public async Task LoginAdmin()
     {
         var uri = ClientUriBuilder
@@ -126,7 +106,7 @@ public abstract class AnonymousRoleControllerTestBase<TController, TEntity> : Te
         Assert.IsTrue(response.IsSuccessStatusCode);
     }
     [Test]
-    [Order(50)]
+    [Order(11)]
     public async Task RegisterTestUser()
     {
         var response = await  RegisterNewUserAsync().ConfigureAwait(false);     
@@ -135,15 +115,11 @@ public abstract class AnonymousRoleControllerTestBase<TController, TEntity> : Te
         {
             await DeleteTestUserWithEmail().ConfigureAwait(false);
             response = await RegisterNewUserAsync().ConfigureAwait(false);
-
         }
 
         Assert.IsTrue(response.IsSuccessStatusCode);
 
     }
-
-
-
     private async Task<HttpResponseMessage> RegisterNewUserAsync()
     {
         var uri = ClientUriBuilder
@@ -164,6 +140,57 @@ public abstract class AnonymousRoleControllerTestBase<TController, TEntity> : Te
         return response;
 
     }
+
+    
+
+    [Test]
+    [Order(12)]
+    public async Task VerifyNewUser()
+    {
+        var uri = ClientUriBuilder
+            .Create()
+            .AddSegments("Persons",NewUserId)
+            .Build();
+
+        using var request = new HttpRequestMessage(HttpMethod.Patch, uri)
+        {
+        };
+        var response = await AdminClient
+            .SendAsync(request, HttpCompletionOption.ResponseContentRead)
+            .ConfigureAwait(false);
+
+        Assert.IsTrue(response.IsSuccessStatusCode);
+    }
+
+    [Test]
+    [Order(20)]
+    public async Task Login()
+    {
+        var uri = ClientUriBuilder
+            .Create()
+            .AddSegments("Login")
+            .Build();
+
+        using var request = new HttpRequestMessage(HttpMethod.Post, uri)
+        {
+            Content = JsonContent.Create(ProvideCredentials())
+        };
+        var response = await Client
+            .SendAsync(request, HttpCompletionOption.ResponseContentRead)
+            .ConfigureAwait(false);
+
+        if (response.IsSuccessStatusCode)
+        {
+            string output = await response.Content.ReadAsStringAsync();
+            var deserialized = JsonConvert.DeserializeObject<Response<LoginResponseDTO>>(output);
+            token = deserialized.Data.Token;
+        }
+
+        Assert.IsTrue(response.IsSuccessStatusCode);
+    }
+
+
+   
 
     [Test]
     [Order(9999)]
@@ -216,7 +243,8 @@ public abstract class AnonymousRoleControllerTestBase<TController, TEntity> : Te
     [Order(101)]
     public async Task GET_ById_Expected_Result()
     {
-        string id = _entities.FirstOrDefault().Id;
+        
+        string id = newId is not null ? newId : _entities.FirstOrDefault().Id;
         var uri = CreateUri(id).Build();
         var response = await Client
             .GetAsync(uri, HttpCompletionOption.ResponseContentRead)

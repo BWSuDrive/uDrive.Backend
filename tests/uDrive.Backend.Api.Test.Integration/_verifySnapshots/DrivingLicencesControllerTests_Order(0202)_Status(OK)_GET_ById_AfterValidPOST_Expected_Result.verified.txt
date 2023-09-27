@@ -1,11 +1,11 @@
 ﻿{
-  requestPath: /DrivingLicences/5636fbb5-46b0-4b5f-a846-2f2be2fa730b,
+  requestPath: /DrivingLicences/ID,
   requestHeader: [],
   requestMethod: GET,
   responseBody: {
     id: Guid_1,
     expireDate: DateTimeOffset_1,
-    licenceClass: B
+    licenceClass: Z
   },
   responseHeader: [],
   statusCode: OK,

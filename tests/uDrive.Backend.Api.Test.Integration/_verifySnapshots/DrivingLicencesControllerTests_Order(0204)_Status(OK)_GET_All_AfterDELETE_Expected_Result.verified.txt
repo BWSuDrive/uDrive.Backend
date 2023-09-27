@@ -21,6 +21,11 @@
     {
       id: Guid_4,
       expireDate: DateTimeOffset_4,
+      licenceClass: Z
+    },
+    {
+      id: Guid_5,
+      expireDate: DateTimeOffset_5,
       licenceClass: a
     }
   ],

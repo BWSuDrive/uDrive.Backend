@@ -420,9 +420,15 @@ public class PassengerRequestsController : PersonRoleController<PassengerRequest
     /// </code></returns>
     [HttpPost("FilterDriversBy5kmRadius")]
     public async ValueTask<ActionResult<DriversInRangeDTO>> FilterDriversBy5kmRadiusAsync([FromBody] GeocoordinatesDTO dto)
-    {
+    => await GetDriversBy5kmRadiusAsync(dto,DateTime.Now).ConfigureAwait(false);
 
-        var today = DateTime.Now;
+    [HttpPost("FilterDriversBy5kmRadius/{days}")]
+    public async ValueTask<ActionResult<DriversInRangeDTO>> FilterDriversBy5kmRadiusAtDaysAsync([FromBody] GeocoordinatesDTO dto, int days)
+   => await GetDriversBy5kmRadiusAsync(dto, DateTime.Now.AddDays(days)).ConfigureAwait(false);
+
+
+    private async ValueTask<ActionResult<DriversInRangeDTO>> GetDriversBy5kmRadiusAsync(GeocoordinatesDTO dto, DateTime today)
+    {
         var getDrivers = _context.Drivers.AsTracking().Include(tour => tour.TourPlans).Where(x => x.TourPlans != null);
         if (!getDrivers.Any())
         {
@@ -456,7 +462,7 @@ public class PassengerRequestsController : PersonRoleController<PassengerRequest
                             }
                         }
 
-                        toursInRange.Add(match); break;
+                        toursInRange.Add(match);
                     }
                 }
             }
@@ -489,10 +495,9 @@ public class PassengerRequestsController : PersonRoleController<PassengerRequest
                 TourPlan = tour.driverTourPlan
             });
         }
-
         return Ok(response);
-
     }
+
 
     /// <summary>
     /// Calculates the Distance between the <see cref="Driver"/> and the <see cref="Person"/>
