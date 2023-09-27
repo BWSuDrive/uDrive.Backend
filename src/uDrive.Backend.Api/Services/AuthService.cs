@@ -13,6 +13,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace uDrive.Backend.Api.Services;
 
+/// <summary>
+/// Service for Authorization
+/// </summary>
 public class AuthService : IAuthService
 {
     private readonly UserManager<Person> _userManager;
@@ -20,6 +23,7 @@ public class AuthService : IAuthService
     private readonly IConfiguration _configuration;
     private readonly ApplicationDbContext _context;
 
+    /// <inheritdoc />
     public AuthService(UserManager<Person> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration, ApplicationDbContext context)
     {
         this._userManager = userManager;
@@ -30,6 +34,13 @@ public class AuthService : IAuthService
 
     }
 
+
+    /// <summary>
+    /// Validates, if an <see cref="Person"/> is logged in via his/her <see cref="HttpContext"/>
+    /// </summary>
+    /// <param name="context">The <see cref="HttpContext"/></param>
+    /// <returns>The found <see cref="Person"/> inside the database</returns>
+    /// <exception cref="InvalidOperationException"></exception>
     public async Task<Person> GetLogedInPerson(HttpContext context)
     {
         var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last();
@@ -57,6 +68,11 @@ public class AuthService : IAuthService
         return user;
     }
 
+    /// <summary>
+    /// Register a new <see cref="Person"/> to the database, but he/her is not verified, until a <see cref="UDriveRoles.Secretary"/> or <see cref="UDriveRoles.Administrator"/> verifies the <see cref="Person"/>
+    /// </summary>
+    /// <param name="registerDTO"></param>
+    /// <returns>The <see cref="LoginResponseDTO"/>, filled with a bearer token and message</returns>
     public async Task<Response<LoginResponseDTO>> RegisterSystemUserAsync(RegisterDTO registerDTO)
     {
         var result = await RegistrationAsync(registerDTO).ConfigureAwait(false);
@@ -86,6 +102,12 @@ public class AuthService : IAuthService
         };
     }
 
+
+    /// <summary>
+    /// Registrate the <see cref="Person"/> to the database
+    /// </summary>
+    /// <param name="model"></param>
+    /// <returns></returns>
     public async Task<(int identifier, string token, Person? user)> RegistrationAsync(RegisterDTO model)
     {
         var userExists = await _userManager.FindByNameAsync(model.UserName);
@@ -123,6 +145,11 @@ public class AuthService : IAuthService
         return (1, token, createdUser);
     }
 
+    /// <summary>
+    /// Sign in the <see cref="Person"/> to the System by calling <see cref="LoginAsync(SignInUserDTO)"/>
+    /// </summary>
+    /// <param name="credentials"></param>
+    /// <returns></returns>
     public async Task<Response<LoginResponseDTO>> LoginSystemUserAsync(SignInUserDTO credentials)
     {
 
@@ -153,6 +180,11 @@ public class AuthService : IAuthService
         };
     }
 
+    /// <summary>
+    /// Sign in the <see cref="Person"/> to the System
+    /// </summary>
+    /// <param name="model"></param>
+    /// <returns></returns>
     public async Task<(int identifier, string token, Person? user, List<string>? roles)> LoginAsync(SignInUserDTO model)
     {
         var user = await _userManager.FindByNameAsync(model.UserName);
@@ -179,13 +211,24 @@ public class AuthService : IAuthService
         return (1, token, user, userRoles);
     }
 
+    /// <summary>
+    /// Assignes a <see cref="Person"/> to a new Role
+    /// </summary>
+    /// <param name="person">The <see cref="Person"/></param>
+    /// <param name="role">The Role</param>
+    /// <returns></returns>
     public async Task<bool> AssignPersonToRoleAsync(Person person, string role)
     {
         _ = await _userManager.AddToRoleAsync(person,role).ConfigureAwait(false);
         return true;
     }
 
-
+    /// <summary>
+    /// Generates a JWT Bearer Token for Rest Api Calls
+    /// </summary>
+    /// <param name="person">The <see cref="Person"/></param>
+    /// <param name="claims">The Claims, (e.q. roles) of the <see cref="Person"/> </param>
+    /// <returns>The freshly generated token</returns>
     private async Task<string> GenerateJWTTokenAsync(Person person, IEnumerable<Claim> claims)
     {
 

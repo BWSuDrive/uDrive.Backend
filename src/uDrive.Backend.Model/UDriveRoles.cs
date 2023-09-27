@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace uDrive.Backend.Model;
 
-namespace uDrive.Backend.Model;
-
+/// <summary>
+/// Static defined roles
+/// </summary>
 public static class UDriveRoles
 {
 

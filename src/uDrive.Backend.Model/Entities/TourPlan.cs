@@ -5,6 +5,8 @@ namespace uDrive.Backend.Model.Entities;
 
 /// <summary>
 /// Entity of TourPlan
+/// A TourPlan is a scheduled ride, from <see cref="Start"/> to <see cref="Destination"/>.
+/// A <see cref="Person"/> can request via an <see cref="PassengerRequest"/> to be an passenger
 /// </summary>
 public class TourPlan : IEntity
 {
@@ -21,7 +23,7 @@ public class TourPlan : IEntity
     public DateTime Departure { get; set; }
 
     /// <summary>
-    /// TODO : please explain
+    /// Minutes before no one can request to be an passenger
     /// </summary>
     public int? StopRequests { get; set; }
 
@@ -61,7 +63,14 @@ public class TourPlan : IEntity
     /// </summary>
     public virtual Driver? Driver { get; set; } = null!;
 
+    /// <summary>
+    /// Collection of <see cref="Entities.Person"/> as passengers for the current ride
+    /// </summary>
     public virtual ICollection<Person> Passengers { get; } = new Collection<Person>();
+
+    /// <summary>
+    /// Collection of <see cref="PassengerRequest"/> for the current ride
+    /// </summary>
     public virtual ICollection<PassengerRequest> PassengerRequests { get; } = new Collection<PassengerRequest>();
 
 
