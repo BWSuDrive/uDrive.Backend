@@ -1,14 +1,19 @@
 ﻿{
-  requestPath: /Drivers/AddDrivingLicenceWithNewDriver/0a4dc42f-48b5-444f-81ae-a6f1d5fba545,
+  requestPath: /DrivingLicences,
   requestBody: {
     id: null,
     expireDate: DateTime_1,
-    licenceClass: X,
+    licenceClass: Z,
     driver: null
   },
   requestHeader: [],
   requestMethod: POST,
-  responseBody: Guid_1,
+  responseBody: {
+    id: Guid_1,
+    expireDate: DateTimeOffset_1,
+    licenceClass: Z,
+    driver: null
+  },
   responseHeader: [],
   statusCode: OK,
   statusCodeExpected: true

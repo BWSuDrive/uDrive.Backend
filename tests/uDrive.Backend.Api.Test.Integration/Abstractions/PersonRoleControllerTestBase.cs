@@ -27,7 +27,7 @@ namespace uDrive.Backend.Api.Test.Integration.Abstractions
 
 
         [Test]
-        [Order(200)]
+        [Order(100)]
         public async Task POST_ValidModel_Expected_Result()
         {
             var uri = CreateUri().Build();
@@ -52,12 +52,12 @@ namespace uDrive.Backend.Api.Test.Integration.Abstractions
 
 
         [Test]
-        [Order(201)]
+        [Order(101)]
         public async Task GET_All_AfterValidPOST_Expected_Result()
         => await GET_All_Expected_Result().ConfigureAwait(false);
 
         [Test]
-        [Order(202)]
+        [Order(102)]
         public async Task GET_ById_AfterValidPOST_Expected_Result()
         => await GET_ById_Expected_Result().ConfigureAwait(false);
 

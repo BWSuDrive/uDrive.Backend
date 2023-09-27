@@ -42,12 +42,12 @@ namespace uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers
         public async Task OnGetAsync(string searchString) => await PopulateAsync(searchString);
         
         public async Task PopulateAsync(string searchString) {
-            var getUsers = await _context.Persons.AsTracking().Include(drivers => drivers.Drivers).ToListAsync();
+            var getUsers = await _context.Persons.AsTracking().Include(drivers => drivers.Driver).ToListAsync();
             if (!String.IsNullOrEmpty(searchString))
             {
                 getUsers = getUsers.Where(x => x.Lastname.Contains(searchString) || x.Firstname.Contains(searchString)).ToList();
             }
-            var persons = getUsers.Where(x => !x.Drivers.Any());
+            var persons = getUsers.Where(x => x.Driver is null);
             Users = persons.ToList();
         }
 
