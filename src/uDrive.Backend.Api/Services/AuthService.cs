@@ -53,7 +53,7 @@ public class AuthService : IAuthService
         {
             throw new InvalidOperationException();
         }    
-        var dbUser = _context.Persons.Where(x => x.Id == user.Id).AsTracking().Include(driver => driver.Drivers).FirstOrDefault();
+        var dbUser = _context.Persons.Where(x => x.Id == user.Id).AsTracking().Include(driver => driver.Driver).FirstOrDefault();
         return user;
     }
 

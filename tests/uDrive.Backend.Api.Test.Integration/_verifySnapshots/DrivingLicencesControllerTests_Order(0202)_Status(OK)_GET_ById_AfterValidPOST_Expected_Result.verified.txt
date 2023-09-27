@@ -5,7 +5,8 @@
   responseBody: {
     id: Guid_1,
     expireDate: DateTimeOffset_1,
-    licenceClass: Z
+    licenceClass: Z,
+    driver: null
   },
   responseHeader: [],
   statusCode: OK,

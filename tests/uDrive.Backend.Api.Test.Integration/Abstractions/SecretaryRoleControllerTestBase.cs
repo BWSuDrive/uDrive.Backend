@@ -17,7 +17,7 @@ namespace uDrive.Backend.Api.Test.Integration.Abstractions
     {
 
 
-        protected override string ProvideNewRole() => UDriveRoles.Secretary;
+        protected virtual string ProvideNewRole() => UDriveRoles.Secretary;
 
         [Test]
         [Order(13)]

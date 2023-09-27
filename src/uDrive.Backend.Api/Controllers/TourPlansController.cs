@@ -63,7 +63,7 @@ public class TourPlansController : DriverRoleController<TourPlan>
             return BadRequest();
         }
 
-        var driver = person.Drivers.FirstOrDefault();
+        var driver = person.Driver;
         if (driver is null)
         {
             return BadRequest();
@@ -94,7 +94,7 @@ public class TourPlansController : DriverRoleController<TourPlan>
             return BadRequest();
         }
 
-        var driver = person.Drivers.FirstOrDefault();
+        var driver = person.Driver;
         if (driver is null)
         {
             return BadRequest();
@@ -143,7 +143,7 @@ public class TourPlansController : DriverRoleController<TourPlan>
             return BadRequest();
         }
 
-        var driver = person.Drivers.FirstOrDefault();
+        var driver = person.Driver;
         if (driver is null)
         {
             return BadRequest();
@@ -183,7 +183,7 @@ public class TourPlansController : DriverRoleController<TourPlan>
             return BadRequest();
         }
 
-        var driver = person.Drivers.FirstOrDefault();
+        var driver = person.Driver;
         if (driver is null)
         {
             return BadRequest();

@@ -39,12 +39,12 @@ internal class PassengerRequestEntityTypeConfiguration
 
         _ = builder.HasOne(d => d.Person).WithMany(p => p.PassengerRequests)
             .HasForeignKey(d => d.IdPerson)
-            .OnDelete(DeleteBehavior.ClientSetNull)
+            .OnDelete(DeleteBehavior.ClientCascade)
             .HasConstraintName("FK_Person_PassengarRequests");
 
         _ = builder.HasOne(d => d.TourPlan).WithMany(p => p.PassengerRequests)
             .HasForeignKey(d => d.IdTourPlan)
-            .OnDelete(DeleteBehavior.ClientSetNull)
+            .OnDelete(DeleteBehavior.ClientCascade)
             .HasConstraintName("FK_TourPlan_PassengarRequests");
 
     }

@@ -13,7 +13,8 @@ namespace uDrive.Backend.Api.Test.Integration.Abstractions
     where TController : AdministratorRoleController<TEntity>
     where TEntity : class, IEntity
     {
- 
+        protected override string ProvideNewRole() => UDriveRoles.Administrator;
+
 
     }
 }

@@ -11,5 +11,5 @@ public class DrivingLicence : IEntity
 
     public string LicenceClass { get; set; } = null!;
 
-    public virtual ICollection<Driver> Drivers { get; } = new List<Driver>();
+    public virtual Driver? Driver { get; } = default;
 }

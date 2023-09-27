@@ -80,6 +80,8 @@ public class PersonsController : ControllerBase
         {
             return NotFound();
         }
+
+
         await _userManager.DeleteAsync(user).ConfigureAwait(false);
         await _context.SaveChangesAsync().ConfigureAwait(false);
 
@@ -104,6 +106,21 @@ public class PersonsController : ControllerBase
 
         return NoContent();
     }
+
+    //private async Task DeletePersonDeep(Person person)
+    //{
+    //    var store = _context.Persons.Where(x =>  x.Id == person.Id).AsTracking().Include(driver => driver.Drivers);
+    //    foreach(var driver in store.)
+    //}
+
+    //private async Task DeleteTours(Driver driver)
+    //{
+    //    foreach(var tour in driver.TourPlans)
+    //    {
+            
+    //    }
+    //}
+
 
     [Authorize(Roles = $"{UDriveRoles.Administrator}")]
     [HttpPut("AddRoleToUser/{role}/{idPerson}")]

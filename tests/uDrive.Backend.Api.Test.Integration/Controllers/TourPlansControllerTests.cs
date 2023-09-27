@@ -13,12 +13,12 @@
 //    public sealed class TourPlansControllerTests
 //    : DriverRoleControllerTestBase<TourPlansController, TourPlan>
 //    {
-        
+
 //        protected override TourPlan ProvideModelValidComplete()
 //       => new TourPlan
 //       {
 //           ExpireDate = new DateTime(2024, 12, 30, 0, 0, 0, DateTimeKind.Utc),
-//           LicenceClass = "Z"           
+//           LicenceClass = "Z"
 //       };
 
 //        //protected override Expression<Func<DrivingLicence, object>> ProvideRequiredProperty() => model => model.ExpireDate;
