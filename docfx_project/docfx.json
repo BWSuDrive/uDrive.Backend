@@ -41,7 +41,9 @@
     "fileMetadataFiles": [],
     "globalMetadataFiles": {
       "_appTitle": "uDrive.Backend"
+
     },
+    "globalMetadataFiles": [],
     "keepFileLink": false,
     "output": "_site",
     "postProcessors": [],
