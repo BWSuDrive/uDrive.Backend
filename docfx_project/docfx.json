@@ -39,9 +39,9 @@
     ],
     "disableGitFeatures": false,
     "fileMetadataFiles": [],
-    "globalMetadata": {
-      "_appTitle": "uDrive.Backend",
-      "_appLogoPath": "/images/udrive-low-resolution-logo-color-on-transparent-background.png"
+    "globalMetadataFiles": {
+      "_appTitle": "uDrive.Backend"
+
     },
     "globalMetadataFiles": [],
     "keepFileLink": false,

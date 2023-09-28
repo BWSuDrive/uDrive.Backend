@@ -13,8 +13,8 @@ Mithilfe von [.Net Framework](https://learn.microsoft.com/de-de/dotnet/) wurde d
 Zum Testen der API wurde im Vorfeld das Tool (Postman)[https://www.postman.com/] benutzt.
 ## Deployment und Server
 Die Apps werden auf [Microsoft Azure](https://azure.microsoft.com/de-de/) gehostet mit folgenden Plan:
-![azure](/images/BWS_uDrive_Group.svg)
+![azure](images/BWS_uDrive_Group.png)
 Zum Deployment werden zwei Github Actions genutzt, die sowohl an den Api, als auch an den Web App Server die änderungen deployen.
 ## Datenmodel
 Das Backend liegt folgendem Datenmodel zugrunde 
-![ERM](/images/uDrive-Model.svg)
+![ERM](images/uDrive-Model.png)
