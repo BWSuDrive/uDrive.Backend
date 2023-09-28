@@ -41,7 +41,7 @@
     "fileMetadataFiles": [],
     "globalMetadataFiles": {
       "_appTitle": "uDrive.Backend",
-      "_appLogoPath": "images/udrive-low-resolution-logo-color-on-transparent-background.svg"
+      "_appLogoPath": "images/udrive-low-resolution-logo-color-on-transparent-background.png"
     },
     "keepFileLink": false,
     "output": "_site",
