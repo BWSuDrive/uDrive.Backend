@@ -37,6 +37,15 @@
         ]
       }
     ],
+    "disableGitFeatures": false,
+    "fileMetadataFiles": [],
+    "globalMetadataFiles": {
+      "_appTitle": "uDrive.Backend",
+      "_appLogoPath": "images/udrive-low-resolution-logo-color-on-transparent-background.svg"
+    },
+    "keepFileLink": false,
+    "output": "_site",
+    "postProcessors": [],
     "resource": [
       {
         "files": [
@@ -44,15 +53,9 @@
         ]
       }
     ],
-    "output": "_site",
-    "globalMetadataFiles": [],
-    "fileMetadataFiles": [],
     "template": [
       "default",
       "modern"
-    ],
-    "postProcessors": [],
-    "keepFileLink": false,
-    "disableGitFeatures": false
+    ]
   }
 }
