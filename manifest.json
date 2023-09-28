@@ -438,96 +438,6 @@
       "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.ExecuteAsync.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.ModelExpressionProvider.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.Url.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.Component.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.Json.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.Html.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.ViewData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.Model.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.__tagHelperAttribute_0.html"
         }
       },
@@ -639,6 +549,96 @@
       "output": {
         ".html": {
           "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.__tagHelperScopeManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.ExecuteAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.ModelExpressionProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.Url.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.Component.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.Json.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.Html.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.ViewData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.Model.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_Disable2fa.html"
         }
       },
       "version": ""
@@ -1218,6 +1218,146 @@
       "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
       "output": {
         ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_0.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_5.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_6.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_7.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_8.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_9.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_10.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_11.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_12.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperExecutionContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperRunner.html"
         }
       },
@@ -1419,146 +1559,6 @@
       "output": {
         ".html": {
           "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_0.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_2.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_3.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_4.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_5.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_6.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_7.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_8.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_9.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_10.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_11.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperAttribute_12.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Identity_Pages_Account_Manage_EnableAuthenticator.__tagHelperExecutionContext.html"
         }
       },
       "version": ""
@@ -3728,36 +3728,6 @@
       "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Secretariat_Pages_Drivers_Index.yml",
       "output": {
         ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Secretariat_Pages_Drivers_Index.ViewData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Secretariat_Pages_Drivers_Index.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Secretariat_Pages_Drivers_Index.Model.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Secretariat_Pages_Drivers_Index.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Secretariat_Pages_Drivers_Index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Secretariat_Pages_Drivers_Index.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Secretariat_Pages_Drivers_Index.__tagHelperAttribute_0.html"
         }
       },
@@ -3939,6 +3909,36 @@
       "output": {
         ".html": {
           "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Secretariat_Pages_Drivers_Index.Html.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Secretariat_Pages_Drivers_Index.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Secretariat_Pages_Drivers_Index.ViewData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Secretariat_Pages_Drivers_Index.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Secretariat_Pages_Drivers_Index.Model.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/AspNetCoreGeneratedDocument.Areas_Secretariat_Pages_Drivers_Index.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/AspNetCoreGeneratedDocument.Areas_Secretariat_Pages_Drivers_Index.html"
         }
       },
       "version": ""
@@ -5211,26 +5211,6 @@
       "source_relative_path": "api/uDrive.Backend.Api.Services.Interfaces.IAuthService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Api.Services.Interfaces.IAuthService.AssignPersonToRoleAsync.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Api.Services.Interfaces.IAuthService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Api.Services.Interfaces.IAuthService.GetLogedInPerson.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Api.Services.Interfaces.IAuthService.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Api.Services.Interfaces.IAuthService.LoginAsync.html"
         }
       },
@@ -5272,6 +5252,26 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Api.Services.Interfaces.IAuthService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Api.Services.Interfaces.IAuthService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Api.Services.Interfaces.IAuthService.AssignPersonToRoleAsync.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Api.Services.Interfaces.IAuthService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Api.Services.Interfaces.IAuthService.GetLogedInPerson.html"
         }
       },
       "version": ""
@@ -6021,16 +6021,6 @@
       "source_relative_path": "api/uDrive.Backend.Model.Entities.DrivingLicence.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.DrivingLicence.Id.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.DrivingLicence.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Model.Entities.DrivingLicence.ExpireDate.html"
         }
       },
@@ -6062,6 +6052,16 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Model.Entities.DrivingLicence.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Entities.DrivingLicence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Entities.DrivingLicence.Id.html"
         }
       },
       "version": ""
@@ -7461,16 +7461,6 @@
       "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.PersonalDataModel.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.PersonalDataModel._userManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.PersonalDataModel.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.PersonalDataModel._logger.html"
         }
       },
@@ -7502,6 +7492,16 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.PersonalDataModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.PersonalDataModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.PersonalDataModel._userManager.html"
         }
       },
       "version": ""
@@ -7781,16 +7781,6 @@
       "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.RegisterModel.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.RegisterModel._signInManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.RegisterModel.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.RegisterModel._userManager.html"
         }
       },
@@ -7922,6 +7912,16 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.RegisterModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.RegisterModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.RegisterModel._signInManager.html"
         }
       },
       "version": ""
@@ -8531,6 +8531,36 @@
       "source_relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.yml",
       "output": {
         ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.ViewData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.Model.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.ExecuteAsync.html"
         }
       },
@@ -8582,36 +8612,6 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.Html.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.ViewData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.Model.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.html"
         }
       },
       "version": ""
@@ -8891,6 +8891,106 @@
       "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
       "output": {
         ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_0.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_5.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_6.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_7.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_8.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_9.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_10.html"
         }
       },
@@ -9051,106 +9151,6 @@
       "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_0.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_2.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_3.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_4.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_5.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_6.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_7.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_8.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__tagHelperAttribute_9.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.__Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper.html"
         }
       },
@@ -9242,6 +9242,66 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.__tagHelperAttribute_0.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.__tagHelperAttribute_1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.__tagHelperAttribute_2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.__tagHelperAttribute_3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.__tagHelperAttribute_4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.__tagHelperAttribute_5.html"
         }
       },
       "version": ""
@@ -9411,66 +9471,6 @@
       "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.__tagHelperAttribute_0.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.__tagHelperAttribute_1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.__tagHelperAttribute_2.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.__tagHelperAttribute_3.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.__tagHelperAttribute_4.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.__tagHelperAttribute_5.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.Component.html"
         }
       },
@@ -9502,36 +9502,6 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__LoginPartial.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.Json.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.Html.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.html"
         }
       },
       "version": ""
@@ -9652,6 +9622,36 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.Component.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.Json.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.Html.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__ValidationScriptsPartial.html"
         }
       },
       "version": ""
