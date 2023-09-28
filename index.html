@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>uDrive.Backend </title>
+      <title>uDrive.Backend | uDrive.Backend </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="uDrive.Backend ">
+      <meta name="title" content="uDrive.Backend | uDrive.Backend ">
       
       <link rel="icon" href="favicon.ico">
       <link rel="stylesheet" href="public/docfx.min.css">
@@ -15,7 +15,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/BWSuDrive/uDrive.Backend/blob/main/docfx_project/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/BWSuDrive/uDrive.Backend/blob/54/merge/docfx_project/index.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -46,7 +46,7 @@
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
           <a class="navbar-brand" href="index.html">
-            <img id="logo" class="svg" src="logo.svg" alt="">
+            <img id="logo" class="svg" src="/images/udrive-low-resolution-logo-color-on-transparent-background.png" alt="">
             
           </a>
           <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,13 +85,29 @@
         <article data-uid="">
 <h1 id="udrivebackend">uDrive.Backend</h1>
 
-<p>Diese Dokumentation und Anwendung ist Teil der uDrive App.
+<p>Diese Dokumentation und Anwendung ist Teil der <a href="https://github.com/BWSuDrive">uDrive App</a>.
+<br>
 Die hier zu grundeliegende API und die C# Razor Pages wurden von Benjamin Bigalke <a href="https://github.com/benwirren">@benwirren</a> entwickelt.
+<br>
+Die Android App <a href="https://github.com/BWSuDrive/uDrive.Frontend">uDrive</a> nutzt die Api, diese wurde von <a href="https://github.com/orgs/BWSuDrive/people/CuzImLloyd">Lucas</a>, <a href="https://github.com/orgs/BWSuDrive/people/n-loewen">Nico</a> und <a href="https://github.com/orgs/BWSuDrive/people/Skilecto">Fabian</a> entwickelt
+<br>
+Die gesamte Anwendung wurde im Rahmen einer Projektarbeit an der <a href="https://bws-hofheim.de/">Br�hlwiesenschule Hofheim</a> entwickelt
+<br>
 Der gro�teil der Anleitungen und Tutorials stammen aus den <a href="https://learn.microsoft.com/en-us/dotnet/fundamentals/">Dot Net Fundamentels</a> und es wurde sich an den <a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a> gerichtet.</p>
+<h2 id="entwicklung">Entwicklung</h2>
+<p>Mithilfe von <a href="https://learn.microsoft.com/de-de/dotnet/">.Net Framework</a> wurde die API erstellt und die Razor Pages, innerhalb von <a href="https://visualstudio.microsoft.com/de/">Visual Studio</a>.<br>
+Zum Testen der API wurde im Vorfeld das Tool (Postman)[https://www.postman.com/] benutzt.</p>
+<h2 id="deployment-und-server">Deployment und Server</h2>
+<p>Die Apps werden auf <a href="https://azure.microsoft.com/de-de/">Microsoft Azure</a> gehostet mit folgenden Plan:
+<img src="/images/BWS_uDrive_Group.svg" alt="azure">
+Zum Deployment werden zwei Github Actions genutzt, die sowohl an den Api, als auch an den Web App Server die �nderungen deployen.</p>
+<h2 id="datenmodel">Datenmodel</h2>
+<p>Das Backend liegt folgendem Datenmodel zugrunde
+<img src="/images/uDrive-Model.svg" alt="ERM"></p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/BWSuDrive/uDrive.Backend/blob/main/docfx_project/index.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/BWSuDrive/uDrive.Backend/blob/54/merge/docfx_project/index.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
