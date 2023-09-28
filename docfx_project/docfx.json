@@ -40,8 +40,7 @@
     "disableGitFeatures": false,
     "fileMetadataFiles": [],
     "globalMetadataFiles": {
-      "_appTitle": "uDrive.Backend",
-      "_appLogoPath": "images/udrive-low-resolution-logo-color-on-transparent-background.svg"
+      "_appTitle": "uDrive.Backend"
     },
     "keepFileLink": false,
     "output": "_site",
