@@ -4901,26 +4901,6 @@
       "source_relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController._logger.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController._authService.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController.-ctor.html"
         }
       },
@@ -4942,6 +4922,26 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController._logger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Api.Controllers.RegisterController._authService.html"
         }
       },
       "version": ""
@@ -6021,6 +6021,16 @@
       "source_relative_path": "api/uDrive.Backend.Model.Entities.DrivingLicence.yml",
       "output": {
         ".html": {
+          "relative_path": "api/uDrive.Backend.Model.Entities.DrivingLicence.Id.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Model.Entities.DrivingLicence.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/uDrive.Backend.Model.Entities.DrivingLicence.ExpireDate.html"
         }
       },
@@ -6052,16 +6062,6 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Model.Entities.DrivingLicence.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Model.Entities.DrivingLicence.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Model.Entities.DrivingLicence.Id.html"
         }
       },
       "version": ""
@@ -7281,36 +7281,6 @@
       "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.Index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.Email.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.ChangePassword.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.DownloadPersonalData.html"
         }
       },
@@ -7458,6 +7428,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.Index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.Email.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.ManageNavPages.ChangePassword.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.PersonalDataModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.PersonalDataModel._userManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.PersonalDataModel.yml",
       "output": {
         ".html": {
@@ -7492,16 +7502,6 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.PersonalDataModel.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.PersonalDataModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.Manage.PersonalDataModel._userManager.html"
         }
       },
       "version": ""
@@ -7781,6 +7781,16 @@
       "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.RegisterModel.yml",
       "output": {
         ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.RegisterModel._signInManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.RegisterModel.yml",
+      "output": {
+        ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.RegisterModel._userManager.html"
         }
       },
@@ -7912,16 +7922,6 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.RegisterModel.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.RegisterModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Identity.Pages.Account.RegisterModel._signInManager.html"
         }
       },
       "version": ""
@@ -8071,46 +8071,6 @@
       "source_relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel._userManager.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel._userStore.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel._logger.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel._context.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.-ctor.html"
         }
       },
@@ -8192,6 +8152,46 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel._userManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel._userStore.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel._logger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Areas.Secretariat.Pages.Drivers.IndexModel._context.html"
         }
       },
       "version": ""
@@ -8531,36 +8531,6 @@
       "source_relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.yml",
       "output": {
         ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.ViewData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.Model.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.yml",
-      "output": {
-        ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.ExecuteAsync.html"
         }
       },
@@ -8612,6 +8582,36 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.Html.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.ViewData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.Model.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Pages_Index.html"
         }
       },
       "version": ""
@@ -8882,6 +8882,26 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.PrivacyModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.Html.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.html"
         }
       },
       "version": ""
@@ -9222,26 +9242,6 @@
       "output": {
         ".html": {
           "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.Json.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.Html.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/uDrive.Backend.Pages.Pages.Shared.Pages_Shared__Layout.html"
         }
       },
       "version": ""
