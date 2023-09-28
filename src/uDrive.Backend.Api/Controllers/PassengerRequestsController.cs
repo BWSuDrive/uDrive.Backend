@@ -139,7 +139,8 @@ public class PassengerRequestsController : PersonRoleController<PassengerRequest
 
         var save = await _context.Set<PassengerRequest>().AddAsync(entity).ConfigureAwait(false);
         await _context.SaveChangesAsync();
-        return Ok(save.Entity);
+        var response = _context.PassengerRequests.Where(x => x.Id == entity.Id).AsTracking().Include(x => x.TourPlan).ToList();
+        return Ok(response);
     }
 
 
